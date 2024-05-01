@@ -35,8 +35,6 @@ import {
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 
-//mark元素增强
-import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 //时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
 //浏览量
