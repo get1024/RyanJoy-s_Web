@@ -34,8 +34,36 @@ features:
     details: 一款快速、易用的SSG工具，为本知识系统提供支持。在此感谢为vue.js、vite、vitepress做出贡献的所有朋友🙏。
 ---
 
-本站总访问量 <span id="busuanzi_value_site_pv" /> 次
-本站访客数 <span id="busuanzi_value_site_uv" /> 人次
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/logo.png',
+    name: 'RyanJoy',
+    title: 'RyanJoy-s Blog原始创作者',
+    desc:'全栈在学人员，涉及大前端开发、后端开发。<hr>孩儿立志出乡关，学不成名誓不还。<br>埋骨何须桑梓地，人生无处不春山。',
+    org:'HENU',
+    links: [
+      { icon: 'github', link: 'https://github.com/get1024' },
+      { icon: 'twitter', link: 'https://twitter.com/RyanJoy_1945815' }
+    ]
+  },
+]
+</script>
+
+<div style="margin:30px">
+  <h2 align="center" font-normal op50 p="t-10 b-2">
+    RyanJoy's Web🌏的创作者
+  </h2>
+</div>
+
+<VPTeamMembers size="small" :members="members" align="center"/>
+
+<p align="center" style="margin:30px;font-size:13px;">
+  本站总访问量 <span id="busuanzi_value_site_pv" style="color:#bd34fe"/> 次
+  本站访客数 <span id="busuanzi_value_site_uv" style="color:#bd34fe"/> 人次
+</p>
 
 <style>
 :root {
