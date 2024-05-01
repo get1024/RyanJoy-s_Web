@@ -1,6 +1,5 @@
 import { link } from 'fs'
 import { cwd } from 'node:process'
-import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 import { text } from 'stream/consumers'
 import { defineConfig, type DefaultTheme } from 'vitepress'
 // 行内链接悬浮窗
@@ -60,24 +59,25 @@ export default defineConfig({
         // 填写在此处填写您的仓库链接
         repoURL: () => 'https://github.com/get1024/RyanJoy-s_Web', 
       }), 
-      GitChangelogMarkdownSection({ 
-        getChangelogTitle: (_, __, { helpers }): string => {
-          if (helpers.idStartsWith(join('pages', 'en')))
-            return 'File History'
-          if (helpers.idStartsWith(join('pages', 'zh-CN')))
-            return '文件历史'
+      // GitChangelogMarkdownSection({ 
+      //   getChangelogTitle: (_, __, { helpers }): string => {
+      //     if (helpers.idStartsWith(join('pages', 'en')))
+      //       return 'File History'
+      //     if (helpers.idStartsWith(join('pages', 'zh-CN')))
+      //       return '文件历史'
   
-          return 'File History'
-        },
-        getContributorsTitle: (_, __, { helpers }): string => {
-          if (helpers.idStartsWith(join('pages', 'en')))
-            return 'Contributors'
-          if (helpers.idStartsWith(join('pages', 'zh-CN')))
-            return '贡献者'
+      //     return 'File History'
+      //   },
+      //   getContributorsTitle: (_, __, { helpers }): string => {
+      //     if (helpers.idStartsWith(join('pages', 'en')))
+      //       return 'Contributors'
+      //     if (helpers.idStartsWith(join('pages', 'zh-CN')))
+      //       return '贡献者'
   
-          return 'Contributors'
-        },
-      }), 
+      //     return 'Contributors'
+      //   },
+      // }), 
+      GitChangelogMarkdownSection(),
     ],
   }, 
 
@@ -171,16 +171,12 @@ export default defineConfig({
       // 默认禁用图片懒加载
       lazyLoading: true
     },
-    //努力在适配obsidian双链语法的插件，但是不好用，遇到数字会需要额外加“_”在最前面
-    // config: (md) => {
-    //   md.use(BiDirectionalLinks({
-    //     dir: cwd(),
-    //   }))
-    // },
-
-    //时间线插件
+    
     config: (md) => {
+      //时间线插件
       md.use(timeline);
+      //行内链接预览
+      md.use(InlineLinkPreviewElementTransform);
     },
   },
 
