@@ -51,9 +51,7 @@ export const Theme: ThemeConfig = {
         'zh-CN': { // configure for Simplified Chinese
           popup: { 
             loading: '加载中...', 
-            loadingAriaLabel: '加载中', 
-            noLogs: '目前没有上传记录📝',
-            viewFullHistory:'查看全部记录',
+            loadingAriaLabel: '加载中',
           } 
         }, 
         'en': { // configure for English
@@ -69,7 +67,7 @@ export const Theme: ThemeConfig = {
       // 把选项填写在这里吧...
       locales: {
         'zh-CN': {
-          noLogs: '暂无最近变更历史',
+          // noLogs: '暂无最近变更历史',
           lastEdited: '本页面最后编辑于 {{daysAgo}}',
           lastEditedDateFnsLocaleName: 'zhCN',
           viewFullHistory: '查看完整历史',
