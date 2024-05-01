@@ -70,29 +70,28 @@ export const Theme: ThemeConfig = {
         },
       }
     }),
-      //基于git的页面历史
-      // app.use(NolebaseGitChangelogPlugin, { 
-      //   // 把选项填写在这里吧...
-      //   locales: {
-      //     'zh-CN': {
-      //       // noLogs: '暂无最近变更历史',
-      //       lastEdited: '本页面最后编辑于 {{daysAgo}}',
-      //       lastEditedDateFnsLocaleName: 'zhCN',
-      //       viewFullHistory: '查看完整历史',
-      //       committedOn: '于 {{date}} 提交',
-      //     },
-      //   },
-      //   mapContributors: [
-      //     {
-      //       name: 'RyanJoy',
-      //       nameAliases:['RJY','任俊业'],
-      //       avatar: '/logo.png',
-      //       email: 'junyeren@outlook.com',
-      //       emailAliases:['2025050361@henu.edu.cn','1195975371@qq.com','18903803658@163.com']
-      //     }
-      //   ]
-      // })
-      app.use(NolebaseGitChangelogPlugin);
+      // 基于git的页面历史
+      app.use(NolebaseGitChangelogPlugin, { 
+        // 把选项填写在这里吧...
+        locales: {
+          'zh-CN': {
+            noLogs: '暂无最近变更历史',
+            lastEdited: '本页面最后编辑于 {{daysAgo}}',
+            lastEditedDateFnsLocaleName: 'zhCN',
+            viewFullHistory: '查看完整历史',
+            committedOn: '于 {{date}} 提交',
+          },
+        },
+        mapContributors: [
+          {
+            name: 'RyanJoy',
+            nameAliases:['RJY','任俊业'],
+            avatar: '/logo.png',
+            email: 'junyeren@outlook.com',
+            emailAliases:['2025050361@henu.edu.cn','1195975371@qq.com','18903803658@163.com']
+          }
+        ]
+      })
   },
   setup() {
     const route = useRoute();

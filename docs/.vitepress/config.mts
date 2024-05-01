@@ -55,25 +55,24 @@ export default defineConfig({
         // 填写在此处填写您的仓库链接
         repoURL: () => 'https://github.com/get1024/RyanJoy-s_Web', 
       }), 
-      // GitChangelogMarkdownSection({ 
-      //   getChangelogTitle: (_, __, { helpers }): string => {
-      //     if (helpers.idStartsWith(join('pages', 'en')))
-      //       return 'File History'
-      //     if (helpers.idStartsWith(join('pages', 'zh-CN')))
-      //       return '文件历史'
+      GitChangelogMarkdownSection({ 
+        getChangelogTitle: (_, __, { helpers }): string => {
+          if (helpers.idStartsWith(join('pages', 'en')))
+            return 'File History'
+          if (helpers.idStartsWith(join('pages', 'zh-CN')))
+            return '文件历史'
   
-      //     return 'File History'
-      //   },
-      //   getContributorsTitle: (_, __, { helpers }): string => {
-      //     if (helpers.idStartsWith(join('pages', 'en')))
-      //       return 'Contributors'
-      //     if (helpers.idStartsWith(join('pages', 'zh-CN')))
-      //       return '贡献者'
+          return 'File History'
+        },
+        getContributorsTitle: (_, __, { helpers }): string => {
+          if (helpers.idStartsWith(join('pages', 'en')))
+            return 'Contributors'
+          if (helpers.idStartsWith(join('pages', 'zh-CN')))
+            return '贡献者'
   
-      //     return 'Contributors'
-      //   },
-      // }), 
-      GitChangelogMarkdownSection(),
+          return 'Contributors'
+        },
+      }), 
     ],
   }, 
 
