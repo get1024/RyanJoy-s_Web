@@ -12,12 +12,6 @@ import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities/
 import './styles/vars.css'
 import './styles/main.css'
 
-//行内链接预览
-import { 
-  NolebaseInlineLinkPreviewPlugin, 
-} from '@nolebase/vitepress-plugin-inline-link-preview/client'
-import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
-
 //高亮目标标题
 import {  
   NolebaseHighlightTargetedHeading,  
@@ -99,7 +93,6 @@ export const Theme: ThemeConfig = {
       //   ]
       // })
       app.use(NolebaseGitChangelogPlugin);
-      app.use(NolebaseInlineLinkPreviewPlugin);
   },
   setup() {
     const route = useRoute();

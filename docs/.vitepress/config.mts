@@ -2,10 +2,6 @@ import { link } from 'fs'
 import { cwd } from 'node:process'
 import { text } from 'stream/consumers'
 import { defineConfig, type DefaultTheme } from 'vitepress'
-// 行内链接悬浮窗
-import { 
-  InlineLinkPreviewElementTransform 
-} from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 
 //git更新版本
 import { join } from 'node:path'
@@ -175,8 +171,6 @@ export default defineConfig({
     config: (md) => {
       //时间线插件
       md.use(timeline);
-      //行内链接预览
-      md.use(InlineLinkPreviewElementTransform);
     },
   },
 
