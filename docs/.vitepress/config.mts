@@ -1,7 +1,6 @@
 import { link } from 'fs'
 import { cwd } from 'node:process'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
-import { createRequire } from 'module'
 import { text } from 'stream/consumers'
 import { defineConfig, type DefaultTheme } from 'vitepress'
 // 行内链接悬浮窗
@@ -10,13 +9,12 @@ import {
 } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 
 //git更新版本
+import { join } from 'node:path'
 import { 
   GitChangelog, 
   GitChangelogMarkdownSection, 
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
-const require = createRequire(import.meta.url)
-const pkg = require('vitepress/package.json')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -28,10 +26,9 @@ export default defineConfig({
 
   //配置网页图标
   head: [
-    ['link', { rel: 'icon', href: '/RyanJoy_logo.png' }],
+    ['link', { rel: 'icon', href: '/RyanJoy-s_Web/logo.png' }],
   ],
 
-  
   //阅读增强插件
   vite: { 
     optimizeDeps: {
@@ -54,9 +51,26 @@ export default defineConfig({
     plugins: [ 
       GitChangelog({ 
         // 填写在此处填写您的仓库链接
-        repoURL: () => 'https://github.com/nolebase/integrations', 
+        repoURL: () => 'https://github.com/get1024/RyanJoy-s_Web', 
       }), 
-      GitChangelogMarkdownSection(), 
+      GitChangelogMarkdownSection({ 
+        getChangelogTitle: (_, __, { helpers }): string => {
+          if (helpers.idStartsWith(join('pages', 'en')))
+            return 'File History'
+          if (helpers.idStartsWith(join('pages', 'zh-CN')))
+            return '文件历史'
+  
+          return 'File History'
+        },
+        getContributorsTitle: (_, __, { helpers }): string => {
+          if (helpers.idStartsWith(join('pages', 'en')))
+            return 'Contributors'
+          if (helpers.idStartsWith(join('pages', 'zh-CN')))
+            return '贡献者'
+  
+          return 'Contributors'
+        },
+      }), 
     ],
   }, 
 
@@ -68,7 +82,7 @@ export default defineConfig({
     nav: nav(),
 
     editLink: {
-      pattern: 'https://github.com/get1024',
+      pattern: 'https://github.com/get1024/RyanJoy-s_Web/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页面',
     },
 
@@ -84,7 +98,7 @@ export default defineConfig({
 
     outline: {
       label: '本页大纲',
-      level:[1,6],
+      level:[1,3],
     },
 
     lastUpdated: {
@@ -108,12 +122,8 @@ export default defineConfig({
         link: 'https://github.com/get1024',
       },
       {
-        icon: 'github',
-        link: 'https://github.com/get1024',
-      },
-      {
-        icon: 'github',
-        link: 'https://github.com/get1024',
+        icon: 'x',
+        link: 'https://twitter.com/RyanJoy_1945815',
       },
     ],
 
@@ -181,12 +191,16 @@ function nav(): DefaultTheme.NavItem[] {
           link:'/blog/life_skills/'
         },
         {
-          text: '💻Technical Skills',
+          text: '💻Technical Competence',
           link:'/blog/tech_skills/'
         },
         {
           text: '🛠️Project',
           link:'/blog/project/'
+        },
+        {
+          text: '🤔Reflection & Summary',
+          link:'/blog/reflection&summary/'
         },
       ]
     },
@@ -216,7 +230,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
         {
           // 第二级
           text: '🛒Shopping',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text:'7000元笔记本电脑选购指北',
@@ -228,13 +242,13 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
 
     {
-      text: '💻Technical Skills',
+      text: '💻Technical Competence',
       collapsed: false,
       items: [
         {
           // 第二级
           text: '📑个人Blog搭建指北',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               // 第三级
@@ -245,7 +259,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
         },
         {
           text: '📕CSS学习笔记',
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: 'CSS2笔记',
@@ -257,6 +271,16 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
     {
       text: '🛠️Project',
+      collapsed: false,
+      items: [
+        {
+          text: '7000￥价位笔记本电脑选购指北',
+          link: '7000￥价位笔记本电脑选购指北.md',
+        },
+      ]
+    },
+    {
+      text: '🤔Reflection & Summary',
       collapsed: false,
       items: [
         {

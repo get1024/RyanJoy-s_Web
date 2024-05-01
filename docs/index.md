@@ -16,7 +16,7 @@ hero:
       text: 联系我
       link: /about_me/reach_me
   image:
-    src: /RyanJoy_logo.png
+    src: /logo.png
     alt: RyanJoy's Blog logo
 
 features:
