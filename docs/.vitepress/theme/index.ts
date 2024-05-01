@@ -30,6 +30,16 @@ import {
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 //mark元素增强
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
+//时间线样式
+import "vitepress-markdown-timeline/dist/theme/index.css";
+//浏览量
+import googleAnalytics from 'vitepress-plugin-google-analytics'
+import { inBrowser } from 'vitepress'
+import busuanzi from 'busuanzi.pure.js'
+//图片缩放
+import mediumZoom from 'medium-zoom';
+import { onMounted, watch, nextTick } from 'vue';
+import { useRoute } from 'vitepress';
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -44,7 +54,12 @@ export const Theme: ThemeConfig = {
       ],
     })
   },
-  enhanceApp({ app }) {
+  enhanceApp({ app, router }) {
+    if (inBrowser) {
+      router.onAfterRouteChanged = () => {
+        busuanzi.fetch()
+      }
+    }
     //配置国际化
     app.provide(InjectionKey, {
       locales: { // 配置国际化
@@ -83,7 +98,21 @@ export const Theme: ThemeConfig = {
           emailAliases:['2025050361@henu.edu.cn','1195975371@qq.com','18903803658@163.com']
         }
       ]
-    }) 
+    })
+  },
+  setup() {
+    const route = useRoute();
+    const initZoom = () => {
+      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
+      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+    };
+    onMounted(() => {
+      initZoom();
+    });
+    watch(
+      () => route.path,
+      () => nextTick(() => initZoom())
+    );
   },
 }
 

@@ -34,6 +34,9 @@ features:
     details: 一款快速、易用的SSG工具，为本知识系统提供支持。在此感谢为vue.js、vite、vitepress做出贡献的所有朋友🙏。
 ---
 
+本站总访问量 <span id="busuanzi_value_site_pv" /> 次
+本站访客数 <span id="busuanzi_value_site_uv" /> 人次
+
 <style>
 :root {
   --vp-home-hero-name-color: transparent;

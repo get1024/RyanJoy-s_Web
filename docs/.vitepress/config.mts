@@ -14,7 +14,9 @@ import {
   GitChangelog, 
   GitChangelogMarkdownSection, 
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
-
+import { hostname } from 'os'
+//时间线插件
+import timeline from "vitepress-markdown-timeline"; 
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,6 +25,11 @@ export default defineConfig({
   title: "RyanJoy's Palace🏢",
   description: 'RyanJoy前途似锦',
   lastUpdated: true,
+
+  //站点地图
+  sitemap:{
+    hostname:'https://get1024.github.io/RyanJoy-s_Web/',
+  },
 
   //配置网页图标
   head: [
@@ -170,6 +177,11 @@ export default defineConfig({
     //     dir: cwd(),
     //   }))
     // },
+
+    //时间线插件
+    config: (md) => {
+      md.use(timeline);
+    },
   },
 
 })
