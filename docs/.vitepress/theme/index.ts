@@ -74,12 +74,6 @@ export const Theme: ThemeConfig = {
             loadingAriaLabel: '加载中',
           }
         },
-        'en': { // configure for English
-          popup: {
-            loading: 'Loading...',
-            loadingAriaLabel: 'Loading',
-          }
-        },
       }
     }),
       //基于git的页面历史
