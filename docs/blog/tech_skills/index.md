@@ -1,0 +1,1 @@
+- docs/blog/tech_skill/index.md

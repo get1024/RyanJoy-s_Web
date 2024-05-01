@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@nolebase/markdown-it-bi-directional-links": "^2.0.0-rc10",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.0.0-rc10",
+    "@nolebase/vitepress-plugin-git-changelog": "^2.0.0-rc10",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.0.0-rc10",
+    "@nolebase/vitepress-plugin-inline-link-preview": "^2.0.0-rc10",
+    "vitepress": "^1.1.4"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}

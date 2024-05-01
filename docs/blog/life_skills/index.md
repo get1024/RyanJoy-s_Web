@@ -1,0 +1,1 @@
+- docs/blog/life_skills/index.md
