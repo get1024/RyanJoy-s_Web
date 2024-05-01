@@ -185,7 +185,7 @@ function nav(): DefaultTheme.NavItem[] {
       link: '/',
     },
     {
-      text: '📰Blog',
+      text: '📒Blog',
       items: [
         {
           text: '🚶Life Skills',
@@ -243,6 +243,82 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
 
     {
+      text: '🛠️Project',
+      collapsed: false,
+      items: [
+        {
+          text: '💸基于Springboot的资产管理系统',
+          collapsed: true,
+          items: [
+            {
+              text: '1.前端',
+              link: '/project/基于vue+springboot的资产管理系统/第1天---前端',
+            },
+            {
+              text: '2-1.若依——低代码开发平台',
+              link: '',
+            },
+            {
+              text: '2-2.项目速成攻略',
+              link: '/project/基于vue+springboot的资产管理系统/第2天_2---项目速成攻略',
+            },
+            {
+              text: '3.Sping Security',
+              link: '',
+            },
+            {
+              text: '4.智慧物业管理系统',
+              link: '/project/基于vue+springboot的资产管理系统/第4天---智慧物业管理系统',
+            },
+          ]
+        },
+        {
+          text: '🎬JY-movie',
+          collapsed: true,
+          items: [
+            {
+              text: 'README.md文档',
+              link: '/project/JY-movie/jy-movie'
+            },
+            {
+              text: '毕业答辩相关',
+              link: '/project/JY-movie/定稿后答辩'
+            },
+          ]
+        },
+        {
+          text: '🏢RyanJoy\'s Web',
+          collapsed: true,
+          items: [
+            {
+
+            }
+          ]
+        },
+        {
+          text: '🚀Starship Customize',
+          collapsed: true,
+          items: [
+            {
+              text: 'README.md文档',
+              link: '/project/Starship_customize/starship_custom',
+            },
+          ]
+        },
+      ]
+    },
+
+    {
+      text: '🤔Reflection & Summary',
+      collapsed: false,
+      items: [
+        {
+          text: '💨目前还是空'
+        },
+      ]
+    },
+
+    {
       text: '💻Technical Competence',
       collapsed: false,
       items: [
@@ -264,31 +340,59 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           items: [
             {
               text: 'CSS2笔记',
-              link:'/tech_skills/CSS/CSS',
+              link:'/tech_skills/CSS/CSS2',
+            },
+            // {
+            //   text: 'CSS3笔记',
+            //   link:'/tech_skills/CSS/CSS3',
+            // },
+          ]
+        },
+        {
+          text: '📗HTML学习笔记',
+          collapsed: true,
+          items: [
+            {
+              text: 'HTML4笔记',
+              link:'/tech_skills/HTML/HTML4',
+            },
+          ]
+        },
+        {
+          text: '📘SpringBoot学习笔记',
+          collapsed: true,
+          items: [
+            {
+              
+            },
+          ]
+        },
+        {
+          text: '📓Terminal相关',
+          collapsed: true,
+          items: [
+            {
+              text: 'Git使用',
+              link: '/tech_skills/Terminal/git使用'
+            },
+            {
+              text: 'Powershell',
+              link: '/tech_skills/Terminal/powershell'
+            },
+          ]
+        },
+        {
+          text: '📙Vue学习笔记',
+          collapsed: true,
+          items: [
+            {
+              text: 'VUE笔记',
+              link: '/tech_skills/VUE/VUE'
             },
           ]
         },
       ]
     },
-    {
-      text: '🛠️Project',
-      collapsed: false,
-      items: [
-        {
-          text: '7000￥价位笔记本电脑选购指北',
-          link: '7000￥价位笔记本电脑选购指北.md',
-        },
-      ]
-    },
-    {
-      text: '🤔Reflection & Summary',
-      collapsed: false,
-      items: [
-        {
-          text: '7000￥价位笔记本电脑选购指北',
-          link: '7000￥价位笔记本电脑选购指北.md',
-        },
-      ]
-    },
+
   ]
 }
