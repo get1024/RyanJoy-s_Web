@@ -291,7 +291,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           collapsed: true,
           items: [
             {
-
+              text: '目前还是空',
             }
           ]
         },
@@ -313,7 +313,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
       collapsed: false,
       items: [
         {
-          text: '💨目前还是空'
+          text: '目前还是空'
         },
       ]
     },
@@ -349,6 +349,20 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           ]
         },
         {
+          text: '🌵Git—代码版本控制',
+          collapsed: true,
+          items: [
+            {
+              text: '如何规范commit？',
+              link:'/tech_skills/Git/如何规范Git Commit？',
+            },
+            {
+              text: 'Git使用',
+              link:'tech_skills/Git/git使用',
+            },
+          ]
+        },
+        {
           text: '📗HTML学习笔记',
           collapsed: true,
           items: [
@@ -359,25 +373,21 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           ]
         },
         {
-          text: '📘SpringBoot学习笔记',
+          text: '⌨️Powershell-新一代终端',
           collapsed: true,
           items: [
             {
-              
+              text: 'Powershell',
+              link: '/tech_skills/Terminal/powershell'
             },
           ]
         },
         {
-          text: '📓Terminal相关',
+          text: '📘SpringBoot学习笔记',
           collapsed: true,
           items: [
             {
-              text: 'Git使用',
-              link: '/tech_skills/Terminal/git使用'
-            },
-            {
-              text: 'Powershell',
-              link: '/tech_skills/Terminal/powershell'
+              text: '目前还是空',
             },
           ]
         },
