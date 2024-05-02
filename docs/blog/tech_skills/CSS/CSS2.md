@@ -3,6 +3,11 @@ Created at: 2024年03月15日 17:39:49
 Last edited at: 2024年05月01日 22:04:29
 title: CSS2笔记
 ---
+> [!WARNING] 想要下载本页为pdf？或者想要预览完整内容？
+> 声明⚠️：作者已事先编辑好pdf文档，本文更新还在同步中……
+> 
+> 想要获取本文完整文档，<a href="../../../public/blog/tech_skills/CSS2笔记.pdf" download="CSS2笔记.pdf">点击此处下载CSS2完整笔记</a>，<a href="../../../public/blog/tech_skills/CSS3笔记.pdf" download="CSS3笔记.pdf">点击此处下载CSS3完整笔记</a>。
+
 # 一-CSS 基础
 ## 1-简介
 - `CSS` 全称为**层叠样式表**（`Cascading Style Sheets`）；
