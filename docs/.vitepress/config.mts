@@ -358,7 +358,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
             },
             {
               text: 'Git使用',
-              link:'tech_skills/Git/git使用',
+              link:'/tech_skills/Git/git使用',
             },
           ]
         },
@@ -377,8 +377,8 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           collapsed: true,
           items: [
             {
-              text: 'Powershell',
-              link: '/tech_skills/Terminal/powershell'
+              text: 'Powershell使用笔记',
+              link: '/tech_skills/Powershell/powershell'
             },
           ]
         },
