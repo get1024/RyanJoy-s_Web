@@ -18,16 +18,16 @@ import {
 } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 //文件更新git页面历史
-import { 
-  NolebaseGitChangelogPlugin 
-} from '@nolebase/vitepress-plugin-git-changelog/client'
+// import { 
+//   NolebaseGitChangelogPlugin 
+// } from '@nolebase/vitepress-plugin-git-changelog/client'
 import {
   NolebaseGitChangelog,  
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 import {
   NolebaseGitContributors,  
 } from '@nolebase/vitepress-plugin-git-changelog/client'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
+// import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 
 //时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
@@ -59,6 +59,30 @@ export const Theme: ThemeConfig = {
         busuanzi.fetch()
       }
     }
+
+    // 基于git的页面历史
+      // app.use(NolebaseGitChangelogPlugin, { 
+      //   // 把选项填写在这里吧...
+      //   locales: {
+      //     'zh-CN': {
+      //       noLogs: '暂无最近变更历史',
+      //       lastEdited: '本页面最后编辑于 {{daysAgo}}',
+      //       lastEditedDateFnsLocaleName: 'zhCN',
+      //       viewFullHistory: '查看完整历史',
+      //       committedOn: '于 {{date}} 提交',
+      //     },
+      //   },
+      //   mapContributors: [
+      //     {
+      //       name: 'RyanJoy',
+      //       nameAliases:['RJY','任俊业'],
+      //       avatar: '/logo.png',
+      //       email: 'junyeren@outlook.com',
+      //       emailAliases:['2025050361@henu.edu.cn','1195975371@qq.com','18903803658@163.com']
+      //     }
+      //   ]
+      // })
+
     //配置国际化
     app.provide(InjectionKey, {
       locales: { // 配置国际化
@@ -69,29 +93,7 @@ export const Theme: ThemeConfig = {
           }
         },
       }
-    }),
-      // 基于git的页面历史
-      app.use(NolebaseGitChangelogPlugin, { 
-        // 把选项填写在这里吧...
-        locales: {
-          'zh-CN': {
-            noLogs: '暂无最近变更历史',
-            lastEdited: '本页面最后编辑于 {{daysAgo}}',
-            lastEditedDateFnsLocaleName: 'zhCN',
-            viewFullHistory: '查看完整历史',
-            committedOn: '于 {{date}} 提交',
-          },
-        },
-        mapContributors: [
-          {
-            name: 'RyanJoy',
-            nameAliases:['RJY','任俊业'],
-            avatar: '/logo.png',
-            email: 'junyeren@outlook.com',
-            emailAliases:['2025050361@henu.edu.cn','1195975371@qq.com','18903803658@163.com']
-          }
-        ]
-      })
+    })
   },
   setup() {
     const route = useRoute();
