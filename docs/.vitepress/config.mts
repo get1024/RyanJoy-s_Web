@@ -53,7 +53,7 @@ export default defineConfig({
     plugins: [ 
       GitChangelog({ 
         // 填写在此处填写您的仓库链接
-        repoURL: () => 'https://github.com/get1024/RyanJoy-s_Web', 
+        repoURL: () => 'https://github.com/nolebase/integrations', 
       }), 
       GitChangelogMarkdownSection({ 
         getChangelogTitle: (_, __, { helpers }): string => {
@@ -155,8 +155,11 @@ export default defineConfig({
     },
 
     //侧边栏配置
+    //base键值对是直接省略了在后续sidebar函数中的路径了，默认从base指定的路径开始。
     sidebar: {
-      '/blog':{base:'/blog',items:sidebar_blog()},
+      '/blog': { base: '/blog', items: sidebar_blog() },
+      '/about_me': { base: '/about_me', items: sidebar_about_me() },
+      '/archive': { base: '/archive', items: sidebar_archive() },
     },
 
   },
@@ -216,6 +219,30 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: '🧑‍🤝‍🧑Friend Chains',
       link: '/about_me/friendChains'
+    },
+  ]
+}
+
+//archive侧边栏
+function sidebar_archive(): DefaultTheme.SidebarItem[]{
+  return [
+    {
+      text: '暂时没有内容',
+      link:'',
+    }
+  ]
+}
+
+//about_me侧边栏
+function sidebar_about_me(): DefaultTheme.SidebarItem[]{
+  return [
+    {
+      text: 'Friend Chains',
+      link: '/friendChains',
+    },
+    {
+      text: 'Reach Me',
+      link: '/reach_me',
     },
   ]
 }
