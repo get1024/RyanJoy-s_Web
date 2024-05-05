@@ -5,10 +5,10 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 //git更新版本
 import { join } from 'node:path'
-// import { 
-//   GitChangelog, 
-//   GitChangelogMarkdownSection, 
-// } from '@nolebase/vitepress-plugin-git-changelog/vite'
+import { 
+  GitChangelog, 
+  GitChangelogMarkdownSection, 
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { hostname } from 'os'
 //时间线插件
 import timeline from "vitepress-markdown-timeline"; 
@@ -51,28 +51,7 @@ export default defineConfig({
       ], 
     }, 
     plugins: [ 
-      // GitChangelog({ 
-      //   // 填写在此处填写您的仓库链接
-      //   repoURL: () => 'https://github.com/nolebase/integrations', 
-      // }), 
-      // GitChangelogMarkdownSection({ 
-      //   getChangelogTitle: (_, __, { helpers }): string => {
-      //     if (helpers.idStartsWith(join('pages', 'en')))
-      //       return 'File History'
-      //     if (helpers.idStartsWith(join('pages', 'zh-CN')))
-      //       return '文件历史'
-  
-      //     return 'File History'
-      //   },
-      //   getContributorsTitle: (_, __, { helpers }): string => {
-      //     if (helpers.idStartsWith(join('pages', 'en')))
-      //       return 'Contributors'
-      //     if (helpers.idStartsWith(join('pages', 'zh-CN')))
-      //       return '贡献者'
-  
-      //     return 'Contributors'
-      //   },
-      // }), 
+
     ],
   }, 
 
