@@ -1,3 +1,8 @@
+---
+Created at: 2024年04月19日 20:13:26
+Last edited at: 2024年05月05日 23:56:43
+---
+# Powershell 笔记
 - 快捷键
 ```
 #呼出powershell窗口
