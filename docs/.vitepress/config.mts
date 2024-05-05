@@ -33,6 +33,13 @@ export default defineConfig({
 
   //阅读增强插件
   vite: { 
+    plugins: [ 
+      GitChangelog({ 
+        // 填写在此处填写您的仓库链接
+        repoURL: () => 'https://github.com/get1024/RyanJoy-s_Web', 
+      }), 
+      GitChangelogMarkdownSection(), 
+    ],
     optimizeDeps: {
       include: [ 
         // @rive-app/canvas is a CJS/UMD module, so it needs to be included here
@@ -50,9 +57,7 @@ export default defineConfig({
         '@nolebase/vitepress-plugin-highlight-targeted-heading', 
       ], 
     }, 
-    plugins: [ 
-
-    ],
+    
   }, 
 
   themeConfig: {

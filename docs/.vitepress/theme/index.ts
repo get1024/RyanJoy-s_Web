@@ -21,6 +21,7 @@ import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 import { 
   NolebaseGitChangelogPlugin 
 } from '@nolebase/vitepress-plugin-git-changelog/client'
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import {
   NolebaseGitChangelog,  
 } from '@nolebase/vitepress-plugin-git-changelog/client'
@@ -53,25 +54,18 @@ export const Theme: ThemeConfig = {
       ],
     })
   },
+
   enhanceApp({ app, router }) {
     if (inBrowser) {
       router.onAfterRouteChanged = () => {
         busuanzi.fetch()
       }
     }
-
-    //配置国际化
-    app.provide(InjectionKey, {
-      locales: { // 配置国际化
-        'zh-CN': { // configure for Simplified Chinese
-          popup: {
-            loading: '加载中...',
-            loadingAriaLabel: '加载中',
-          }
-        },
-      }
-    })
+    // 基于git的页面历史
+    app.use(NolebaseGitChangelogPlugin)
   },
+
+  //图片缩放
   setup() {
     const route = useRoute();
     const initZoom = () => {
