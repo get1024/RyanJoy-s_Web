@@ -293,7 +293,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
             },
             {
               text: '毕业答辩相关',
-              link: '/project/JY-movie/定稿后答辩'
+              link: '/project/JY-movie/JY-movie答辩相关'
             },
           ]
         },

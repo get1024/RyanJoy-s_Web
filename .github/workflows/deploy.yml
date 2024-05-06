@@ -2,12 +2,6 @@
 #
 name: Deploy VitePress site to Pages
 
-- uses: actions/checkout@v4
-  with:
-    # Number of commits to fetch. 0 indicates all history for all branches and tags.
-    # Default: 1
-    fetch-depth: 0
-
 on:
   # 在针对 `main` 分支的推送上运行。如果你
   # 使用 `master` 分支作为默认分支，请将其更改为 `master`
