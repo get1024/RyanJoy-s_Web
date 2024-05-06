@@ -68,7 +68,7 @@ export const Theme: ThemeConfig = {
         { 
           name: 'RyanJoy', 
           email: 'junyeren@outlook.com', 
-          avatar: '/logo.png',
+          avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/logo.png?raw=true',
         } 
       ]
     })
