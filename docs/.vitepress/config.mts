@@ -125,7 +125,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/get1024',
+        link: 'https://github.com/get1024/RyanJoy-s_Web',
       },
       {
         icon: 'x',

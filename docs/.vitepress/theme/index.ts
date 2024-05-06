@@ -8,7 +8,6 @@ import {
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import './styles/vars.css'
 import './styles/main.css'
 
@@ -19,14 +18,10 @@ import {
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 //文件更新git页面历史
 import { 
-  NolebaseGitChangelogPlugin 
-} from '@nolebase/vitepress-plugin-git-changelog/client'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-import {
-  NolebaseGitChangelog,  
-} from '@nolebase/vitepress-plugin-git-changelog/client'
-import {
-  NolebaseGitContributors,  
+  NolebaseGitChangelogPlugin,
+  NolebaseGitChangelog, 
+  NolebaseGitContributors,
+  InjectionKey
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 
@@ -67,7 +62,9 @@ export const Theme: ThemeConfig = {
       mapContributors: [ 
         { 
           name: 'RyanJoy', 
+          nameAliases: ['RJY','junyeren'],
           email: 'junyeren@outlook.com', 
+          emailAliases: ['2025050361@henu.edu.cn','18903803658@163.com'],
           avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/logo.png?raw=true',
         } 
       ]
