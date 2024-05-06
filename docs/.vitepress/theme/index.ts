@@ -8,7 +8,7 @@ import {
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import { InjectionKey } from '@nolebase/vitepress-plugin-git-changelog/client'
+import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import './styles/vars.css'
 import './styles/main.css'
 
@@ -62,7 +62,7 @@ export const Theme: ThemeConfig = {
       }
     }
     // 基于git的页面历史
-    app.provide(InjectionKey, { 
+    app.use(NolebaseGitChangelogPlugin, { 
       // 把选项填写在这里吧...
       mapContributors: [ 
         { 
