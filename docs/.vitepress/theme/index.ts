@@ -62,7 +62,16 @@ export const Theme: ThemeConfig = {
       }
     }
     // 基于git的页面历史
-    app.use(NolebaseGitChangelogPlugin)
+    app.use(NolebaseGitChangelogPlugin, { 
+      // 把选项填写在这里吧...
+      mapContributors: [ 
+        { 
+          name: 'RyanJoy', 
+          email: 'junyeren@outlook.com', 
+          avatar: '/logo.png',
+        } 
+      ]
+    })
   },
 
   //图片缩放
