@@ -11,7 +11,10 @@ import {
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { hostname } from 'os'
 //时间线插件
-import timeline from "vitepress-markdown-timeline"; 
+import timeline from "vitepress-markdown-timeline"
+
+// to-do插件
+import taskLists from 'markdown-it-task-checkbox'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -157,6 +160,15 @@ export default defineConfig({
     config: (md) => {
       //时间线插件
       md.use(timeline);
+      //to-do插件
+      md.use(taskLists, {
+        disabled: true,
+        divWrap: false,
+        divClass: 'checkbox',
+        idPrefix: 'cbx_',
+        ulClass: 'task-list',
+        liClass: 'task-list-item',
+      });
     },
   },
 
