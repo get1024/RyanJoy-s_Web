@@ -7,8 +7,8 @@ title: 🗃️Archive
 
 ## 更新时间树🌴
 ::: timeline 2024-04-29
-- [Friend Chains](docs/about_me/friendChains.md)
-- 《深入浅出webpack》 http://webpack.wuhaolin.cn/
+- [Friend Chains](/about_me/friendChains)
+- [CSS2笔记](/blog/tech_skills/CSS/CSS2)
 :::
 
 ::: timeline 2023-04-23
