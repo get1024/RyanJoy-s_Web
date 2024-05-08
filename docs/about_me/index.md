@@ -10,7 +10,7 @@ const members = [
   {
     avatar: 'https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/logo.png',
     name: 'RyanJoy',
-    title: 'RyanJoy-s Blog原始创作者',
+    title: 'RyanJoy-s Blog🌏原始创作者',
     desc:'目前全沾，立志做全栈',
     org:'HENU',
     links: [
@@ -29,12 +29,12 @@ const members = [
 </div>
 
 ## 🙋‍♂️About Me
-
+<!-- 
 <div style="margin:30px">
-  <h2 align="center" font-normal op50 p="t-10 b-2">
+  <h3 align="center" font-normal op50 p="t-10 b-2">
     RyanJoy's Web🌏的创作者
-  </h2>
-</div>
+  </h3>
+</div> -->
 
 <VPTeamMembers size="small" :members="members" align="center"/>
 
@@ -64,8 +64,8 @@ I've always wanted to do something interesting, be an interesting person, and ma
       <center><img src="https://github-readme-stats.vercel.app/api?username=get1024&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide_border=true&show_owner=true" align="right"/></center>
     </td>
   </tr>
-  <tr><center><img src="https://streak-stats.demolab.com?user=get1024&theme=buefy&hide_border=true&locale=zh_Hans&date_format=%5BY.%5Dn.j" alt="GitHub Streak" /></center></tr>
-  <tr><center><img src="https://github-readme-activity-graph.vercel.app/graph?username=get1024&bg_color=ffffff&color=000000&line=758cff&point=5b59e8&area=true&hide_border=true" /></center></tr>
+  <tr><center><img src="https://streak-stats.demolab.com?user=get1024&theme=buefy&hide_border=true&locale=zh_Hans&date_format=%5BY.%5Dn.j" alt="GitHub Streak" align="center"/></center></tr>
+  <tr><center><img src="https://github-readme-activity-graph.vercel.app/graph?username=get1024&bg_color=ffffff&color=000000&line=758cff&point=5b59e8&area=true&hide_border=true" align="center"/></center></tr>
 </table>
 
 ## 📞Reach Me
