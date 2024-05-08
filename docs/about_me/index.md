@@ -29,12 +29,12 @@ const members = [
 </div>
 
 ## 🙋‍♂️About Me
-<!-- 
+
 <div style="margin:30px">
   <h3 align="center" font-normal op50 p="t-10 b-2">
     RyanJoy's Web🌏的创作者
   </h3>
-</div> -->
+</div>
 
 <VPTeamMembers size="small" :members="members" align="center"/>
 
@@ -53,20 +53,16 @@ I've always wanted to do something interesting, be an interesting person, and ma
 
 ## 📈My GitHub statistics
 
-<table>
-  <tr>
-    <td>
-      <!-- <center><img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=get1024&theme=default&utcOffset=8" align="right" /></center> -->
-      <center>
-      <img height="170px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=get1024&layout=compact&hide_border=true" align="left"/></center>
-    </td>
-    <td>
-      <center><img src="https://github-readme-stats.vercel.app/api?username=get1024&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide_border=true&show_owner=true" align="right"/></center>
-    </td>
-  </tr>
-  <tr><center><img src="https://streak-stats.demolab.com?user=get1024&theme=buefy&hide_border=true&locale=zh_Hans&date_format=%5BY.%5Dn.j" alt="GitHub Streak" align="center"/></center></tr>
-  <tr><center><img src="https://github-readme-activity-graph.vercel.app/graph?username=get1024&bg_color=ffffff&color=000000&line=758cff&point=5b59e8&area=true&hide_border=true" align="center"/></center></tr>
-</table>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=get1024&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide_border=true&show_owner=true"  />
+</div>
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=get1024&theme=buefy&hide_border=true&locale=zh_Hans&date_format=%5BY.%5Dn.j"  />
+</div>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=get1024&bg_color=ffffff&color=000000&line=758cff&point=5b59e8&area=true&hide_border=true"  />
+</div>
 
-## 📞Reach Me
+
+## 📱Reach Me
 [reach me](./reach_me)
