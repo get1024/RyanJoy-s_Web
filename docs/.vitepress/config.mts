@@ -179,7 +179,7 @@ export default defineConfig({
       md.use(timeline);
       //to-do插件
       md.use(taskLists, {
-        disabled: false,
+        disabled: false,  
         divWrap: false,
         divClass: 'checkbox',
         idPrefix: 'cbx_',
