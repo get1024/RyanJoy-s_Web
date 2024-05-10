@@ -30,11 +30,11 @@ export const nav: DefaultTheme.Config['nav'] = [
     link: '/about_me/'
   },
   {
-    text: '🗃️Archive',
-    link: '/archive/'
-  },
-  {
     text: '🧑‍🤝‍🧑Friend Chains',
     link: '/about_me/friendChains'
+  },
+  {
+    text: '🗃️Archive',
+    link: '/archive/'
   },
 ]
