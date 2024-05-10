@@ -22,14 +22,13 @@ const members = [
 </script>
 # {{$frontmatter.title}}
 
-## ❓Who am I ?
+<!-- ## ❓Who am I ?
 <br/>
 <div id="header" align="center">
   <h1>
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&color=000000&center=true&vCenter=true&random=false&width=900&height=70&lines=Hi+there%2C+I'm+RyanJoy!%F0%9F%91%8B" alt="If you see this text, there is a problem with your web proxy. To access this website in China, please enable Web proxy." />
-    <!-- <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/> -->
   </h1>
-</div>
+</div> -->
 
 ## ℹ️Info
 
@@ -131,6 +130,3 @@ I've always wanted to do something interesting, be an interesting person, and ma
   <img src="https://img.shields.io/badge/VitePress-green?style=plastic&logo=vitepress&logoColor=white&labelColor=green&color=green" alt="VitePress" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-GitHub%20Pages-222?logo=GitHub-Pages&logoColor=FFF" alt="GitHub Pages" style="display: inline-block;" />&nbsp;
 </p>
-
-## 📱Reach Me
-[click this](./reach_me)
