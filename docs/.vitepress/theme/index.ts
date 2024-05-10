@@ -35,6 +35,7 @@ import busuanzi from 'busuanzi.pure.js'
 import mediumZoom from 'medium-zoom';
 import { onMounted, watch, nextTick } from 'vue';
 import { useRoute } from 'vitepress';
+import './style/index.css'
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,

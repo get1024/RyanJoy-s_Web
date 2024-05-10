@@ -20,9 +20,11 @@ title: CSS2笔记
 ## 2-三种样式表
 ### 2.1-行内样式
 - 写在空间标签的 `style` 属性中，又称内联样式。
+::: code-group
 ```HTML
 <h1 style="color:red;font-size=60px;">这是一个内联样式举例</h1>
 ```
+:::
 - 效果前后对比
 	- 前<h1>这是一个内联样式举例</h1>
 	- 后<h1 style="color:red;font-size=60px;">这是一个内联样式举例</h1>

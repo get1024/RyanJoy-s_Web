@@ -16,6 +16,9 @@ import timeline from "vitepress-markdown-timeline"
 // to-do插件
 import taskLists from 'markdown-it-task-checkbox'
 
+//引入nav
+import { nav } from './configs'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base:'/RyanJoy-s_Web/',
@@ -85,7 +88,7 @@ export default defineConfig({
     //左上角的logo头像
     logo: '/logo.png',
 
-    nav: nav(),
+    nav,
 
     editLink: {
       pattern: 'https://github.com/get1024/RyanJoy-s_Web/edit/main/docs/:path',
@@ -191,50 +194,6 @@ export default defineConfig({
 
 })
 
-
-//nav定义
-//link设置为不带.md后缀的路径
-function nav(): DefaultTheme.NavItem[] {
-  return [
-    {
-      text: '🏡Home',
-      link: '/',
-    },
-    {
-      text: '📒Blog',
-      items: [
-        {
-          text: '🚶Life Skills',
-          link:'/blog/life_skills/'
-        },
-        {
-          text: '💻Technical Competence',
-          link:'/blog/tech_skills/'
-        },
-        {
-          text: '🛠️Project',
-          link:'/blog/project/'
-        },
-        {
-          text: '🤔Reflection & Summary',
-          link:'/blog/reflection&summary/'
-        },
-      ]
-    },
-    {
-      text: '👨‍🎓About Me',
-      link: '/about_me/'
-    },
-    {
-      text: '🗃️Archive',
-      link: '/archive/'
-    },
-    {
-      text: '🧑‍🤝‍🧑Friend Chains',
-      link: '/about_me/friendChains'
-    },
-  ]
-}
 
 //archive侧边栏
 function sidebar_archive(): DefaultTheme.SidebarItem[]{
