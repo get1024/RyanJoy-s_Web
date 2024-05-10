@@ -1,10 +1,12 @@
 ---
 Created at: 2024年04月19日 20:13:26
 Last edited at: 2024年05月05日 23:56:43
+title: Powershell 笔记
 ---
-# Powershell 笔记
+# {{$frontmatter.title}}
+
 - 快捷键
-```
+```sh
 #呼出powershell窗口
 win+R：wt.exe
 
@@ -13,7 +15,7 @@ win+`
 ```
 ## 端口相关
 - 查询置顶 `port` 并释放
-```shell
+```sh
 #查询置顶端口占用信息
 > netstat -ano | findstr [port] 
 链接类型      源端口              目标端口            链接状态        PID

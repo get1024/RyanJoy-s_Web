@@ -5,7 +5,7 @@ title: 🗃️Archive
 ---
 # {{$frontmatter.title}}
 
-## 更新时间树🌴
+## 创建时间树🌴
 ::: timeline 2024-04-29
 - [Friend Chains](/about_me/friendChains)
 - [CSS2笔记](/blog/tech_skills/CSS/CSS2)

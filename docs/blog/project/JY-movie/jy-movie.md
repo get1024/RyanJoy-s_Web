@@ -1,15 +1,16 @@
 ---
 Created at: 2024年04月24日 17:50:28
 Last edited at: 2024年05月01日 09:30:32
+title: jy-movie
 ---
-# jy-movie
+# {{$frontmatter.title}}
 
 > 🖥️ 基于 SpringBoot➕vue 的前后端分离的电影购票系统
 ## 🎤 〇、前言
 - 项目`GitHub`地址单击下图
   > [![JY影院](https://github-readme-stats.vercel.app/api/pin/?username=get1024&repo=jy-movie&show_owner=true)](https://github.com/get1024/jy-movie)
 - 首页预览
-  <!-- > ![app-home-vue](../../../../img/app_home_vue.png) -->
+  > ![app-home-vue](/blog/project/JY-movie/app_home_vue.png)
 ---
 ## 📃 一、介绍
 - SpringBoot+SpringSecurity+MyBatis-Plus 框架的前后端电影项目，前端使用 vue+element ui，后端 SpringBoot。
@@ -52,9 +53,11 @@ Last edited at: 2024年05月01日 09:30:32
 1. `vue-worker` 、`vue-admin` 端 `header` 组件上 `daily_work` 的 `badge` 优化 `v-for` 结构，由 `v-for="item in list" :key="item"` 优化为 `v-for="(item,index) in list" :key="index"`。解决了前端控制台爆红警告 ⚠️ 问题。
 2. 增添功能：`vue-worker` 端点击下拉框中的每日任务后，会视作客服已经处理所点击任务，将会有弹窗提示，并且调用 `api` 删除后端数据库相应任务记录。
 3. `vue-worker` 和 `vue-admin` 的 `header` 组件右上角下拉框条目新增信息：显示当前的任务主要内容以及重要程度。
+### 7️⃣2024 年 05 月 08 日 21:59:44
+1. `vue-worker`端，信息统计改为`echarts`图表。
 ## 🙌🏼 六、结尾碎碎念
 - Ok👌🏼，期待大家 `fork`。
 <!-- - 个人联系方式 [personal home](../../../../index.md)，有兴趣可以联系讨论交流。 -->
 
 ---
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=get1024&count_private=true&show_icons=true)](https://github.com/get1024)
+<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=get1024&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=radical&hide_border=true&show_owner=true"/></div>

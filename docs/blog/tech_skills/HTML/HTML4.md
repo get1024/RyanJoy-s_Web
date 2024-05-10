@@ -1,19 +1,19 @@
 ---
 title: HTML4笔记
 Created at: 2024年01月15日 10:01:13
-Last edited at: 2024年05月02日 11:17:05
+Last edited at: 2024年05月10日 11:33:18
 ---
-# HTML4 笔记
+# {{$frontmatter.title}}
 ## 一、HTML 标签
 - **标签** 又叫 **元素**，是和 html 基本组成单位
 - 标签名不分大小写，但推荐小写，因为小写更加规范
 ### 1、标签类型
-1. 双标签
-```html
+- 双标签
+```html:line-numbers
 <body></body>
 ```
-2. 单标签
-```html
+- 单标签
+```html:line-numbers
 <input>
 ```
 ### 2、标签之间关系
@@ -21,13 +21,12 @@ Last edited at: 2024年05月02日 11:17:05
 - **并列关系**
 ### 3、标签属性
 - 用于给标签提供 **附加信息**
-```html
+```html:line-numbers
 <marquee loop="1"></marquee>
 ```
 - loop 即是属性名，1 是属性值
 - ***标签中出现同名属性时，后写的属性会失效***
 - 有些特殊属性没有属性名只有属性值，例如 ：`<input disabled>` 
----
 
 ## 二、HTML 基本结构
 ### 1、检查&查看网页源代码
@@ -35,34 +34,31 @@ Last edited at: 2024年05月02日 11:17:05
 - 【查看网页源代码】看到的是程序员编写的源代码
 - 在我们日常开发中，**【检查】用的最多**
 ### 2、基本结构
-```html
+```html:line-numbers {6}
 <html>
 	<head>
 		<title>[自定义页签名]</title>
 	</head>
 	<body>
-		<marquee>任俊业大帅逼</marquee>
+		<marquee>RyanJoy现实有点小帅</marquee>
 	</body>
 </html>
 ```
 -  **注：**``<head></head>`` 中写的内容实质上不会出现在页面中，但是浏览器在渲染前会检验代码来保证整体结构正确
----
 
 ## 三、HTML 注释
 ### 1、注释写法
-- <!-- [注释内容] -->
+- `<!-- [注释内容] -->`
 - **注：** 注释可以写多行，但注释符号一定不能嵌套
----
 
 ## 四、HTML 文档声明
 ### 1、H5文档声明
 - 文档声明用于告诉浏览器当前网页的版本
-```html
+```html:line-numbers
 <!DOCTYPE html>
 ```
 - 文档声明必须写在整个 `html` 文档第一行
 - 文档声明必须写在 `<html>` 标签的外侧
-- ---
 
 ## 五、HTML 字符编码
 ### 1、计算机对数据的操作
@@ -78,28 +74,26 @@ Last edited at: 2024年05月02日 11:17:05
 ### 3、具体使用
 - 平时编码时，统一采用 **`utf-8`** 编码
 - 为了让浏览器在渲染 `html` 文件时，不犯错误，可以通过 **`meta`** 标签配合 **`charset`** 属性指定字符编码
-```html
+```html:line-numbers
 <head>
 	<meta charset="UTF-8"/>
 </head>
 ```
----
 
 ## 六、HTML 设置语言
-- 属于 [[HTML4#15、HTML 全局属性|全局属性]]
+- 属于 [全局属性](HTML4#_15、html-全局属性)
 ### 1、主要作用
 - ✔️让浏览器显示对应的翻译提示
 - ✔️有利于搜索引擎优化
 ### 2、具体写法
-```html
+```html:line-numbers
 <html lang="zh-CN">
 ```
----
 
 ## 七、HTML 标准结构
 ### 1、标准结构
-- 标准结构是在 [[HTML4#2、基本结构|基本结构]] 基础上进一步完善的 **`html`** 结构，如下所示：
-```html
+- 标准结构是在 [基本结构](HTML4#_2、基本结构) 基础上进一步完善的 **`html`** 结构，如下所示：
+```html:line-numbers
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
@@ -115,7 +109,6 @@ Last edited at: 2024年05月02日 11:17:05
 - 在新建的 **`html`** 文件中输入 **`!`** ，出现提示后按下 **`enter`** 键即可快速生成标准结构；
 - 配置 **`VSCode`** 的内置插件 **`emmet`**，可以对生成结构的属性进行定制；
 - 在存放代码的文件夹中，存放一个 **`favicon.ico`** 图片，便可以配置网站图标。
----
 
 ## 八、HTML 基础知识
 ### 1、开发者文档
@@ -126,7 +119,7 @@ Last edited at: 2024年05月02日 11:17:05
 | `<h1>~<h6>` | 标题                                             | 双     |
 | `<p>`       | 段落                                             | 双     |
 | `<div>`     | 没有任何含义，只用于整体布局，<br>有利于统一管理 `<div></div>` 内部的样式 | 双     |
->[!注意事项]
+>[!DANGER] 注意事项
 >1. `<h1>` 最好只写一个，`<h2> ~ <h6>` 可以写多个
 >2. `<h1> ~ <h6>` 不能互相嵌套
 >3. `<p>` 标签内部**不能写** [[HTML4#4、块级元素与行内元素|块级元素]]
@@ -139,14 +132,14 @@ Last edited at: 2024年05月02日 11:17:05
 	- 有利于 `SEO`（搜索引擎优化）。
 	- 方便设备解析（如屏幕阅读器、盲人阅读器等）。
 ### 4、块级元素与行内元素
-1. **块级元素**：独占一行（[[HTML4#2、排版标签|排版标签]] 都是块级元素）；
+1. **块级元素**：独占一行（[排版标签](HTML4#_2、排版标签) 都是块级元素）；
 2. **行内元素**：不独占一行（例如 `input` 、`img`等）
-> [!用法]
+> [!NOTE] 用法
 > **块级元素**中能写块级元素和行内元素；
 > **行内元素**中能写行内元素，但不能写块级元素；
 ### 5、文本标签
 1. 用于包裹：词汇、短语等；
-2. 通常**写在** [[HTML4#2、排版标签|排版标签]] **里面**；
+2. 通常**写在** [排版标签](HTML4#_2、排版标签) **里面**；
 3. 排版标签更宏观（大段的文字），文本标签更微观（词汇、短语）。
 4. **文本标签通常都是行内元素**。
 #### ①常用标签
@@ -155,6 +148,7 @@ Last edited at: 2024年05月02日 11:17:05
 | `<em>` | 要着重阅读的内容 | 双 |
 | `<strong>` | 十分重要的内容（语气强于 `em`） | 双 |
 | `<span>` | 没有语义，用于包裹短语的通用容器 | 双 |
+
 通俗解释：`<div>` 是大包装袋，`<span>` 是小包装袋
 #### ②不常用标签
 | 标签名               | 标签语义                                          | 单/双标签 |
@@ -176,17 +170,17 @@ Last edited at: 2024年05月02日 11:17:05
 | `<q>`             | 短引用（很少使用）                                     | 双     |
 | `<blockquote>`    | 长引用（很少使用）                                     | 双     |
 | `<address>`       | 地址信息                                          | 双     |
-> [!备注]
-> 1. 这些不常用的文本标签，编写代码时不用过于纠结（其实不用也行，主要就是用 [[HTML4#①常用标签|常用的文本标签]]）
+> [!NOTE] 备注
+> 1. 这些不常用的文本标签，编写代码时不用过于纠结（其实不用也行，主要就是用 [常用标签](HTML4#_1常用标签)）
 > 2. `<blockquote>` 与 `<address>` 是**块级元素**，其它的文本标签，都是**行内元素**
 > 3. 有些语义感不强的标签，我们很少使用，例如：`<small>`、`<b>`、`<u>`、`<q>`、`<blockquote>`
-> 4. 由于 HTML 标签实在太多，我们只需记住 [[HTML4#2、排版标签|排版标签]] 和 [[HTML4#常用标签|常用文本标签]]即可
+> 4. 由于 HTML 标签实在太多，我们只需记住 [排版标签](HTML4#_2、排版标签) 和 [常用标签](HTML4#_1常用标签)即可
 
 ### 6、图片标签
 | 标签名 | 标签语意 | 常用属性 | 单/双标签 |
 | :--: | :--: | :--: | :--: |
 | `img` | ==图片== | `src`：图片路径，用来指明图片的具体位置<br>`alt`：图片描述<br>`width`：图片宽度，单位是像素 `px`<br>`height`：图片高度，单位是像素 `px` | 单 |
-> [! alt 属性的作用]
+> [!NOTE] alt属性的作用
 > 1. *搜索引擎*通过此属性，得知图片的内容。（最主要的作用）
 > 2. 当图片*无法显示*的时候，有些浏览器会呈现出此属性设置的值
 > 3. *盲人阅读器*会朗读此属性值
@@ -241,7 +235,7 @@ Last edited at: 2024年05月02日 11:17:05
 | :-: | :--: | :-----------------------------------------------------------------------------------------------------------------------------------------------: | :---: |
 | `a` | 超链接  | `href`：指定要跳转到的具体目标。<br>`target`：控制跳转时如何打开页面，`_self`: 在本窗口打开，`_blank`: 在新窗口打开。<br>`id`：元素的唯一标识，可用于**设置锚点**。<br>`name`：元素的名字，写在 `a` 标签中，也能**设置锚点**。 |   双   |
 #### ①跳转到指定页面
-```html
+```html:line-numbers
 <!-- 跳转其他网页 -->
 <a href="https://www.jd.com/" target="_blank">去京东</a>
 <!-- 跳转本地网页 -->
@@ -251,7 +245,7 @@ Last edited at: 2024年05月02日 11:17:05
 > 1. 代码中的**多个空格、多个回车**，都会被浏览器解析成一个空格；
 > 2. 虽然 `a` 是行内元素，但 `a` 元素可以包裹除它自身外的任何元素。
 #### ②跳转到指定文件（也可触发下载）
-```html
+```html:line-numbers
 <!-- 浏览器能直接打开的文件 -->
 <a href="./resource/123.jpg">123</a>
 <a href="./resource/456.mp4">456</a>
@@ -267,12 +261,12 @@ Last edited at: 2024年05月02日 11:17:05
 > 1. 若浏览器**无法打开文件**，则会引导用户下载；
 > 2. 若想强制触发下载，则需使用 `download` 属性，属性值即为下载文件的名称。
 #### ③跳转到锚点位置
-> [!锚点是什么] 
+> [!NOTE] 锚点是什么 
 >网页中的一个**标记点**
 
 具体使用方式：
 1. 设置锚点
-```html
+```html:line-numbers
 <!-- 第一种方式：a标签配合name属性 -->
 <a name="test1"></a>
 
@@ -284,7 +278,7 @@ Last edited at: 2024年05月02日 11:17:05
 > 2. `name` 和 `id` 都是**区分大小写**的，且 `id` 最好***别***是数字开头。
 
 2. 跳转锚点
-```html
+```html:line-numbers
 <!-- 跳转到test1锚点 -->
 <a href="#test1">去test1锚点</a>
 
@@ -302,7 +296,7 @@ Last edited at: 2024年05月02日 11:17:05
 ```
 #### ④唤起指定应用；
 通过 `a` 标签，可以唤起设备应用程序。
-```html
+```html:line-numbers
 <!-- 唤起设备拨号 -->
 <a href="tel:10010">电话联系</a>
 
@@ -315,7 +309,7 @@ Last edited at: 2024年05月02日 11:17:05
 ### 9、列表
 #### ①有序列表 (ordered list)
 概念：有顺序或侧重顺序的列表
-```html
+```html:line-numbers
 <h2>要把大象放冰箱总共分几步</h2>
 <ol>
 	<li>把冰箱门打开</li>
@@ -325,7 +319,7 @@ Last edited at: 2024年05月02日 11:17:05
 ```
 #### ②无序列表 (unordered list)
 概念：无顺序或不侧重顺序的列表
-```html
+```html:line-numbers
 <h2>我想去的几个城市</h2>
 <ul>
 	<li>成都</li>
@@ -336,7 +330,7 @@ Last edited at: 2024年05月02日 11:17:05
 #### ③自定义列表 (definition list)
 1. 概念：所谓自定义列表，就是一个包含**术语名称**以及**术语描述**的列表。
 2. 一个 `dl` 就是一个自定义列表，一个 `dt` 就是一个术语名称（definition title），一个 `dd` 就是术语描述（definition description）（**可以有多个术语描述**）。
-```html
+```html:line-numbers
 <h2>如何高效的学习？</h2>
 <dl>
 	<dt>做好笔记</dt>
@@ -350,7 +344,7 @@ Last edited at: 2024年05月02日 11:17:05
 ```
 #### ④列表嵌套
 概念：列表中的某项内容，又包含一个列表（注意：嵌套时，务必把结构写完整）。
-```html
+```html:line-numbers
 <h2></h2>
 <ul>
 	<li>成都</li>
@@ -369,12 +363,12 @@ Last edited at: 2024年05月02日 11:17:05
 	<li>武汉</li>
 </ul>
 ```
-> [!注意：]
+> [!WARNING] 注意
 > 1. `li` 标签最好写在 `ul` 或 `ol` 中，*不要单独使用*；
 > 2. `li` 是 list item 列表项的缩写。
 ### 10、表格
 #### ①基本结构
-1. 一个完整的表格由：**表格标题、表格头部、表格主体、表格脚注**四部分组成。![[Pasted image 20240308152145.png]]
+1. 一个完整的表格由：**表格标题、表格头部、表格主体、表格脚注**四部分组成。![table structure](../../../public/blog/tech_skills/HTML_table_structure.png)
 2. 表格涉及到的标签：
 	- **`table`**：表格
 	- **`caption`**：表格标题（没有属性）
@@ -384,7 +378,7 @@ Last edited at: 2024年05月02日 11:17:05
 	- **`tr`**：每一行
 	- **`th`** 、**`td`**：每一个单元格（**注：表格头部中用 `th`，表格主体、表格脚注用 `td`**）
 3. 具体编码：
-```html
+```html:line-numbers
 <table border="1">
 	<!-- 表格标题 -->
       <caption>
@@ -444,7 +438,7 @@ Last edited at: 2024年05月02日 11:17:05
  #### ③跨行跨列
 1. `rowspan`：指定要跨的行数。
 2. `colspan`：指定要跨的列数。
-3. 动手练习：![[Pasted image 20240308175555.png]]
+3. 动手练习：![table example](../../../public/blog/tech_skills/HTML_table_example.png)
 ### 11、常用标签补充
 
 |  标签名  |           标签含义           | 单/双标签 |
@@ -458,13 +452,13 @@ Last edited at: 2024年05月02日 11:17:05
 ### 12、表单
 - 概念：一个包含**交互的区域**，用于**收集**用户提供的**数据**。*其实就是前端界面上可以输入的模块。*
 #### ①基本结构
-```html
+```html:line-numbers
 <form action="https://www.baidu.com/s" method="get" target="_blank">
 	<input type="text" name="wd">
 	<button>search</button>
 </form>
 ```
-![[Pasted image 20240315101311.png|700]]
+![form structure](../../../public/blog/tech_skills/HTML_form_structure.png)
 #### ②常用表单控件
 
 |  控件   |                                                                                                                                   代码&样式                                                                                                                                   |                                                   属性                                                   |
@@ -479,16 +473,17 @@ Last edited at: 2024年05月02日 11:17:05
 | 普通按钮  |                                                           `<input type="button" value="普通按钮">` <input type="button" value="普通按钮"><br>`<button type="button">普通按钮</button>` <button type="button">普通按钮</button>                                                            |                         ⚠️普通按钮的 `type` 需写为 `button`，否则默认值是 `submit` 就会引起表单的提交                          |
 |  文本域  |                                                                                         `<textarea row="5" col="10">这是文本域</textarea>` <textarea row="5" col="10">这是文本域</textarea>                                                                                         |                              `rows` 、`cols`<br>不能便携 `type` 属性，其余属性与文本框一致                               |
 |  下拉框  | `<select name="from"><option value="1">选择 1</option><option value="2" selected>选择 2</option><option value="3">选择 3</option></select>` <select name="from"><option value="1">选择 1</option><option value="2" selected>选择 2</option><option value="3">选择 3</option></select> |                         `<select>`：`name`<br>`<option>`：`value`、`selected`<br>                         |
->[!备注：]
+>[!NOTE] 备注
 >结合后续 `CSS` 学习，`<input type="checkbox">` 、`<input type="radio">` 组件在 `CSS` 中是调整不了 `color` 和 `background-color` 的，因为有些控件的某些属性被固定了，我们无法进行修改。
 #### ③禁用表单控件
 - `disabled` 属性：给表单中控件设置此属性即可禁用
 - 代码
-```html
+```html:line-numbers
 <input type="text" value="this is a disabled input box" disabled>
 ```
 - 效果
 <input type="text" value="this is a disabled input box" disabled>
+
 #### ④label 标签
 ##### 作用：
 `label` 标签可与表单控件相关联，关联之后点击文字，与之对应的表单控件就会获取焦点。
@@ -497,23 +492,24 @@ Last edited at: 2024年05月02日 11:17:05
 2. 把表单控件嵌套在 `label` 里面。
 ##### 效果对比：
 - 未关联：
-```html
+```html:line-numbers
 账户：<input type="text" value="请输入账户名">
 ```
 账户：<input type="text" value="请输入账户名">
 - 关联：
-```html
+```html:line-numbers
 <label>账户：<input type="text" value="请输入账户名"></label>
 <label for="account">账户：</label><input type="text" id="account" value="请输入账户名">
 ```
 <label>账户：<input type="text" value="请输入账户名"></label>
+
 ##### 提示：
 - `<button>` 不需要和 `label` 做关联，因为没这个需求。
 #### ⑤fieldset 和 legend 的使用（了解）
 - `fieldset` 可以为表单控件分组
 - `legend` 标签是分组的标题
 - 代码
-```html
+```html:line-numbers
 <fieldset>
 	<legend>主要信息</legend>
 	<label>账户：
@@ -553,7 +549,7 @@ Last edited at: 2024年05月02日 11:17:05
 	- 在网页中嵌入广告；
 	- 与超链接或表单的 `target` 配合，展示不同内容。
 - 代码实例
-```html
+```html:line-numbers
 - iframe嵌入普通网页
 <iframe src="https://www.toutiao.com" width="100%" height="100%" frameborder="0"></iframe>
 
@@ -607,23 +603,23 @@ Last edited at: 2024年05月02日 11:17:05
 | `lang`  |                   给标签指定语言，具体规范可参考 [[HTML4#六、HTML 设置语言|六、HTML设置语言]]                   |
 ### 16、meta 元信息
 #### ①配置字符编码
-```html
+```html:line-numbers
 <meta charset="utf-8">
 ```
 #### ②针对 IE 浏览器的兼容性配置
-```html
+```html:line-numbers
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
 #### ③针对移动端的配置
-```html
+```html:line-numbers
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 ```
 #### ④配置网页关键字
-```html
+```html:line-numbers
 <meta name="keywords" content="[8-12个用英文逗号隔开的单词/词语]">
 ```
 #### ⑤配置网页描述信息
-```html
+```html:line-numbers
 <meta name="description" content="[80字以内的一段话，与网站内容相关]">
 ```
 - 更多 `<meta>` 信息，参考 [文档级元数据元素 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)

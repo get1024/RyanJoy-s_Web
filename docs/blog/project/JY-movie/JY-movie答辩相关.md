@@ -3,7 +3,8 @@ Created at: 2024年04月27日 22:13:06
 Last edited at: 2024年05月09日 23:58:10
 title: JY-movie答辩相关
 ---
-# 定稿后答辩
+# {{$frontmatter.title}}
+
 ## 一、材料准备
 - [x] 论文纸质版打印✖️2；
 - [x] 答辩 PPT，10~15 页；（before 2024/5/6 18:00）；

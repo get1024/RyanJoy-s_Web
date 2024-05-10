@@ -1,7 +1,7 @@
 ---
 Created at: 2024年04月29日 20:06:40
 Last edited at: 2024年05月08日 23:21:08
-title: About Me
+title: 🧑‍🎓About Me
 ---
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
@@ -21,14 +21,16 @@ const members = [
 ]
 </script>
 
-<div id="header" align="center">
-  <h1>
-    <a href="https://get1024.github.io/RyanJoy-s_Web/"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&color=000000&center=true&vCenter=true&random=false&width=900&height=70&lines=Hi+there%2C+I'm+RyanJoy!%F0%9F%91%8B" alt="Typing SVG" /></a>
-    <!-- <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/> -->
-  </h1>
-</div>
+# {{$frontmatter.title}}
 
-## 🙋‍♂️About Me
+<!-- <div id="header" align="center">
+  <h1>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&color=000000&center=true&vCenter=true&random=false&width=900&height=70&lines=Hi+there%2C+I'm+RyanJoy!%F0%9F%91%8B" alt="If you see this text, there is a problem with your web proxy. To access this website in China, please enable Web proxy." />
+    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  </h1>
+</div> -->
+
+## ℹ️Info
 
 <div style="margin:30px">
   <h3 align="center" font-normal op50 p="t-10 b-2">
@@ -65,4 +67,4 @@ I've always wanted to do something interesting, be an interesting person, and ma
 
 
 ## 📱Reach Me
-[reach me](./reach_me)
+[click this](./reach_me)

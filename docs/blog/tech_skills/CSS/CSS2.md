@@ -8,7 +8,7 @@ title: CSS2笔记
 > 
 > 想要获取本文完整文档，[点击查看/下载CSS2完整笔记](/blog/tech_skills/CSS2笔记.pdf)，[点击查看/下载CSS3完整笔记](/blog/tech_skills/CSS3笔记.pdf)
 
-# 一-CSS 基础
+# {{$frontmatter.title}}
 ## 1-简介
 - `CSS` 全称为**层叠样式表**（`Cascading Style Sheets`）；
 	- 层叠：一层一层“铺”上去；
