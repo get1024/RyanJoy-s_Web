@@ -30,6 +30,10 @@
 }
 
 /* 提示框 */
+.custom-block.note {
+  border-color: #999797;
+}
+
 .custom-block.tip {
   border-color: var(--vp-c-green-2);
 }
