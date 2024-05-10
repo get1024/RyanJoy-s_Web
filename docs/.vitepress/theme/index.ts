@@ -107,7 +107,6 @@ export const Theme: ThemeConfig = {
       inputPosition: 'top',
       theme:'preferred_color_scheme',
       lang: 'zh-CN',
-      dataloading: 'lazy',
       crossorigin:'anonymous',
       }, 
       {
