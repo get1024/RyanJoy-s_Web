@@ -12,10 +12,6 @@ export const nav: DefaultTheme.Config['nav'] = [
         link:'/blog/life_skills/'
       },
       {
-        text: '💻Technical Competence',
-        link:'/blog/tech_skills/'
-      },
-      {
         text: '🛠️Project',
         link:'/blog/project/'
       },
@@ -23,15 +19,15 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: '🤔Reflection & Summary',
         link:'/blog/reflection&summary/'
       },
+      {
+        text: '💻Technical Competence',
+        link:'/blog/tech_skills/'
+      },
     ]
   },
   {
     text: '👨‍🎓About Me',
     link: '/about_me/'
-  },
-  {
-    text: '🧑‍🤝‍🧑Friend Chains',
-    link: '/about_me/friendChains'
   },
   {
     text: '🗃️Archive',
