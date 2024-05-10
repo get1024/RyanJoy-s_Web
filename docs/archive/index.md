@@ -2,6 +2,8 @@
 Created at: 2024年04月29日 20:08:15
 Last edited at: 2024年05月05日 23:53:23
 title: 🗃️Archive
+
+sidebar: false
 ---
 # {{$frontmatter.title}}
 
@@ -76,4 +78,8 @@ title: 🗃️Archive
 
 ::: timeline 2024-01-12
 - [Vue笔记](/blog/tech_skills/VUE/VUE) 22:01:19
+:::
+
+::: details 怎么😕？还想👀更多？
+小贪心鬼，作者RyanJoy没有更多啦，他已经把全部都上交给你啦~🥵
 :::
