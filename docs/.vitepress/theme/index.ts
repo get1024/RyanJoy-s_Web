@@ -39,6 +39,9 @@ import './style/index.css'
 //评论giscus
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData } from 'vitepress';
+import { strict } from 'assert'
+import { emit } from 'process'
+import theme from 'vitepress/theme'
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -100,8 +103,12 @@ export const Theme: ThemeConfig = {
       category: 'Announcements', // 讨论分类
       categoryId: 'DIC_kwDOL1mSLM4CfRSC', //讨论分类ID
       mapping: 'pathname',
-      inputPosition: 'bottom',
+      strict: '0',
+      inputPosition: 'top',
+      theme:'preferred_color_scheme',
       lang: 'zh-CN',
+      dataloading: 'lazy',
+      crossorigin:'anonymous',
       }, 
       {
         frontmatter, route
