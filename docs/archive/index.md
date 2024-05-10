@@ -24,7 +24,7 @@ sidebar: false
 
 ::: timeline 2024-04-29
 - [📒Blog](/blog/) 21:50:23
-- [Friend Chains](/about_me/friendChains) 20:10:05
+- [🧑‍🤝‍🧑Friend Chains](/about_me/friendChains) 20:10:05
 - [📱Reach Me](/about_me/reach_me) 20:09:16
 - [🗃️Archive](/archive/) 20:08:15
 - [👨‍🎓About Me](/about_me/) 20:06:40
