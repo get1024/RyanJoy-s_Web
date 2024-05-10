@@ -4,7 +4,7 @@ Last edited at: 2024年05月10日 15:31:32
 title: 如何规范Git Commit？
 ---
 # {{$frontmatter.title}}
->[!warning]  我们为什么要规范 commit？
+>[!DANGER]  我们为什么要规范 commit？
 >多人协作项目、个人版本控制在进行 Git 提交时，都需要写 commit message，否则 `git push origin main` 是不被允许的。
 >一般来说，commit message应该清晰明了，说明本次提交的目的，具体做了什么操作……
 >但是在日常开发中，大家的commit message千奇百怪，中英文混合使用、fix bug等各种笼统的message司空见怪，这就导致后续代码维护成本特别大，有时自己都不知道自己的fix bug修改的是什么问题。
