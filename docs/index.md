@@ -19,7 +19,7 @@ hero:
   #  /blog/ --> 默认进入blog下的index.md
     - theme: brand
       text: 进入博客
-      link: /blog/
+      link: /blog/index
     - theme: alt
       text: 联系我
       link: /about_me/reach_me

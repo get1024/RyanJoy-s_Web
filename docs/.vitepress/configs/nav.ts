@@ -9,28 +9,28 @@ export const nav: DefaultTheme.Config['nav'] = [
     items: [
       {
         text: '🚶Life Skills',
-        link:'/blog/life_skills/'
+        link:'/blog/life_skills/index'
       },
       {
         text: '🛠️Project',
-        link:'/blog/project/'
+        link:'/blog/project/index'
       },
       {
         text: '🤔Reflection & Summary',
-        link:'/blog/reflection&summary/'
+        link:'/blog/reflection&summary/index'
       },
       {
         text: '💻Technical Competence',
-        link:'/blog/tech_skills/'
+        link:'/blog/tech_skills/index'
       },
     ]
   },
   {
     text: '👨‍🎓About Me',
-    link: '/about_me/'
+    link: '/about_me/index'
   },
   {
     text: '🗃️Archive',
-    link: '/archive/'
+    link: '/archive/index'
   },
 ]
