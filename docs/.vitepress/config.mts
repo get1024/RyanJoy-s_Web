@@ -2,7 +2,7 @@ import { link } from 'fs'
 import { cwd } from 'node:process'
 import { text } from 'stream/consumers'
 import { defineConfig, type DefaultTheme } from 'vitepress'
-
+import { SearchPlugin } from "vitepress-plugin-search";
 //git更新版本
 import { join } from 'node:path'
 import { 
@@ -12,12 +12,13 @@ import {
 import { hostname } from 'os'
 //时间线插件
 import timeline from "vitepress-markdown-timeline"
-
 // to-do插件
 import taskLists from 'markdown-it-task-checkbox'
-
 //引入nav
 import { nav } from './configs'
+//引入algolia
+import algolia from './algolia'
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -61,7 +62,7 @@ export default defineConfig({
   
           return 'Contributors'
         },
-      }), 
+      }),
     ],
     optimizeDeps: {
       include: [ 
@@ -141,28 +142,8 @@ export default defineConfig({
     ],
 
     search: {
-      provider: 'local',
-      options: {
-        locales: {
-          'zh-CN': {
-            translations: {
-              button: {
-                buttonText: '搜索文档',
-                buttonAriaLabel: '搜索文档'
-              },
-              modal: {
-                footer: {
-                  selectText: '选择',
-                  navigateText: '切换',
-                  closeText: '关闭',
-                },
-                noResultsText: '无法找到相关结果',
-                resetButtonTitle: '清除查询条件',
-              }
-            }
-          }
-        }
-      }
+      provider: 'algolia',
+      options: algolia,
     },
 
     //侧边栏配置
