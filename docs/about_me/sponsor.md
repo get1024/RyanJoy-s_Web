@@ -2,6 +2,7 @@
 Created at: 2024年05月10日 23:35:10
 Last edited at: 2024年05月11日 00:09:49
 title: 💰Sponsor
+tag: money
 ---
 # {{$frontmatter.title}}
 ## 写在前面

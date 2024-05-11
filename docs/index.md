@@ -3,6 +3,14 @@ layout: home
 
 title: 🏡Home
 
+head:
+  - - meta
+    - name: keywords
+    - content: vitepress vue vite blog 个人博客 博客
+  - - meta
+    - name: description
+    - content: 一个全栈程序员的个人博客
+
 hero:
   name: RyanJoy's Blog
   text: 📝记录RyanJoy生活、学习、回忆的个人宫殿
@@ -15,6 +23,9 @@ hero:
     - theme: alt
       text: 联系我
       link: /about_me/reach_me
+    - theme: sponsor
+      text: 赞助作者
+      link: /about_me/sponsor
   image:
     src: /logo.png
     alt: RyanJoy's Blog logo
