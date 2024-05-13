@@ -97,7 +97,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      message: '孩儿立志出乡关，学不成名誓不还。',
       copyright: `Copyright © 2022-${new Date().getFullYear()}  <a href="https://github.com/get1024">RyanJoy(get1024)</a>`,
     },
 
