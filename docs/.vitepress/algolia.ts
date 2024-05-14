@@ -1,6 +1,6 @@
 export default {
   appId: "VCE8UETSXA",
-  apiKey: "c4555838d125590a4e56ae03ca580905",
+  apiKey: "7cb10052cf4e86c65cfc5c943ece2003",
   indexName: 'get1024io',
   placeholder: '请输入关键词',
   translations: {
