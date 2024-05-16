@@ -35,7 +35,7 @@ export default defineConfig({
 
   //配置网页图标
   head: [
-    ['link', { rel: 'icon', href: '/RyanJoy-s_Web/avatar.png' }],
+    ['link', { rel: 'icon', href: '/RyanJoy-s_Web/logo.png' }],
   ],
 
   //阅读增强插件
