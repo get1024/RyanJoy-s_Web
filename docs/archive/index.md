@@ -24,7 +24,7 @@ sidebar: false
 :::
 
 ::: timeline 2024-05-02
-- [如何规范Git Commit？](/blog/tech_skills/Git/如何规范Git%20Commit？) 11:14:24
+- [如何规范Git Commit？](/blog/tools/Git/如何规范Git Commit？) 11:14:24
 :::
 
 ::: timeline 2024-05-01
@@ -64,7 +64,7 @@ sidebar: false
 :::
 
 ::: timeline 2024-04-19
-- [Powershell笔记](/blog/tech_skills/Powershell/powershell) 20:13:26
+- [Powershell笔记](/blog/tools/Powershell/powershell) 20:13:26
 :::
 
 ::: timeline 2024-04-01
@@ -72,7 +72,7 @@ sidebar: false
 :::
 
 ::: timeline 2024-03-26
-- [Git使用](/blog/tech_skills/Git/git使用) 10:55:46
+- [Git使用](/blog/tools/Git/git使用) 10:55:46
 :::
 
 ::: timeline 2024-03-18
