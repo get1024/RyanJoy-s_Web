@@ -286,7 +286,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
 
     {
-      text: '💻Technical Competence',
+      text: '💻Technical Stack',
       collapsed: false,
       items: [
         {
@@ -298,6 +298,17 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
               // 第三级
               text: '个人博客系统搭建最优解',
               link:'/tech_skills/Blog/个人博客系统搭建最优解',
+            },
+            {
+              // 第三级
+              text: 'Blog搭建过程中的错误解决',
+              collapsed: true,
+              items:[
+                {
+                  text: 'ERROR:cannot find module \'@rollup\'',
+                  link: '/tech_skills/Blog/error_fix/rollup',
+                },
+              ]
             },
           ]
         },
@@ -316,36 +327,12 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           ]
         },
         {
-          text: '🌵Git-代码版本控制',
-          collapsed: true,
-          items: [
-            {
-              text: '如何规范commit？',
-              link:'/tech_skills/Git/如何规范Git Commit？',
-            },
-            {
-              text: 'Git使用',
-              link:'/tech_skills/Git/git使用',
-            },
-          ]
-        },
-        {
           text: '📗HTML学习笔记',
           collapsed: true,
           items: [
             {
               text: 'HTML4笔记',
               link:'/tech_skills/HTML/HTML4',
-            },
-          ]
-        },
-        {
-          text: '⌨️Powershell-新一代终端',
-          collapsed: true,
-          items: [
-            {
-              text: 'Powershell使用笔记',
-              link: '/tech_skills/Powershell/powershell'
             },
           ]
         },
@@ -370,6 +357,37 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
         },
       ]
     },
+    
+    {
+      text: '🛠️Tools',
+      collapsed: false,
+      items:[
+        {
+          text: '🌵Git-代码版本控制',
+          collapsed: true,
+          items: [
+            {
+              text: '如何规范commit？',
+              link:'/tools/Git/如何规范Git Commit？',
+            },
+            {
+              text: 'Git使用',
+              link:'/tools/Git/git使用',
+            },
+          ]
+        },
+        {
+          text: '⌨️Powershell-新一代终端',
+          collapsed: true,
+          items: [
+            {
+              text: 'Powershell使用笔记',
+              link: '/tools/Powershell/powershell'
+            },
+          ]
+        },
+      ]
+    }
 
   ]
 }

@@ -20,9 +20,13 @@ export const nav: DefaultTheme.Config['nav'] = [
         link:'/blog/reflection&summary/index'
       },
       {
-        text: '💻Technical Competence',
+        text: '💻Technical Stack',
         link:'/blog/tech_skills/index'
       },
+      {
+        text: '🛠️Tools',
+        link: 'blog/tools/index'
+      }
     ]
   },
   {
