@@ -10,7 +10,7 @@ const members = [
   {
     avatar: 'https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png',
     name: 'RyanJoy',
-    title: 'RyanJoy-s Blog🌏原始创作者',
+    title: 'RyanJoy\'s Web🌏原始创作者',
     desc:'目前全沾，立志做全栈',
     org:'HENU',
     links: [
@@ -27,15 +27,6 @@ const members = [
     <span id="busuanzi_value_page_pv" />
   </span>
 </div>
-
-
-<!-- ## ❓Who am I ?
-<br/>
-<div id="header" align="center">
-  <h1>
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=40&pause=1000&color=000000&center=true&vCenter=true&random=false&width=900&height=70&lines=Hi+there%2C+I'm+RyanJoy!%F0%9F%91%8B" alt="If you see this text, there is a problem with your web proxy. To access this website in China, please enable Web proxy." />
-  </h1>
-</div> -->
 
 ## ℹ️Info
 
