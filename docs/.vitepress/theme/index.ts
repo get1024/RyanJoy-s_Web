@@ -59,7 +59,7 @@ export const Theme: ThemeConfig = {
 
   enhanceApp({ app, router }) {
     if (inBrowser) {
-      router.onAfterRouteChanged = () => {
+      router.onAfterRouteChanged = (to) => {
         busuanzi.fetch()
       }
     }

@@ -151,7 +151,7 @@ export default defineConfig({
     
     config: (md) => {
       //时间线插件
-      md.use(timeline)
+      md.use(timeline);
       //to-do插件
       md.use(taskLists, {
         disabled: false,  
@@ -324,7 +324,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           ]
         },
         {
-          text: '🌵Git—代码版本控制',
+          text: '🌵Git-代码版本控制',
           collapsed: true,
           items: [
             {
