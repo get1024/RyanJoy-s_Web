@@ -24,7 +24,7 @@ import algolia from './algolia'
 export default defineConfig({
   base:'/RyanJoy-s_Web/',
   lang: 'zh-CN',
-  title: "RyanJoy's Palace🏰",
+  title: "RyanJoy's Palace",
   description: 'RyanJoy前途似锦',
   lastUpdated: true,
 
@@ -45,24 +45,7 @@ export default defineConfig({
         // 填写在此处填写您的仓库链接
         repoURL: () => 'https://github.com/get1024/RyanJoy-s_Web', 
       }), 
-      GitChangelogMarkdownSection({ 
-        getChangelogTitle: (_, __, { helpers }): string => {
-          if (helpers.idStartsWith(join('pages', 'en')))
-            return 'File History'
-          if (helpers.idStartsWith(join('pages', 'zh-CN')))
-            return '文件历史'
-  
-          return 'File History'
-        },
-        getContributorsTitle: (_, __, { helpers }): string => {
-          if (helpers.idStartsWith(join('pages', 'en')))
-            return 'Contributors'
-          if (helpers.idStartsWith(join('pages', 'zh-CN')))
-            return '贡献者'
-  
-          return 'Contributors'
-        },
-      }),
+      GitChangelogMarkdownSection(),
     ],
     optimizeDeps: {
       include: [ 
@@ -87,7 +70,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     //左上角的logo头像
-    logo: '/avatar.png',
+    logo: '/logo.png',
 
     nav,
 
@@ -168,7 +151,7 @@ export default defineConfig({
     
     config: (md) => {
       //时间线插件
-      md.use(timeline);
+      md.use(timeline)
       //to-do插件
       md.use(taskLists, {
         disabled: false,  
