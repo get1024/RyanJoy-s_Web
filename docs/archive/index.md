@@ -15,7 +15,8 @@ sidebar: false
 
 ## 🌴Archive Timeline
 ::: timeline 2024-05-16
-- [个人Blog搭建过程中的错误解决](/blog/project/RyanJoy-s_Web/Error_fix)
+- [🛠️Tools](/blog/tools/index) 23:29:21
+- [ERROR : cannot find module '@rollup'](/blog/tech_skills/Blog/error_fix/rollup.md) 19:45:54
 :::
 
 ::: timeline 2024-05-11
@@ -31,7 +32,7 @@ sidebar: false
 :::
 
 ::: timeline 2024-04-30
-- [💻Technical Competence](/blog/tech_skills/) 00:15:39
+- [💻Technical Stack](/blog/tech_skills/) 00:15:39
 - [🛠️Project](/blog/project/) 00:14:59
 - [🚶Life Skills](/blog/life_skills/) 00:13:34
 :::
