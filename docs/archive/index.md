@@ -5,14 +5,14 @@ title: 🗃️Archive
 
 sidebar: false
 ---
-# {{$frontmatter.title}}
+# {{$frontmatter.title}} <badge type="tip" text="持续更新" style="margin-top:12px;"/>
 
 <div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
   👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
     <span id="busuanzi_value_page_pv" />
   </span>
 </div>
- <badge type="tip" text="持续更新" style="margin-top:12px;"/>
+
 
 ## 🌴Archive Timeline
 ::: timeline 2024-05-11
