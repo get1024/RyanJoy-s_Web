@@ -5,6 +5,13 @@ title: 💰Sponsor
 tag: money
 ---
 # {{$frontmatter.title}}
+
+<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
+  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
+    <span id="busuanzi_value_page_pv" />
+  </span>
+</div>
+
 ## 写在前面
 欢迎来到{{$frontmatter.title}}页面！您的支持是我继续创作和分享知识的动力。通过赞助，您不仅能够帮助我维持和更新博客，还能激励我创作更多有价值的内容。
 ## 为什么赞助我？

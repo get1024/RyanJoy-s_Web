@@ -5,6 +5,13 @@ title: JY-movie答辩相关
 ---
 # {{$frontmatter.title}}
 
+<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
+  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
+    <span id="busuanzi_value_page_pv" />
+  </span>
+</div>
+
+
 ## 一、材料准备
 - [x] 论文纸质版打印✖️2；
 - [x] 答辩 PPT，10~15 页；（before 2024/5/6 18:00）；

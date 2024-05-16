@@ -5,6 +5,13 @@ title: jy-movie
 ---
 # {{$frontmatter.title}}
 
+<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
+  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
+    <span id="busuanzi_value_page_pv" />
+  </span>
+</div>
+
+
 > 🖥️ 基于 SpringBoot➕vue 的前后端分离的电影购票系统
 ## 🎤 〇、前言
 - 项目`GitHub`地址单击下图

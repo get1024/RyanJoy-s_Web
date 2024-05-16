@@ -5,6 +5,13 @@ title: 🧑‍🤝‍🧑Friend Chains
 ---
 # {{$frontmatter.title}}
 
+<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
+  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
+    <span id="busuanzi_value_page_pv" />
+  </span>
+</div>
+
+
 ## <p><img src="/avatar.png" style="height:40px;float:left;margin-top:-7px;"/><span >RyanJoy的知识图书馆</span></p>
 
 👏欢迎来到小业的知识图书馆[RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/)，这里是{{$frontmatter.title}}分区!

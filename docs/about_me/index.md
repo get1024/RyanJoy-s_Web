@@ -22,6 +22,13 @@ const members = [
 </script>
 # {{$frontmatter.title}}
 
+<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
+  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
+    <span id="busuanzi_value_page_pv" />
+  </span>
+</div>
+
+
 <!-- ## ❓Who am I ?
 <br/>
 <div id="header" align="center">

@@ -5,6 +5,13 @@ title: Powershell 笔记
 ---
 # {{$frontmatter.title}}
 
+<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
+  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
+    <span id="busuanzi_value_page_pv" />
+  </span>
+</div>
+
+
 - 快捷键
 ```sh
 #呼出powershell窗口
