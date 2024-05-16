@@ -8,7 +8,7 @@ import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
   {
-    avatar: 'https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/logo.png',
+    avatar: 'https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png',
     name: 'RyanJoy',
     title: 'RyanJoy-s Blog🌏原始创作者',
     desc:'目前全沾，立志做全栈',

@@ -35,7 +35,7 @@ export default defineConfig({
 
   //配置网页图标
   head: [
-    ['link', { rel: 'icon', href: '/RyanJoy-s_Web/logo.png' }],
+    ['link', { rel: 'icon', href: '/RyanJoy-s_Web/avatar.png' }],
   ],
 
   //阅读增强插件
@@ -87,7 +87,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     //左上角的logo头像
-    logo: '/logo.png',
+    logo: '/avatar.png',
 
     nav,
 
