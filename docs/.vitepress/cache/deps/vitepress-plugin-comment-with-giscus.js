@@ -9,7 +9,7 @@ import {
   openBlock,
   ref,
   watch
-} from "./chunk-RU6JHMWN.js";
+} from "./chunk-RY5ODQAQ.js";
 import "./chunk-Y2F7D3TJ.js";
 
 // node_modules/@giscus/vue/dist/index.mjs

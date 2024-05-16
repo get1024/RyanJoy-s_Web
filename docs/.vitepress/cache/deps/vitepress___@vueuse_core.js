@@ -33,7 +33,7 @@ import {
   version,
   watch,
   watchEffect
-} from "./chunk-RU6JHMWN.js";
+} from "./chunk-RY5ODQAQ.js";
 import "./chunk-Y2F7D3TJ.js";
 
 // node_modules/vitepress/lib/vue-demi.mjs

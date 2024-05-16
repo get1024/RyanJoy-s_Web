@@ -24,7 +24,7 @@ import algolia from './algolia'
 export default defineConfig({
   base:'/RyanJoy-s_Web/',
   lang: 'zh-CN',
-  title: "RyanJoy's Palace🏢",
+  title: "RyanJoy's Palace🏰",
   description: 'RyanJoy前途似锦',
   lastUpdated: true,
 
