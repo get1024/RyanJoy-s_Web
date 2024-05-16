@@ -1,5 +1,5 @@
 ---
-title: 💻Technical Competence
+title: 💻Technical Stack
 Created at: 2024年04月30日 00:15:39
 Last edited at: 2024年05月02日 01:07:12
 ---
