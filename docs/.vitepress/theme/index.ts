@@ -72,7 +72,7 @@ export const Theme: ThemeConfig = {
           nameAliases: ['RJY','junyeren'],
           email: 'junyeren@outlook.com', 
           emailAliases: ['2025050361@henu.edu.cn','18903803658@163.com'],
-          avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/logo.png?raw=true',
+          avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/avatar.png?raw=true',
         } 
       ]
     })

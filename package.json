@@ -4,9 +4,10 @@
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.0.0-rc10",
     "@nolebase/vitepress-plugin-git-changelog": "^2.0.0-rc10",
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.0.0-rc10",
+    "@nolebase/vitepress-plugin-page-properties": "^2.0.0-rc14",
     "@types/node": "^20.12.7",
     "flexsearch": "^0.7.43",
-    "unocss": "^0.57.7",
+    "unocss": "^0.60.2",
     "vitepress": "^1.1.4",
     "vitepress-plugin-search": "^1.0.4-alpha.22"
   },
