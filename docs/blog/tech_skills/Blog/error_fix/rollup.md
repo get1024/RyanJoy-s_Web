@@ -1,7 +1,7 @@
 ---
 Created at: 2024年05月16日 19:45:54
 Last edited at: 2024年05月16日 19:49:20
-title: ERROR:cannot find module '@rollup'
+title: Error:Cannot find module '@rollup/rollup-win32-x64-msvc'
 ---
 # {{$frontmatter.title}}
 
