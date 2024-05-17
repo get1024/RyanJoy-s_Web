@@ -6,6 +6,7 @@
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.0.0-rc10",
     "@types/node": "^20.12.7",
     "flexsearch": "^0.7.43",
+    "markdown-it": "^14.1.0",
     "unocss": "^0.60.2",
     "vitepress": "^1.1.4",
     "vitepress-plugin-search": "^1.0.4-alpha.22"

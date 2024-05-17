@@ -283,8 +283,9 @@ export default defineConfig({
 
     // FIXME:解决algolia搜索不爬虫的问题
     search: {
-      provider: 'algolia',
-      options: algolia,
+      // provider: 'algolia',
+      // options: algolia,
+      provider: 'local',
     },
 
     //侧边栏配置
