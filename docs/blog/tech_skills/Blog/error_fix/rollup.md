@@ -13,7 +13,7 @@ title: Error:Cannot find module '@rollup/rollup-win32-x64-msvc'
 
 ## 报错表现
 在搭建好基于`vitepress`的`blog`结构后，运行`npm run docs:dev`命令，进行部署前的运行结果检查，结果报以下错误：
-![error show](../../../../public/blog/project/RyanJoy-s_Web/error_show.png)
+![error show](/blog/tech_skills/error_show.png)
 **最为关键**的错误提示为以下一行代码：
 ::: code-group
 ```sh
