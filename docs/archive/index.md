@@ -24,7 +24,7 @@ sidebar: false
 :::
 
 ::: timeline 2024-05-02
-- [如何规范Git Commit？](/blog/tools/Git/如何规范Git%20Commit？) 11:14:24
+- [如何规范Git Commit？](/blog/tools/Git/如何规范Git_Commit？) 11:14:24
 :::
 
 ::: timeline 2024-05-01

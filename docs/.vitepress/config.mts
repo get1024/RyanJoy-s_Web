@@ -164,7 +164,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           text: '🌵Git-代码版本控制',
           collapsed: true,
           items: [
-            {text: '如何规范commit？',link:'/tools/Git/如何规范Git Commit？',},
+            {text: '如何规范commit？',link:'/tools/Git/如何规范Git_Commit？',},
             {text: 'Git使用',link:'/tools/Git/git使用',},
           ]
         },
