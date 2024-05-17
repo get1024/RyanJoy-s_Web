@@ -5,7 +5,7 @@ title: 🗃️Archive
 
 sidebar: false
 ---
-# {{$frontmatter.title}} <badge type="tip" text="持续更新" style="margin-top:12px;"/>
+# {{$frontmatter.title}} <badge type="danger" text="持续更新" style="margin-top:12px;"/> <badge type="warning" text="当前27篇文章，继续加油！" style="margin-top:12px;"/>
 
 <div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
   👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
@@ -24,7 +24,7 @@ sidebar: false
 :::
 
 ::: timeline 2024-05-02
-- [如何规范Git Commit？](/blog/tools/Git/如何规范Git Commit？) 11:14:24
+- [如何规范Git Commit？](/blog/tools/Git/如何规范Git%20Commit？) 11:14:24
 :::
 
 ::: timeline 2024-05-01
