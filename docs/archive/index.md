@@ -16,7 +16,7 @@ sidebar: false
 ## 🌴Archive Timeline
 ::: timeline 2024-05-16
 - [🛠️Tools](/blog/tools/index) 23:29:21
-- [ERROR : cannot find module '@rollup'](/blog/tech_skills/Blog/error_fix/rollup.md) 19:45:54
+- [Error :Cannot find module '@rollup/rollup-win32-x64-msvc'](/blog/tech_skills/Blog/error_fix/rollup.md) 19:45:54
 :::
 
 ::: timeline 2024-05-11
