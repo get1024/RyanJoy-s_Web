@@ -122,7 +122,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           collapsed: true,
           items: [
             {text: '个人博客系统搭建最优解',link:'/tech_skills/Blog/个人博客系统搭建最优解',},
-            {text: 'Blog搭建过程中的排坑经验',link: '/tech_skills/Blog/error_fix/rollup'},
+            {text: 'Blog搭建过程中的排坑指北',link: '/tech_skills/Blog/error_fix/'},
           ]
         },
         {
@@ -175,6 +175,23 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
             {text: 'Powershell使用笔记',link: '/tools/Powershell/powershell'},
           ]
         },
+        {
+          text: '👨‍💻VScode',
+          collapsed: true,
+          items: [
+            {
+              // todo:完成vscode插件分支独立，设置单独侧边栏，类似于error fix
+              text: '🔌插件——我在用什么？',
+              collapsed:true,
+              items:[
+                {
+                  text: 'Todo Tree',
+                  link: '/tools/VSCode/插件/todo_tree',
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
 
