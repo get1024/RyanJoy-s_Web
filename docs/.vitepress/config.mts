@@ -180,7 +180,6 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
           collapsed: true,
           items: [
             {
-              // todo:完成vscode插件分支独立，设置单独侧边栏，类似于error fix
               text: '🔌插件——我在用什么？',
               collapsed:true,
               items:[
@@ -298,7 +297,7 @@ export default defineConfig({
       },
     ],
 
-    // FIXME:解决algolia搜索不爬虫的问题
+    // BUG:解决algolia搜索不爬虫的问题
     search: {
       // provider: 'algolia',
       // options: algolia,
