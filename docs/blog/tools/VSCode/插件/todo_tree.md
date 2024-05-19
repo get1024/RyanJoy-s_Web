@@ -13,7 +13,6 @@ title: Todo Tree🌳
 ## 安装
 插件搜索`Todo Tree`，选择下图所示。
 ![todo tree](/blog/tools/vscode/插件/todo_tree.png)
-
 ## 自定义进行配置
 ### 进入插件设置界面
 ![setting1](/blog/tools/vscode/插件/todotree_setting1.png)
@@ -54,7 +53,7 @@ title: Todo Tree🌳
 :::
 
 ## 用法
-在要使用的地方点击快捷键`ctrl+/`，即可插入注释，在其中输入**既定的字段**，即一下内容
+在要使用的地方点击快捷键`ctrl+/`，即可插入注释，在其中输入**既定的字段**，即以下内容：
 ::: code-group
 ```json 
 "todo-tree.general.tags": [
