@@ -24,7 +24,7 @@ title: 如何规范Git Commit？
 ```
 ## 字段含义
 ### type
->[!important] 必写项
+>[!warning] 必写项
 >type 是 commit message 必须包含的内容，用于说明git commit的类别，只允许使用下面的标识。
 - `feat`：新功能（feature）。
 - `fix/to`：修复bug，可以是QA发现的BUG，也可以是研发自己发现的BUG。
