@@ -101,6 +101,14 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
             {text: 'README.md文档',link: '/project/Starship_customize/starship_custom',},
           ]
         },
+        {
+          text: '🎵Cloud Music个人实现',
+          collapsed: true,
+          items: [
+            // todo:完成cloud music的内容
+            {text: '暂时为空'},
+          ]
+        },
       ]
     },
 
