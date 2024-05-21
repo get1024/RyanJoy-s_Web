@@ -11,12 +11,18 @@ const members = [
     avatar: 'https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png',
     name: 'RyanJoy',
     title: 'RyanJoy\'s Web🌏原始创作者',
-    desc:'目前全沾，立志做全栈',
     org:'HENU',
+    orgLink:'https://www.henu.edu.cn/',
+    desc:'目前全沾，立志做全栈',
     links: [
       { icon: 'github', link: 'https://github.com/get1024' },
-      { icon: 'twitter', link: 'https://twitter.com/RyanJoy_1945815' }
-    ]
+      {
+        icon: {svg: '<svg t="1715358041217" class="icon" viewBox="0 0 1217 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6062" width="200" height="200"><path d="M459.643282 956.423306l18.87277-283.091558 513.826397-462.687277c22.525565-20.699168-4.870392-31.048751-34.701545-12.78478L323.272295 598.449465 48.703924 511.391201c-59.053508-16.437574-59.662307-57.227111 13.393579-87.058264L1130.539834 12.78478c48.703924-21.916766 95.581451 12.175981 76.70868 87.058264l-182.030916 856.580262c-12.78478 60.879905-49.312723 75.491082-100.451843 47.486325l-277.003567-204.55648-133.326992 129.065398c-14.611177 15.219976-27.395957 28.004756-54.791914 28.004757z" p-id="6063"></path></svg>'},
+        link: 'https://t.me/RyanJoy_1945815',
+      },
+      { icon: 'twitter', link: 'https://twitter.com/RyanJoy_1945815' },
+    ],
+    sponsor: 'https://get1024.github.io/RyanJoy-s_Web/about_me/sponsor.html#%E8%B5%9E%E5%8A%A9%E5%85%A5%E5%8F%A3',
   },
 ]
 </script>
@@ -38,18 +44,19 @@ const members = [
 
 <VPTeamMembers size="small" :members="members" align="center"/>
 
-My English name is RyanJoy, you can call me Xiao Ye (小业).
+大家好！我的英文名字是RyanJoy，你可以叫我小业。
 
-I am an undergraduate software engineering student currently preparing for graduate school and may not be able to update my Github projections/pages in time. 
+我是一名本科软件工程专业的学生，目前正在备考研究生，所以可能无法及时更新Github以及本博客。
 
-I love and would love to try out all open source projects, and if I am lucky enough to join, I will contribute as much as I can. My small dream of the stage is to pass the graduate exam and then strive to become a front-end designer & engineer (considering the popularity of AI in the future, the necessary status of front-end engineers is at stake).
+我喜欢并愿意尝试所有的开源项目，如果我幸运能够加入的话，我将尽我所能做出贡献。
 
-I've always wanted to do something interesting, be an interesting person, and make a contribution to other programmers like me...
-- 👨‍🎓Currently preparing for postgraduate examination;
-- I love 👨‍💻programming, 🏋️working out, 🎧listening to music, and am eager to have a successful 💰career, a happy 🏘️family, and lots of good 🧑‍🤝‍🧑friends;
-- If you want to contact me, you can click [here](https://get1024.github.io/RyanJoy-s_Web/about_me/reach_me.html), or you can choose a contact method **you prefer** on the left side of my personal page. If you **don't** like **any of the above methods**, here are the rest of my emails and my phone number. I hope you like them(u must!🤬):
-  - 📧Email: 2025050361@henu.edu.cn；18903803658@163.com
-  - 🛰WeChat: 18903803658
+我现阶段的小梦想是考上研究生，然后努力成为一名前端设计师和工程师(考虑到未来AI的普及，前端工程师的必要地位岌岌可危)。
+
+我一直想做一些有趣的事情，成为一个有趣的人，为其他像我一样的程序员做出贡献……
+
+- 👨‍🎓正在准备研究生考试;
+- 我喜欢编程，喜欢健身，喜欢🎧听音乐；
+- 希望能够在以后找到一份喜欢的工作、遇到一群好朋友、谈一场好的恋爱……
 
 ## 📈My GitHub statistics
 
