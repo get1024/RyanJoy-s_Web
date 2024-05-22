@@ -18,14 +18,14 @@ hero:
   actions:
   #  /blog/ --> 默认进入blog下的index.md
     - theme: brand
-      text: 进入博客
+      text: 进入博客📖
       link: /blog/index
     - theme: alt
-      text: 联系我
+      text: 联系我📞
       link: /about_me/reach_me
-    - theme: sponsor
-      text: 赞助作者
-      link: /about_me/sponsor
+    - theme: alt
+      text: 友链🧑‍🤝‍🧑
+      link: /about_me/friendChains
   image:
     src: /logo.png
     alt: RyanJoy's Blog logo
