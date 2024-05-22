@@ -52,6 +52,8 @@
   width: 70px;
   margin-top: 10px;
   object-fit: contain;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /* 链接下划线去除 */

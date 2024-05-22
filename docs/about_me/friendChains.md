@@ -39,24 +39,24 @@ title: 🧑‍🤝‍🧑Friend Chains
   </div>
 </div>
 
-<!-- <div class="linkcard-container">
+<div class="linkcard-container">
   <div class="linkcard">
+    <a href="https://zpj80231.github.io/znote/" target="_blank">
+      <p class="description">ZPJの自留地<br><span>内在丰盈者，独行亦如众</span></p>
+      <div class="logo">
+          <img alt="Logo" width="70px" height="70px" src="https://zpj80231.github.io/znote/vuepress/head-fish.jpg" />
+      </div>
+    </a>
+  </div>
+  <!-- <div class="linkcard">
     <a href="https://vitepress.yiov.top/" target="_blank">
       <p class="description">Vitepress中文搭建教程<br><span>https://vitepress.yiov.top/</span></p>
       <div class="logo">
           <img alt="Logo" width="70px" height="70px" src="https://vitepress.yiov.top/logo.png" />
       </div>
     </a>
-  </div>
-  <div class="linkcard">
-    <a href="https://vitepress.yiov.top/" target="_blank">
-      <p class="description">Vitepress中文搭建教程<br><span>https://vitepress.yiov.top/</span></p>
-      <div class="logo">
-          <img alt="Logo" width="70px" height="70px" src="https://vitepress.yiov.top/logo.png" />
-      </div>
-    </a>
-  </div>
-</div> -->
+  </div> -->
+</div>
 
 ## 如何在本页添加您的友链？
 复制下面代码，修改符号`[]`括起来的内容，修改完成后，推荐您在***评论区直接回复***。
@@ -98,3 +98,5 @@ title: 🧑‍🤝‍🧑Friend Chains
 网站名称：RyanJoy's Web
 ```
 :::
+
+<!-- todo:参照wcowin的友链界面，完善本页面 -->
