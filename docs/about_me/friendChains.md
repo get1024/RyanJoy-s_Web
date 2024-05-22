@@ -58,6 +58,20 @@ title: 🧑‍🤝‍🧑Friend Chains
   </div>
 </div>
 
+<div class="linkcard-container">
+  <div class="linkcard">
+    <a href="https://qkongtao.cn/" target="_blank">
+      <p class="description">左眼会陪右眼哭の博客
+        <br/>
+        <span>干嘛这么想不开，要在脸上贴个输字！</span>
+      </p>
+      <div class="logo">
+          <img alt="Logo" width="50px" height="50px" src="https://qkongtao.cn/file/images/favicon.png" />
+      </div>
+    </a>
+  </div>
+</div>
+
 ## 如何在本页添加您的友链？
 ### 1.小小要求
 > [!WARNING] 作者说
