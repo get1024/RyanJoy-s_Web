@@ -48,17 +48,50 @@ title: 🧑‍🤝‍🧑Friend Chains
       </div>
     </a>
   </div>
-  <!-- <div class="linkcard">
-    <a href="https://vitepress.yiov.top/" target="_blank">
-      <p class="description">Vitepress中文搭建教程<br><span>https://vitepress.yiov.top/</span></p>
+  <div class="linkcard">
+    <a href="https://finisky.github.io/" target="_blank">
+      <p class="description">Finisky Garden<br><span>互联网技术那些事儿</span></p>
       <div class="logo">
-          <img alt="Logo" width="70px" height="70px" src="https://vitepress.yiov.top/logo.png" />
+          <img alt="Logo" width="70px" height="70px" src="https://finisky.github.io/images/avatar.png" />
       </div>
     </a>
-  </div> -->
+  </div>
 </div>
 
 ## 如何在本页添加您的友链？
+### 1.小小要求
+> [!WARNING] 作者说
+> 为了打造更好的博客社区、提供更加优质的伙伴推荐，这里将有下列要求：
+>
+> - 独立博客：访问流畅，不依赖第三方博客平台（CSDN、博客园等等）；
+> - 最好全部是原创内容（知识类除外），原创内容3篇以上；
+> - 处于活跃状态，有一定的更新频率；
+> - 建站一个月以上；
+> - 三观正确，不存在任何违反国家法律法规的行为；热爱祖国，坚持维护共产党领导；
+### 2.把我添加到您的友链中
+以下是我的**友链**相关信息，供您参考。
+::: code-group
+```markdown
+头像链接：https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png
+网站链接：https://get1024.github.io/RyanJoy-s_Web/
+网站简介：🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
+网站名称：RyanJoy's Web
+```
+```html
+<div class="linkcard">
+  <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">
+    <p class="description">RyanJoy's Web
+      <br/>
+      <span>🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧</span>
+    </p>
+    <div class="logo">
+        <img alt="Logo" width="50px" height="50px" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" />
+    </div>
+  </a>
+</div>
+```
+:::
+### 3.编写您的友链信息留言评论
 复制下面代码，修改符号`[]`括起来的内容，修改完成后，推荐您在***评论区直接回复***。
 ::: code-group
 ```html
@@ -76,27 +109,3 @@ title: 🧑‍🤝‍🧑Friend Chains
 ```
 :::
 
-## 我的友链
-::: code-group
-```html
-<div class="linkcard">
-  <a href="https://get1024.github.io/RyanJoy-s_Web/" target="_blank">
-    <p class="description">RyanJoy's Web
-      <br/>
-      <span>🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧</span>
-    </p>
-    <div class="logo">
-        <img alt="Logo" width="50px" height="50px" src="https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png" />
-    </div>
-  </a>
-</div>
-```
-```markdown
-头像链接：https://raw.githubusercontent.com/get1024/RyanJoy-s_Web/main/docs/public/avatar.png
-网站链接：https://get1024.github.io/RyanJoy-s_Web/
-网站简介：🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧
-网站名称：RyanJoy's Web
-```
-:::
-
-<!-- todo:参照wcowin的友链界面，完善本页面 -->
