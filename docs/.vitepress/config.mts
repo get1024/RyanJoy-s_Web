@@ -116,7 +116,21 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
       text: '🤔Reflection & Summary',
       collapsed: false,
       items: [
-        {text: '目前还是空'},
+        {
+          text: '👩‍❤️‍👨感情',
+          collapsed: true,
+          items:[
+            {text:'自我分析',link:'/reflection&summary/感情/自我分析'},
+            {text:'放下感情还是提高自己？',link:'/reflection&summary/感情/放下感情还是提高自己？'},
+          ]
+        },
+        {
+          text: '👨‍🎓考研',
+          collapsed: true,
+          items:[
+            {text:'动力鸡汤', link:'/reflection&summary/考研/动力鸡汤'},
+          ]
+        }
       ]
     },
 
