@@ -17,7 +17,7 @@ sidebar: false
 ::: timeline 2024-5-29
 - [放下感情还是提高自己？](/blog/reflection&summary/感情/放下感情还是提高自己？) 13:46:10
 - [自我分析](/blog/reflection&summary/感情/自我分析) 13:40:26
-- [动力鸡汤](blog/reflection&summary/考研/动力鸡汤) 13:24:52
+- [动力鸡汤](/blog/reflection&summary/考研/动力鸡汤) 13:24:52
 :::
 
 ::: timeline 2024-05-18
