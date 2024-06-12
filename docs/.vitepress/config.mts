@@ -117,6 +117,13 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
       collapsed: false,
       items: [
         {
+          text: '🆙个人成长',
+          collapsed: true,
+          items:[
+            {text:'关于做好Read it later的重要性', link:'/reflection&summary/个人成长/关于做好Read_it_later的重要性'},
+          ]
+        },
+        {
           text: '👩‍❤️‍👨感情',
           collapsed: true,
           items:[
