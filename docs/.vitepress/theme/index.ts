@@ -64,16 +64,8 @@ export const Theme: ThemeConfig = {
         busuanzi.fetch()
       }
     }
-    app.provide(InjectionKey, { 
-      mapAuthors: [ 
-        { 
-          name: 'RyanJoy', 
-          mapByNameAliases: ['RJY','junyeren'],
-          mapByEmailAliases: ['junyeren@outlook.com', '2025050361@henu.edu.cn','18903803658@163.com'],
-          avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/avatar.png?raw=true',
-        } 
-      ]
-    }) 
+    // 基于git的页面历史
+    app.use(NolebaseGitChangelogPlugin)
   },
 
   //图片缩放
