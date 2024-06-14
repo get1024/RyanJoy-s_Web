@@ -26,7 +26,6 @@ import {
   InjectionKey
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-
 //时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
 //浏览量
@@ -65,19 +64,16 @@ export const Theme: ThemeConfig = {
         busuanzi.fetch()
       }
     }
-    // 基于git的页面历史
-    app.use(NolebaseGitChangelogPlugin, { 
-      // 把选项填写在这里吧...
+    app.provide(InjectionKey, { 
       mapAuthors: [ 
         { 
           name: 'RyanJoy', 
           mapByNameAliases: ['RJY','junyeren'],
-          email: 'junyeren@outlook.com', 
-          mapByEmailAliases: ['2025050361@henu.edu.cn','18903803658@163.com'],
+          mapByEmailAliases: ['junyeren@outlook.com', '2025050361@henu.edu.cn','18903803658@163.com'],
           avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/avatar.png?raw=true',
         } 
       ]
-    })
+    }) 
   },
 
   //图片缩放
