@@ -11,9 +11,9 @@
 /* var.css */
 /* 侧边栏、链接等主题颜色 */
 :root {
-  --vp-c-brand-1: #18794e;
-  --vp-c-brand-2: #299764;
-  --vp-c-brand-3: #30a46c;
+  --vp-c-brand-1: #1a7b50;
+  --vp-c-brand-2: #1d6d48;
+  --vp-c-brand-3: #1f8252;
 }
 
 .dark {
