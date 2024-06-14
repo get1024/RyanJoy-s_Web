@@ -14,6 +14,10 @@ sidebar: false
 </div>
 
 ## 🌴Archive Timeline
+::: timeline 2024-06-12
+- [关于做好Read it later的重要性](/blog/reflection&summary/个人成长/关于做好Read_it_later的重要性) 13:40:26
+:::
+
 ::: timeline 2024-5-29
 - [放下感情还是提高自己？](/blog/reflection&summary/感情/放下感情还是提高自己？) 13:46:10
 - [自我分析](/blog/reflection&summary/感情/自我分析) 13:40:26
