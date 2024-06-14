@@ -64,17 +64,17 @@ export const Theme: ThemeConfig = {
         busuanzi.fetch()
       }
     }
-    // 基于git的页面历史
-    app.use(NolebaseGitChangelogPlugin,{ 
-      // 把选项填写在这里吧...
+    
+    app.use(NolebaseGitChangelogPlugin,{
       mapAuthors: [
-        { 
-          name: 'RyanJoy', 
+        {
+          name: 'RyanJoy',
+          username: 'get1024',
           mapByNameAliases: ['RJY','junyeren'],
-          email: 'junyeren@outlook.com', 
-          mapByEmailAliases: ['2025050361@henu.edu.cn','18903803658@163.com'],
+          mapByEmailAliases: ['junyeren@outlook.com', '2025050361@henu.edu.cn','18903803658@163.com'],
           avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/avatar.png?raw=true',
-        } 
+          links: 'https://github.com/get1024',
+        }
       ]
     })
   },
