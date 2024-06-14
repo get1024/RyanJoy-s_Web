@@ -1,7 +1,9 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme as ThemeConfig } from 'vitepress'
-import { 
+import {
+  InjectionKey as NolebaseEnhancedReadabilitiesInjectionKey,
+  LayoutMode as NolebaseEnhancedReadabilitiesLayoutMode,
   NolebaseEnhancedReadabilitiesMenu, 
   NolebaseEnhancedReadabilitiesScreenMenu, 
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
