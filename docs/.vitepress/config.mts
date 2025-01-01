@@ -41,7 +41,6 @@ function sidebar_error_fix():DefaultTheme.SidebarItem[]{
 function sidebar_about_me(): DefaultTheme.SidebarItem[]{
   return [
     {text: '📱Reach Me',link: '/reach_me',},
-    {text: '💰Sponsor',link: '/sponsor'}
   ]
 }
 
