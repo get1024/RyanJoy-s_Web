@@ -10,11 +10,7 @@ title: CSS2笔记
 
 # {{$frontmatter.title}}
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 ## 1-简介
 - `CSS` 全称为**层叠样式表**（`Cascading Style Sheets`）；

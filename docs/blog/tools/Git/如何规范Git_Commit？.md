@@ -5,11 +5,7 @@ title: 如何规范Git Commit？
 ---
 # {{$frontmatter.title}}
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 >[!DANGER]  我们为什么要规范 commit？
 >多人协作项目、个人版本控制在进行 Git 提交时，都需要写 commit message，否则 `git push origin main` 是不被允许的。

@@ -7,11 +7,7 @@ sidebar: false
 ---
 # {{$frontmatter.title}} <badge type="danger" text="持续更新" style="margin-top:12px;"/>
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 ## 🌴Archive Timeline
 ::: timeline 2024-06-12

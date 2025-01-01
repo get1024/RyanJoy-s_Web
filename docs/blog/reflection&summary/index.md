@@ -5,11 +5,7 @@ title: 🤔Reflection & Summary
 ---
 # {{$frontmatter.title}}
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 
 ## <p><img src="/avatar.png" style="height:40px;float:left;margin-top:-7px;"/><span >RyanJoy的知识图书馆</span></p>

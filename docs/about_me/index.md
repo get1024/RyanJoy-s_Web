@@ -22,17 +22,10 @@ const members = [
       },
       { icon: 'twitter', link: 'https://twitter.com/RyanJoy_1945815' },
     ],
-    sponsor: 'https://get1024.github.io/RyanJoy-s_Web/about_me/sponsor.html#%E8%B5%9E%E5%8A%A9%E5%85%A5%E5%8F%A3',
   },
 ]
 </script>
 # {{$frontmatter.title}}
-
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
 
 ## ℹ️Info
 
@@ -46,17 +39,13 @@ const members = [
 
 大家好！我的英文名字是RyanJoy，你可以叫我小业。
 
-我是一名本科软件工程专业的学生，目前正在备考研究生，所以可能无法及时更新Github以及本博客。
+我是一名本科软件工程专业的学生，目前在RUC就读人工智能，在本博客记录个人学习心得，如若有幸与您遇见，一定是缘分。
 
 我喜欢并愿意尝试所有的开源项目，如果我幸运能够加入的话，我将尽我所能做出贡献。
 
-我现阶段的小梦想是考上研究生，然后努力成为一名前端设计师和工程师(考虑到未来AI的普及，前端工程师的必要地位岌岌可危)。
-
-我热爱我的祖国（中国），并且坚定维护共产党的领导，痛恨日本帝国主义，每天睡前高唱“[大刀向鬼子们的头上砍去……](https://music.163.com/#/song?id=409031983)”。**精日精韩等一切狗腿子🐕之类**别来沾边！
-
 我一直想做一些有趣的事情，成为一个有趣的人，为其他像我一样的程序员做出贡献……
 
-- 👨‍🎓正在准备研究生考试;
+- 努力成为行业大佬，实现财富自由；
 - 我喜欢编程，喜欢健身，喜欢🎧听音乐；
 - 希望能够在以后找到一份喜欢的工作、遇到一群好朋友、谈一场好的恋爱……
 

@@ -4,11 +4,7 @@ Last edited at: 2024年05月18日 15:30:08
 title: Todo Tree🌳
 ---
 # {{$frontmatter.title}}
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 ## 安装
 插件搜索`Todo Tree`，选择下图所示。

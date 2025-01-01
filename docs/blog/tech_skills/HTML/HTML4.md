@@ -5,11 +5,7 @@ Last edited at: 2024年05月10日 11:33:18
 ---
 # {{$frontmatter.title}}
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 ## 一、HTML 标签
 - **标签** 又叫 **元素**，是和 html 基本组成单位

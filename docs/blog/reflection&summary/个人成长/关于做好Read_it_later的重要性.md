@@ -6,11 +6,7 @@ title: 关于做好Read it later的重要性
 
 # {{$frontmatter.title}}
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 > [!TIP] 什么是 Read it later ?
 > Read it later 是指在阅读/发现某篇有内容、高质量且对自己有帮助的文章/视频后，将文章/视频的访问方式保存到一个列表中，等待以后阅读。

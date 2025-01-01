@@ -5,11 +5,7 @@ title: Error:Cannot find module '@rollup/rollup-win32-x64-msvc'
 ---
 # {{$frontmatter.title}}
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 ## 报错表现
 在搭建好基于`vitepress`的`blog`结构后，运行`npm run docs:dev`命令，进行部署前的运行结果检查，结果报以下错误：

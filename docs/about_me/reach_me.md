@@ -5,11 +5,7 @@ title: 📱Reach Me
 ---
 # {{$frontmatter.title}}
 
-<div class="flex gap-[4px] items-center" style="color:gray;font-size:14px;">
-  👁️‍🗨️阅读量: <span id="busuanzi_container_page_pv">
-    <span id="busuanzi_value_page_pv" />
-  </span>
-</div>
+ 
 
 > [!WARNING] 欢迎你哦👏
 > 你点开了本页面，一定是想联系RyanJoy吧！
