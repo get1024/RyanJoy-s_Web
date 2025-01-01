@@ -40,7 +40,6 @@ function sidebar_error_fix():DefaultTheme.SidebarItem[]{
 //about_me侧边栏
 function sidebar_about_me(): DefaultTheme.SidebarItem[]{
   return [
-    {text: '🧑‍🤝‍🧑Friend Chains',link: '/friendChains',},
     {text: '📱Reach Me',link: '/reach_me',},
     {text: '💰Sponsor',link: '/sponsor'}
   ]
