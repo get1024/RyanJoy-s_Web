@@ -34,10 +34,6 @@ sidebar: false
 - [Error :Cannot find module '@rollup/rollup-win32-x64-msvc'](/blog/tech_skills/Blog/error_fix/rollup) 19:45:54
 :::
 
-::: timeline 2024-05-11
-- [💰Sponsor](/about_me/sponsor) 23:35:10
-:::
-
 ::: timeline 2024-05-02
 - [如何规范Git Commit？](/blog/tools/Git/如何规范Git_Commit？) 11:14:24
 :::
@@ -54,7 +50,6 @@ sidebar: false
 
 ::: timeline 2024-04-29
 - [📒Blog](/blog/) 21:50:23
-- [🧑‍🤝‍🧑Friend Chains](/about_me/friendChains) 20:10:05
 - [📱Reach Me](/about_me/reach_me) 20:09:16
 - [🗃️Archive](/archive/) 20:08:15
 - [👨‍🎓About Me](/about_me/) 20:06:40
