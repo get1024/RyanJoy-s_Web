@@ -19,10 +19,10 @@ hero:
   #  /blog/ --> 默认进入blog下的index.md
     - theme: brand
       text: 进入博客📖
-      link: /blog/index
+      link: /📒笔记/index.md
     - theme: alt
       text: 联系我📞
-      link: /about_me/reach_me
+      link: /👨🏼‍🎓关于我/index.md
   image:
     src: /logo.png
     alt: RyanJoy's Blog logo
