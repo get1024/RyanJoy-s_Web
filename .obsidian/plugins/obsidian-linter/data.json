@@ -60,7 +60,7 @@
     "yaml-timestamp": {
       "enabled": true,
       "date-created": true,
-      "date-created-key": "creatAt",
+      "date-created-key": "createAt",
       "date-modified": true,
       "date-modified-key": "updateAt",
       "format": "YYYY-MM-DD HH:mm:ss",
