@@ -6,6 +6,7 @@
     "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiBrandCss3",
       "FiHome",
       "FiImage",
       "IbDocumentText",
@@ -29,8 +30,7 @@
       "1️⃣",
       "🇻🇬",
       "💽",
-      "📐",
-      "⚒"
+      "📐"
     ],
     "recentlyUsedIconsSize": 25,
     "rules": [],
@@ -86,5 +86,6 @@
   "RyanJoy's Blog": {
     "iconName": "TiBrandBlogger",
     "iconColor": "#ffd500"
-  }
+  },
+  "draft.md": "TiBrandCss3"
 }
