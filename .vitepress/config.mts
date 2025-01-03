@@ -65,7 +65,7 @@ export default defineConfig({
             username: 'get1024',
             mapByNameAliases: ['RJY','junyeren'],
             mapByEmailAliases: ['junyeren@outlook.com', '2025050361@henu.edu.cn','18903803658@163.com'],
-            avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/avatar.png?raw=true',
+            avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/public/avatar.png?raw=true',
             links: 'https://github.com/get1024',
           }
         ],
@@ -162,8 +162,8 @@ export default defineConfig({
     },
     //侧边栏自动配置
     sidebar: calculateSidebar([
-      { folderName: 'about_me', separate: true },
-      { folderName: 'blog', separate: true },
+      { folderName: '👨🏼‍🎓关于我', separate: true },
+      { folderName: '📒笔记', separate: true },
     ]),
   },
 
