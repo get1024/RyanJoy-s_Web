@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
-                "mode": "preview",
+                "file": "index.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "CSS2"
+              "title": "index"
             }
           }
         ]
@@ -111,7 +111,7 @@
       {
         "id": "eea0fabdb0fe0f02",
         "type": "tabs",
-        "dimension": 33.47107438016529,
+        "dimension": 33.67768595041322,
         "children": [
           {
             "id": "b1c8a3a1485a2f14",
@@ -119,10 +119,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📒笔记/🖥️专业技能/💈CSS/CSS2.md"
+                "file": "index.md"
               },
               "icon": "lucide-list",
-              "title": "CSS2 的大纲"
+              "title": "index 的大纲"
             }
           }
         ]
@@ -130,7 +130,7 @@
       {
         "id": "0c06364c6f2f5bab",
         "type": "tabs",
-        "dimension": 33.367768595041326,
+        "dimension": 33.16115702479338,
         "children": [
           {
             "id": "97eedade00e09191",
@@ -169,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
+                "file": "index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -197,7 +197,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "CSS2 的关系图"
+              "title": "index 的关系图"
             }
           }
         ],
@@ -223,22 +223,25 @@
   },
   "active": "fa0e3e1053c8fd55",
   "lastOpenFiles": [
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/utils.d.ts",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/i18n.d.ts",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/constants.d.ts",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/iframe.d.ts",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/PopupIframe.vue",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/LinkButton.vue",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/InlineLinkPreview.vue",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/types.d.ts",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/index.d.ts",
+    "📒笔记/index.md",
+    "📒笔记/🖥️专业技能/index.md",
+    "draft.md",
+    "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
+    "👨🏼‍🎓关于我/联系我.md",
     "node_modules/@iconify-json/svg-spinners/index.js",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/package.json",
-    "node_modules/markdown-it-attrs/patterns.js",
-    "node_modules/markdown-it-attrs/markdown-it-attrs.browser.js",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/mouse.mjs",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/mouse.js",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/iframe.mjs",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/iframe.js",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/i18n.js",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/i18n.mjs",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/markdown-it/index.d.cts",
     "node_modules/@nolebase/markdown-it-element-transform/README.md",
     "📒笔记/🖥️专业技能/📄HTML/HTML4.md",
     "index.md",
-    "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
-    "draft.md",
     "📒笔记/🤔反思和总结/💯考研/英二学习经验.md",
     "📒笔记/🤔反思和总结/💯考研/动力鸡汤.md",
     "📒笔记/🤔反思和总结/📈个人成长/关于做好Read_it_later的重要性.md",
@@ -256,9 +259,6 @@
     "📒笔记/🖥️专业技能/🔧VUE/VUE.md",
     "📒笔记/🖥️专业技能/🌐博客/error_fix/rollup.md",
     "📒笔记/🖥️专业技能/🌐博客/error_fix/index.md",
-    "📒笔记/🖥️专业技能/🌐博客/个人博客系统搭建最优解.md",
-    "📒笔记/🖥️专业技能/博客/error_fix/rollup.md",
-    "📒笔记/🖥️专业技能/博客/error_fix/index.md",
     "未命名.canvas",
     "微信图片_20240622192945.png",
     "RyanJoy-s_Web/docs/public/blog/tools/vscode/插件/todo_tree.png",

@@ -1,5 +1,5 @@
 {
-  "accentColor": "",
+  "accentColor": "#5babf5",
   "interfaceFontFamily": ".萍方-简",
   "textFontFamily": ".萍方-简",
   "monospaceFontFamily": "Cascadia Code",
@@ -7,9 +7,6 @@
   "translucency": false,
   "cssTheme": "AnuPpuccin",
   "enabledCssSnippets": [
-    "AnuExtendTheme",
-    "autofading-ui",
-    "better-bullet-points-in-edit-mode",
     "bigger-link-popup-preview",
     "bullet-point-relationship-lines",
     "custom-icons-for-frontmatter-tags",
@@ -22,9 +19,12 @@
     "tag-pills",
     "搜索框美化",
     "outline",
-    "theme",
-    "yaozhuwa@CSS"
+    "AnuExtendTheme",
+    "autofading-ui",
+    "better-bullet-points-in-edit-mode",
+    "yaozhuwa@CSS",
+    "theme"
   ],
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSizeAction": true
 }

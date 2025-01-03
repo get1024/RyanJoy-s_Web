@@ -20,7 +20,7 @@
 // //about_me侧边栏
 // function sidebar_about_me(): DefaultTheme.SidebarItem[] {
 // return [
-//     { text: '📱Reach Me', link: '/reach_me', },
+//     { text: '📱Reach Me', link: '/联系我', },
 // ]
 // }
 
