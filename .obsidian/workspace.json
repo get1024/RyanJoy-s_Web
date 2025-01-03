@@ -92,26 +92,9 @@
     "type": "split",
     "children": [
       {
-        "id": "826f0e16eaee36c7",
-        "type": "tabs",
-        "dimension": 33.16115702479338,
-        "children": [
-          {
-            "id": "6b878fab9b6cfc59",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          }
-        ]
-      },
-      {
         "id": "eea0fabdb0fe0f02",
         "type": "tabs",
-        "dimension": 33.67768595041322,
+        "dimension": 50.38639876352396,
         "children": [
           {
             "id": "b1c8a3a1485a2f14",
@@ -130,7 +113,7 @@
       {
         "id": "0c06364c6f2f5bab",
         "type": "tabs",
-        "dimension": 33.16115702479338,
+        "dimension": 49.61360123647604,
         "children": [
           {
             "id": "97eedade00e09191",
@@ -138,11 +121,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "第1天---前端 的出链列表"
             }
           },
           {
@@ -151,6 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +145,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "第1天---前端 的反向链接列表"
             }
           },
           {
@@ -200,8 +185,7 @@
               "title": "第1天---前端 的关系图"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -221,10 +205,19 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "fff84b784abc86e6",
+  "active": "fa0e3e1053c8fd55",
   "lastOpenFiles": [
-    "public/blog/project/基于vue+springboot的资产管理系统/day1_p1.png",
-    "public/blog/project/基于vue+springboot的资产管理系统/Pasted image 20240310162933.png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (141).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (14).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (15).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (29).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (28).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (27).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (26).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (25).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (24).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (23).png",
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (22).png",
     "index.md",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/locales/index.mjs.map",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/locales/index.mjs",
@@ -260,15 +253,6 @@
     "📒笔记/🖥️专业技能/🔧VUE/VUE.md",
     "📒笔记/🖥️专业技能/🌐博客/error_fix/rollup.md",
     "📒笔记/🖥️专业技能/🌐博客/error_fix/index.md",
-    "未命名.canvas",
-    "微信图片_20240622192945.png",
-    "RyanJoy-s_Web/docs/public/blog/tools/vscode/插件/todo_tree.png",
-    "RyanJoy-s_Web/node_modules/undici/docs/assets/lifecycle-diagram.png",
-    "RyanJoy-s_Web/node_modules/@unocss/inspector/dist/client/favicon.svg",
-    "RyanJoy-s_Web/node_modules/vitepress-plugin-search/dist/flex-logo.svg",
-    "RyanJoy-s_Web/docs/public/about_me/wechat_pay.png",
-    "RyanJoy-s_Web/docs/public/about_me/alipay.jpg",
-    "RyanJoy-s_Web/docs/public/about_me/1715344325342.jpg",
-    "RyanJoy-s_Web/docs/public/about_me/mm_facetoface_collect_qrcode_1715344349368.png"
+    "未命名.canvas"
   ]
 }
