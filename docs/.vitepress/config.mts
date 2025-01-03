@@ -20,7 +20,10 @@ import { nav } from './configs'
 import algolia from './algolia'
 //引入 面包屑导航
 // import { generateBreadcrumbsData } from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
-
+//页面属性
+import {
+  PageProperties,
+} from '@nolebase/vitepress-plugin-page-properties/vite'
 
 //archive侧边栏
 function sidebar_archive(): DefaultTheme.SidebarItem[]{
@@ -250,8 +253,20 @@ export default defineConfig({
       GitChangelog({ 
         // 填写在此处填写您的仓库链接
         repoURL: () => 'https://github.com/get1024/RyanJoy-s_Web', 
+        //V2 --> V3 特性迁移
+        mapAuthors: [
+          {
+            name: 'RyanJoy',
+            username: 'get1024',
+            mapByNameAliases: ['RJY','junyeren'],
+            mapByEmailAliases: ['junyeren@outlook.com', '2025050361@henu.edu.cn','18903803658@163.com'],
+            avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/avatar.png?raw=true',
+            links: 'https://github.com/get1024',
+          }
+        ],
       }), 
       GitChangelogMarkdownSection(),
+      PageProperties(),
     ],
     optimizeDeps: {
       include: [ 

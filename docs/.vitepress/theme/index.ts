@@ -46,6 +46,10 @@ import { emit } from 'process'
 import theme from 'vitepress/theme'
 //面包屑导航
 // import { NolebaseBreadcrumbs } from '@nolebase/vitepress-plugin-breadcrumbs/client'
+//页面属性
+import {
+  NolebasePagePropertiesPlugin,
+} from '@nolebase/vitepress-plugin-page-properties/client'
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -69,18 +73,42 @@ export const Theme: ThemeConfig = {
         busuanzi.fetch()
       }
     }
-    
-    app.use(NolebaseGitChangelogPlugin,{
-      mapAuthors: [
-        {
-          name: 'RyanJoy',
-          username: 'get1024',
-          mapByNameAliases: ['RJY','junyeren'],
-          mapByEmailAliases: ['junyeren@outlook.com', '2025050361@henu.edu.cn','18903803658@163.com'],
-          avatar: 'https://github.com/get1024/RyanJoy-s_Web/blob/main/docs/public/avatar.png?raw=true',
-          links: 'https://github.com/get1024',
-        }
-      ]
+    app.use(NolebaseGitChangelogPlugin)
+    app.use(NolebasePagePropertiesPlugin<{
+      tags: string[]
+      progress: number
+    }>(), {
+      properties: {
+        'zh-CN': [
+          {
+            key: 'tags',
+            type: 'tags',
+            title: '标签',
+          },
+          {
+            key: 'progress',
+            type: 'progress',
+            title: '完成进度',
+          },
+          {
+            key: 'wordCount',
+            type: 'dynamic',
+            title: '字数',
+            options: {
+              type: 'wordsCount',
+            },
+          },
+          {
+            key: 'readingTime',
+            type: 'dynamic',
+            title: '阅读时间',
+            options: {
+              type: 'readingTime',
+              dateFnsLocaleName: 'zhCN',
+            },
+          },
+        ],
+      },
     })
   },
 
