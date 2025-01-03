@@ -223,10 +223,14 @@
   },
   "active": "ac960ff4146d5405",
   "lastOpenFiles": [
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.pdf",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.pdf",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第4天---智慧物业管理系统.md",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_2---项目速成攻略.md",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/constants.mjs",
     "index.md",
     "draft.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
     "🗃️最近更新/index.md",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (14).png",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (141).png",
@@ -246,8 +250,6 @@
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/markdown-it/index.mjs",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/utils.d.ts",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/i18n.d.ts",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/constants.d.ts",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/iframe.d.ts",
     "📒笔记/index.md",
     "📒笔记/🖥️专业技能/index.md",
     "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
@@ -267,8 +269,6 @@
     "📒笔记/🖥️专业技能/🌐博客/🐞BUG解决方案/rollup.md",
     "📒笔记/🖥️专业技能/🌐博客/🐞BUG解决方案/index.md",
     "📒笔记/🖥️专业技能/🌐博客/BUG解决方案/rollup.md",
-    "📒笔记/🖥️专业技能/🌐博客/BUG解决方案/index.md",
-    "📒笔记/🖥️专业技能/🔧VUE/VUE.md",
     "未命名.canvas"
   ]
 }
