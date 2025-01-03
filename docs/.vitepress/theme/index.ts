@@ -1,3 +1,4 @@
+// 主题配置文件
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme as ThemeConfig } from 'vitepress'
@@ -43,11 +44,15 @@ import { useData } from 'vitepress';
 import { strict } from 'assert'
 import { emit } from 'process'
 import theme from 'vitepress/theme'
+//面包屑导航
+// import { NolebaseBreadcrumbs } from '@nolebase/vitepress-plugin-breadcrumbs/client'
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
+      //将面包屑导航添加到文档上方
+      // 'doc-before': () => h(NolebaseBreadcrumbs), 
       // 为较宽的屏幕的导航栏添加阅读增强菜单
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
       // 为较窄的屏幕（通常是小于 iPad Mini）添加阅读增强菜单

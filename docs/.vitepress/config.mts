@@ -18,6 +18,8 @@ import taskLists from 'markdown-it-task-checkbox'
 import { nav } from './configs'
 //引入algolia
 import algolia from './algolia'
+//引入 面包屑导航
+// import { generateBreadcrumbsData } from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
 
 
 //archive侧边栏
@@ -49,7 +51,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
   return [
   // 第一级
     {
-      text: '🚶Life Skills',
+      text: '📂Life Skills',
       collapsed: false,
       items: [
         {
@@ -63,7 +65,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
 
     {
-      text: '🛠️Project',
+      text: '📂Project',
       collapsed: false,
       items: [
         {
@@ -111,7 +113,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
 
     {
-      text: '🤔Reflection & Summary',
+      text: '📂Reflection & Summary',
       collapsed: false,
       items: [
         {
@@ -140,7 +142,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
 
     {
-      text: '💻Technical Stack',
+      text: '📂Technical Stack',
       collapsed: false,
       items: [
         {
@@ -184,7 +186,7 @@ function sidebar_blog(): DefaultTheme.SidebarItem[]{
     },
     
     {
-      text: '🛠️Tools',
+      text: '📂Tools',
       collapsed: false,
       items:[
         {
@@ -258,7 +260,8 @@ export default defineConfig({
         '@nolebase/vitepress-plugin-enhanced-readabilities > @nolebase/ui > @rive-app/canvas', 
       ], 
       exclude: [ 
-        '@nolebase/vitepress-plugin-enhanced-readabilities/client', 
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+        // '@nolebase/vitepress-plugin-breadcrumbs/client', //面包屑导航
       ], 
     },
     ssr: { 
@@ -266,6 +269,7 @@ export default defineConfig({
         // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
         '@nolebase/vitepress-plugin-enhanced-readabilities', 
         '@nolebase/vitepress-plugin-highlight-targeted-heading', 
+        // '@nolebase/vitepress-plugin-breadcrumbs', //面包屑导航
       ], 
     }, 
     
@@ -346,7 +350,6 @@ export default defineConfig({
       //递进分支
       '/blog/tech_skills/Blog/error_fix': {base:'/blog/tech_skills/Blog/error_fix',items:sidebar_error_fix()},
     },
-
   },
 
   markdown: {
@@ -370,4 +373,8 @@ export default defineConfig({
     },
   },
 
+  //面包屑导航
+  // transformPageData(pageData, context) { 
+  //   generateBreadcrumbsData(pageData, context) 
+  // },
 })
