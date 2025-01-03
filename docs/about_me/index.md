@@ -1,7 +1,7 @@
 ---
-Created at: 2024年04月29日 20:06:40
-Last edited at: 2024年05月08日 23:21:08
 title: 🧑‍🎓About Me
+createdAt: 2024-01-23
+updatedAt: 2024-01-23
 ---
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
