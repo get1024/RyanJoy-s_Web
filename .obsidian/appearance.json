@@ -5,7 +5,7 @@
   "monospaceFontFamily": "Cascadia Code",
   "baseFontSize": 17,
   "translucency": false,
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "",
   "enabledCssSnippets": [
     "bigger-link-popup-preview",
     "bullet-point-relationship-lines",

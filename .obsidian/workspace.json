@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "第1天---前端"
             }
           }
         ]
@@ -119,10 +119,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md"
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "第1天---前端 的大纲"
             }
           }
         ]
@@ -169,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "index.md",
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -197,7 +197,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "index 的关系图"
+              "title": "第1天---前端 的关系图"
             }
           }
         ],
@@ -221,27 +221,28 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "fa0e3e1053c8fd55",
+  "active": "fff84b784abc86e6",
   "lastOpenFiles": [
+    "public/blog/project/基于vue+springboot的资产管理系统/day1_p1.png",
+    "public/blog/project/基于vue+springboot的资产管理系统/Pasted image 20240310162933.png",
+    "index.md",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/locales/index.mjs.map",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/locales/index.mjs",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/locales.mjs",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/utils.mjs",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/index.mjs",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/markdown-it/index.mjs",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/utils.d.ts",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/i18n.d.ts",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/constants.d.ts",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/iframe.d.ts",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/PopupIframe.vue",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/LinkButton.vue",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components/InlineLinkPreview.vue",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/components",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/types.d.ts",
-    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/index.d.ts",
     "📒笔记/index.md",
     "📒笔记/🖥️专业技能/index.md",
     "draft.md",
     "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
     "👨🏼‍🎓关于我/联系我.md",
-    "node_modules/@iconify-json/svg-spinners/index.js",
     "node_modules/@nolebase/markdown-it-element-transform/README.md",
     "📒笔记/🖥️专业技能/📄HTML/HTML4.md",
-    "index.md",
     "📒笔记/🤔反思和总结/💯考研/英二学习经验.md",
     "📒笔记/🤔反思和总结/💯考研/动力鸡汤.md",
     "📒笔记/🤔反思和总结/📈个人成长/关于做好Read_it_later的重要性.md",
@@ -268,7 +269,6 @@
     "RyanJoy-s_Web/docs/public/about_me/wechat_pay.png",
     "RyanJoy-s_Web/docs/public/about_me/alipay.jpg",
     "RyanJoy-s_Web/docs/public/about_me/1715344325342.jpg",
-    "RyanJoy-s_Web/docs/public/about_me/mm_facetoface_collect_qrcode_1715344349368.png",
-    "RyanJoy-s_Web/docs/public/blog/tech_skills/HTML_form_structure.png"
+    "RyanJoy-s_Web/docs/public/about_me/mm_facetoface_collect_qrcode_1715344349368.png"
   ]
 }
