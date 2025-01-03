@@ -29,7 +29,7 @@
               "state": {
                 "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "第1天---前端"
@@ -37,6 +37,26 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "f89323b93e0daa98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "707ec1c0eb23a2fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "第1天---前端"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,7 +225,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 273.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,7 +242,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "ac960ff4146d5405",
+  "active": "707ec1c0eb23a2fd",
   "lastOpenFiles": [
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.pdf",
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.pdf",
