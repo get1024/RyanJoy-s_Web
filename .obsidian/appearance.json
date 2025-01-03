@@ -13,17 +13,15 @@
     "custom-icons-for-specific-folders",
     "image-cards",
     "nicer-checkboxes",
-    "smaller-scrollbar",
     "stylish-blockquotes",
     "subtler-folding-gutter-arrows",
-    "tag-pills",
     "搜索框美化",
-    "outline",
     "AnuExtendTheme",
     "autofading-ui",
     "better-bullet-points-in-edit-mode",
-    "yaozhuwa@CSS",
-    "theme"
+    "tag-pills",
+    "smaller-scrollbar",
+    "outline"
   ],
   "theme": "obsidian",
   "baseFontSizeAction": true

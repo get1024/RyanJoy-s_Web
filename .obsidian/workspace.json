@@ -177,7 +177,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8417075347794715,
+                  "scale": 0.5070457432534891,
                   "close": true
                 }
               },
@@ -185,7 +185,8 @@
               "title": "第1天---前端 的关系图"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -207,6 +208,8 @@
   },
   "active": "fa0e3e1053c8fd55",
   "lastOpenFiles": [
+    "🗃️最近更新/index.md",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (14).png",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (141).png",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (15).png",
@@ -217,7 +220,6 @@
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (25).png",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (24).png",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (23).png",
-    "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (22).png",
     "index.md",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/locales/index.mjs.map",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/locales/index.mjs",
@@ -252,7 +254,6 @@
     "📒笔记/🖥️专业技能/🌐博客/BUG解决方案/index.md",
     "📒笔记/🖥️专业技能/🔧VUE/VUE.md",
     "📒笔记/🖥️专业技能/🌐博客/error_fix/rollup.md",
-    "📒笔记/🖥️专业技能/🌐博客/error_fix/index.md",
     "未命名.canvas"
   ]
 }
