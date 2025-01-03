@@ -30,7 +30,7 @@ import {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:'/RyanJoy-s_Web/docs/',
+  base:'/RyanJoy-s_Web/',
   lang: 'zh-CN',
   title: "RyanJoy's Web",
   description: 'RyanJoy前途似锦',
