@@ -1,0 +1,274 @@
+{
+  "main": {
+    "id": "69605880f4f49a34",
+    "type": "split",
+    "children": [
+      {
+        "id": "97500e41c9a22c49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f848ca6da6410be4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🗃️最近更新/index.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db890d315716b235",
+    "type": "split",
+    "children": [
+      {
+        "id": "76fdd7f284d11b81",
+        "type": "tabs",
+        "dimension": 62.29338842975207,
+        "children": [
+          {
+            "id": "fff84b784abc86e6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "2a68444a5a6cc073",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      },
+      {
+        "id": "32638ce4998108c5",
+        "type": "tabs",
+        "dimension": 37.70661157024794,
+        "children": [
+          {
+            "id": "75068d2eb2f74196",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 332.5150947570801
+  },
+  "right": {
+    "id": "612f978ab273423b",
+    "type": "split",
+    "children": [
+      {
+        "id": "826f0e16eaee36c7",
+        "type": "tabs",
+        "dimension": 33.16115702479338,
+        "children": [
+          {
+            "id": "6b878fab9b6cfc59",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "eea0fabdb0fe0f02",
+        "type": "tabs",
+        "dimension": 33.47107438016529,
+        "children": [
+          {
+            "id": "b1c8a3a1485a2f14",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "🗃️最近更新/index.md"
+              },
+              "icon": "lucide-list",
+              "title": "index 的大纲"
+            }
+          }
+        ]
+      },
+      {
+        "id": "0c06364c6f2f5bab",
+        "type": "tabs",
+        "dimension": 33.367768595041326,
+        "children": [
+          {
+            "id": "97eedade00e09191",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "9c61b72d464a58c9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "5aa7b7632df70aca",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "🗃️最近更新/index.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 3,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": true,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1.73013925925926,
+                  "lineSizeMultiplier": 1.67438814814815,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.8417075347794715,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "index 的关系图"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-to-notion:Share to notion": false,
+      "periodic-notes:Open today": false,
+      "obsidian42-brat:BRAT": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "f848ca6da6410be4",
+  "lastOpenFiles": [
+    "📂笔记/反思和总结/个人成长/关于做好Read_it_later的重要性.md",
+    "🗃️最近更新/index.md",
+    "Excalidraw/CN协议汇总 2024-11-18 11.09.46.excalidraw.md",
+    "未命名.canvas",
+    "Daily_Notes/2024-04-01.md",
+    "Daily_Notes/2024-02-02.md",
+    "Daily_Notes/2023-09-03.md",
+    "Daily_Notes/2023-09-10.md",
+    "Daily_Notes/2023-09-16.md",
+    "Daily_Notes/2023-02-06.md",
+    "Daily_Notes/2023-01-28.md",
+    "Excalidraw/Drawing 2024-10-14 10.36.43.excalidraw.md",
+    "RyanJoy-s_Web/docs/blog/tech_skills/HTML/HTML4.md",
+    "RyanJoy-s_Web/docs/blog/reflection&summary/考研/英二学习经验.md",
+    "RyanJoy-s_Web/docs/about_me/index.md",
+    "New/22408考研.md",
+    "微信图片_20240622192945.png",
+    "RyanJoy-s_Web/docs/blog/reflection&summary/个人成长/关于做好Read_it_later的重要性.md",
+    "RyanJoy-s_Web/node_modules/@nolebase/vitepress-plugin-enhanced-readabilities/dist/client/components/deps.mjs",
+    "RyanJoy-s_Web/node_modules/vite/dist/node/chunks/dep-DfBmsS12.js",
+    "RyanJoy-s_Web/node_modules/vitepress/dist/node/serve-CEEKiiuH.js",
+    "RyanJoy-s_Web/node_modules/vite/dist/node/chunks/dep-h78lQ5BT.js",
+    "RyanJoy-s_Web/node_modules/@esbuild/linux-s390x",
+    "RyanJoy-s_Web/node_modules/@esbuild/linux-riscv64",
+    "RyanJoy-s_Web/node_modules/@esbuild/linux-ppc64",
+    "RyanJoy-s_Web/node_modules/@esbuild/linux-mips64el",
+    "RyanJoy-s_Web/node_modules/@esbuild/linux-loong64",
+    "RyanJoy-s_Web/node_modules/@esbuild/linux-arm64",
+    "RyanJoy-s_Web/docs/blog/tools/VSCode/插件/todo_tree.md",
+    "RyanJoy-s_Web/docs/blog/tech_skills/Blog/error_fix/index.md",
+    "RyanJoy-s_Web/docs/public/blog/tools/vscode/插件/todo_tree.png",
+    "RyanJoy-s_Web/docs/about_me/sponsor.md",
+    "New/清单.md",
+    "RyanJoy-s_Web/node_modules/@jridgewell/set-array/README.md",
+    "RyanJoy-s_Web/node_modules/@jridgewell/resolve-uri/README.md",
+    "RyanJoy-s_Web/node_modules/fs-extra/README.md",
+    "RyanJoy-s_Web/node_modules/universalify/README.md",
+    "RyanJoy-s_Web/node_modules/jsonfile/README.md",
+    "RyanJoy-s_Web/node_modules/jsonfile/CHANGELOG.md",
+    "RyanJoy-s_Web/node_modules/undici/docs/assets/lifecycle-diagram.png",
+    "RyanJoy-s_Web/node_modules/@unocss/inspector/dist/client/favicon.svg",
+    "RyanJoy-s_Web/node_modules/vitepress-plugin-search/dist/flex-logo.svg",
+    "RyanJoy-s_Web/docs/public/about_me/wechat_pay.png",
+    "RyanJoy-s_Web/docs/public/about_me/alipay.jpg",
+    "RyanJoy-s_Web/docs/public/about_me/1715344325342.jpg",
+    "RyanJoy-s_Web/docs/public/about_me/mm_facetoface_collect_qrcode_1715344349368.png",
+    "RyanJoy-s_Web/docs/public/blog/tech_skills/HTML_form_structure.png"
+  ]
+}

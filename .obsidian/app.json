@@ -1,0 +1,20 @@
+{
+  "showLineNumber": true,
+  "trashOption": "system",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "RyanJoy's_Blog/docs/public",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "New",
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A3",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "readableLineLength": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
+}
