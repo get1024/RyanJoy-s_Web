@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🗃️最近更新/index.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "fa0e3e1053c8fd55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "draft.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "draft"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -119,10 +134,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🗃️最近更新/index.md"
+                "file": "draft.md"
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "draft 的大纲"
             }
           }
         ]
@@ -169,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🗃️最近更新/index.md",
+                "file": "draft.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -197,7 +212,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "index 的关系图"
+              "title": "draft 的关系图"
             }
           }
         ],
@@ -221,47 +236,47 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "f848ca6da6410be4",
+  "active": "fa0e3e1053c8fd55",
   "lastOpenFiles": [
-    "📂笔记/反思和总结/个人成长/关于做好Read_it_later的重要性.md",
-    "🗃️最近更新/index.md",
-    "Excalidraw/CN协议汇总 2024-11-18 11.09.46.excalidraw.md",
+    "👨🏼‍🎓关于我/reach_me.md",
+    "👨🏼‍🎓关于我/index.md",
+    "👨🏼‍🎓关于我",
+    "📒笔记/实用工具/VSCode/插件/todo_tree.md",
+    "📒笔记/专业技能/Blog/error_fix/rollup.md",
+    "📒笔记/专业技能/Blog/error_fix/index.md",
+    "📒笔记/生活技巧/shopping/7000￥价位笔记本电脑选购指北.md",
+    "📒笔记/实用工具/VSCode/插件",
+    "📒笔记/实用工具/Powershell/powershell.md",
+    "📒笔记/实用工具/Git/如何规范Git_Commit？.md",
+    "📒笔记/实用工具/Git/git使用.md",
+    "📒笔记/反思和总结/考研/英二学习经验.md",
+    "📒笔记/反思和总结/考研/动力鸡汤.md",
+    "📒笔记/反思和总结/感情/自我分析.md",
+    "📒笔记/反思和总结/感情/放下感情还是提高自己？.md",
+    "📒笔记/反思和总结/个人成长/关于做好Read_it_later的重要性.md",
+    "📒笔记/个人项目/基于vue+springboot的资产管理系统/第4天---智慧物业管理系统.md",
+    "📒笔记/个人项目/基于vue+springboot的资产管理系统/第2天_2---项目速成攻略.md",
+    "📒笔记/个人项目/基于vue+springboot的资产管理系统/第1天---前端.md",
+    "📒笔记/个人项目/Starship_customize/starship_custom.md",
+    "📒笔记/个人项目/JY-movie/JY-movie答辩相关.md",
+    "📒笔记/个人项目/JY-movie/jy-movie.md",
+    "📒笔记/专业技能/VUE/VUE.md",
+    "📒笔记/专业技能/HTML/HTML4.md",
+    "📒笔记/专业技能/CSS/CSS2.md",
+    "📒笔记/专业技能/Blog/个人博客系统搭建最优解.md",
+    "📒笔记/专业技能/Blog/error_fix",
+    "📒笔记/生活技巧/shopping",
+    "📒笔记/生活技巧/index.md",
+    "📒笔记/实用工具/VSCode",
+    "📒笔记/实用工具/Powershell",
+    "📒笔记/实用工具/index.md",
+    "📒笔记/实用工具/Git",
+    "📒笔记/反思和总结/考研",
+    "📒笔记/反思和总结/感情",
+    "📒笔记/反思和总结/个人成长",
     "未命名.canvas",
-    "Daily_Notes/2024-04-01.md",
-    "Daily_Notes/2024-02-02.md",
-    "Daily_Notes/2023-09-03.md",
-    "Daily_Notes/2023-09-10.md",
-    "Daily_Notes/2023-09-16.md",
-    "Daily_Notes/2023-02-06.md",
-    "Daily_Notes/2023-01-28.md",
-    "Excalidraw/Drawing 2024-10-14 10.36.43.excalidraw.md",
-    "RyanJoy-s_Web/docs/blog/tech_skills/HTML/HTML4.md",
-    "RyanJoy-s_Web/docs/blog/reflection&summary/考研/英二学习经验.md",
-    "RyanJoy-s_Web/docs/about_me/index.md",
-    "New/22408考研.md",
     "微信图片_20240622192945.png",
-    "RyanJoy-s_Web/docs/blog/reflection&summary/个人成长/关于做好Read_it_later的重要性.md",
-    "RyanJoy-s_Web/node_modules/@nolebase/vitepress-plugin-enhanced-readabilities/dist/client/components/deps.mjs",
-    "RyanJoy-s_Web/node_modules/vite/dist/node/chunks/dep-DfBmsS12.js",
-    "RyanJoy-s_Web/node_modules/vitepress/dist/node/serve-CEEKiiuH.js",
-    "RyanJoy-s_Web/node_modules/vite/dist/node/chunks/dep-h78lQ5BT.js",
-    "RyanJoy-s_Web/node_modules/@esbuild/linux-s390x",
-    "RyanJoy-s_Web/node_modules/@esbuild/linux-riscv64",
-    "RyanJoy-s_Web/node_modules/@esbuild/linux-ppc64",
-    "RyanJoy-s_Web/node_modules/@esbuild/linux-mips64el",
-    "RyanJoy-s_Web/node_modules/@esbuild/linux-loong64",
-    "RyanJoy-s_Web/node_modules/@esbuild/linux-arm64",
-    "RyanJoy-s_Web/docs/blog/tools/VSCode/插件/todo_tree.md",
-    "RyanJoy-s_Web/docs/blog/tech_skills/Blog/error_fix/index.md",
     "RyanJoy-s_Web/docs/public/blog/tools/vscode/插件/todo_tree.png",
-    "RyanJoy-s_Web/docs/about_me/sponsor.md",
-    "New/清单.md",
-    "RyanJoy-s_Web/node_modules/@jridgewell/set-array/README.md",
-    "RyanJoy-s_Web/node_modules/@jridgewell/resolve-uri/README.md",
-    "RyanJoy-s_Web/node_modules/fs-extra/README.md",
-    "RyanJoy-s_Web/node_modules/universalify/README.md",
-    "RyanJoy-s_Web/node_modules/jsonfile/README.md",
-    "RyanJoy-s_Web/node_modules/jsonfile/CHANGELOG.md",
     "RyanJoy-s_Web/node_modules/undici/docs/assets/lifecycle-diagram.png",
     "RyanJoy-s_Web/node_modules/@unocss/inspector/dist/client/favicon.svg",
     "RyanJoy-s_Web/node_modules/vitepress-plugin-search/dist/flex-logo.svg",

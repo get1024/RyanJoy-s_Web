@@ -3,8 +3,8 @@
   "trashOption": "system",
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "RyanJoy's_Blog/docs/public",
-  "newFileLocation": "folder",
+  "attachmentFolderPath": "public",
+  "newFileLocation": "root",
   "newFileFolderPath": "New",
   "promptDelete": false,
   "pdfExportSettings": {
@@ -15,6 +15,6 @@
     "downscalePercent": 100
   },
   "readableLineLength": false,
-  "newLinkFormat": "relative",
-  "useMarkdownLinks": true
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": false
 }

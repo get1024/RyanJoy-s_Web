@@ -1,40 +1,19 @@
 import type { DefaultTheme } from 'vitepress'
 export const nav: DefaultTheme.Config['nav'] = [
   {
-    text: '🏡Home',
+    text: '🏡首页',
     link: '/',
   },
   {
-    text: '📒Blog',
-    items: [
-      {
-        text: '🚶Life Skills',
-        link:'/blog/life_skills/index'
-      },
-      {
-        text: '🛠️Project',
-        link:'/blog/project/index'
-      },
-      {
-        text: '🤔Reflection & Summary',
-        link:'/blog/reflection&summary/index'
-      },
-      {
-        text: '💻Technical Stack',
-        link:'/blog/tech_skills/index'
-      },
-      {
-        text: '🛠️Tools',
-        link: 'blog/tools/index'
-      }
-    ]
+    text: '📒笔记',
+    link: '/',
   },
   {
-    text: '👨‍🎓About Me',
-    link: '/about_me/index'
+    text: '👨‍🎓关于我',
+    link: '/👨🏼‍🎓关于我/index'
   },
   {
-    text: '🗃️Archive',
-    link: '/archive/index'
+    text: '🗃️最近更新',
+    link: '/🗃️最近更新/index'
   },
 ]
