@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f848ca6da6410be4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
             "id": "fa0e3e1053c8fd55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft.md",
-                "mode": "source",
-                "source": false
+                "file": "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "draft"
+              "title": "CSS2"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5150947570801
+    "width": 283.5150947570801
   },
   "right": {
     "id": "612f978ab273423b",
@@ -134,10 +119,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "draft.md"
+                "file": "📒笔记/🖥️专业技能/💈CSS/CSS2.md"
               },
               "icon": "lucide-list",
-              "title": "draft 的大纲"
+              "title": "CSS2 的大纲"
             }
           }
         ]
@@ -184,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "draft.md",
+                "file": "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -212,7 +197,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "draft 的关系图"
+              "title": "CSS2 的关系图"
             }
           }
         ],
@@ -238,42 +223,42 @@
   },
   "active": "fa0e3e1053c8fd55",
   "lastOpenFiles": [
+    "node_modules/@iconify-json/svg-spinners/index.js",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/package.json",
+    "node_modules/markdown-it-attrs/patterns.js",
+    "node_modules/markdown-it-attrs/markdown-it-attrs.browser.js",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/mouse.mjs",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/mouse.js",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/iframe.mjs",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/iframe.js",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/i18n.js",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/composables/i18n.mjs",
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/markdown-it/index.d.cts",
+    "node_modules/@nolebase/markdown-it-element-transform/README.md",
+    "📒笔记/🖥️专业技能/📄HTML/HTML4.md",
+    "index.md",
+    "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
+    "draft.md",
     "📒笔记/🤔反思和总结/💯考研/英二学习经验.md",
     "📒笔记/🤔反思和总结/💯考研/动力鸡汤.md",
-    "📒笔记/🤔反思和总结/💯考研",
     "📒笔记/🤔反思和总结/📈个人成长/关于做好Read_it_later的重要性.md",
-    "📒笔记/🤔反思和总结/📈个人成长",
     "📒笔记/🤔反思和总结/🥰情感/自我分析.md",
     "📒笔记/🤔反思和总结/🥰情感/放下感情还是提高自己？.md",
-    "📒笔记/🤔反思和总结/🥰情感",
     "📒笔记/🛠️实用工具/🛡️VSCode/🔌插件/todo_tree.md",
-    "📒笔记/🛠️实用工具/🛡️VSCode/🔌插件",
     "📒笔记/🛠️实用工具/🛡️VSCode/插件/todo_tree.md",
-    "📒笔记/🛠️实用工具/🛡️VSCode/插件",
-    "📒笔记/🛠️实用工具/🛡️VSCode",
     "📒笔记/🛠️实用工具/🔳Powershell/powershell.md",
-    "📒笔记/🛠️实用工具/🔳Powershell",
     "📒笔记/🛠️实用工具/🗄️Git/git使用.md",
     "📒笔记/🛠️实用工具/🗄️Git/如何规范Git_Commit？.md",
-    "📒笔记/🛠️实用工具/🗄️Git",
     "📒笔记/🖥️专业技能/🌐博客/🐞BUG解决方案/rollup.md",
     "📒笔记/🖥️专业技能/🌐博客/🐞BUG解决方案/index.md",
-    "📒笔记/🖥️专业技能/🌐博客/🐞BUG解决方案",
     "📒笔记/🖥️专业技能/🌐博客/BUG解决方案/rollup.md",
     "📒笔记/🖥️专业技能/🌐博客/BUG解决方案/index.md",
-    "📒笔记/🖥️专业技能/🌐博客/BUG解决方案",
     "📒笔记/🖥️专业技能/🔧VUE/VUE.md",
-    "📒笔记/🖥️专业技能/📄HTML/HTML4.md",
-    "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
     "📒笔记/🖥️专业技能/🌐博客/error_fix/rollup.md",
     "📒笔记/🖥️专业技能/🌐博客/error_fix/index.md",
     "📒笔记/🖥️专业技能/🌐博客/个人博客系统搭建最优解.md",
     "📒笔记/🖥️专业技能/博客/error_fix/rollup.md",
     "📒笔记/🖥️专业技能/博客/error_fix/index.md",
-    "📒笔记/🖥️专业技能/博客/个人博客系统搭建最优解.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第4天---智慧物业管理系统.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_2---项目速成攻略.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
     "未命名.canvas",
     "微信图片_20240622192945.png",
     "RyanJoy-s_Web/docs/public/blog/tools/vscode/插件/todo_tree.png",

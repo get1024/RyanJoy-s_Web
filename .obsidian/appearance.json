@@ -3,7 +3,7 @@
   "interfaceFontFamily": ".萍方-简",
   "textFontFamily": ".萍方-简",
   "monospaceFontFamily": "Cascadia Code",
-  "baseFontSize": 16,
+  "baseFontSize": 17,
   "translucency": false,
   "cssTheme": "AnuPpuccin",
   "enabledCssSnippets": [
@@ -25,6 +25,6 @@
     "theme",
     "yaozhuwa@CSS"
   ],
-  "theme": "obsidian",
+  "theme": "moonstone",
   "baseFontSizeAction": true
 }

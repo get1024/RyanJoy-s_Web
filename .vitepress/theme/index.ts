@@ -50,6 +50,11 @@ import theme from 'vitepress/theme'
 import {
   NolebasePagePropertiesPlugin,
 } from '@nolebase/vitepress-plugin-page-properties/client'
+//行内链接预览
+import { 
+  NolebaseInlineLinkPreviewPlugin, 
+} from '@nolebase/vitepress-plugin-inline-link-preview/client'
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -109,7 +114,8 @@ export const Theme: ThemeConfig = {
           },
         ],
       },
-    })
+    }),
+    app.use(NolebaseInlineLinkPreviewPlugin)
   },
 
   //图片缩放

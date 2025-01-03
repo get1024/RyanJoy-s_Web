@@ -17,7 +17,7 @@ import taskLists from 'markdown-it-task-checkbox'
 //引入nav
 import { nav } from './configs'
 //引入sidebar
-// import {sidebar} from './configs'
+// import {sidebar} from './configs'  //原sidebar配置函数存放地
 import { calculateSidebar } from '@nolebase/vitepress-plugin-sidebar'
 //引入algolia
 import algolia from './algolia'
@@ -27,6 +27,12 @@ import algolia from './algolia'
 import {
   PageProperties,
 } from '@nolebase/vitepress-plugin-page-properties/vite'
+// 引入obsidian双链规则插件
+import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+//引入行内链接预览插件
+import { 
+  InlineLinkPreviewElementTransform 
+} from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -76,6 +82,7 @@ export default defineConfig({
       exclude: [ 
         '@nolebase/vitepress-plugin-enhanced-readabilities/client',
         // '@nolebase/vitepress-plugin-breadcrumbs/client', //面包屑导航
+        '@nolebase/vitepress-plugin-inline-link-preview/client',  //行内链接
       ], 
     },
     ssr: { 
@@ -84,6 +91,7 @@ export default defineConfig({
         '@nolebase/vitepress-plugin-enhanced-readabilities', 
         '@nolebase/vitepress-plugin-highlight-targeted-heading', 
         // '@nolebase/vitepress-plugin-breadcrumbs', //面包屑导航
+        '@nolebase/vitepress-plugin-inline-link-preview',   //行内链接
       ], 
     }, 
     
@@ -166,6 +174,10 @@ export default defineConfig({
     },
     
     config: (md) => {
+      //行内链接预览
+      md.use(InlineLinkPreviewElementTransform)
+      //obsidian双链插件
+      md.use(BiDirectionalLinks())
       //时间线插件
       md.use(timeline);
       //to-do插件
