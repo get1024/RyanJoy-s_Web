@@ -223,6 +223,7 @@
   },
   "active": "ac960ff4146d5405",
   "lastOpenFiles": [
+    "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/constants.mjs",
     "index.md",
     "draft.md",
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
@@ -268,7 +269,6 @@
     "📒笔记/🖥️专业技能/🌐博客/BUG解决方案/rollup.md",
     "📒笔记/🖥️专业技能/🌐博客/BUG解决方案/index.md",
     "📒笔记/🖥️专业技能/🔧VUE/VUE.md",
-    "📒笔记/🖥️专业技能/🌐博客/error_fix/rollup.md",
     "未命名.canvas"
   ]
 }
