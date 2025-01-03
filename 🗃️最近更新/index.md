@@ -1,12 +1,12 @@
 ---
-title: 🗃️Archive
+title: 🗃️最近更新
 sidebar: false
 createAt: 2024-04-29 20:08:15
 updateAt: 2025-01-03 17:27:30
 ---
 # {{$frontmatter.title}} <badge type="danger" text="持续更新" style="margin-top:12px;"/>
 
-## 🌴Archive Timeline
+## 🌴更新时间树
 ::: timeline 2024-06-12
 - [关于做好Read it later的重要性](/📒笔记/🤔反思和总结/📈个人成长/关于做好Read_it_later的重要性) 13:40:26
 :::

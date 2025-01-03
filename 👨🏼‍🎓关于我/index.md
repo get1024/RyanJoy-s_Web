@@ -1,5 +1,5 @@
 ---
-title: 🧑‍🎓About Me
+title: 🧑‍🎓关于我
 createdAt: 2024-01-23
 updatedAt: 2024-01-23
 ---

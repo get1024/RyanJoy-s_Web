@@ -6,7 +6,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   },
   {
     text: '📒笔记',
-    link: '/',
+    link: '/📒笔记/index',
   },
   {
     text: '👨‍🎓关于我',
