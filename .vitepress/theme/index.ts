@@ -11,7 +11,6 @@ import {
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import './styles/vars.css'
 import './styles/main.css'
 
 //高亮目标标题
