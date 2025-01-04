@@ -55,6 +55,13 @@ import {
   NolebaseInlineLinkPreviewPlugin, 
 } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
+import 'virtual:group-icons.css' //代码组图标
+
+//组件
+import Linkcard from "./components/Linkcard.vue"
+import HomeUnderLine from './components/HomeUnderLine.vue'
+import Update from './components/Update.vue'
+import ArticleMetadata from "./components/ArticleMetadata.vue"
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -115,7 +122,11 @@ export const Theme: ThemeConfig = {
         ],
       },
     }),
-    app.use(NolebaseInlineLinkPreviewPlugin)
+    app.use(NolebaseInlineLinkPreviewPlugin),
+    app.component('Linkcard' , Linkcard),
+    app.component('HomeUnderLine', HomeUnderLine),
+    app.component('Update',Update),
+    app.component('ArticleMetadata' , ArticleMetadata)
   },
 
   //图片缩放
