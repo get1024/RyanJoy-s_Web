@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft.md",
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "draft"
-            }
-          },
-          {
-            "id": "ac960ff4146d5405",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "第3天---spring security"
+              "title": "第2天_1---若依"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.md"
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md"
               },
               "icon": "lucide-list",
-              "title": "第3天---spring security 的大纲"
+              "title": "第2天_1---若依 的大纲"
             }
           }
         ]
@@ -169,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.md",
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -197,7 +182,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "第3天---spring security 的关系图"
+              "title": "第2天_1---若依 的关系图"
             }
           }
         ],
@@ -215,18 +200,17 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-to-notion:Share to notion": false,
-      "periodic-notes:Open today": false,
       "obsidian42-brat:BRAT": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "periodic-notes:Open today": false
     }
   },
-  "active": "ac960ff4146d5405",
+  "active": "fa0e3e1053c8fd55",
   "lastOpenFiles": [
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
+    "draft.md",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.md",
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
     "📒笔记/👨🏼‍💻个人项目/index.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
     "未命名.md",
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.pdf",
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.pdf",
@@ -234,7 +218,6 @@
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_2---项目速成攻略.md",
     "node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/constants.mjs",
     "index.md",
-    "draft.md",
     "🗃️最近更新/index.md",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (14).png",
     "public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (141).png",

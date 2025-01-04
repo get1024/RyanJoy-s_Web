@@ -247,7 +247,7 @@ public --&g ...`,l:"📒笔记/👨🏼‍💻个人项目/💴基于vue+springb
 比如数据字典如图所示：
 ![[public/blog/project/基于vue+springboot的资产管理系统/day1_p8_ (21).png] ...`,l:"📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.html#_2下拉选择",a:"_2下拉选择"},"13.0":{t:"若依",p:`
 {{$frontmatter.title}}
-![[public/blog/project/基于vue+springboot的资产管理系统/第2天_1---若依.pdf|第2天_1---若依]]
+[[public/blog/project/基于vue+springboot的资产管理系统/第2天_1---若依.pdf|第2天_1---若依]]
 `,l:"📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.html",a:"若依"},"14.0":{t:"# }",p:`
 项目快速实现思路
 

@@ -11,4 +11,7 @@ var options = {
 
 export default defineConfig({
     plugins: [SearchPlugin(options)],
+    optimizeDeps:{
+        include: ['pdf'],
+    }
 });
