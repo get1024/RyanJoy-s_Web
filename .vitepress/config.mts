@@ -174,6 +174,7 @@ export default defineConfig({
   },
 
   markdown: {
+    lineNumbers: true,
     image: {
       // 默认禁用图片懒加载
       lazyLoading: true,
@@ -204,8 +205,4 @@ export default defineConfig({
     },
   },
 
-  //面包屑导航
-  // transformPageData(pageData, context) {
-  //   generateBreadcrumbsData(pageData, context)
-  // },
 });

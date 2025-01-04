@@ -11,7 +11,7 @@ import {
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import './styles/main.css'
+
 
 //高亮目标标题
 import {  
@@ -55,6 +55,8 @@ import {
 } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 import 'virtual:group-icons.css' //代码组图标
+import { NProgress } from 'nprogress-v2/dist/index.js' // 进度条组件
+import 'nprogress-v2/dist/index.css' // 进度条样式
 
 //组件
 import Linkcard from "./components/Linkcard.vue"
@@ -80,8 +82,13 @@ export const Theme: ThemeConfig = {
 
   enhanceApp({ app, router }) {
     if (inBrowser) {
+      NProgress.configure({ showSpinner: false })
+      router.onBeforeRouteChange = () => {
+        NProgress.start() // 开始进度条
+      }
       router.onAfterRouteChanged = (to) => {
         busuanzi.fetch()
+        NProgress.done()
       }
     }
     app.use(NolebaseGitChangelogPlugin)
