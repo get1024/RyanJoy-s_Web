@@ -55,6 +55,30 @@ function calculateSidebarWithDefaultOpen(targets, base) {
   return result;
 }
 
+//展开所有层级的文件夹
+// function calculateSidebarWithDefaultOpen(targets, base) {
+//   const result = originalCalculateSidebar(targets, base);
+//   function setAllCollapsedFalse(items) {
+//     items.forEach(item => {
+//       item.collapsible = true; 
+//       item.collapsed = false;
+  
+//       if (item.items) {
+//         setAllCollapsedFalse(item.items);
+//       }
+//     });
+//   }
+//   if (Array.isArray(result)) {
+//     setAllCollapsedFalse(result);
+//   } else {
+//     Object.values(result).forEach(items => {
+//       setAllCollapsedFalse(items);
+//     });
+//   }
+//   return result;
+// }
+
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/RyanJoy-s_Web/",
