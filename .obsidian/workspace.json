@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
+                "file": "ResentUpdate.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "第2天_1---若依"
+              "title": "ResentUpdate"
             }
           }
         ]
@@ -102,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md"
+                "file": "ResentUpdate.md"
               },
               "icon": "lucide-list",
-              "title": "第2天_1---若依 的大纲"
+              "title": "ResentUpdate 的大纲"
             }
           }
         ]
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
+                "file": "ResentUpdate.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -182,7 +182,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "第2天_1---若依 的关系图"
+              "title": "ResentUpdate 的关系图"
             }
           }
         ],
@@ -206,6 +206,7 @@
   },
   "active": "712f569fd6fe7f3d",
   "lastOpenFiles": [
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
     "node_modules/webpack/package.json",
     "node_modules/util/node_modules/inherits/inherits.js",
     "node_modules/util/support/isBufferBrowser.js",
@@ -216,7 +217,6 @@
     "node_modules/url/node_modules/punycode/punycode.js",
     "node_modules/url/node_modules/punycode/package.json",
     "node_modules/url/url.js",
-    "node_modules/isarray/test.js",
     "node_modules/isarray/README.md",
     "node_modules/base64-js/README.md",
     "node_modules/events/security.md",
