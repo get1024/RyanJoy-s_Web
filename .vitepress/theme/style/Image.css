@@ -1,44 +1,37 @@
-/* VitePress项目中正文部分图片样式 */
-.markdown-body img {
+/* 全局图片样式 */
+img {
+    width: 70%;
+    max-height: auto;
+    border-radius: 20px;
+    /* 将图片设置为块状元素，防止与文本同行 */
     display: block;
-    /* 确保图片为块级元素，方便居中 */
-    margin: 20px auto;
-    /* 居中显示并在图片四周加上20px的外边距 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    /* 增加阴影效果 */
-    border-radius: 8px;
-    /* 图片四角略微圆角 */
-    max-width: 100%;
-    /* 防止图片超出页面宽度 */
+    /* 水平居中 */
+    margin-left: auto;
+    margin-right: auto;
+    /* 上下外边距 */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* 底部阴影 */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
 }
 
-/* 如果图片宽度大于或等于高度，则不调整图片高度 */
-.markdown-body img {
-    max-height: 100%;
-    /* 限制图片的最大高度 */
-    object-fit: contain;
-    /* 保持图片比例 */
-}
-
-/* 处理高度大于宽度的图片 */
-.markdown-body img[data-aspect-ratio] {
-    height: auto;
-    /* 如果图片的高度大于宽度，则不强制调整高度 */
-    max-height: 80vh;
-    /* 图片的最大高度为视口高度的80% */
+/* 首页图片 */
+img.VPImage{
+    box-shadow: 0 0px 0px white;
+    margin-left: 20px;
     width: auto;
-    /* 让宽度自适应 */
 }
 
-/* 自定义图片展示效果，使其更具美感 */
-.markdown-body img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* 增加过渡效果 */
+/* 分类首页头像图标 */
+img.titleAvatar{
+    box-shadow: 0 0px 0px white;
+    width: 40px;
+    float: left;
+    margin:-7px 0 0 0;
 }
 
-.markdown-body img:hover {
-    transform: scale(1.05);
-    /* 鼠标悬停时，图片略微放大 */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    /* 增加更明显的阴影 */
+/* 贡献者头像图标 */
+img.h-8{
+    box-shadow: 0 0px 0px white;
+    margin:-2px -9px 0 0;
 }

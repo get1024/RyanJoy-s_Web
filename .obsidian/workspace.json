@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ResentUpdate.md",
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "ResentUpdate"
+              "title": "第1天---前端"
             }
           }
         ]
@@ -102,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ResentUpdate.md"
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md"
               },
               "icon": "lucide-list",
-              "title": "ResentUpdate 的大纲"
+              "title": "第1天---前端 的大纲"
             }
           }
         ]
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ResentUpdate.md",
+                "file": "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -182,7 +182,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "ResentUpdate 的关系图"
+              "title": "第1天---前端 的关系图"
             }
           }
         ],
@@ -206,17 +206,19 @@
   },
   "active": "712f569fd6fe7f3d",
   "lastOpenFiles": [
+    "ResentUpdate.md",
+    "node_modules/bindings/package.json",
+    "node_modules/bindings/bindings.js",
+    "node_modules/bindings/LICENSE.md",
+    "node_modules/bindings",
+    "node_modules/nan/nan_json.h",
+    "node_modules/nan/nan_maybe_pre_43_inl.h",
+    "node_modules/nan/nan_object_wrap.h",
+    "node_modules/nan/nan_new.h",
+    "node_modules/nan/nan_maybe_43_inl.h",
+    "node_modules/nan/nan_define_own_property_helper.h",
+    "node_modules/nan/nan_implementation_pre_12_inl.h",
     "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
-    "node_modules/webpack/package.json",
-    "node_modules/util/node_modules/inherits/inherits.js",
-    "node_modules/util/support/isBufferBrowser.js",
-    "node_modules/util/support/isBuffer.js",
-    "node_modules/util/support",
-    "node_modules/util/node_modules/inherits/package.json",
-    "node_modules/util/util.js",
-    "node_modules/url/node_modules/punycode/punycode.js",
-    "node_modules/url/node_modules/punycode/package.json",
-    "node_modules/url/url.js",
     "node_modules/isarray/README.md",
     "node_modules/base64-js/README.md",
     "node_modules/events/security.md",
@@ -240,8 +242,6 @@
     "node_modules/mississippi/readme.md",
     "node_modules/mississippi/changelog.md",
     "node_modules/json-parse-better-errors/README.md",
-    "node_modules/json-parse-better-errors/LICENSE.md",
-    "node_modules/json-parse-better-errors/CHANGELOG.md",
     "node_modules/stream-http/test/server/static/browserify.png",
     "node_modules/pdfjs-dist/es5/web/images/shadow.png",
     "node_modules/pdfjs-dist/es5/web/images/loading-icon.gif",
