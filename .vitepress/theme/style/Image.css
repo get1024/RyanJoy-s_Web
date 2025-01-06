@@ -35,3 +35,7 @@ img.h-8{
     box-shadow: 0 0px 0px white;
     margin:-2px -9px 0 0;
 }
+
+.badgeP>img{
+    all: unset;
+}
