@@ -38,20 +38,17 @@ import {
 
 function calculateSidebarWithDefaultOpen(targets, base) {
   const result = originalCalculateSidebar(targets, base);
-
-  // 遍历结果，修改第一级的 collapsed 属性为 false
   if (Array.isArray(result)) {
     result.forEach(item => {
-      item.collapsed = false; // 第一级展开
+      item.collapsed = false; 
     });
   } else {
     Object.values(result).forEach(items => {
       items.forEach(item => {
-        item.collapsed = false; // 第一级展开
+        item.collapsed = false; 
       });
     });
   }
-
   return result;
 }
 
