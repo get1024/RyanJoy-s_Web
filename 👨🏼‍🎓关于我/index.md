@@ -126,7 +126,3 @@ const members = [
   <img src="https://img.shields.io/badge/VitePress-green?style=plastic&logo=vitepress&logoColor=white&labelColor=green&color=green" alt="VitePress" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-GitHub%20Pages-222?logo=GitHub-Pages&logoColor=FFF" alt="GitHub Pages" style="display: inline-block;" />&nbsp;
 </p>
-
-<!-- 嵌入reach_me页面语法,
-若要启用，删除链接双引号 -->
-<!-- @include: "./reach_me.md" -->
