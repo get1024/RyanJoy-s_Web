@@ -18,7 +18,8 @@ import taskLists from "markdown-it-task-checkbox";
 import { nav } from "./configs";
 //引入sidebar
 // import {sidebar} from './configs'  //原sidebar配置函数存放地
-import { calculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
+// import { calculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
+import { calculateSidebar as originalCalculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
 //引入algolia
 import algolia from "./algolia";
 //引入 面包屑导航
@@ -34,6 +35,25 @@ import {
   groupIconMdPlugin,
   groupIconVitePlugin,
 } from "vitepress-plugin-group-icons";
+
+function calculateSidebarWithDefaultOpen(targets, base) {
+  const result = originalCalculateSidebar(targets, base);
+
+  // 遍历结果，修改第一级的 collapsed 属性为 false
+  if (Array.isArray(result)) {
+    result.forEach(item => {
+      item.collapsed = false; // 第一级展开
+    });
+  } else {
+    Object.values(result).forEach(items => {
+      items.forEach(item => {
+        item.collapsed = false; // 第一级展开
+      });
+    });
+  }
+
+  return result;
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -167,10 +187,10 @@ export default defineConfig({
       provider: "local",
     },
     //侧边栏自动配置
-    sidebar: calculateSidebar([
+    sidebar: calculateSidebarWithDefaultOpen([
       { folderName: "👨🏼‍🎓关于我", separate: true },
       { folderName: "📒笔记", separate: true },
-    ]),
+    ],''),
   },
 
   markdown: {
