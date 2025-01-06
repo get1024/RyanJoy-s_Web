@@ -6,7 +6,7 @@ updateAt: 2025-01-03 18:38:46
 > [!DANGER] 想要下载本页为pdf？或者想要预览完整内容？
 > 声明⚠️：作者已事先编辑好pdf文档，本文更新还在同步中……
 > 
-> 想要获取本文完整文档，[点击查看/下载CSS2完整笔记](/blog/tech_skills/CSS2笔记.pdf)，[点击查看/下载CSS3完整笔记](/blog/tech_skills/CSS3笔记.pdf)
+> 想要获取本文完整文档，[点击查看/下载**CSS2**完整笔记](/blog/tech_skills/CSS2笔记.pdf)，[点击查看/下载**CSS3**完整笔记](/blog/tech_skills/CSS3笔记.pdf)
 
 # {{$frontmatter.title}}
 
