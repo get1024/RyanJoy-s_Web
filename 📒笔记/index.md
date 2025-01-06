@@ -5,7 +5,7 @@ updateAt: 2025-01-03 17:30:25
 ---
 # {{$frontmatter.title}}
 
-## <p><img src="/avatar.png" style="height:40px;float:left;margin-top:-7px;"/><span >RyanJoy的知识图书馆</span></p>
+## <p><img src="/avatar.png" class="titleAvatar" /><span >RyanJoy的知识图书馆</span></p>
 
 👏欢迎来到小业的知识图书馆[RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/)，这里是{{$frontmatter.title}}分区!
 
