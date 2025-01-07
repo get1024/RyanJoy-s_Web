@@ -117,6 +117,7 @@ const enhanceAppOriginal = ({ app, router }) => {
     },
   })
   app.use(NolebaseInlineLinkPreviewPlugin)
+  // 组件引入
   app.component('Linkcard', Linkcard)
   app.component('HomeUnderLine', HomeUnderLine)
   app.component('Update', Update)
@@ -139,6 +140,7 @@ export const Theme: ThemeConfig = {
     })
   },
 
+  // 简化enhanceApp的结构
   enhanceApp: (ctx) => {
     enhanceAppOriginal(ctx)  // 调用原有的配置
     vitepressNprogress(ctx)  // 使用新的插件
