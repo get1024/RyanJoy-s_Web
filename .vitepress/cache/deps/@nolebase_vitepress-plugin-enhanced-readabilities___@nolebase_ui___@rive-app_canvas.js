@@ -1,6 +1,6 @@
 import {
   __commonJS
-} from "./chunk-JVWSFFO4.js";
+} from "./chunk-L6OFPWCY.js";
 
 // node_modules/.pnpm/@rive-app+canvas@2.25.3/node_modules/@rive-app/canvas/rive.js
 var require_rive = __commonJS({

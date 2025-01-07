@@ -2,7 +2,8 @@ import { link } from "fs";
 import { cwd } from "node:process";
 import { text } from "stream/consumers";
 import { defineConfig, type DefaultTheme } from "vitepress";
-import { SearchPlugin } from "vitepress-plugin-search";
+import flexSearchIndexOptions from "flexsearch";
+import { chineseSearchOptimize as originalchineseSearchOptimize, pagefindPlugin } from 'vitepress-plugin-pagefind'
 //git更新版本
 import { join } from "node:path";
 import {
@@ -52,7 +53,6 @@ function calculateSidebarWithDefaultOpen(targets, base) {
   }
   return result;
 }
-
 //展开所有层级的文件夹
 // function calculateSidebarWithDefaultOpen(targets, base) {
 //   const result = originalCalculateSidebar(targets, base);
@@ -75,6 +75,17 @@ function calculateSidebarWithDefaultOpen(targets, base) {
 //   }
 //   return result;
 // }
+
+function customizechineseSearchOptimize(input: string) {
+  const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
+  const result: string[] = []
+  for (const it of segmenter.segment(input)) {
+    if (it.isWordLike) {
+      result.push(it.segment)
+    }
+  }
+  return result.join(' ')
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -117,6 +128,18 @@ export default defineConfig({
       }),
       GitChangelogMarkdownSection(),
       PageProperties(),
+      pagefindPlugin({
+        customSearchQuery: customizechineseSearchOptimize,
+        btnPlaceholder: '搜索',
+        placeholder: '搜索文档',
+        emptyText: '空空如也',
+        heading: '共: {{searchResult}} 条结果',
+        excludeSelector: ['img', 'a.header-anchor'],
+        filter(searchItem, idx, originArray) {
+          console.log(searchItem)
+          return !searchItem.route.includes('404')
+        },
+      }),
       groupIconVitePlugin(), //代码组图标
     ],
     optimizeDeps: {

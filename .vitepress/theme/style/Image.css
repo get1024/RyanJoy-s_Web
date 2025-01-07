@@ -2,7 +2,7 @@
 img {
     width: 70%;
     max-height: auto;
-    border-radius: 20px;
+    border-radius: 15px;
     /* 将图片设置为块状元素，防止与文本同行 */
     display: block;
     /* 水平居中 */
@@ -24,7 +24,7 @@ img.VPImage.image-src{
 
 img.VPImage.logo{
     box-shadow: 0 0px 0px white;
-    margin: 20px;
+    margin: 10px 5px 10px 20px;
     width: auto;
 }
 
@@ -44,4 +44,12 @@ img.h-8{
 
 .badgeP>img{
     all: unset;
+}
+
+img.VPPluginSearch-flex-logo{
+    width: 80px;
+    margin-left: calc(100% - 90px);
+    padding-bottom: 10px;
+    border-radius: 0%;
+    box-shadow: 0 0px 0px white;
 }
