@@ -16,9 +16,15 @@ img {
 }
 
 /* 首页图片 */
-img.VPImage{
+img.VPImage.image-src{
     box-shadow: 0 0px 0px white;
-    margin-left: 20px;
+    margin: 0px;
+    width: auto;
+}
+
+img.VPImage.logo{
+    box-shadow: 0 0px 0px white;
+    margin: 20px;
     width: auto;
 }
 
