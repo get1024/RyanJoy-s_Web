@@ -58,12 +58,70 @@ import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 import 'virtual:group-icons.css' //代码组图标
 import { NProgress } from 'nprogress-v2/dist/index.js' // 进度条组件
 import 'nprogress-v2/dist/index.css' // 进度条样式
+//
+import vitepressNprogress from 'vitepress-plugin-nprogress'
+import 'vitepress-plugin-nprogress/lib/css/index.css'
 
 //组件
 import Linkcard from "./components/Linkcard.vue"
 import HomeUnderLine from './components/HomeUnderLine.vue'
 import Update from './components/Update.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
+
+const enhanceAppOriginal = ({ app, router }) => {
+  if (inBrowser) {
+    NProgress.configure({ showSpinner: false })
+    router.onBeforeRouteChange = () => {
+      NProgress.start() // 开始进度条
+    }
+    router.onAfterRouteChanged = (to) => {
+      busuanzi.fetch()
+      NProgress.done()
+    }
+  }
+  app.use(NolebaseGitChangelogPlugin)
+  app.use(NolebasePagePropertiesPlugin<{
+    tags: string[]
+    progress: number
+  }>(), {
+    properties: {
+      'zh-CN': [
+        {
+          key: 'tags',
+          type: 'tags',
+          title: '标签',
+        },
+        {
+          key: 'progress',
+          type: 'progress',
+          title: '完成进度',
+        },
+        {
+          key: 'wordCount',
+          type: 'dynamic',
+          title: '字数',
+          options: {
+            type: 'wordsCount',
+          },
+        },
+        {
+          key: 'readingTime',
+          type: 'dynamic',
+          title: '阅读时间',
+          options: {
+            type: 'readingTime',
+            dateFnsLocaleName: 'zhCN',
+          },
+        },
+      ],
+    },
+  })
+  app.use(NolebaseInlineLinkPreviewPlugin)
+  app.component('Linkcard', Linkcard)
+  app.component('HomeUnderLine', HomeUnderLine)
+  app.component('Update', Update)
+  app.component('ArticleMetadata', ArticleMetadata)
+}
 
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
@@ -81,59 +139,9 @@ export const Theme: ThemeConfig = {
     })
   },
 
-  enhanceApp({ app, router }) {
-    if (inBrowser) {
-      NProgress.configure({ showSpinner: false })
-      router.onBeforeRouteChange = () => {
-        NProgress.start() // 开始进度条
-      }
-      router.onAfterRouteChanged = (to) => {
-        busuanzi.fetch()
-        NProgress.done()
-      }
-    }
-    app.use(NolebaseGitChangelogPlugin)
-    app.use(NolebasePagePropertiesPlugin<{
-      tags: string[]
-      progress: number
-    }>(), {
-      properties: {
-        'zh-CN': [
-          {
-            key: 'tags',
-            type: 'tags',
-            title: '标签',
-          },
-          {
-            key: 'progress',
-            type: 'progress',
-            title: '完成进度',
-          },
-          {
-            key: 'wordCount',
-            type: 'dynamic',
-            title: '字数',
-            options: {
-              type: 'wordsCount',
-            },
-          },
-          {
-            key: 'readingTime',
-            type: 'dynamic',
-            title: '阅读时间',
-            options: {
-              type: 'readingTime',
-              dateFnsLocaleName: 'zhCN',
-            },
-          },
-        ],
-      },
-    }),
-    app.use(NolebaseInlineLinkPreviewPlugin),
-    app.component('Linkcard' , Linkcard),
-    app.component('HomeUnderLine', HomeUnderLine),
-    app.component('Update',Update),
-    app.component('ArticleMetadata' , ArticleMetadata)
+  enhanceApp: (ctx) => {
+    enhanceAppOriginal(ctx)  // 调用原有的配置
+    vitepressNprogress(ctx)  // 使用新的插件
   },
 
   //图片缩放
