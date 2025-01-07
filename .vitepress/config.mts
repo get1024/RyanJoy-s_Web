@@ -53,39 +53,19 @@ function calculateSidebarWithDefaultOpen(targets, base) {
   }
   return result;
 }
-//展开所有层级的文件夹
-// function calculateSidebarWithDefaultOpen(targets, base) {
-//   const result = originalCalculateSidebar(targets, base);
-//   function setAllCollapsedFalse(items) {
-//     items.forEach(item => {
-//       item.collapsible = true; 
-//       item.collapsed = false;
-  
-//       if (item.items) {
-//         setAllCollapsedFalse(item.items);
-//       }
-//     });
-//   }
-//   if (Array.isArray(result)) {
-//     setAllCollapsedFalse(result);
-//   } else {
-//     Object.values(result).forEach(items => {
-//       setAllCollapsedFalse(items);
-//     });
-//   }
-//   return result;
-// }
 
-// function chineseSearchOptimize(input: string) {
-//   const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
-//   const result: string[] = []
-//   for (const it of segmenter.segment(input)) {
-//     if (it.isWordLike) {
-//       result.push(it.segment)
-//     }
-//   }
-//   return result.join(' ')
-// }
+function customChineseSearchOptimize(input: string) {
+  const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
+  const segmentedWords: string[] = []
+  for (const it of segmenter.segment(input)) {
+    if (it.isWordLike) {
+      segmentedWords.push(it.segment)
+    }
+  }
+  const processedInput = segmentedWords.join(' ');
+  return chineseSearchOptimize(processedInput);
+}
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -129,7 +109,7 @@ export default defineConfig({
       GitChangelogMarkdownSection(),
       PageProperties(),
       pagefindPlugin({
-        customSearchQuery: chineseSearchOptimize,
+        customSearchQuery: customChineseSearchOptimize,
         btnPlaceholder: '搜索',
         placeholder: '搜索文档',
         emptyText: '空空如也',
