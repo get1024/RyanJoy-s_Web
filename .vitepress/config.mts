@@ -54,19 +54,6 @@ function calculateSidebarWithDefaultOpen(targets, base) {
   return result;
 }
 
-function customChineseSearchOptimize(input: string) {
-  const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
-  const segmentedWords: string[] = []
-  for (const it of segmenter.segment(input)) {
-    if (it.isWordLike) {
-      segmentedWords.push(it.segment)
-    }
-  }
-  const processedInput = segmentedWords.join(' ');
-  return chineseSearchOptimize(processedInput);
-}
-
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/RyanJoy-s_Web/",
@@ -109,7 +96,7 @@ export default defineConfig({
       GitChangelogMarkdownSection(),
       PageProperties(),
       pagefindPlugin({
-        customSearchQuery: customChineseSearchOptimize,
+        customSearchQuery: chineseSearchOptimize,
         btnPlaceholder: '搜索',
         placeholder: '搜索文档',
         emptyText: '空空如也',
