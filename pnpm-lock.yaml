@@ -91,9 +91,9 @@ importers:
       '@nolebase/vitepress-plugin-page-properties':
         specifier: ^2.12.0
         version: 2.12.0(@algolia/client-search@5.18.0)(@types/node@22.10.5)(postcss@8.4.49)(search-insights@2.17.3)(typescript@5.7.2)
-      '@nolebase/vitepress-plugin-sidebar':
-        specifier: ^2.12.0
-        version: 2.12.0
+      '@ryanjoy/vitepress-plugin-sidebar':
+        specifier: ^1.0.1
+        version: 1.0.1
       '@types/markdown-it':
         specifier: 14.1.2
         version: 14.1.2
@@ -783,9 +783,6 @@ packages:
   '@nolebase/vitepress-plugin-page-properties@2.12.0':
     resolution: {integrity: sha512-Ev6y7jgGANp48VrNMqSAK6uJlkoezNjWTRB2PTDGKZGvLXnaUNxOCWiToCj+CwcOKAFwvPF8fhuhAflyjGtU4Q==}
 
-  '@nolebase/vitepress-plugin-sidebar@2.12.0':
-    resolution: {integrity: sha512-IF+GiOXQiPKvbALA8vZGixOt2CihzGvO4iXnGRg5LMb1ngoaFWf0xf50wsDOKqua6j1BdPCDSfKs1ghdKzfMCw==}
-
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
@@ -902,6 +899,9 @@ packages:
     resolution: {integrity: sha512-DYvxS0M07PvgvavMIybCOBYheyrqlui6ZQBHJs6GqduVzHSZ06TPPvlfvnYstjODHQ8UUXFwt5YE+h0jFI8kwg==}
     cpu: [x64]
     os: [win32]
+
+  '@ryanjoy/vitepress-plugin-sidebar@1.0.1':
+    resolution: {integrity: sha512-8Kro2jKJIN5qjMhjr1ePGzau6qyVRXC3HiIV+NxTyS9UrQRQ59KoFo/H9V1hrWrxJIGZRrTfidfeRGHDXL583A==}
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
@@ -3968,11 +3968,6 @@ snapshots:
       - typescript
       - universal-cookie
 
-  '@nolebase/vitepress-plugin-sidebar@2.12.0':
-    dependencies:
-      fs-extra: 11.2.0
-      tinyglobby: 0.2.10
-
   '@polka/url@1.0.0-next.28': {}
 
   '@rollup/pluginutils@5.1.4(rollup@4.30.0)':
@@ -4039,6 +4034,11 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.30.0':
     optional: true
+
+  '@ryanjoy/vitepress-plugin-sidebar@1.0.1':
+    dependencies:
+      fs-extra: 11.2.0
+      tinyglobby: 0.2.10
 
   '@sec-ant/readable-stream@0.4.1': {}
 

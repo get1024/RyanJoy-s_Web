@@ -18,8 +18,9 @@ import taskLists from "markdown-it-task-checkbox";
 import { nav } from "./configs";
 //引入sidebar
 // import {sidebar} from './configs'  //原sidebar配置函数存放地
-// import { calculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
-import { calculateSidebar as originalCalculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
+// import { calculateSidebar as originalCalculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
+//自己重新上传的npm包
+import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar";
 //引入algolia
 import algolia from "./algolia";
 //引入 面包屑导航
@@ -74,7 +75,6 @@ function calculateSidebarWithDefaultOpen(targets, base) {
 //   }
 //   return result;
 // }
-
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
