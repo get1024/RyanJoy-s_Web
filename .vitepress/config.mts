@@ -3,7 +3,7 @@ import { cwd } from "node:process";
 import { text } from "stream/consumers";
 import { defineConfig, type DefaultTheme } from "vitepress";
 import flexSearchIndexOptions from "flexsearch";
-import { chineseSearchOptimize, pagefindPlugin } from 'vitepress-plugin-pagefind'
+import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 //git更新版本
 import { join } from "node:path";
 import {
@@ -52,6 +52,16 @@ function calculateSidebarWithDefaultOpen(targets, base) {
     });
   }
   return result;
+}
+function chineseSearchOptimize(input: string) {
+  const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
+  const result: string[] = []
+  for (const it of segmenter.segment(input)) {
+    if (it.isWordLike) {
+      result.push(it.segment)
+    }
+  }
+  return result.join(' ')
 }
 
 // https://vitepress.dev/reference/site-config
