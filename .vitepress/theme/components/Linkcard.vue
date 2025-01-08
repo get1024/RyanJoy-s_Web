@@ -69,8 +69,4 @@ const props = withDefaults(defineProps<Props>(), {
     object-fit: contain;
 }
 
-/* 链接下划线去除 */
-.vp-doc a {
-    text-decoration: none;
-}
 </style>
