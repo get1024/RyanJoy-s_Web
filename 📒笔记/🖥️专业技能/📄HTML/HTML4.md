@@ -441,7 +441,7 @@ Last edited at: 2024年05月10日 11:33:18
  #### ③跨行跨列
 1. `rowspan`：指定要跨的行数。
 2. `colspan`：指定要跨的列数。
-3. 动手练习：![table example](../../../public/blog/tech_skills/HTML_table_example.png)
+3. 动手练习：![table example](/blog/tech_skills/HTML_table_example.png)
 ### 11、常用标签补充
 
 |  标签名  |           标签含义           | 单/双标签 |
@@ -461,7 +461,7 @@ Last edited at: 2024年05月10日 11:33:18
 	<button>search</button>
 </form>
 ```
-![form structure](../../../public/blog/tech_skills/HTML_form_structure.png)
+![form structure](/blog/tech_skills/HTML_form_structure.png)
 #### ②常用表单控件
 
 |  控件   |                                                                                                                                   代码&样式                                                                                                                                   |                                                   属性                                                   |
