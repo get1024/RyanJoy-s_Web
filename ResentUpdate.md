@@ -2,11 +2,15 @@
 title: 🗃️最近更新
 sidebar: false
 createAt: 2024-04-29 20:08:15
-updateAt: 2025-01-06 11:03:47
+updateAt: 2025-01-08 20:04:06
 ---
 # {{$frontmatter.title}} <badge type="danger" text="持续更新" style="margin-top:12px;"/>
 
 ## 🌴更新时间树
+::: timeline 2025-01-08
+- [vitepress-plugin-sidebar](/📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-sidebar) 20:03:52
+:::
+
 ::: timeline 2025-01-06
 - [[📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依|第2天_1---若依]] 10:07:11
 - [[📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security|第3天---spring security]] 10:07:26
