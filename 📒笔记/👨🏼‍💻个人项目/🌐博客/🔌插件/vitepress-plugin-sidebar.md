@@ -6,7 +6,7 @@ title: 自动生成侧边栏
 # {{$frontmatter.title}} <Badge type="tip" text="^1.0.1" />
 
 ::: tip 插件相关
-- Github仓库：[@ryanjoy/vitepress-plugin-sidebar](https://github.com/get1024/customIntegrations/tree/main/custom-vitepress-plugin-sidebar)
+- Github仓库：[@ryanjoy/vitepress-plugin-sidebar](https://github.com/get1024/customIntegrations/tree/main/vitepress-plugin-sidebar)
 - npm地址：[@ryanjoy/vitepress-plugin-sidebar](https://www.npmjs.com/package/@ryanjoy/vitepress-plugin-sidebar)
 :::
 
