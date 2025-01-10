@@ -67,7 +67,7 @@ updateAt: 2025-01-08 20:04:06
 :::
 
 ::: timeline 2024-04-24
-- [Starship美化项目的README文档](/📒笔记/👨🏼‍💻个人项目/☄️Starship_customize/starship_custom) 18:03:36
+- [Starship美化项目的README文档](/📒笔记/🛠️实用工具/🔳Powershell/配置starship美化) 18:03:36
 - [JY-movie的README文档](/📒笔记/👨🏼‍💻个人项目/🎦JY-movie/jy-movie) 17:50:28
 :::
 

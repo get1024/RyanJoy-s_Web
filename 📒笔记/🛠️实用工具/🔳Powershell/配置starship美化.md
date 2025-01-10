@@ -1,12 +1,9 @@
 ---
 Created at: 2024年04月24日 18:03:36
 Last edited at: 2024年05月05日 23:55:29
-title: Starship Customize
+title: 配置Starship美化
 ---
 # {{$frontmatter.title}}
-
- 
-
 
 > powershell 自定义美化
 
