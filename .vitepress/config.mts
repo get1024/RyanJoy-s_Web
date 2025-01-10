@@ -22,10 +22,6 @@ import { nav } from "./configs";
 // import { calculateSidebar as originalCalculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
 //自己重新上传的npm包
 import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar";
-//引入algolia
-import algolia from "./algolia";
-//引入 面包屑导航
-// import { generateBreadcrumbsData } from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
 //页面属性
 import { PageProperties } from "@nolebase/vitepress-plugin-page-properties/vite";
 // 引入obsidian双链规则插件
@@ -121,13 +117,10 @@ export default defineConfig({
     ],
     optimizeDeps: {
       include: [
-        // @rive-app/canvas is a CJS/UMD module, so it needs to be included here
-        // for Vite to properly bundle it.
         "@nolebase/vitepress-plugin-enhanced-readabilities > @nolebase/ui > @rive-app/canvas",
       ],
       exclude: [
         "@nolebase/vitepress-plugin-enhanced-readabilities/client",
-        // '@nolebase/vitepress-plugin-breadcrumbs/client', //面包屑导航
         "@nolebase/vitepress-plugin-inline-link-preview/client", //行内链接
       ],
     },
@@ -136,7 +129,6 @@ export default defineConfig({
         // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
         "@nolebase/vitepress-plugin-enhanced-readabilities",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
-        // '@nolebase/vitepress-plugin-breadcrumbs', //面包屑导航
         "@nolebase/vitepress-plugin-inline-link-preview", //行内链接
       ],
     },
@@ -201,10 +193,7 @@ export default defineConfig({
       },
     ],
 
-    // BUG:解决algolia搜索不爬虫的问题
     search: {
-      // provider: 'algolia',
-      // options: algolia,
       provider: "local",
     },
     //侧边栏自动配置

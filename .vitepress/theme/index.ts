@@ -11,8 +11,6 @@ import {
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-
-
 //高亮目标标题
 import {  
   NolebaseHighlightTargetedHeading,  
@@ -44,8 +42,6 @@ import { useData } from 'vitepress';
 import { strict } from 'assert'
 import { emit } from 'process'
 import theme from 'vitepress/theme'
-//面包屑导航
-// import { NolebaseBreadcrumbs } from '@nolebase/vitepress-plugin-breadcrumbs/client'
 //页面属性
 import {
   NolebasePagePropertiesPlugin,
@@ -61,7 +57,6 @@ import 'nprogress-v2/dist/index.css' // 进度条样式
 //
 import vitepressNprogress from 'vitepress-plugin-nprogress'
 import 'vitepress-plugin-nprogress/lib/css/index.css'
-
 //组件
 import Linkcard from "./components/Linkcard.vue"
 import HomeUnderLine from './components/HomeUnderLine.vue'
