@@ -15,7 +15,7 @@ git config --global alias.[别名] '[原git命令]'
 个人命令别名设置
 git sb --> git status -sb
 git cm "[message]" --> git commit -m "[message]"
-git p  --> git pull origin main
+git pl  --> git pull origin main
 git pu --> git push origin main
 ```
 ## Git 常用命令
