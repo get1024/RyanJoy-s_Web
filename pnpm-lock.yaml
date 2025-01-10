@@ -24,6 +24,9 @@ importers:
       busuanzi.pure.js:
         specifier: ^1.0.3
         version: 1.0.3
+      date-fns:
+        specifier: ^4.1.0
+        version: 4.1.0
       fs-extra:
         specifier: ^11.2.0
         version: 11.2.0
@@ -42,6 +45,9 @@ importers:
       pagefind:
         specifier: ^1.3.0
         version: 1.3.0
+      path:
+        specifier: ^0.12.7
+        version: 0.12.7
       remark-fff:
         specifier: ^1.2.1
         version: 1.2.1
@@ -2511,6 +2517,9 @@ packages:
   path-type@5.0.0:
     resolution: {integrity: sha512-5HviZNaZcfqP95rwpv+1HDgUamezbqdSYTyzjTvwtJSnIH+3vnbmWsItli8OFEndS984VT55M3jduxZbX351gg==}
     engines: {node: '>=12'}
+
+  path@0.12.7:
+    resolution: {integrity: sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==}
 
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
@@ -6115,6 +6124,11 @@ snapshots:
   path-key@4.0.0: {}
 
   path-type@5.0.0: {}
+
+  path@0.12.7:
+    dependencies:
+      process: 0.11.10
+      util: 0.10.4
 
   pathe@1.1.2: {}
 
