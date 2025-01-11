@@ -5,20 +5,23 @@ ul {
 .post-item {
     display: flex;
     justify-content: space-between;
-    width: 120%;
+    width: 100%;
     margin: 10px 0;
-    /* 可根据需要调整间距 */
+
 }
 
 .post-item a {
     text-align: left;
-    /* 确保标题在左边 */
 }
 
 .post-date {
     text-align: right;
-    /* 确保日期时间在右边 */
     color: gray;
+    font-family: monospace; 
+    white-space: nowrap;
+    min-width: 200px;
+    font-size: 0.76em;
+    font-weight: bolder;
 }
 
 h2 {
