@@ -62,8 +62,9 @@ import Linkcard from "./components/Linkcard.vue"
 import HomeUnderLine from './components/HomeUnderLine.vue'
 import Update from './components/Update.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
+import nodeIndex from "./components/noteIndex.vue"
 
-const enhanceAppOriginal = ({ app, router }) => {
+const enhanceAppOriginal = ({ app, router, siteData }) => {
   if (inBrowser) {
     NProgress.configure({ showSpinner: false })
     router.onBeforeRouteChange = () => {
@@ -117,6 +118,7 @@ const enhanceAppOriginal = ({ app, router }) => {
   app.component('HomeUnderLine', HomeUnderLine)
   app.component('Update', Update)
   app.component('ArticleMetadata', ArticleMetadata)
+  app.component('nodeIndex',nodeIndex)
 }
 
 export const Theme: ThemeConfig = {
