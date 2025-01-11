@@ -1,11 +1,11 @@
 ---
 title: VUE笔记
-Created at: 2024年01月12日 22:01:19
-Last edited at: 2024年05月05日 23:56:47
+createAt: 2024-01-12 22:01:19
+updateAt: 2025-01-11 22:39:28
+tags:
+  - 前端
 ---
 # {{$frontmatter.title}}
-
- 
 
 ## ES 6 语法规范
 ## ES 6 模块化

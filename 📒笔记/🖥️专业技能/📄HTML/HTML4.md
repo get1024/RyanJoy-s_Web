@@ -1,11 +1,11 @@
 ---
 title: HTML4笔记
-Created at: 2024年01月15日 10:01:13
-Last edited at: 2024年05月10日 11:33:18
+createAt: 2024-01-15 10:01:13
+updateAt: 2025-01-11 22:38:44
+tags:
+  - 前端
 ---
 # {{$frontmatter.title}}
-
- 
 
 ## 一、HTML 标签
 - **标签** 又叫 **元素**，是和 html 基本组成单位

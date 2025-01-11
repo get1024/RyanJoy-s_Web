@@ -1,12 +1,12 @@
 ---
 title: 🚨Blog搭建过程中的排坑指北
-Created at: 2024年05月18日 15:47:53
-Last edited at: 2024年05月02日 01:07:12
+createAt: 2025-01-11 20:05:08
+updateAt: 2025-01-11 22:34:59
+tags:
+  - info
+  - 博客
 ---
 # {{$frontmatter.title}}
-
- 
-
 
 ## <p><img src="/avatar.png" class="titleAvatar" /><span >RyanJoy的知识图书馆</span></p>
 

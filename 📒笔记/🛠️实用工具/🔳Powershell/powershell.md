@@ -1,12 +1,9 @@
 ---
-Created at: 2024年04月19日 20:13:26
-Last edited at: 2024年05月05日 23:56:43
 title: Powershell 笔记
+createAt: 2024-04-19 20:13:26
+updateAt: 2025-01-11 22:44:40
 ---
 # {{$frontmatter.title}}
-
- 
-
 
 - 快捷键
 ```sh

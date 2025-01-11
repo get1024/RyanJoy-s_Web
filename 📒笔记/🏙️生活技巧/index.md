@@ -1,7 +1,9 @@
 ---
-Created at: 2024年04月30日 00:13:34
-Last edited at: 2024年05月05日 23:53:29
 title: 🏙️生活技巧
+createAt: 2024-01-06 00:00:40
+updateAt: 2025-01-12 00:00:56
+tags:
+  - info
 ---
 # {{$frontmatter.title}}
 

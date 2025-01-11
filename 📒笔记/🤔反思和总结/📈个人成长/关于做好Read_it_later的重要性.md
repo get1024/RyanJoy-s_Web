@@ -1,12 +1,10 @@
 ---
-Created at: 2024年06月12日 13:40:26
-Last edited at: 2024年06月16日 22:34:03
 title: 关于做好Read it later的重要性
+createAt: 2024-06-12 13:40:26
+updateAt: 2025-01-11 22:42:29
+tags:
 ---
-
 # {{$frontmatter.title}}
-
- 
 
 > [!TIP] 什么是 Read it later ?
 > Read it later 是指在阅读/发现某篇有内容、高质量且对自己有帮助的文章/视频后，将文章/视频的访问方式保存到一个列表中，等待以后阅读。

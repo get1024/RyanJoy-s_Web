@@ -1,12 +1,11 @@
 ---
-Created at: 2024年04月27日 22:13:06
-Last edited at: 2024年05月09日 23:58:10
 title: JY-movie答辩相关
+createAt: 2025-01-11 20:05:08
+updateAt: 2025-01-11 22:36:25
+tags:
+  - project
 ---
 # {{$frontmatter.title}}
-
- 
-
 
 ## 一、材料准备
 - [x] 论文纸质版打印✖️2；

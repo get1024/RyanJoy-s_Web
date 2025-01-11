@@ -1,7 +1,10 @@
 ---
 createAt: 2025-01-08 12:09:08
-updateAt: 2025-01-08 20:04:12
+updateAt: 2025-01-11 22:35:35
 title: 自动生成侧边栏
+tags:
+  - 博客
+  - plugin
 ---
 # {{$frontmatter.title}} <Badge type="tip" text="^1.0.1" />
 

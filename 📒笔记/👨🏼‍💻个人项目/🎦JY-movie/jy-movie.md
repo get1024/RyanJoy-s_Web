@@ -1,12 +1,12 @@
 ---
-Created at: 2024年04月24日 17:50:28
-Last edited at: 2024年05月01日 09:30:32
 title: jy-movie
+createAt: 2025-01-11 20:05:08
+updateAt: 2025-01-11 22:36:12
+tags:
+  - project
+  - info
 ---
 # {{$frontmatter.title}}
-
- 
-
 
 > 🖥️ 基于 SpringBoot➕vue 的前后端分离的电影购票系统
 ## 🎤 〇、前言

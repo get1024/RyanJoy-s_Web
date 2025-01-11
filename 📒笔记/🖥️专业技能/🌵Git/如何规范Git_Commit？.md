@@ -1,11 +1,11 @@
 ---
-Created at: 2024年05月02日 11:14:24
-Last edited at: 2024年05月10日 15:31:32
 title: 如何规范Git Commit？
+createAt: 2025-01-11 20:05:08
+updateAt: 2025-01-11 22:37:41
+tags:
+  - git
 ---
 # {{$frontmatter.title}}
-
- 
 
 >[!DANGER]  我们为什么要规范 commit？
 >多人协作项目、个人版本控制在进行 Git 提交时，都需要写 commit message，否则 `git push origin main` 是不被允许的。

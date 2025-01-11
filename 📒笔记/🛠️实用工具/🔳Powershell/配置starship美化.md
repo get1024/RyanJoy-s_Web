@@ -1,7 +1,7 @@
 ---
-Created at: 2024年04月24日 18:03:36
-Last edited at: 2024年05月05日 23:55:29
 title: 配置Starship美化
+createAt: 2024-04-24 18:03:36
+updateAt: 2025-01-11 22:44:24
 ---
 # {{$frontmatter.title}}
 

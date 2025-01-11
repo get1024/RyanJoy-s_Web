@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "03323a8bfb81dc59",
+        "id": "7baf24cb95a54b97",
         "type": "tabs",
         "children": [
           {
-            "id": "d7d30c6a810aebd4",
+            "id": "de4a4dd5b9ca25e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-group-icons.md",
+                "file": "📒笔记/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vitepress-plugin-group-icons"
-            }
-          },
-          {
-            "id": "402c4afe44fd5c46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ResentUpdate.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ResentUpdate"
+              "title": "index"
             }
           }
         ]
@@ -116,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-group-icons.md"
+                "file": "📒笔记/index.md"
               },
               "icon": "lucide-list",
-              "title": "vitepress-plugin-group-icons 的大纲"
+              "title": "index 的大纲"
             }
           }
         ]
@@ -168,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-group-icons.md",
+                "file": "📒笔记/index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -196,7 +182,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "vitepress-plugin-group-icons 的关系图"
+              "title": "index 的关系图"
             }
           }
         ],
@@ -204,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 273.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,16 +205,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d7d30c6a810aebd4",
+  "active": "de4a4dd5b9ca25e3",
   "lastOpenFiles": [
+    "vite.config.ts.timestamp-1736611291209-45bae8b5d37ca.mjs",
+    "📒笔记/🏙️生活技巧/index.md",
+    "README.md",
+    "vite.config.ts.timestamp-1736607445607-4c15c3fa07a53.mjs",
     "ResentUpdate.md",
-    "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-group-icons.md",
-    "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-sidebar.md",
-    "📒笔记/🖥️专业技能/🌵Git/git使用.md",
+    "index.md",
     "draft.md",
-    "📒笔记/🛠️实用工具/📡科学上网/飞机场汇总➕对比.md",
-    "📒笔记/🤔反思和总结/📈个人成长/一些鸡汤句.md",
+    "📒笔记/index.md",
+    "📒笔记/🛠️实用工具/index.md",
+    "📒笔记/🛠️实用工具/🛡️VSCode/🔌插件/todo_tree.md",
     "📒笔记/🛠️实用工具/🔳Powershell/powershell.md",
+    "📒笔记/🛠️实用工具/🔳Powershell/配置starship美化.md",
+    "📒笔记/🛠️实用工具/📡科学上网/飞机场汇总➕对比.md",
+    "📒笔记/🤔反思和总结/index.md",
+    "📒笔记/🤔反思和总结/🥰情感/自我分析.md",
+    "📒笔记/🤔反思和总结/🥰情感/放下感情还是提高自己？.md",
+    "📒笔记/🤔反思和总结/📈个人成长/一些鸡汤句.md",
+    "📒笔记/🤔反思和总结/📈个人成长/关于做好Read_it_later的重要性.md",
+    "📒笔记/🤔反思和总结/💯考研/英二学习经验.md",
+    "📒笔记/🤔反思和总结/💯考研/动力鸡汤.md",
+    "📒笔记/🖥️专业技能/index.md",
+    "📒笔记/🖥️专业技能/🔧VUE/VUE.md",
+    "📒笔记/🖥️专业技能/📄HTML/HTML4.md",
+    "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
+    "📒笔记/🖥️专业技能/🌵Git/git使用.md",
+    "📒笔记/🖥️专业技能/🌵Git/如何规范Git_Commit？.md",
+    "📒笔记/👨🏼‍💻个人项目/index.md",
     "pnpm-lock.yaml.2417959077",
     "_tmp_11804_196239f65e01782c317c4d2dc4e5bea5",
     "public/blog/project/博客/optionalSidebarConfig2.png",
@@ -239,30 +245,11 @@
     "public/blog/project/博客/firstLevelIgnore.png",
     "public/blog/project/博客",
     "public/blog/project/新建文件夹",
-    "📒笔记/👨🏼‍💻个人项目/🌐博客/个人博客系统搭建最优解.md",
-    "📒笔记/👨🏼‍💻个人项目/☄️Starship_customize/starship_custom.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_2---项目速成攻略.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_1---若依.md",
-    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第1天---前端.md",
     "node_modules/bindings/package.json",
     "node_modules/bindings/bindings.js",
-    "node_modules/bindings/LICENSE.md",
     "node_modules/bindings",
     "node_modules/nan/nan_json.h",
     "node_modules/nan/nan_maybe_pre_43_inl.h",
-    "node_modules/nan/nan_object_wrap.h",
-    "node_modules/isarray/README.md",
-    "node_modules/base64-js/README.md",
-    "node_modules/events/security.md",
-    "node_modules/events/Readme.md",
-    "node_modules/events/History.md",
-    "node_modules/object.assign/README.md",
-    "node_modules/object.assign/CHANGELOG.md",
-    "node_modules/nprogress-v2/README.md",
-    "node_modules/nprogress-v2/LICENSE.md",
-    "node_modules/upath/readme.md",
-    "node_modules/timers-browserify/README.md",
-    "node_modules/timers-browserify/LICENSE.md",
     "node_modules/stream-http/test/server/static/browserify.png",
     "node_modules/pdfjs-dist/es5/web/images/shadow.png",
     "node_modules/pdfjs-dist/es5/web/images/loading-icon.gif",

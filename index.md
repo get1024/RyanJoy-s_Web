@@ -1,8 +1,6 @@
 ---
 layout: home
-
 title: 🏡首页
-
 head:
   - - meta
     - name: keywords
@@ -10,13 +8,11 @@ head:
   - - meta
     - name: description
     - content: 一个全栈程序员的个人博客
-
 hero:
   name: RyanJoy's Web
   text: 📝记录RyanJoy生活、学习、回忆的个人宫殿
   tagline: “🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧。”
   actions:
-  #  /blog/ --> 默认进入blog下的index.md
     - theme: brand
       text: 进入博客📖
       link: /📒笔记/index.md
@@ -26,7 +22,6 @@ hero:
   image:
     src: /logo.png
     alt: RyanJoy's Blog logo
-
 features:
   - icon: 🗞️
     title: 精彩的知识以及内容！
@@ -40,6 +35,8 @@ features:
   - icon: 🚀
     title: 由<a href="https://vitepress.dev/zh/" style="color:#0e79ff;text-decoration:underline;" target="_blank">Vitepress</a>提供支持
     details: 一款快速、易用的SSG工具，为本知识系统提供支持。在此感谢为vue.js、vite、vitepress做出贡献的所有朋友🙏。
+createAt: 2023-01-01 15:28:26
+updateAt: 2025-01-11 22:45:59
 ---
 
 <p align="center" style="margin:30px;font-size:13px;">

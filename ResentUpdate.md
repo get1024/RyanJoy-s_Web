@@ -2,11 +2,14 @@
 title: 🗃️最近更新
 sidebar: false
 createAt: 2024-04-29 20:08:15
-updateAt: 2025-01-08 20:04:06
+updateAt: 2025-01-11 22:46:02
+outline: false
 ---
 # {{$frontmatter.title}} <badge type="danger" text="持续更新" style="margin-top:12px;"/>
 
-## 🌴更新时间树
+<nodeIndex />
+
+<!-- ## 🌴更新时间树
 
 ::: timeline 2025-01-11
 - [vitepress-plugin-group-icons](/📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-group-icons.md) 13:34:24
@@ -114,4 +117,4 @@ updateAt: 2025-01-08 20:04:06
 
 ::: details 怎么😕？还想👀更多？
 小贪心鬼，作者RyanJoy没有更多啦，他已经把全部都上交给你啦~🥵
-:::
+::: -->

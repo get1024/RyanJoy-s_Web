@@ -1,7 +1,10 @@
 ---
 createAt: 2025-01-11 13:34:24
-updateAt: 2025-01-11 15:45:07
+updateAt: 2025-01-11 22:35:27
 title: vitepress-plugin-group-icons
+tags:
+  - 博客
+  - plugin
 ---
 # {{$frontmatter.title}}
 

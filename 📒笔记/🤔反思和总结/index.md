@@ -1,7 +1,9 @@
 ---
-Created at: 2024年05月01日 14:24:36
-Last edited at: 2024年05月02日 01:11:49
 title: 🤔反思和总结
+createAt: 2024-05-01 14:24:36
+updateAt: 2025-01-11 22:44:02
+tags:
+  - info
 ---
 # {{$frontmatter.title}}
 

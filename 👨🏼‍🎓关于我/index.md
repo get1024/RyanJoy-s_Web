@@ -1,7 +1,9 @@
 ---
 title: 🧑‍🎓关于我
-createdAt: 2024-01-23
-updatedAt: 2024-01-23
+createAt: 2025-01-11 20:05:08
+updateAt: 2025-01-11 22:34:28
+tags:
+  - info
 ---
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
