@@ -32,7 +32,9 @@ import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-in
 import {
   groupIconMdPlugin,
   groupIconVitePlugin,
+  localIconLoader
 } from "vitepress-plugin-group-icons";
+
 
 function calculateSidebarWithDefaultOpen(targets, base) {
   const result = originalCalculateSidebar(targets, base);
@@ -113,7 +115,16 @@ export default defineConfig({
           return !searchItem.route.includes('404')
         },
       }),
-      groupIconVitePlugin(), //代码组图标
+      groupIconVitePlugin({
+        customIcon:{
+          "pip": "vscode-icons:file-type-pip",
+          "docker":"vscode-icons:file-type-docker2",
+          ".cpp":"vscode-icons:file-type-cpp",
+          "git":"vscode-icons:file-type-git",
+          "powershell":"vscode-icons:file-type-powershell",
+          "shell":"vscode-icons:file-type-shell",
+        }
+      }), //代码组图标
     ],
     optimizeDeps: {
       include: [
