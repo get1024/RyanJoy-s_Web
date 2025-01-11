@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📒笔记/index.md",
+                "file": "ResentUpdate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "ResentUpdate"
             }
           }
         ]
@@ -102,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📒笔记/index.md"
+                "file": "ResentUpdate.md"
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "ResentUpdate 的大纲"
             }
           }
         ]
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📒笔记/index.md",
+                "file": "ResentUpdate.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -182,7 +182,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "index 的关系图"
+              "title": "ResentUpdate 的关系图"
             }
           }
         ],
@@ -207,11 +207,7 @@
   },
   "active": "de4a4dd5b9ca25e3",
   "lastOpenFiles": [
-    "vite.config.ts.timestamp-1736611291209-45bae8b5d37ca.mjs",
-    "📒笔记/🏙️生活技巧/index.md",
     "README.md",
-    "vite.config.ts.timestamp-1736607445607-4c15c3fa07a53.mjs",
-    "ResentUpdate.md",
     "index.md",
     "draft.md",
     "📒笔记/index.md",
@@ -234,6 +230,11 @@
     "📒笔记/🖥️专业技能/🌵Git/git使用.md",
     "📒笔记/🖥️专业技能/🌵Git/如何规范Git_Commit？.md",
     "📒笔记/👨🏼‍💻个人项目/index.md",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第4天---智慧物业管理系统.md",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第3天---spring security.md",
+    "📒笔记/👨🏼‍💻个人项目/💴基于vue+springboot的资产管理系统/第2天_2---项目速成攻略.md",
+    "vite.config.ts.timestamp-1736611291209-45bae8b5d37ca.mjs",
+    "vite.config.ts.timestamp-1736607445607-4c15c3fa07a53.mjs",
     "pnpm-lock.yaml.2417959077",
     "_tmp_11804_196239f65e01782c317c4d2dc4e5bea5",
     "public/blog/project/博客/optionalSidebarConfig2.png",
@@ -249,7 +250,6 @@
     "node_modules/bindings/bindings.js",
     "node_modules/bindings",
     "node_modules/nan/nan_json.h",
-    "node_modules/nan/nan_maybe_pre_43_inl.h",
     "node_modules/stream-http/test/server/static/browserify.png",
     "node_modules/pdfjs-dist/es5/web/images/shadow.png",
     "node_modules/pdfjs-dist/es5/web/images/loading-icon.gif",
