@@ -1,0 +1,263 @@
+---
+createAt: 2025-01-11 13:34:24
+updateAt: 2025-01-11 15:45:07
+title: vitepress-plugin-group-icons
+---
+# {{$frontmatter.title}}
+
+## 包管理器
+
+```js [index.js]
+// package manager
+"pnpm": "vscode-icons:file-type-light-pnpm",
+"npm": "vscode-icons:file-type-npm",
+"yarn": "vscode-icons:file-type-yarn",
+"bun": "vscode-icons:file-type-bun",
+"deno": "vscode-icons:file-type-light-deno",
+"pip": "vscode-icons:file-type-pip",
+```
+
+效果如下
+::: code-group
+
+```sh [pnpm]
+```
+
+```sh [npm]
+```
+
+```sh [yarn]
+```
+
+```sh [bun]
+```
+
+```sh [deno]
+```
+
+```sh [pip]
+```
+
+:::
+
+## 框架
+
+```js [index.js]
+// frameworks
+"vue": "vscode-icons:file-type-vue",
+"svelte": "vscode-icons:file-type-svelte",
+"angular": "vscode-icons:file-type-angular",
+"react": "vscode-icons:file-type-reactjs",
+"next": "vscode-icons:file-type-light-next",
+"nuxt": "vscode-icons:file-type-nuxt",
+"solid": "logos:solidjs-icon",
+"astro": "vscode-icons:file-type-light-astro",
+"docker":"vscode-icons:file-type-docker2",
+```
+
+效果如下
+::: code-group
+``` [Vue]
+```
+
+``` [Svelte]
+```
+
+``` [angular]
+```
+
+``` [react]
+```
+
+``` [next]
+```
+
+``` [nuxt]
+```
+
+``` [solid]
+```
+
+``` [astro]
+```
+
+``` [docker]
+```
+:::
+
+## 打包器
+
+```js [index.js]
+// bundlers
+"rollup": "vscode-icons:file-type-rollup",
+"webpack": "vscode-icons:file-type-webpack",
+"vite": "vscode-icons:file-type-vite",
+"esbuild": "vscode-icons:file-type-esbuild",
+```
+
+效果如下
+::: code-group
+``` [rollup]
+```
+
+``` [webpack]
+```
+
+``` [vite]
+```
+
+``` [esbuild]
+```
+:::
+
+## 配置文件
+
+```js [index.js]
+// configuration files
+"package.json": "vscode-icons:file-type-node",
+"tsconfig.json": "vscode-icons:file-type-tsconfig",
+".npmrc": "vscode-icons:file-type-npm",
+".editorconfig": "vscode-icons:file-type-editorconfig",
+".eslintrc": "vscode-icons:file-type-eslint",
+".eslintignore": "vscode-icons:file-type-eslint",
+"eslint.config": "vscode-icons:file-type-eslint",
+".gitignore": "vscode-icons:file-type-git",
+".gitattributes": "vscode-icons:file-type-git",
+".env": "vscode-icons:file-type-dotenv",
+".env.example": "vscode-icons:file-type-dotenv",
+".vscode": "vscode-icons:file-type-vscode",
+"tailwind.config": "vscode-icons:file-type-tailwind",
+"uno.config": "vscode-icons:file-type-unocss",
+```
+
+::: code-group
+``` [package.json]
+```
+
+``` [tsconfig.json]
+```
+
+``` [.npmrc]
+```
+
+``` [.editorconfig]
+```
+
+``` [.eslintrc]
+```
+
+``` [.eslintignore]
+```
+
+``` [eslint.config]
+```
+
+``` [.gitignore]
+```
+
+``` [.gitattributes]
+```
+
+``` [.env]
+```
+
+``` [.env.example]
+```
+
+``` [.vscode]
+```
+
+``` [tailwind.config]
+```
+
+``` [uno.config]
+```
+:::
+
+## 文件扩展名
+
+```js [index.js]
+// filename extensions
+".ts": "vscode-icons:file-type-typescript",
+".tsx": "vscode-icons:file-type-typescript",
+".mjs": "vscode-icons:file-type-js",
+".cjs": "vscode-icons:file-type-js",
+".json": "vscode-icons:file-type-json",
+".js": "vscode-icons:file-type-js",
+".jsx": "vscode-icons:file-type-js",
+".md": "vscode-icons:file-type-markdown",
+".py": "vscode-icons:file-type-python",
+".cpp":"vscode-icons:file-type-cpp",
+".ico": "vscode-icons:file-type-favicon",
+".html": "vscode-icons:file-type-html",
+".css": "vscode-icons:file-type-css",
+".yml": "vscode-icons:file-type-light-yaml",
+".yaml": "vscode-icons:file-type-light-yaml",
+```
+
+::: code-group
+``` [.ts]
+```
+
+``` [.tsx]
+```
+
+``` [.mjs]
+```
+
+``` [.cjs]
+```
+
+``` [.json]
+```
+
+``` [.js]
+```
+
+``` [.jsx]
+```
+
+``` [.md]
+```
+
+``` [.py]
+```
+
+``` [.cpp]
+```
+
+``` [.ico]
+```
+
+``` [.html]
+```
+
+``` [.css]
+```
+
+``` [.yml]
+```
+
+``` [.yaml]
+```
+:::
+
+## 命令行
+
+```js [index.js]
+// bash
+"git":"vscode-icons:file-type-git",
+"powershell":"vscode-icons:file-type-powershell",
+"shell":"vscode-icons:file-type-shell",
+```
+
+::: code-group
+``` [git]
+```
+
+``` [powershell]
+```
+
+``` [shell]
+```
+:::
