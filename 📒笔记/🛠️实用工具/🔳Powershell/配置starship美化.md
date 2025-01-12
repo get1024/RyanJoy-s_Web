@@ -1,7 +1,7 @@
 ---
 title: 配置Starship美化
 createAt: 2024-04-24 18:03:36
-updateAt: 2025-01-11 22:44:24
+updateAt: 2025-01-12 16:35:08
 ---
 # {{$frontmatter.title}}
 
@@ -12,7 +12,7 @@ updateAt: 2025-01-11 22:44:24
 - 项目`GitHub`地址单击下图
   > [![powershell美化](https://github-readme-stats.vercel.app/api/pin/?username=get1024&repo=starship_custom&show_owner=true&show_icon=true)](https://github.com/get1024/starship_custom)
 - 效果展示
-  > ![display](/blog/project/Starship_customize/display.png)
+  > ![display](/blog/tools/powershell/Starship_customize/display.png)
 
 ## 1️、Install Starship
 
