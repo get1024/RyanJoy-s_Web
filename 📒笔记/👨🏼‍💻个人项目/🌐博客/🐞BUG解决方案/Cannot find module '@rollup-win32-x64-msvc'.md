@@ -1,12 +1,12 @@
 ---
-title: Error:Cannot find module '@rollup/rollup-win32-x64-msvc'
+title: Cannot find module '@rollup-win32-x64-msvc'
 createAt: 2023-12-07 10:15:38
-updateAt: 2025-01-12 00:23:38
+updateAt: 2025-01-12 16:09:34
 tags:
   - 博客
   - bug
 ---
-# {{$frontmatter.title}}
+# Cannot find module '@rollup-win32-x64-msvc'
 
 ## 报错表现
 在搭建好基于`vitepress`的`blog`结构后，运行`npm run docs:dev`命令，进行部署前的运行结果检查，结果报以下错误：
