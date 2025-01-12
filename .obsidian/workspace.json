@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/自动生成索引页.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "自动生成索引页"
+              "title": "index"
             }
           }
         ]
@@ -102,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/自动生成索引页.md"
+                "file": "index.md"
               },
               "icon": "lucide-list",
-              "title": "自动生成索引页 的大纲"
+              "title": "index 的大纲"
             }
           }
         ]
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/自动生成索引页.md",
+                "file": "index.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -182,7 +182,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "自动生成索引页 的关系图"
+              "title": "index 的关系图"
             }
           }
         ],
@@ -206,12 +206,12 @@
   },
   "active": "8d08c38b60d82b43",
   "lastOpenFiles": [
+    "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/自动生成索引页.md",
     "vite.config.ts.timestamp-1736684529357-63b7c8c3684ff.mjs",
     "vite.config.ts.timestamp-1736684288019-1a444b9c606c2.mjs",
     "最近更新.md",
     "vite.config.ts.timestamp-1736682629772-98ca37e8ce3e5.mjs",
     "📒笔记/💻操作系统/💠Windows11/Microsoft Todo无法同步问题.md",
-    "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/自动生成索引页.md",
     "vite.config.ts.timestamp-1736682223118-7ee54a74dd638.mjs",
     "vite.config.ts.timestamp-1736681193911-887efcc250407.mjs",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🐞BUG解决方案/Cannot find module '@rollup-win32-x64-msvc'.md",
@@ -232,7 +232,6 @@
     "public/blog/os/winodws11/Snipaste_2025-01-12_16-31-23.png",
     "public/blog/os/winodws11",
     "public/blog/os/新建文件夹",
-    "public/blog/tools/powershell/Starship_customize",
     "draft.md",
     "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
     "📒笔记/🖥️专业技能/🌵Git/git使用.md",
