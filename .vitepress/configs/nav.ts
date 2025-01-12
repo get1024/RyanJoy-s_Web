@@ -13,7 +13,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     link: '/👨🏼‍🎓关于我/index'
   },
   {
-    text: '🗃️最近更新',
+    text: '🗃️归档',
     link: '/最近更新'
   },
 ]
