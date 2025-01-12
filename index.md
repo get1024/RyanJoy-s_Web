@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 🏡首页
+title: index
 head:
   - - meta
     - name: keywords
@@ -36,8 +36,9 @@ features:
     title: 由<a href="https://vitepress.dev/zh/" style="color:#0e79ff;text-decoration:underline;" target="_blank">Vitepress</a>提供支持
     details: 一款快速、易用的SSG工具，为本知识系统提供支持。在此感谢为vue.js、vite、vitepress做出贡献的所有朋友🙏。
 createAt: 2023-01-01 15:28:26
-updateAt: 2025-01-11 22:45:59
+updateAt: 2025-01-12 16:08:25
 ---
+# index
 
 <p align="center" style="margin:30px;font-size:13px;">
   本站总访问量 <span id="busuanzi_value_site_pv" style="color:#bd34fe"/> 次
