@@ -1,7 +1,7 @@
 ---
-title: 如何规范Git Commit？
+title: 如何规范Git_Commit？
 createAt: 2024-05-17 08:17:32
-updateAt: 2025-01-12 00:26:48
+updateAt: 2025-01-12 16:10:10
 tags:
   - git
 ---
