@@ -14,6 +14,6 @@ export const nav: DefaultTheme.Config['nav'] = [
   },
   {
     text: '🗃️最近更新',
-    link: '/ResentUpdate'
+    link: '/最近更新'
   },
 ]
