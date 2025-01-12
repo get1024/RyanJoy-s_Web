@@ -1,0 +1,24 @@
+.ArticleMetadata-word{
+    color: gray;
+    font-family: monospace; 
+    white-space: nowrap;
+    min-width: 200px;
+    font-size: 0.76em;
+    font-weight: bolder;
+}
+
+.ArticleMetadata-word p {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    margin: 3px; /* 去除默认的段落间距 */
+}
+
+.ArticleMetadata-word p svg {
+    margin-right: 4px; /* 图标和文字之间的间距，可根据需要调整 */
+    flex-shrink: 0; /* 防止图标被压缩 */
+    vertical-align: middle; /* 防止图标顶部与文字不对齐 */
+}
+
+.ArticleMetadata-word p span {
+    line-height: 1.5; /* 确保文字的垂直居中看起来自然 */
+}
