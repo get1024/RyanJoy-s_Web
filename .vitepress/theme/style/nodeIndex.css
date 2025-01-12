@@ -1,17 +1,49 @@
-ul {
-    padding: 0;
+ul.noteIndex-ul {
+    padding: 0 0 0 20px; /* 确保小圆点正常显示 */
+    list-style-type: disc;
 }
 
 .post-item {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 10px 0;
-
+    align-items: center;
+    width: 105%;
+    margin: 8px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-style: dashed;
+    border-radius: 7px;
+    border-color: rgba(15, 124, 60, 0.349);
 }
 
-.post-item a {
+.post-link-update {
     text-align: left;
+}
+
+.post-link-update a{
+    font-family: monospace;
+    text-decoration:none;
+    display: inline-block; /* 确保 padding 应用到 a 标签 */
+    padding: 3px; /* 添加默认的内边距，避免悬浮时跳动 */
+    border-radius: 5px; /* 统一圆角，避免悬浮时变化 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease, background-color 0.3s ease;
+}
+
+.post-link-update a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.281);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.post-update{
+    color: gray;
+    font-family: monospace; 
+    white-space: nowrap;
+    min-width: 200px;
+    font-size: 0.76em;
+    font-weight: bolder;
 }
 
 .post-date {
@@ -24,7 +56,8 @@ ul {
     font-weight: bolder;
 }
 
-h2 {
+h2.noteIndex-h2 {
+    font-weight: bold;
     font-size: 1.5em;
     margin-top: 20px;
 }
