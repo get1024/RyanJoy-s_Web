@@ -1,11 +1,11 @@
 ---
 title: 如何规范Git_Commit？
 createAt: 2024-05-17 08:17:32
-updateAt: 2025-01-12 16:10:10
+updateAt: 2025-01-15 11:18:56
 tags:
   - git
 ---
-# {{$frontmatter.title}}
+# 如何规范Git commit？
 
 >[!DANGER]  我们为什么要规范 commit？
 >多人协作项目、个人版本控制在进行 Git 提交时，都需要写 commit message，否则 `git push origin main` 是不被允许的。
@@ -15,9 +15,11 @@ tags:
 ## 规范建设
 一开始，我希望借助前人已经约定好的规范进行本文的内容基础，但在寻找了大量关于 `git commit -m [message]` 的资料后，学习、结合了 [Alibaba · 阿里巴巴](https://github.com/alibaba)、[高德地图](https://lbs.amap.com/)等相关部门已有的规范总结出以下规范。
 ### Commit message格式
+
 ```sh
 <type>(<scope>):<subject>
 ```
+
 ## 字段含义
 ### type
 >[!warning] 必写项
@@ -46,10 +48,12 @@ tags:
 - 结尾不加句号或其他标点符号。
 ## 总结
 根据以上规范git commit message将是如下的格式：
+
 ```sh
 fix(DAO):用户查询缺少username属性 
 feat(Controller):用户查询接口开发
 ```
+
 以上就是本文梳理的git commit规范，那么我们这样规范git commit到底有哪些好处呢？
 - 便于程序员对提交历史进行追溯，了解发生了什么情况。
 - 一旦约束了commit message，意味着我们将慎重的进行每一次提交，不能再一股脑的把各种各样的改动都放在一个git commit里面，这样一来整个代码改动的历史也将更加清晰。
