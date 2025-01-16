@@ -70,9 +70,9 @@
       "update-on-file-contents-updated": "after 5 seconds"
     },
     "yaml-title": {
-      "enabled": true,
+      "enabled": false,
       "title-key": "title",
-      "mode": "filename"
+      "mode": "first-h1"
     },
     "yaml-title-alias": {
       "enabled": false,
@@ -277,13 +277,7 @@
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [],
-  "filesToIgnore": [
-    {
-      "label": "",
-      "match": "",
-      "flags": "i"
-    }
-  ],
+  "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
   "lintCommands": [],

@@ -21,8 +21,9 @@
     "better-bullet-points-in-edit-mode",
     "tag-pills",
     "smaller-scrollbar",
-    "outline"
+    "outline",
+    "theme"
   ],
-  "theme": "obsidian",
+  "theme": "moonstone",
   "baseFontSizeAction": true
 }

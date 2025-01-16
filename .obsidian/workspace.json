@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bb07796794c3f19b",
+        "id": "6f72502db64e0aa4",
         "type": "tabs",
         "children": [
           {
-            "id": "8d08c38b60d82b43",
+            "id": "67b22fb26b937ab2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "📒笔记/🏙️生活技巧/🛒购物/7000￥价位笔记本电脑选购指北.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "7000￥价位笔记本电脑选购指北"
             }
           }
         ]
@@ -102,10 +102,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "📒笔记/🏙️生活技巧/🛒购物/7000￥价位笔记本电脑选购指北.md"
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "7000￥价位笔记本电脑选购指北 的大纲"
             }
           }
         ]
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "index.md",
+                "file": "📒笔记/🏙️生活技巧/🛒购物/7000￥价位笔记本电脑选购指北.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -177,12 +177,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5070457432534878,
+                  "scale": 0.5070457432534876,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "index 的关系图"
+              "title": "7000￥价位笔记本电脑选购指北 的关系图"
             }
           }
         ],
@@ -204,8 +204,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "8d08c38b60d82b43",
+  "active": "67b22fb26b937ab2",
   "lastOpenFiles": [
+    "📒笔记/🏙️生活技巧/🛒购物/衣物挑选——个人向.md",
+    "📒笔记/🏙️生活技巧/🛒购物/7000￥价位笔记本电脑选购指北.md",
+    "📒笔记/🖥️专业技能/🌵Git/Git学习.md",
+    "📒笔记/🖥️专业技能/🌵Git/如何规范Git_Commit？.md",
+    "public/blog/tools/vscode/插件/todo_tree.png",
+    "public/avatar.png",
+    "public/blog/tech_skills/未命名.md",
+    "public/blog/tech_skills/vue",
+    "public/blog/tech_skills/git",
+    "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
+    "📒笔记/👨🏼‍💻个人项目/🌐博客/🐞BUG解决方案/Cannot find module '@rollup-win32-x64-msvc'.md",
+    "public/blog/project/博客/error_show.png",
+    "public/blog/tools/Pasted image 20250113164856.png",
+    "README.md",
+    "index.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/自动生成索引页.md",
     "vite.config.ts.timestamp-1736684529357-63b7c8c3684ff.mjs",
     "vite.config.ts.timestamp-1736684288019-1a444b9c606c2.mjs",
@@ -214,7 +229,6 @@
     "📒笔记/💻操作系统/💠Windows11/Microsoft Todo无法同步问题.md",
     "vite.config.ts.timestamp-1736682223118-7ee54a74dd638.mjs",
     "vite.config.ts.timestamp-1736681193911-887efcc250407.mjs",
-    "📒笔记/👨🏼‍💻个人项目/🌐博客/🐞BUG解决方案/Cannot find module '@rollup-win32-x64-msvc'.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🐞BUG解决方案/rollup.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🐞BUG解决方案/Cannot find module '@rollup/rollup-win32-x64-msvc'.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🐞BUG解决方案/Cannot find module '@rollup",
@@ -226,31 +240,18 @@
     "public/blog/os/winodws11/1-5.png",
     "public/blog/os/winodws11/1-4.png",
     "public/blog/os/winodws11/1-3.png",
-    "public/blog/os/winodws11/1-2.png",
-    "public/blog/os/winodws11/1-1.png",
-    "public/blog/os/winodws11/1.1.png",
-    "public/blog/os/winodws11/Snipaste_2025-01-12_16-31-23.png",
-    "public/blog/os/winodws11",
-    "public/blog/os/新建文件夹",
     "draft.md",
-    "📒笔记/🖥️专业技能/💈CSS/CSS2.md",
-    "📒笔记/🖥️专业技能/🌵Git/git使用.md",
-    "📒笔记/🖥️专业技能/🌵Git/如何规范Git_Commit？.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/个人博客系统搭建最优解.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/自动生成侧边栏.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/代码块图标标题.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🐞BUG解决方案/index.md",
-    "index.md",
     "📒笔记/👨🏼‍💻个人项目/🎵网易云音乐/待完成.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/代码块图标.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/vitepress-plugin-group-icons.md",
     "📒笔记/👨🏼‍💻个人项目/🌐博客/🔌插件/代码块/组图标.md",
     "📒笔记/🤔反思和总结/📈个人成长/一些鸡汤句.md",
-    "README.md",
     "📒笔记/index.md",
     "📒笔记/🛠️实用工具/index.md",
-    "📒笔记/🛠️实用工具/🛡️VSCode/🔌插件/todo_tree.md",
-    "📒笔记/🛠️实用工具/🔳Powershell/powershell.md",
     "未命名.canvas"
   ]
 }
