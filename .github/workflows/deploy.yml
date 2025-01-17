@@ -22,13 +22,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
           node-version: 22 # 用于构建站点的特定 Node.js 版本，默认为 20。（可选）
           package-manager: pnpm@latest # 应使用哪个 Node.js 包管理器来安装依赖项和构建站点。会根据存储库中的 lockfile 自动检测。（可选）
-      - name: Check if dist directory exists
-        run: ls -R ./dist  # 确保 dist 目录生成
 
         
   deploy:
