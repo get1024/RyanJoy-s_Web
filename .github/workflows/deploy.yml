@@ -53,6 +53,9 @@ jobs:
           path: .vitepress/dist
       - name: Install, build, and upload your site
         uses: withastro/action@v3
+        with:
+          node-version: 20
+          package-manager: 22
 
   # 部署工作
   deploy:
