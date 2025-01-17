@@ -51,6 +51,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
+      - name: Install, build, and upload your site
+        uses: withastro/action@v3
 
   # 部署工作
   deploy:
