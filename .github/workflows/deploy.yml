@@ -25,7 +25,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: ./dist/
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
