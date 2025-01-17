@@ -31,7 +31,6 @@
     "@vueuse/core": "^12.4.0",
     "busuanzi.pure.js": "^1.0.3",
     "date-fns": "^4.1.0",
-    "execa": "^9.5.2",
     "fs-extra": "^11.2.0",
     "markdown-it-task-checkbox": "^1.0.6",
     "medium-zoom": "^1.1.0",
