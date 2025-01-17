@@ -1,11 +1,11 @@
 ---
-title: Git使用
+title: Git学习
 createAt: 2024-03-26 10:55:46
-updateAt: 2025-01-15 11:53:18
+updateAt: 2025-01-16 23:29:52
 tags:
   - git
 ---
-# Git 使用
+# Git 学习
 
 ::: tip 作者说
 本文档是笔者基于对 [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN) 的自主学习整理的补充性文档。如果有幸此文被您发现，强烈推荐结合 [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN) 进行学习。
