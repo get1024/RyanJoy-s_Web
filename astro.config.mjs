@@ -5,5 +5,6 @@ export default defineConfig({
     base: '/RyanJoy-s_Web',
     build: {
         outDir: '.vitepress/dist' // 设置构建输出目录
-    }
+    },
+    output: '.vitepress/dist'
 })
