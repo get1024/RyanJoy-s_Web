@@ -1,7 +1,7 @@
 ---
 title: Git学习
 createAt: 2024-03-26 10:55:46
-updateAt: 2025-01-16 23:29:52
+updateAt: 2025-01-18 23:00:26
 tags:
   - git
 ---
@@ -9,9 +9,15 @@ tags:
 
 ::: tip 作者说
 本文档是笔者基于对 [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN) 的自主学习整理的补充性文档。如果有幸此文被您发现，强烈推荐结合 [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN) 进行学习。
+
+由于本篇内容较多，翻看右边➡️「本页大纲」也无法做到十分清晰，因此这里提供对「二级标题」的快速索引。主体主要包括**三大部分**，如下表格所示，点击对应链接查看目标内容吧~
+
+| [1-Git-基本内容](#_1-git-基本内容) | [2-Git-远程](#_2-git-远程) | [3-Git-命令自定义别名](#_3-git-命令自定义别名) |
+| :------------------------: | :--------------------: | :------------------------------: |
+
 :::
 
-## Git 主要
+## <span style="color:red;font-family:monospace;font-style:italic;">1</span>-Git-基本内容
 
 ### 提交
 
@@ -23,9 +29,10 @@ git commit -m "提交描述"
 
 ### 分支
 
-Git 的分支也非常轻量。它们只是简单地指向**某个提交纪录** —— 仅此而已。所以许多 Git 使用者传颂：**早建分支！多用分支！**
+Git 的分支非常轻量。它们只是简单地指向**某个提交纪录** —— 仅此而已。所以许多 Git 使用者传颂：**早建分支！多用分支！**
 
 #### 新建并切换分支
+<p></p>
 
 ```sh [git]
 git branch <分支名>   // 新建分支
@@ -33,6 +40,7 @@ git switch <分支名>   // 切换分支
 ```
 
 #### 合并分支
+<p></p>
 
 ```shell [git]
 git merge <分支名>   // 把指定分支合并到当前操作的分支上
@@ -51,7 +59,7 @@ HEAD 是一个对当前所在分支的符号引用 —— 也就是指向你正�
 git checkout <提交记录hash值>
 ```
 
-就变为 `HEAD => 提交记录` 。但也不难察觉，这种方式要求我们能够明确指出 `<提交记录hash值>` ，这不是一个轻松的活。所以就有了 相对引用。
+就变为 `HEAD => 提交记录` 。但也不难察觉，这种方式要求我们能够明确指出 `<提交记录hash值>` ，这不是一个轻松的活。所以就有了 [[#相对引用]]。
 
 #### 相对引用
 
@@ -73,19 +81,20 @@ git checkout <分支名>~<num>
 相对引用最多的就是移动分支。可以直接使用 `-f` 选项让分支指向另一个提交。
 
 ```sh [git]
-git branch -f <被移动分支> <HEAD/分支名>~<num>
+git branch -f <被移动分支> <HEAD or 分支名>~<num>
 ```
 
-这一命令会将 `被移动分支` 强制指向 `HEAD/分支名` 指向的提交记录的第 `num` 级 `parent` 提交。
+这一命令会将 `被移动分支` 强制指向 `HEAD or 分支名` 指向的提交记录的第 `num` 级 `parent` 提交。
 
 #### 撤销变更
+<p></p>
 
 ```sh [git]
 git reset HEAD^  // 用于本地回滚一个版本，对远程提交无效
 git revert HEAD  // 用于远程回滚。
 ```
 
-我们比较常用 `git revert HEAD` ，这一命令通过新建一个 与父级提交状态相同的 提交，来覆盖本次提交。
+我们比较常用 `git revert HEAD` ，这一命令通过新建一个「与父级提交状态相同的」提交，来**覆盖**本次提交。
 
 ### 整理提交记录
 
@@ -111,7 +120,7 @@ git cherry-pick <提交记录hash值1> <提交记录hash值2> ... <提交记录h
 git rebase -i HEAD~<num>
 ```
 
-这一命令表明：将通过 UI 调整 `HEAD` 第 `<num>` 级 `parent` 提交记录 **(不包含自身)** 以下的提交记录。
+这一命令表明：将通过 UI 调整 `HEAD` 第 `<num>` 级 `parent` 提交记录 **以下的** 提交记录。
 
 ### 提交的技巧
 
@@ -141,6 +150,7 @@ git tag <标签值> <提交记录hash值>or<相对引用>
 ```
 
 ### Git describe
+<p></p>
 
 ```sh [git]
 git describe <ref>
@@ -156,12 +166,12 @@ git describe <ref>
 
 当 `ref` 提交记录上有某个标签时，则只输出标签名称。
 
-## Git 远程
+## <span style="color:red;font-family:monospace;font-style:italic;">2</span>-Git-远程
 
 
 
 
-## Git 命令自定义别名
+## <span style="color:red;font-family:monospace;font-style:italic;">3</span>-Git-命令自定义别名
 
 ```sh {2}
 设置别名命令
