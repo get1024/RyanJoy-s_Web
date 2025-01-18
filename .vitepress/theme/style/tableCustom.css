@@ -1,0 +1,9 @@
+.vp-doc table {
+    display: table;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 90%;
+}

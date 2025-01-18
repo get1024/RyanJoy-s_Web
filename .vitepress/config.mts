@@ -168,8 +168,8 @@ export default defineConfig({
     },
 
     outline: {
-      label: "本页大纲",
-      level: [1, 4],
+      label: "📑本页大纲",
+      level: 'deep'
     },
 
     lastUpdated: {
