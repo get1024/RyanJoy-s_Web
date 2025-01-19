@@ -15,6 +15,18 @@ img {
     box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
 }
 
+video {
+    width: 100%;
+    border-radius: 15px;
+    /* 将图片设置为块状元素，防止与文本同行 */
+    display: block;
+    /* 水平居中 */
+    margin-left: auto;
+    margin-right: auto;
+    /* 底部阴影 */
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
+}
+
 /* 首页图片 */
 img.VPImage.image-src{
     box-shadow: 0 0px 0px white;

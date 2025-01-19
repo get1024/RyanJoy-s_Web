@@ -1,16 +1,18 @@
 
 /* var.css */
 :root {
-  --vp-c-brand-1: #18794e;
-  --vp-c-brand-2: #299764;
-  --vp-c-brand-3: #30a46c;
+  --vp-c-brand-1: #e68c00;  /* 深金色 */
+  --vp-c-brand-2: #ff9e00;  /* 暗橙黄色 */
+  --vp-c-brand-3: #e0b424;  /* 暗淡黄色 */
 }
 
 .dark {
-  --vp-c-brand-1: #3dd68c;
-  --vp-c-brand-2: #30a46c;
-  --vp-c-brand-3: #298459;
+  --vp-c-brand-1: #f7a800;  /* 主色 - 深黄色，偏金色 */
+  --vp-c-brand-2: #ffb300;  /* 次色 - 橙黄色 */
+  --vp-c-brand-3: #f9d423;  /* 辅助色 - 淡黄色 */
 }
+
+
 /* 以前的vp-c-brand已弃用 */
 
 :root {
