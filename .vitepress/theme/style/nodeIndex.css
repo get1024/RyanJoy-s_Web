@@ -14,7 +14,7 @@ ul.noteIndex-ul {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-style: dashed;
     border-radius: 7px;
-    border-color: rgba(15, 124, 60, 0.349);
+    border-color: #e0b424;
 }
 
 .post-link-update {
