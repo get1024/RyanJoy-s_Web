@@ -1,7 +1,7 @@
 ---
 title: Git学习
 createAt: 2024-03-26 10:55:46
-updateAt: 2025-01-18 23:00:26
+updateAt: 2025-01-19 20:50:29
 tags:
   - git
 ---
@@ -12,12 +12,12 @@ tags:
 
 由于本篇内容较多，翻看右边➡️「本页大纲」也无法做到十分清晰，因此这里提供对「二级标题」的快速索引。主体主要包括**三大部分**，如下表格所示，点击对应链接查看目标内容吧~
 
-| [1-Git-基本内容](#_1-git-基本内容) | [2-Git-远程](#_2-git-远程) | [3-Git-命令自定义别名](#_3-git-命令自定义别名) |
+| [1-Git 基本内容](#_1-git-基本内容) | [2-Git 远程](#_2-git-远程) | [3-实际搭配 Github 使用](#_3-实际搭配-github-使用) |
 | :------------------------: | :--------------------: | :------------------------------: |
 
 :::
 
-## <span style="color:red;font-family:monospace;font-style:italic;">1</span>-Git-基本内容
+## <span style="color:red;font-family:monospace;font-style:italic;">1</span>-Git 基本内容
 
 ### 提交
 
@@ -166,20 +166,146 @@ git describe <ref>
 
 当 `ref` 提交记录上有某个标签时，则只输出标签名称。
 
-## <span style="color:red;font-family:monospace;font-style:italic;">2</span>-Git-远程
+## <span style="color:red;font-family:monospace;font-style:italic;">2</span>-Git 远程
 
+::: info 远程仓库
+即本地仓库的内容在远程的备份，实现了代码社交化。
+:::
 
+### git clone
 
+用此命令，把「远程仓库」克隆到「本地仓库」，方便我们对仓库进行修改、PR……
 
-## <span style="color:red;font-family:monospace;font-style:italic;">3</span>-Git-命令自定义别名
-
-```sh {2}
-设置别名命令
-git config --global alias.[别名] '[原git命令]'
-
-个人命令别名设置
-git sb --> git status -sb
-git cm "[message]" --> git commit -m "[message]"
-git pl  --> git pull origin main
-git pu --> git push origin main
+```sh [git]
+git clone git@github.com:<username>/<repo-name>.git
 ```
+
+### git fetch
+
+`git fetch` 完成了仅有的但是很重要的两步:
+
+- 从远程仓库下载本地仓库中缺失的提交记录
+- 更新远程分支指针(如 `o/main`)
+
+`git fetch` 实际上将本地仓库中的「远程分支」更新成了「远程仓库相应分支」最新的状态，但并不会改变本地仓库的状态。它不会更新你的 `main` 分支，也不会修改你磁盘上的文件。
+
+理解这一点很重要，因为许多开发人员误以为执行了 `git fetch` 以后，他们本地仓库就与远程仓库同步了。它可能已经将进行这一操作所需的所有数据都下载了下来，但是**并没有**修改你本地的文件。
+
+### git pull
+
+`git pull` 完成了「先抓取更新再合并到本地分支」这两个操作。
+
+### git push
+
+`git push` 负责将**你的**变更上传到指定的远程仓库，并在远程仓库上合并你的新提交记录。
+
+### 偏离的提交历史
+
+假设你周一克隆了一个仓库，然后开始研发某个新功能。到周五时，你新功能开发测试完毕，可以发布了。但是你发现你的同事这周写了一堆代码，还改了许多你的功能中使用的 API，这些变动会导致你新开发的功能变得不可用。但是他们已经将那些提交推送到远程仓库了，因此你的工作就变成了基于项目**旧版**的代码，与远程仓库最新的代码不匹配了。
+
+这种情况下, 因为这情况（历史偏离）有许多的不确定性，Git 是不会允许你 `push` 变更的。实际上 `git push` 会**强制你先合并远程最新的代码**，然后才能分享你的工作。
+
+|                    初始状态                    |                   目标状态                    |
+| :----------------------------------------: | :---------------------------------------: |
+| ![[public/blog/tech_skills/git/orgin.png]] | ![[public/blog/tech_skills/git/goal.png]] |
+
+```sh [git]
+git clone
+git fakeTeamwork  // learngitbranching网站自定义命令，模拟团队协作
+git commit
+git pull --rebase
+git push
+```
+
+运行过程如下
+
+![[public/blog/tech_skills/git/process.mp4]]
+
+### 远程服务器拒绝
+
+如果你是在一个大的合作团队中工作，很可能是 main 被锁定了，需要一些 Pull Request 流程来合并修改。如果你直接提交 (commit) 到本地 main，然后试图推送 (push) 修改, 你将会收到这样类似的信息：
+
+```sh [powershell]
+! [远程服务器拒绝] main -> main (TF402455: 不允许推送(push)这个分支; 你必须使
+用pull request来更新这个分支.)
+```
+
+|                     初始状态                     |                    目标状态                    |
+| :------------------------------------------: | :----------------------------------------: |
+| ![[public/blog/tech_skills/git/origin2.png]] | ![[public/blog/tech_skills/git/goal2.png]] |
+
+```sh [git]
+git branch -f main o/main
+git branch feature C2
+git switch feature
+git push
+```
+
+运行过程如下
+
+![[public/blog/tech_skills/git/process2.mp4|process2]]
+
+## <span style="color:red;font-family:monospace;font-style:italic;">3</span>-实际搭配 Github 使用
+
+### 首次提交
+
+欲把本地项目发布到 Github 仓库中，需要以下步骤：
+
+1️⃣：首先需要新建一个 Repository；
+
+2️⃣：在「本地仓库根目录」下打开 `Powershell` 或 `Command` ，**依次执行**以下命令：
+
+  ```sh [powershell]
+  git init			<-- 本地仓库 git 初始化
+  git add .			<-- 添加所有变动到本次提交临时仓库中
+  git commit -m "<your commit state>"			<-- 添加提交记录描述
+  git remote add origin https://github.com/<username>/<repo-name>.git			<-- 链接远程仓库
+  git push -u origin main			<-- 推动提交记录到远程仓库
+  ```
+
+### 版本更新
+
+非首次提交就无需像上述那样麻烦了，只需要进行「提交和同步」即可，具体操作如下：
+
+```sh [powershell]
+git status			<-- 可选。用于查看与上次提交记录的更改变化
+
+git add .			<-- 添加所有变动到本次提交临时仓库中
+git commit -m "<your commit state>"			<-- 添加提交记录描述
+git pull origin main			<-- 拉取远程仓库最新提交记录，并与本地分支合并
+git push origin main			<-- 推送提交记录到远程仓库
+```
+
+由于我们需要多次使用，每次输入上述命令十分繁琐，为了加快工作效率，我们可以自定义 `git` 命令。
+
+### 设置命令别名
+
+语法
+
+```sh [powershell]
+git config --global alias.[别名] '[原git命令]'
+```
+
+具体使用
+
+```sh [powershell]
+git config --global alias.sb 'status -sb'
+git config --global alias.cm 'commit -m'
+git config --global alias.pl 'pull origin main'
+git config --global alias.pu 'push origin main'
+```
+
+如果你有更多个性化需要，可以按照提供的语法格式，自行配置使用。
+
+配置之后，使用效果如下：
+
+```sh [powershell]
+git sb
+
+git add .
+git cm "[message]"
+git pl
+git pu
+```
+
+不难发现，「提交和同步」变得十分简洁！
