@@ -219,7 +219,7 @@ git push
 
 运行过程如下
 
-![[public/blog/tech_skills/git/process.mp4]]
+<xgplayer url="/blog/tech_skills/git/process.mp4" />
 
 ### 远程服务器拒绝
 
@@ -243,7 +243,7 @@ git push
 
 运行过程如下
 
-![[public/blog/tech_skills/git/process2.mp4|process2]]
+<xgplayer url="/blog/tech_skills/git/process2.mp4" poster="/blog/tech_skills/git/goal2.png" />
 
 ## <span style="color:red;font-family:monospace;font-style:italic;">3</span>-实际搭配 Github 使用
 
