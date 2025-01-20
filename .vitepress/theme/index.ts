@@ -72,9 +72,9 @@ export const Theme: ThemeConfig = {
     vitepressNprogress(ctx)  // 使用新的插件
   },
 
-  //图片缩放
   setup() {
     const route = useRoute();
+      //图片缩放
     const initZoom = () => {
       // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
       mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能

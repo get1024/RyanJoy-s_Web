@@ -61,6 +61,7 @@ export default defineConfig({
   title: "RyanJoy's Web",
   description: "RyanJoy前途似锦",
   lastUpdated: true,
+  appearance: true,
 
   //站点地图
   sitemap: {

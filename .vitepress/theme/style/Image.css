@@ -15,6 +15,7 @@ img {
     box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
 }
 
+/* 全局视频样式 */
 video {
     width: 100%;
     border-radius: 15px;
@@ -27,6 +28,12 @@ video {
     box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
 }
 
+/* 深色模式 重写阴影样式 */
+html.dark img,
+html.dark video {
+    box-shadow: 0 10px 30px 0 rgb(255 255 255 / 40%);
+}
+
 /* 首页图片 */
 img.VPImage.image-src{
     box-shadow: 0 0px 0px white;
@@ -34,6 +41,7 @@ img.VPImage.image-src{
     width: auto;
 }
 
+/* 导航栏-左上角图标 */
 img.VPImage.logo{
     box-shadow: 0 0px 0px white;
     margin: 0;
@@ -48,20 +56,41 @@ img.titleAvatar{
     margin:-7px 0 0 0;
 }
 
+html.dark img.titleAvatar{
+    box-shadow: 0 0px 0px black;
+}
+
 /* 贡献者头像图标 */
 img.h-8{
     box-shadow: 0 0px 0px white;
     margin:-2px -9px 0 0;
 }
 
-.badgeP>img{
-    all: unset;
+html.dark img.h-8{
+    box-shadow: 0 0px 0px black;
 }
 
-img.VPPluginSearch-flex-logo{
-    width: 80px;
-    margin-left: calc(100% - 90px);
-    padding-bottom: 10px;
-    border-radius: 0%;
-    box-shadow: 0 0px 0px white;
+/* 关于我-创作者头像 */
+img.avatar-img{
+    /* 颜色无所谓的 */
+    box-shadow: 0 0px 0px black;
+    margin-top: -2px;
+    margin-left: 3px;
+    width: 110%;
+    height: auto;
+}
+
+html.dark img.avatar-img{
+    box-shadow: 0 0px 0px black;
+}
+
+
+/* 关于我-徽标 */
+.badgeP>img{
+    all: unset;
+    box-shadow: 0 10px 30px -3px rgb(0 0 0 / 40%);
+}
+
+html.dark .badgeP>img{
+    box-shadow: 0 10px 30px -3px rgb(255 255 255 / 40%);
 }
