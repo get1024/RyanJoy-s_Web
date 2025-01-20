@@ -67,17 +67,14 @@ html.dark ::-webkit-scrollbar-thumb:hover{
 
 /* 侧边栏 二级标题 */
 /* 目录台头 */
-.VPSidebar .group>.VPSidebarItem>.item,
+.VPSidebar .group>.VPSidebarItem>.item{
+  border-style: dashed;
+  border-radius: 7px;
+  border-color: #e0b424;
+}
+
 #doc-outline-aria-label {
-  background: linear-gradient(104deg,
-          rgba(255, 50, 152, 0) 0.9%,
-          rgba(255, 50, 152, 1.25) 2.4%,
-          rgba(255, 50, 152, 0.5) 5.8%,
-          rgba(255, 50, 152, 0.1) 93%,
-          rgba(255, 50, 152, 0.7) 96%,
-          rgba(255, 50, 152, 0) 98%),
-      linear-gradient(183deg,
-          rgba(84, 3, 204, 0) 0%,
-          rgba(225, 7, 229, 0.3) 7.9%,
-          rgba(150, 3, 204, 0) 15%);
+  border-style: dashed;
+  border-radius: 7px;
+  border-color: #e0b424;
 }
