@@ -119,19 +119,16 @@ export default defineConfig({
     ],
     optimizeDeps: {
       include: [
-        "@nolebase/vitepress-plugin-enhanced-readabilities > @nolebase/ui > @rive-app/canvas",
+
       ],
       exclude: [
-        "@nolebase/vitepress-plugin-enhanced-readabilities/client",
-        "@nolebase/vitepress-plugin-inline-link-preview/client", //行内链接
+
       ],
     },
     ssr: {
       noExternal: [
         // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
-        "@nolebase/vitepress-plugin-enhanced-readabilities",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
-        "@nolebase/vitepress-plugin-inline-link-preview", //行内链接
       ],
     },
   },

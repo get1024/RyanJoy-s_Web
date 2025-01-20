@@ -2,14 +2,6 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme as ThemeConfig } from 'vitepress'
-import {
-  InjectionKey as NolebaseEnhancedReadabilitiesInjectionKey,
-  LayoutMode as NolebaseEnhancedReadabilitiesLayoutMode,
-  NolebaseEnhancedReadabilitiesMenu, 
-  NolebaseEnhancedReadabilitiesScreenMenu, 
-} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 //高亮目标标题
 import {  
   NolebaseHighlightTargetedHeading,  
@@ -68,10 +60,6 @@ export const Theme: ThemeConfig = {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // 为较宽的屏幕的导航栏添加阅读增强菜单
-      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
-      // 为较窄的屏幕（通常是小于 iPad Mini）添加阅读增强菜单
-      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu), 
       'layout-top': () => [ 
         h(NolebaseHighlightTargetedHeading), 
       ],
