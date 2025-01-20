@@ -60,7 +60,6 @@ import 'vitepress-plugin-nprogress/lib/css/index.css'
 //组件
 import Linkcard from "./components/Linkcard.vue"
 import HomeUnderLine from './components/HomeUnderLine.vue'
-import Update from './components/Update.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
 import nodeIndex from "./components/noteIndex.vue"
 
@@ -116,7 +115,6 @@ const enhanceAppOriginal = ({ app, router, siteData }) => {
   // 组件引入
   app.component('Linkcard', Linkcard)
   app.component('HomeUnderLine', HomeUnderLine)
-  app.component('Update', Update)
   app.component('ArticleMetadata', ArticleMetadata)
   app.component('nodeIndex',nodeIndex)
 }

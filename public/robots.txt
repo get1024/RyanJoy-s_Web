@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://get1024.github.io/RyanJoy-s_Web/sitemap.xml
