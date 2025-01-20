@@ -11,10 +11,6 @@ import {
   GitChangelogMarkdownSection,
 } from "@nolebase/vitepress-plugin-git-changelog/vite";
 import { hostname } from "os";
-//时间线插件
-import timeline from "vitepress-markdown-timeline";
-// to-do插件
-import taskLists from "markdown-it-task-checkbox";
 //引入nav
 import { nav } from "./configs";
 //引入sidebar
@@ -22,12 +18,8 @@ import { nav } from "./configs";
 // import { calculateSidebar as originalCalculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
 //自己重新上传的npm包
 import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar";
-//页面属性
-import { PageProperties } from "@nolebase/vitepress-plugin-page-properties/vite";
 // 引入obsidian双链规则插件
 import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links";
-//引入行内链接预览插件
-import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
 //代码组、块图标
 import {
   groupIconMdPlugin,
@@ -102,7 +94,6 @@ export default defineConfig({
         ],
       }),
       GitChangelogMarkdownSection(),
-      PageProperties(),
       pagefindPlugin({
         customSearchQuery: chineseSearchOptimize,
         btnPlaceholder: '搜索',
@@ -228,21 +219,8 @@ export default defineConfig({
         return htmlResult;
       }; //update和阅读成本
       md.use(groupIconMdPlugin); //代码组图标
-      //行内链接预览
-      md.use(InlineLinkPreviewElementTransform);
       //obsidian双链插件
       md.use(BiDirectionalLinks());
-      //时间线插件
-      md.use(timeline);
-      //to-do插件
-      md.use(taskLists, {
-        disabled: false,
-        divWrap: false,
-        divClass: "checkbox",
-        idPrefix: "cbx_",
-        ulClass: "task-list",
-        liClass: "task-list-item",
-      });
     },
   },
 
