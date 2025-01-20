@@ -1,24 +1,17 @@
-/* index.css */
+/* ArticleMetadata.css 放在组件中引用 */
+@import './blockquote.css';
+@import './blur.css';
+@import './custom-block.css';
+@import './hidden.css';
+@import './Image.css';
+/* index.css 本文件*/
+@import './Linkcard.css';
+@import './marker.css';
+/* noteIndex.css 放在组件中引用 */
+@import './rainbow.css';
+@import './tableCustom.css';
 @import './var.css';
-
-@import './vp-code.css';
 @import './vp-code-group.css';
 @import './vp-code-title.css';
+@import './vp-code.css';
 
-@import './Linkcard.css';
-
-@import './rainbow.css';
-
-@import './blockquote.css';
-
-@import './custom-block.css';
-
-@import './blur.css';
-
-@import './hidden.css';
-
-@import './Image.css';
-
-@import './tableCustom.css';
-
-@import './marker.css'

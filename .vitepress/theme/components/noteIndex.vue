@@ -1,6 +1,6 @@
 <script setup>
 import { data as posts } from '../utils/note.data.ts'
-import '../style/nodeIndex.css'
+import '../style/noteIndex.css'
 import { useData } from "vitepress"
 
 
