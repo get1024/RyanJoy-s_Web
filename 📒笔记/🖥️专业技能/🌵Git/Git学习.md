@@ -1,7 +1,7 @@
 ---
 title: Git学习
 createAt: 2024-03-26 10:55:46
-updateAt: 2025-01-19 20:50:29
+updateAt: 2025-01-20 14:55:07
 tags:
   - git
 ---
@@ -219,7 +219,7 @@ git push
 
 运行过程如下
 
-![[/blog/tech_skills/git/process.mp4]]
+![[public/blog/tech_skills/git/process.mp4]]
 
 ### 远程服务器拒绝
 
@@ -243,7 +243,7 @@ git push
 
 运行过程如下
 
-![[/blog/tech_skills/git/process2.mp4]]
+![[public/blog/tech_skills/git/process2.mp4]]
 
 ## <span style="color:red;font-family:monospace;font-style:italic;">3</span>-实际搭配 Github 使用
 
