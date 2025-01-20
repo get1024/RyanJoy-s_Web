@@ -62,7 +62,6 @@ import Linkcard from "./components/Linkcard.vue"
 import HomeUnderLine from './components/HomeUnderLine.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
 import nodeIndex from "./components/noteIndex.vue"
-import xgplayer from './components/xgplayer.vue'
 
 const enhanceAppOriginal = ({ app, router, siteData }) => {
   if (inBrowser) {
@@ -118,7 +117,6 @@ const enhanceAppOriginal = ({ app, router, siteData }) => {
   app.component('HomeUnderLine', HomeUnderLine)
   app.component('ArticleMetadata', ArticleMetadata)
   app.component('nodeIndex',nodeIndex)
-  app.component('xgplayer',xgplayer)
 }
 
 export const Theme: ThemeConfig = {
