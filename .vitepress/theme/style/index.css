@@ -5,7 +5,7 @@
 @import './vp-code-group.css';
 @import './vp-code-title.css';
 
-@import './friendChain.css';
+@import './Linkcard.css';
 
 @import './rainbow.css';
 
@@ -24,3 +24,5 @@
 @import './tableCustom.css';
 
 @import './basicConfig.css';
+
+@import './marker.css'

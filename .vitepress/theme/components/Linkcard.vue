@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import '../style/friendChain.css';
+import '../style/Linkcard.css';
 
 interface Props {
     url: string
@@ -27,3 +27,7 @@ const props = withDefaults(defineProps<Props>(), {
         </a>
     </div>
 </template>
+
+
+<!-- 使用方法 -->
+<!-- <Linkcard url="你的网址" title="标题" description="描述" logo="logo图片路径"/> -->

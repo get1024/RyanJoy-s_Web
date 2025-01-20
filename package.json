@@ -17,7 +17,8 @@
     "vite-plugin-sitemap": "^0.7.1",
     "vitepress": "^1.5.0",
     "vitepress-plugin-nprogress": "^0.0.4",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "xgplayer": "3.0.0-alpha.146"
   },
   "type": "module",
   "scripts": {
