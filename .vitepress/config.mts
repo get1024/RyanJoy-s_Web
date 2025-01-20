@@ -198,7 +198,6 @@ export default defineConfig({
     },
     //侧边栏自动配置
     sidebar: calculateSidebarWithDefaultOpen([
-      { folderName: "👨🏼‍🎓关于我", separate: true },
       { folderName: "📒笔记", separate: true },
     ],''),
   },

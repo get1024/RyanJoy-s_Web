@@ -16,9 +16,6 @@ hero:
     - theme: brand
       text: 进入博客📖
       link: /📒笔记/index.md
-    - theme: alt
-      text: 联系我📞
-      link: /👨🏼‍🎓关于我/index.md
   image:
     src: /logo.png
     alt: RyanJoy's Blog logo

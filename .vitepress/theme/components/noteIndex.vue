@@ -37,11 +37,10 @@ const groupedPosts = Object.entries(posts)
     <ul class="noteIndex-ul">
       <li v-for="post of group.posts" :key="post.url" class="post-item">
         <span class="post-link-update">
-          <a :href="'/RyanJoy-s_Web'+post.url">{{ post.frontmatter.title }}</a>
-          &nbsp;
-          <span class="post-update">更新于{{ post.frontmatter.updateAt.year }}-{{ post.frontmatter.updateAt.month }}-{{ post.frontmatter.updateAt.day }} {{ post.frontmatter.updateAt.hour }}:{{ post.frontmatter.updateAt.minute }}:{{ post.frontmatter.updateAt.second }}</span>
+          <a :href="'/RyanJoy-s_Web'+post.url">{{ post.frontmatter.title }}</a>:
+          <span class="post-update">{{ post.frontmatter.updateAt.year }}.{{ post.frontmatter.updateAt.month }}.{{ post.frontmatter.updateAt.day }} {{ post.frontmatter.updateAt.hour }}:{{ post.frontmatter.updateAt.minute }}:{{ post.frontmatter.updateAt.second }} 更新</span>
         </span>
-        <span class="post-date">创建于 {{ post.frontmatter.createAt.year }}-{{ post.frontmatter.createAt.month }}-{{ post.frontmatter.createAt.day }} {{ post.frontmatter.createAt.hour }}:{{ post.frontmatter.createAt.minute }}:{{ post.frontmatter.createAt.second }}</span>
+        <span class="post-date">创建于 {{ post.frontmatter.createAt.year }}.{{ post.frontmatter.createAt.month }}.{{ post.frontmatter.createAt.day }} {{ post.frontmatter.createAt.hour }}:{{ post.frontmatter.createAt.minute }}:{{ post.frontmatter.createAt.second }}</span>
       </li>
     </ul>
   </div>

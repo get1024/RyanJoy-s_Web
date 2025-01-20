@@ -36,8 +36,11 @@ ul.noteIndex-ul {
     background-color: transparent;
     text-decoration: underline;
 }
+html.dark .post-link-update a:hover {
+    box-shadow: 0 10px 30px 0 rgb(255 255 255 / 40%);
+}
 
-.post-update{
+.post-link-update .post-update{
     color: gray;
     font-family: monospace; 
     white-space: nowrap;
