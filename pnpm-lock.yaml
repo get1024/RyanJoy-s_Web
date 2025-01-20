@@ -42,9 +42,6 @@ importers:
       medium-zoom:
         specifier: ^1.1.0
         version: 1.1.0
-      nprogress-v2:
-        specifier: ^1.0.4
-        version: 1.0.4
       ofetch:
         specifier: ^1.4.1
         version: 1.4.1
@@ -1388,9 +1385,6 @@ packages:
   npm-run-path@6.0.0:
     resolution: {integrity: sha512-9qny7Z9DsQU8Ou39ERsPU4OZQlSTP47ShQzuKZ6PRXpYLtIFgl/DEBYEXKlvcEa+9tHVcK8CF81Y2V72qaZhWA==}
     engines: {node: '>=18'}
-
-  nprogress-v2@1.0.4:
-    resolution: {integrity: sha512-HPhTEgqsQMFXXuaftvu6bevqEXvcQ/hogvkAswlcNyS9eRGjvo7wZY1O4H3aZS4Uq8oWSO6sL3dOj6Oq/ZJN5A==}
 
   nprogress@0.2.0:
     resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
@@ -3200,8 +3194,6 @@ snapshots:
     dependencies:
       path-key: 4.0.0
       unicorn-magic: 0.3.0
-
-  nprogress-v2@1.0.4: {}
 
   nprogress@0.2.0: {}
 

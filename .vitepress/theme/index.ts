@@ -8,7 +8,6 @@ import {
   NolebaseEnhancedReadabilitiesMenu, 
   NolebaseEnhancedReadabilitiesScreenMenu, 
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 //高亮目标标题
@@ -24,8 +23,6 @@ import {
   InjectionKey
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-//时间线样式
-import "vitepress-markdown-timeline/dist/theme/index.css";
 //浏览量
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import { inBrowser } from 'vitepress'
@@ -42,18 +39,7 @@ import { useData } from 'vitepress';
 import { strict } from 'assert'
 import { emit } from 'process'
 import theme from 'vitepress/theme'
-//页面属性
-import {
-  NolebasePagePropertiesPlugin,
-} from '@nolebase/vitepress-plugin-page-properties/client'
-//行内链接预览
-import { 
-  NolebaseInlineLinkPreviewPlugin, 
-} from '@nolebase/vitepress-plugin-inline-link-preview/client'
-import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 import 'virtual:group-icons.css' //代码组图标
-import { NProgress } from 'nprogress-v2/dist/index.js' // 进度条组件
-import 'nprogress-v2/dist/index.css' // 进度条样式
 //
 import vitepressNprogress from 'vitepress-plugin-nprogress'
 import 'vitepress-plugin-nprogress/lib/css/index.css'
@@ -65,53 +51,12 @@ import nodeIndex from "./components/noteIndex.vue"
 
 const enhanceAppOriginal = ({ app, router, siteData }) => {
   if (inBrowser) {
-    NProgress.configure({ showSpinner: false })
-    router.onBeforeRouteChange = () => {
-      NProgress.start() // 开始进度条
-    }
     router.onAfterRouteChanged = (to) => {
       busuanzi.fetch()
-      NProgress.done()
     }
   }
   app.use(NolebaseGitChangelogPlugin)
-  app.use(NolebasePagePropertiesPlugin<{
-    tags: string[]
-    progress: number
-  }>(), {
-    properties: {
-      'zh-CN': [
-        {
-          key: 'tags',
-          type: 'tags',
-          title: '标签',
-        },
-        {
-          key: 'progress',
-          type: 'progress',
-          title: '完成进度',
-        },
-        {
-          key: 'wordCount',
-          type: 'dynamic',
-          title: '字数',
-          options: {
-            type: 'wordsCount',
-          },
-        },
-        {
-          key: 'readingTime',
-          type: 'dynamic',
-          title: '阅读时间',
-          options: {
-            type: 'readingTime',
-            dateFnsLocaleName: 'zhCN',
-          },
-        },
-      ],
-    },
-  })
-  app.use(NolebaseInlineLinkPreviewPlugin)
+  
   // 组件引入
   app.component('Linkcard', Linkcard)
   app.component('HomeUnderLine', HomeUnderLine)
@@ -123,8 +68,6 @@ export const Theme: ThemeConfig = {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      //将面包屑导航添加到文档上方
-      // 'doc-before': () => h(NolebaseBreadcrumbs), 
       // 为较宽的屏幕的导航栏添加阅读增强菜单
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
       // 为较窄的屏幕（通常是小于 iPad Mini）添加阅读增强菜单
