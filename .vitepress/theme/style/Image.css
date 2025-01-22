@@ -1,8 +1,8 @@
 /* 全局图片样式 */
 img:not(.linkcard-img):not(.VPImage.image-src):not(.VPImage.logo):not(.titleAvatar):not(.h-8):not(.avatar-img):not(.badgeP>img) {
-    width: 70%;
+    width: 90%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 8px;
     /* 将图片设置为块状元素，防止与文本同行 */
     display: block;
     /* 水平居中 */
