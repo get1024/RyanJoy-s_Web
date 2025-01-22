@@ -10,10 +10,10 @@ export const nav: DefaultTheme.Config['nav'] = [
   },
   {
     text: '👨‍🎓关于我',
-    link: '/关于我'
+    link: '/otherDocs/关于我'
   },
   {
     text: '🗃️归档',
-    link: '/最近更新'
+    link: '/otherDocs/最近更新'
   },
 ]

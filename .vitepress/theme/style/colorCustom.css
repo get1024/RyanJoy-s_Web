@@ -1,0 +1,93 @@
+:root {
+    --vp-c-brand-1: #e68c00;
+    --vp-c-brand-2: #ff9e00;
+    --vp-c-brand-3: #e0b424;
+
+    /* linkcard色卡 */
+    --custom-bg: #f0f0f0;
+    --custom-border: #dedede;
+    --custom-text: #575d65;
+
+    /* 首页按钮 */
+    --vp-button-brand-text: #F6CEEC;
+    --vp-button-brand-bg: #D939CD;
+    --vp-button-brand-hover-text: #fff;
+    --vp-button-brand-hover-bg: #fe64f1;
+
+    /* 自定义阴影 */
+    --custom-shadow: rgb(0 0 0 / 40%);
+
+    /* 自定义容器 */
+    --custom-block-info-left: #cccccc;
+    --custom-block-info-bg: #fafafa;
+
+    --custom-block-tip-left: #009400;
+    --custom-block-tip-bg: #e6f6e6;
+
+    --custom-block-warning-left: #e6a700;
+    --custom-block-warning-bg: #fff8e6;
+
+    --custom-block-danger-left: #e13238;
+    --custom-block-danger-bg: #ffebec;
+
+    --custom-block-note-left: #4cb3d4;
+    --custom-block-note-bg: #eef9fd;
+
+    --custom-block-important-left: #a371f7;
+    --custom-block-important-bg: #f4eefe;
+
+    --custom-block-caution-left: #e0575b;
+    --custom-block-caution-bg: #fde4e8;
+
+    /* 主页色卡 */
+    --main-page-bg: white;
+    --main-page-text: #050505;
+    --main-page-from: #222222;
+    --main-page-to: #585858;
+    --main-page-menu: #525861;
+    --main-page-appearance: #e0e0e0;
+}
+
+.dark {
+    --vp-c-brand-1: #f7a800;
+    --vp-c-brand-2: #ffb300;
+    --vp-c-brand-3: #f9d423;
+
+    /* linkcard色卡 */
+    --custom-bg: #050505;
+    --custom-border: #282828;
+    --custom-text: #969ba6;
+
+    /* 自定义阴影 */
+    --custom-shadow: rgb(255 255 255 / 40%);
+
+    /* 自定义容器 */
+    --custom-block-info-left: #cccccc;
+    --custom-block-info-bg: #474748;
+
+    --custom-block-tip-left: #009400;
+    --custom-block-tip-bg: #003100;
+
+    --custom-block-warning-left: #e6a700;
+    --custom-block-warning-bg: #4d3800;
+
+    --custom-block-danger-left: #e13238;
+    --custom-block-danger-bg: #4b1113;
+
+    --custom-block-note-left: #4cb3d4;
+    --custom-block-note-bg: #193c47;
+
+    --custom-block-important-left: #a371f7;
+    --custom-block-important-bg: #230555;
+
+    --custom-block-caution-left: #e0575b;
+    --custom-block-caution-bg: #391c22;
+
+    /* 主页色卡 */
+    --main-page-bg: #050505;
+    --main-page-text: #f0f0f0;
+    --main-page-from: #f0f0f0;
+    --main-page-to: #575757;
+    --main-page-menu: #969ba6;
+    --main-page-appearance: #222222;
+}

@@ -5,16 +5,11 @@
     background-color: var(--vp-code-block-bg);
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
+    box-shadow: 0 10px 30px 0 var(--custom-shadow);
     /* 添加阴影 */
     overflow: hidden;
     position: relative;
     /* 确保小圆点定位 */
-}
-
-/* 深色模式-重写阴影 */
-html.dark .vp-code-block-title{
-    box-shadow: 0 10px 30px 0 rgb(255 255 255 / 40%);
 }
 
 /* Mac 风格的小圆点，放在容器顶部 */

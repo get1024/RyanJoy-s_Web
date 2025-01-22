@@ -1,19 +1,43 @@
 ---
-title: 📒笔记
+title: 📒笔记首页
 createAt: 2024-04-29 21:50:23
-updateAt: 2025-01-11 22:45:17
+updateAt: 2025-01-20 23:52:47
 ---
-# {{$frontmatter.title}}
+<script setup>
+    import {lifeSkills} from '/.vitepress/theme/components/lists/lifeSkills'
+    import {os} from '/.vitepress/theme/components/lists/os'
+    import {personalProject} from '/.vitepress/theme/components/lists/personalProject'
+    import {ref_sum} from '/.vitepress/theme/components/lists/ref_sum'
+    import {tech_skills} from '/.vitepress/theme/components/lists/tech_skills'
+    import {tools} from '/.vitepress/theme/components/lists/tools'
+</script>
 
-## <p><img src="/avatar.png" class="titleAvatar" /><span >RyanJoy的知识图书馆</span></p>
+# 笔记首页
 
-👏欢迎来到小业的知识图书馆[RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/)，这里是{{$frontmatter.title}}分区!
+## <p><img src="/avatar.png" class="titleAvatar" /><span >RyanJoy 的知识图书馆</span></p>
 
-## 🚧提示！
->[!DANGER]⚠️注意
->{{$frontmatter.title}}主页尚未装修，敬请期待！⏳
+👏欢迎来到小业的知识图书馆 [RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/)，这里是「📒笔记」分区!
 
->[!DANGER]🚶‍♂️移步📒笔记分区
->在📒笔记分区侧边栏选择您感兴趣的内容，开始您的阅读吧！📖
+## 🏙️生活技巧
 
-还请不要失望🥺，小业会快快装修的！
+<list v-for="{ title , items } in lifeSkills" :title="title" :items="items" />
+
+## 👨🏼‍💻个人项目
+
+<list v-for="{ title , items } in personalProject" :title="title" :items="items" />
+
+## 💻操作系统
+
+<list v-for="{ title , items } in os" :title="title" :items="items" />
+
+## 🖥️专业技能
+
+<list v-for="{ title , items } in tech_skills" :title="title" :items="items" />
+
+## 🤔反思和总结
+
+<list v-for="{ title , items } in ref_sum" :title="title" :items="items" />
+
+## 🛠️实用工具
+
+<list v-for="{ title , items } in tools" :title="title" :items="items" />

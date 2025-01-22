@@ -36,10 +36,11 @@ import 'virtual:group-icons.css' //代码组图标
 import vitepressNprogress from 'vitepress-plugin-nprogress'
 import 'vitepress-plugin-nprogress/lib/css/index.css'
 //组件
-import Linkcard from "./components/Linkcard.vue"
-import HomeUnderLine from './components/HomeUnderLine.vue'
-import ArticleMetadata from "./components/ArticleMetadata.vue"
-import nodeIndex from "./components/noteIndex.vue"
+import Linkcard from "./components/Linkcard/Linkcard.vue"
+import HomeUnderLine from './components/HomeUnderline/HomeUnderLine.vue'
+import ArticleMetadata from "./components/ArticleMetadata/ArticleMetadata.vue"
+import nodeIndex from "./components/noteIndex/noteIndex.vue"
+import list from "./components/lists/list.vue"
 
 const enhanceAppOriginal = ({ app, router, siteData }) => {
   if (inBrowser) {
@@ -54,6 +55,7 @@ const enhanceAppOriginal = ({ app, router, siteData }) => {
   app.component('HomeUnderLine', HomeUnderLine)
   app.component('ArticleMetadata', ArticleMetadata)
   app.component('nodeIndex',nodeIndex)
+  app.component('list', list)
 }
 
 export const Theme: ThemeConfig = {

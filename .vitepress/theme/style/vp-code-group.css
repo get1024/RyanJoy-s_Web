@@ -9,12 +9,7 @@
 .vp-code-group {
     color: var(--vp-c-black-soft);
     border-radius: 8px;
-    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
-}
-
-/* 深色模式-重写阴影 */
-html.dark .vp-code-group{
-    box-shadow: 0 10px 30px 0 rgb(255 255 255 / 40%);
+    box-shadow: 0 10px 30px 0 var(--custom-shadow);
 }
 
 /* 代码组：添加macOS风格的小圆点 */
