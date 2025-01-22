@@ -13,18 +13,22 @@
 /* 目录台头样式 */
 .VPSidebar .group>.VPSidebarItem>.item {
   /* 设置边框样式为虚线 */
-  border-style: dashed;
+  border-style: solid;
   /* 设置边框圆角 */
   border-radius: 7px;
   /* 设置边框颜色 */
   border-color: #e0b424;
+  box-shadow: var(--custom-shadow);
 }
 
 #doc-outline-aria-label {
   /* 设置边框样式为虚线 */
-  border-style: dashed;
+  border-style: solid;
   /* 设置边框圆角 */
   border-radius: 7px;
   /* 设置边框颜色 */
   border-color: #e0b424;
+  box-shadow: var(--custom-shadow);
+  /* 增加右侧边距，确保阴影效果完整显示 */
+  margin-right: 25px;
 }
