@@ -12,7 +12,7 @@ img:not(.linkcard-img):not(.VPImage.image-src):not(.VPImage.logo):not(.titleAvat
     margin-top: 10px;
     margin-bottom: 10px;
     /* 底部阴影 */
-    box-shadow: 0 10px 30px 0 var(--custom-shadow);
+    box-shadow: var(--custom-shadow);
 }
 
 /* 全局视频样式 */
@@ -25,7 +25,7 @@ video {
     margin-left: auto;
     margin-right: auto;
     /* 底部阴影 */
-    box-shadow: 0 10px 30px 0 var(--custom-shadow);
+    box-shadow: var(--custom-shadow);
 }
 
 /* 首页图片 */
@@ -49,3 +49,6 @@ img.avatar-img {
     margin-top: -2px;
     margin-left: 2px;
 }
+
+/* 关于我-徽标 */
+/* .badgeP>img */

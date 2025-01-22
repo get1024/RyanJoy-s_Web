@@ -15,7 +15,7 @@
     --vp-button-brand-hover-bg: #fe64f1;
 
     /* 自定义阴影 */
-    --custom-shadow: rgb(0 0 0 / 40%);
+    --custom-shadow:0 10px 30px 0 rgb(0 0 0 / 40%);
 
     /* 自定义容器 */
     --custom-block-info-left: #cccccc;
@@ -46,6 +46,9 @@
     --main-page-to: #585858;
     --main-page-menu: #525861;
     --main-page-appearance: #e0e0e0;
+
+    --custom-toast-bg: #000000;
+    --custom-toast-text: #ffffff;
 }
 
 .dark {
@@ -59,7 +62,7 @@
     --custom-text: #969ba6;
 
     /* 自定义阴影 */
-    --custom-shadow: rgb(255 255 255 / 40%);
+    --custom-shadow:0 10px 30px 0 rgb(255 255 255 / 40%);
 
     /* 自定义容器 */
     --custom-block-info-left: #cccccc;
@@ -90,4 +93,7 @@
     --main-page-to: #575757;
     --main-page-menu: #969ba6;
     --main-page-appearance: #222222;
+
+    --custom-toast-bg: #ffffff;
+    --custom-toast-text: #000000;
 }

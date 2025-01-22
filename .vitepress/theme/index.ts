@@ -41,6 +41,13 @@ import HomeUnderLine from './components/HomeUnderline/HomeUnderLine.vue'
 import ArticleMetadata from "./components/ArticleMetadata/ArticleMetadata.vue"
 import nodeIndex from "./components/noteIndex/noteIndex.vue"
 import list from "./components/lists/list.vue"
+import githubData from "./components/about_me/githubData.vue"
+import backEnd from "./components/about_me/backEnd.vue"
+import frontEnd from "./components/about_me/frontEnd.vue"
+import devOps from "./components/about_me/devOps.vue"
+import developTools from "./components/about_me/developTools.vue"
+import others from "./components/about_me/others.vue"
+import contactMe from "./components/about_me/contactMe.vue"
 
 const enhanceAppOriginal = ({ app, router, siteData }) => {
   if (inBrowser) {
@@ -56,6 +63,13 @@ const enhanceAppOriginal = ({ app, router, siteData }) => {
   app.component('ArticleMetadata', ArticleMetadata)
   app.component('nodeIndex',nodeIndex)
   app.component('list', list)
+  app.component('githubData', githubData)
+  app.component('backEnd', backEnd)
+  app.component('frontEnd', frontEnd)
+  app.component('devOps', devOps)
+  app.component('developTools', developTools)
+  app.component('others', others)
+  app.component('contactMe', contactMe)
 }
 
 export const Theme: ThemeConfig = {

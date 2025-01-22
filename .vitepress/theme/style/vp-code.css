@@ -3,7 +3,7 @@
 /* 代码块：增加留空边距 增加阴影 */
 /* 后代选择器、属性选择器 */
 .vp-doc div[class*=language-] {
-  box-shadow: 0 10px 30px 0 var(--custom-shadow);
+  box-shadow: var(--custom-shadow);
   padding-top: 20px;
 }
 

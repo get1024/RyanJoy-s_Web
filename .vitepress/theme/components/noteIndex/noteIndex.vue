@@ -83,7 +83,7 @@ h2.noteIndex-h2 {
 
 .post-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px 0 var(--custom-shadow);
+  box-shadow: var(--custom-shadow);
 }
 
 .post-link-update {

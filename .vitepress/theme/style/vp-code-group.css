@@ -9,7 +9,7 @@
 .vp-code-group {
     color: var(--vp-c-black-soft);
     border-radius: 8px;
-    box-shadow: 0 10px 30px 0 var(--custom-shadow);
+    box-shadow: var(--custom-shadow);
 }
 
 /* 代码组：添加macOS风格的小圆点 */

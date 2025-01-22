@@ -2,7 +2,7 @@
     display: table;
     margin: 20px auto;
     border-collapse: collapse;
-    box-shadow: 0 10px 30px 0 var(--custom-shadow);
+    box-shadow: var(--custom-shadow);
     border-radius: 12px;
     overflow: hidden;
     min-width: 90%;
