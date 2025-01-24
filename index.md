@@ -17,7 +17,7 @@ hero:
       text: 进入博客📖
       link: /📒笔记/index
     - theme: alt
-      text: todo✔️
+      text: Todo✔️
       link: /otherDocs/todo
   image:
     src: /logo.png
