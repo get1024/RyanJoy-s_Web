@@ -26,7 +26,10 @@ import {
   groupIconVitePlugin,
   localIconLoader
 } from "vitepress-plugin-group-icons";
-
+// 脚注插件
+import  footnote_plugin  from "markdown-it-footnote"; 
+// 任务列表插件
+import  task_checkbox_plugin  from "markdown-it-task-checkbox"; 
 
 function calculateSidebarWithDefaultOpen(targets, base) {
   const result = originalCalculateSidebar(targets, base);
@@ -218,6 +221,15 @@ export default defineConfig({
       md.use(groupIconMdPlugin); //代码组图标
       //obsidian双链插件
       md.use(BiDirectionalLinks());
+      md.use(footnote_plugin);
+      md.use(task_checkbox_plugin,{
+        disabled: true,
+        divWrap: false,
+        divClass: 'checkbox',
+        idPrefix: 'cbx_',
+        ulClass: 'task-list',
+        liClass: 'task-list-item',
+      });
     },
   },
 
