@@ -118,7 +118,7 @@ div {
 
 - 借助控制台看样式
 
-![控制台](images/3-2.png)
+![控制台]()
 
 ### 字体族
 
@@ -532,7 +532,7 @@ CSS 会把所有的 HTML 元素都看成一个盒子，所有的样式也都是�
 
 图示如下：
 
-![盒子模型](images/box-model.png)
+![盒子模型]()
 
 盒子的大小 = **content** + 左右 **padding** + 左右 **border**。
 
@@ -777,7 +777,7 @@ visibility 属性默认值是 show，如果设置为 hidden，元素会隐藏。
 
 在最初，浮动是用来实现文字环绕图片效果的，现在浮动是主流的页面布局方式之一。
 
-![Image](https://via.placeholder.com/150)
+![Image]()
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, esse eveniet. Soluta quos beatae aperiam velit voluptatibus at veniam minima mollitia nostrum maxime eveniet eos, totam facilis animi laudantium eius placeat earum aspernatur rerum voluptatum, sunt repellat? Quidem recusandae iusto velit incidunt veritatis vero illum tempore dignissimos voluptatibus eius cumque, optio nulla assumenda! Magnam quisquam laborum doloribus eveniet minima eum sit! Repellat, quibusdam. Illum, consequuntur blanditiis fugiat quasi reiciendis unde voluptate rem sequi explicabo, temporibus facilis quod tenetur voluptates aliquid aperiam, ducimus sint. Similique mollitia illum aliquid eos vero suscipit necessitatibus dolore maxime?
 
@@ -836,7 +836,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, esse eveniet. Sol
 
 整体效果如下：
 
-![布局效果图](images/01.png)
+![布局效果图]()
 
 具体标注如下：
 

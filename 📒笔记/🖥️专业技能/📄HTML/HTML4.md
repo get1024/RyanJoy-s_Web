@@ -474,7 +474,8 @@ tags:
 
 #### ①基本结构
 
-1. 一个完整的表格由：**表格标题、表格头部、表格主体、表格脚注**四部分组成。![table structure](public/blog/tech_skills/html/HTML_table_structure.png)
+1. 一个完整的表格由：**表格标题、表格头部、表格主体、表格脚注**四部分组成。
+   ![table structure](/blog/tech_skills/html/HTML_table_structure.png)
 2. 表格涉及到的标签：
 	- **`table`**：表格
 	- **`caption`**：表格标题（没有属性）
@@ -548,7 +549,8 @@ tags:
  #### ③跨行跨列
 1. `rowspan`：指定要跨的行数。
 2. `colspan`：指定要跨的列数。
-3. 动手练习：![table example](/blog/tech_skills/HTML_table_example.png)
+3. 动手练习：
+   ![table example](/blog/tech_skills/html/HTML_table_example.png)
 
 ### 11、常用标签补充
 
@@ -575,7 +577,7 @@ tags:
 </form>
 ```
 
-![form structure](/blog/tech_skills/HTML_form_structure.png)
+![form structure](/blog/tech_skills/html/HTML_form_structure.png)
 
 #### ②常用表单控件
 
