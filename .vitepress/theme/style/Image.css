@@ -52,3 +52,14 @@ img.avatar-img {
 
 /* 关于我-徽标 */
 /* .badgeP>img */
+
+/* 图片缩放样式 */
+.medium-zoom-overlay {
+    /* 设置图片缩放时的覆盖层z-index */
+    z-index: 30;
+}
+
+.medium-zoom-image {
+    /* 设置图片缩放时的图片z-index，确保图片在最上层 */
+    z-index: 9999 !important;
+}
