@@ -1,11 +1,4 @@
-.vp-doc .custom-table-container{
+.vp-doc .custom-table-container {
     display: flex;
     justify-content: center;
-}
-
-.vp-doc table{
-    box-shadow: var(--custom-shadow);
-    overflow: hidden;
-    border-radius: 12px;
-    display: block;
 }

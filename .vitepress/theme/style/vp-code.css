@@ -1,30 +1,13 @@
 /* .vitepress/theme/style/vp-code.css */
 
 /* 代码块：增加留空边距 增加阴影 */
-/* 后代选择器、属性选择器 */
 .vp-doc div[class*=language-] {
   box-shadow: var(--custom-shadow);
-  padding-top: 20px;
-}
-
-/* 代码块：添加macOS风格的小圆点 */
-.vp-doc div[class*=language-]::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 12px;
-  height: 12px;
-  background-color: #ff5f56;
-  border-radius: 50%;
-  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
-  z-index: 1;
 }
 
 /* 代码块：下移行号 隐藏右侧竖线 */
 .vp-doc .line-numbers-wrapper {
-  padding-top: 40px;
+  padding-top: 20px;
   border-right: none;
 }
 
@@ -32,10 +15,10 @@
 .vp-doc .line-numbers-wrapper::after {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 0;
   border-right: 1px solid var(--vp-code-block-divider-color);
-  height: calc(100% - 60px);
+  height: calc(100% - 40px);
 }
 
 .vp-doc div[class*='language-'].line-numbers-mode {

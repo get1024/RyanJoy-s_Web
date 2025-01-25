@@ -1,30 +1,11 @@
 /* .vitepress/theme/style/vp-code-group.css */
 
-/* 代码组：tab间距 */
-.vp-code-group .tabs {
-    padding-top: 20px;
-}
-
 /* 代码组：添加样式及阴影 */
 .vp-code-group {
     color: var(--vp-c-black-soft);
     border-radius: 8px;
     box-shadow: var(--custom-shadow);
 }
-
-/* 代码组：添加macOS风格的小圆点 */
-.vp-code-group .tabs::before {
-    content: ' ';
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    height: 12px;
-    width: 12px;
-    background: #fc625d;
-    border-radius: 50%;
-    box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-}
-
 
 /* 代码组：修正倒角、阴影、边距 */
 .vp-code-group div[class*="language-"].vp-adaptive-theme.line-numbers-mode {
@@ -48,8 +29,6 @@
     top: 24px;
     height: calc(100% - 45px);
 }
-
-
 
 /* 代码组（无行号）：修正倒角、阴影、边距 */
 .vp-code-group div[class*="language-"].vp-adaptive-theme {

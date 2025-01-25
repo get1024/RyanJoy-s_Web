@@ -6,27 +6,7 @@
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: var(--custom-shadow);
-    /* 添加阴影 */
-    overflow: hidden;
     position: relative;
-    /* 确保小圆点定位 */
-}
-
-/* Mac 风格的小圆点，放在容器顶部 */
-.vp-code-block-title::before {
-    content: '';
-    position: absolute;
-    top: 12px;
-    /* 圆点距离容器顶部的距离 */
-    left: 12px;
-    width: 12px;
-    height: 12px;
-    background-color: #fc625d;
-    /* 红色圆点 */
-    border-radius: 50%;
-    box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
-    /* 黄色和绿色圆点 */
-    z-index: 1;
 }
 
 /* 标题栏样式 */
