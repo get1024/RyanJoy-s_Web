@@ -29,7 +29,7 @@ import {
 // 脚注插件
 import  footnote_plugin  from "markdown-it-footnote"; 
 // 任务列表插件
-import  task_checkbox_plugin  from "markdown-it-task-checkbox"; 
+import  task_checkbox_plugin  from "markdown-it-task-checkbox";
 
 function calculateSidebarWithDefaultOpen(targets, base) {
   const result = originalCalculateSidebar(targets, base);
@@ -72,7 +72,10 @@ export default defineConfig({
   },
 
   //配置网页图标
-  head: [["link", { rel: "icon", href: "/RyanJoy-s_Web/logo.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/RyanJoy-s_Web/logo.png" }],
+    ['script', { src: '/RyanJoy-s_Web/tableCustom.js', type: 'module' }]
+  ],
 
   //阅读增强插件
   vite: {

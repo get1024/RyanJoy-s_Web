@@ -1,9 +1,11 @@
-.vp-doc table {
-    display: table;
-    margin: 20px auto;
-    border-collapse: collapse;
+.vp-doc .custom-table-container{
+    display: flex;
+    justify-content: center;
+}
+
+.vp-doc table{
     box-shadow: var(--custom-shadow);
-    border-radius: 12px;
     overflow: hidden;
-    min-width: 90%;
+    border-radius: 12px;
+    display: block;
 }
