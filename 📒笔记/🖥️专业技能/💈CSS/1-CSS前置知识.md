@@ -1,7 +1,7 @@
 ---
 title: CSS 前置知识
 createAt: 2024-05-05 22:25:24
-updateAt: 2025-01-24 21:23:08
+updateAt: 2025-01-25 20:42:40
 tags:
   - 前端
 ---
@@ -94,7 +94,7 @@ h1 {
 
 - 再在 `HTML` 文件中引入该样式文件：
 
-```HTML
+```HTML [example.html]
 <link rel="stylesheet" href="~/example.css">
 ```
 
