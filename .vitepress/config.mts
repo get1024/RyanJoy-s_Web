@@ -3,7 +3,7 @@ import { cwd } from "node:process";
 import { text } from "stream/consumers";
 import { defineConfig, type DefaultTheme } from "vitepress";
 import flexSearchIndexOptions from "flexsearch";
-import { pagefindPlugin } from 'vitepress-plugin-pagefind'
+import { pagefindPlugin } from "vitepress-plugin-pagefind";
 //git更新版本
 import { join } from "node:path";
 import {
@@ -24,37 +24,38 @@ import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links";
 import {
   groupIconMdPlugin,
   groupIconVitePlugin,
-  localIconLoader
+  localIconLoader,
 } from "vitepress-plugin-group-icons";
 // 脚注插件
-import  footnote_plugin  from "markdown-it-footnote"; 
+import footnote_plugin from "markdown-it-footnote";
 // 任务列表插件
-import  task_checkbox_plugin  from "markdown-it-task-checkbox";
+import task_checkbox_plugin from "markdown-it-task-checkbox";
 
 function calculateSidebarWithDefaultOpen(targets, base) {
   const result = originalCalculateSidebar(targets, base);
   if (Array.isArray(result)) {
-    result.forEach(item => {
-      item.collapsed = false; 
+    result.forEach((item) => {
+      item.collapsed = false;
     });
   } else {
-    Object.values(result).forEach(items => {
-      items.forEach(item => {
-        item.collapsed = false; 
+    Object.values(result).forEach((items) => {
+      items.forEach((item) => {
+        item.collapsed = false;
       });
     });
   }
   return result;
 }
+
 function chineseSearchOptimize(input: string) {
-  const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' })
-  const result: string[] = []
+  const segmenter = new Intl.Segmenter("zh-CN", { granularity: "word" });
+  const result: string[] = [];
   for (const it of segmenter.segment(input)) {
     if (it.isWordLike) {
-      result.push(it.segment)
+      result.push(it.segment);
     }
   }
-  return result.join(' ')
+  return result.join(" ");
 }
 
 // https://vitepress.dev/reference/site-config
@@ -72,10 +73,7 @@ export default defineConfig({
   },
 
   //配置网页图标
-  head: [
-    ["link", { rel: "icon", href: "/RyanJoy-s_Web/logo.png" }],
-    ['script', { src: '/RyanJoy-s_Web/tableCustom.js', type: 'module' }]
-  ],
+  head: [["link", { rel: "icon", href: "/RyanJoy-s_Web/logo.png" }]],
 
   //阅读增强插件
   vite: {
@@ -103,34 +101,31 @@ export default defineConfig({
       GitChangelogMarkdownSection(),
       pagefindPlugin({
         customSearchQuery: chineseSearchOptimize,
-        btnPlaceholder: '搜索',
-        placeholder: '搜索文档',
-        emptyText: '空空如也',
-        heading: '共: {{searchResult}} 条结果',
-        excludeSelector: ['img', 'a.header-anchor'],
+        btnPlaceholder: "搜索",
+        placeholder: "搜索文档",
+        emptyText: "空空如也",
+        heading: "共: {{searchResult}} 条结果",
+        excludeSelector: ["img", "a.header-anchor"],
         filter(searchItem, idx, originArray) {
-          console.log(searchItem)
-          return !searchItem.route.includes('404')
+          console.log(searchItem);
+          return !searchItem.route.includes("404");
         },
       }),
       groupIconVitePlugin({
-        customIcon:{
-          "pip": "vscode-icons:file-type-pip",
-          "docker":"vscode-icons:file-type-docker2",
-          ".cpp":"vscode-icons:file-type-cpp",
-          "git":"vscode-icons:file-type-git",
-          "powershell":"vscode-icons:file-type-powershell",
-          "shell":"vscode-icons:file-type-shell",
-        }
+        customIcon: {
+          pip: "vscode-icons:file-type-pip",
+          docker: "vscode-icons:file-type-docker2",
+          ".cpp": "vscode-icons:file-type-cpp",
+          git: "vscode-icons:file-type-git",
+          powershell: "vscode-icons:file-type-powershell",
+          shell: "vscode-icons:file-type-shell",
+          ".mts":"vscode-icons:file-type-typescript"
+        },
       }), //代码组图标
     ],
     optimizeDeps: {
-      include: [
-
-      ],
-      exclude: [
-
-      ],
+      include: [],
+      exclude: [],
     },
     ssr: {
       noExternal: [
@@ -164,7 +159,7 @@ export default defineConfig({
 
     outline: {
       label: "📑本页大纲",
-      level: 'deep'
+      level: "deep",
     },
 
     lastUpdated: {
@@ -203,9 +198,10 @@ export default defineConfig({
       provider: "local",
     },
     //侧边栏自动配置
-    sidebar: calculateSidebarWithDefaultOpen([
-      { folderName: "📒笔记", separate: true },
-    ],''),
+    sidebar: calculateSidebarWithDefaultOpen(
+      [{ folderName: "📒笔记", separate: true }],
+      ""
+    ),
   },
 
   markdown: {
@@ -225,15 +221,40 @@ export default defineConfig({
       //obsidian双链插件
       md.use(BiDirectionalLinks());
       md.use(footnote_plugin);
-      md.use(task_checkbox_plugin,{
+      md.use(task_checkbox_plugin, {
         disabled: true,
         divWrap: false,
-        divClass: 'checkbox',
-        idPrefix: 'cbx_',
-        ulClass: 'task-list',
-        liClass: 'task-list-item',
+        divClass: "checkbox",
+        idPrefix: "cbx_",
+        ulClass: "task-list",
+        liClass: "task-list-item",
       });
+
+      // 保存原有的table渲染器
+      const defaultRender =
+        md.renderer.rules.table_open ||
+        ((tokens, idx) => {
+          return "<table>";
+        });
+
+      // 自定义table渲染
+      md.renderer.rules.table_open = (tokens, idx) => {
+        // 获取用户自定义的类名
+        const className = "custom-table-container";
+        return `<div class="${className}"><table>`;
+      };
+
+      // 确保table结束标签后，div标签正确关闭
+      const defaultTableClose =
+        md.renderer.rules.table_close ||
+        ((tokens, idx, options, env, self) => {
+          return "</table>";
+        });
+
+      md.renderer.rules.table_close = (tokens, idx, options, env, self) => {
+        return `${defaultTableClose(tokens, idx, options, env, self)}</div>`;
+      };
+
     },
   },
-
 });

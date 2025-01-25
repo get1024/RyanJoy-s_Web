@@ -63,9 +63,6 @@ importers:
       thumbhash:
         specifier: ^0.1.1
         version: 0.1.1
-      typescript:
-        specifier: ^5.7.3
-        version: 5.7.3
       unlazy:
         specifier: ^0.12.1
         version: 0.12.1
@@ -133,6 +130,9 @@ importers:
       markdown-it-task-checkbox:
         specifier: ^1.0.6
         version: 1.0.6
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
       vite-plugin-sitemap:
         specifier: ^0.7.1
         version: 0.7.1
