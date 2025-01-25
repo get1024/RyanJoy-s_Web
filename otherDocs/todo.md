@@ -1,7 +1,7 @@
 ---
 title: Todo 清单
 createAt: 2025-01-22 19:58:16
-updateAt: 2025-01-24 21:43:11
+updateAt: 2025-01-25 23:47:55
 sidebar: false
 outline: false
 next: false
@@ -17,3 +17,6 @@ next: false
 - [ ] vue 学习文档补全
 - [ ] 科学上网 clash 自用方案教程
 - [ ] C 语言学习文档补全
+- [ ] npm 依赖包发布、更新
+- [ ] table 美化
+- [x] 代码块样式统一；删除 mac 样式小圆点（太扎眼了……）
