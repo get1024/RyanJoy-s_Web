@@ -1,14 +1,16 @@
 ---
 createAt: 2025-01-08 12:09:08
-updateAt: 2025-01-25 23:38:30
+updateAt: 2025-01-26 00:04:10
 title: 自动生成侧边栏
 tags:
   - 博客
   - plugin
 ---
-# {{$frontmatter.title}} <Badge type="tip" text="^1.0.1" />
+
+# 自动生成侧边栏
 
 ::: tip 插件相关
+
 - Github仓库：[@ryanjoy/vitepress-plugin-sidebar](https://github.com/get1024/customIntegrations/tree/main/vitepress-plugin-sidebar)
 - npm地址：[@ryanjoy/vitepress-plugin-sidebar](https://www.npmjs.com/package/@ryanjoy/vitepress-plugin-sidebar)
 :::
@@ -80,6 +82,7 @@ export default defineConfigWithTheme({
 如果参数中**只**填写了 `[文件夹名,文件夹名]` 这样的**字符串参数**或`{ folderName: '文件夹名', separate: false }`这样的**对象参数**时，构建侧边栏时会自动把不同 `/文件夹名` 路径忽略掉，全局**不会**根据不同的页面路径显示不同侧边栏。我们称之为：**差异路径忽略**。以本博客为例
 
 如此配置
+
 ```ts [config.ts]
 // 方式一
 sidebar: calculateSidebar([
@@ -92,8 +95,11 @@ sidebar: calculateSidebar([
     "📒笔记",
 ]),
 ```
+
 效果如下
+
 ![](/blog/project/博客/firstLevelIgnore.png)
+
 注意到：侧边栏显示结果为**当前所配置的文件夹名**。
 
 <p style="color:red;font-weight:bold">2-separate: true</p>
@@ -101,12 +107,14 @@ sidebar: calculateSidebar([
 如果参数中**只**填写了 `{ folderName: '文件夹名', separate: true }` 这样的**对象参数**时，会根据不同的页面路径显示不同侧边栏。以本博客为例
 
 如此配置
+
 ```ts [config.ts]
 sidebar: calculateSidebar([
     { folderName: "👨🏼‍🎓关于我", separate: true },
     { folderName: "📒笔记", separate: true },
 ]),
 ```
+
 效果如下
 
 |                      /📒笔记                      |                   /👨🏼‍🎓关于我                   |
@@ -120,12 +128,14 @@ sidebar: calculateSidebar([
 如果**既有**`字符串配置`**又有** `{ folderName: 'A', separate: true }` 的配置，那么，[差异路径忽略](#规则一-专一配置) 的规则将不再生效。以本博客为例
 
 如此配置
+
 ```typescript [config.ts]
 calculateSidebar([
     "👨🏼‍🎓关于我",
     { folderName: "📒笔记", separate: true },
 ])
 ```
+
 效果如下
 
 |                      /📒笔记                      |                   /👨🏼‍🎓关于我                   |
@@ -135,12 +145,15 @@ calculateSidebar([
 注意到：侧边栏显示结果有如下区别————对于`separate: true`配置的侧边栏，显示为**当前所配置的文件夹名路径下的内容**；对于`separate: false`（等价于`字符串参数`）配置的侧边栏，显示为**当前所配置的文件夹名**。这也不难理解，因为刚好与[规则一：专一配置](#规则一-专一配置)所呈现的效果严格对应。
 
 ## 可选性配置
+
 上述配置完成了自动生成侧边栏，但不难发现，上述配置，实现效果在最理想情况下也只能做到展示对应路径下第一层级的内容（即`/path/`下的内容）。而考虑到你可能想要原生配置的[`collapse:false`选项](https://vitepress.dev/zh/reference/default-theme-sidebar#collapsible-sidebar-groups)实现的**指定路径下首级文件夹自动展开**效果，可以在完成上述配置的前提下进行下列配置。
 
 ### 为 VitePress 配置
+
 在 VitePress 的配置文件中（通常为 `docs/.vitepress/config.ts`，文件路径和拓展名也许会有区别）。
 
 如此配置
+
 ```ts [config.ts]
 import { calculateSidebar } from '@ryanjoy/vitepress-plugin-sidebar'; // [!code --]
 import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar"; // [!code ++] 
@@ -173,6 +186,7 @@ export default defineConfig({
 ### 修改sidebar配置
 
 如此配置
+
 ```ts [config.ts]
 export default defineConfig({
   //...
@@ -189,7 +203,9 @@ export default defineConfig({
 ```
 
 ::: details `base`是什么？
+
 找到先前在`config.ts`文件中的引入`import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar";`，鼠标置于`calculateSidebar`上，左键单击进入`index.d.ts`文件，如下
+
 ```ts{11-14} [index.d.ts]
 interface ArticleTree {
     index: string;
@@ -208,7 +224,9 @@ declare function calculateSidebar(targets?: Array<string | {
 
 export { calculateSidebar };
 ```
+
 观察到`calculateSidebar()`有两个参数`(target, base)`，`targe`是在配置文件中传入的 字符串参数 或 对象参数 ，`base`是你的vitepress项目配置的基路径，通常情况下为`' '`即可。
+
 :::
 
 ### 检验效果
@@ -220,7 +238,9 @@ export { calculateSidebar };
 注意到：侧边栏显示结果为**当前所配置的文件夹名路径下的内容**，并且路径下首级文件夹已经展开。
 
 :::details 想要展开所有层级的文件夹至最末端文件？
+
 可以尝试把 VitePress 的配置文件定义的函数修改如下
+
 ```ts [config.ts]
 function calculateSidebarWithDefaultOpen(targets, base) {
   const result = originalCalculateSidebar(targets, base);
@@ -243,4 +263,5 @@ function calculateSidebarWithDefaultOpen(targets, base) {
   return result;
 }
 ```
+
 :::

@@ -1,11 +1,13 @@
 ---
-title: Powershell 笔记
+title: Powershell 使用笔记
 createAt: 2024-04-19 20:13:26
-updateAt: 2025-01-11 22:44:40
+updateAt: 2025-01-26 09:20:49
 ---
-# {{$frontmatter.title}}
+
+# Powershell 使用笔记
 
 - 快捷键
+
 ```sh
 #呼出powershell窗口
 win+R：wt.exe
@@ -13,8 +15,11 @@ win+R：wt.exe
 #呼出下拉终端
 win+`
 ```
+
 ## 端口相关
+
 - 查询置顶 `port` 并释放
+
 ```sh
 #查询置顶端口占用信息
 > netstat -ano | findstr [port] 
