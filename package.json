@@ -32,6 +32,8 @@
     "@iconify-json/octicon": "^1.2.2",
     "@nolebase/vitepress-plugin-breadcrumbs": "^2.12.0",
     "@rive-app/canvas": "^2.25.4",
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
     "@vueuse/core": "^12.4.0",
     "busuanzi.pure.js": "^1.0.3",
     "date-fns": "^4.1.0",
