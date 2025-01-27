@@ -1,5 +1,5 @@
 .marker-highlight {
-    border-radius: 5px 5px;
+    /* border-radius: 5px 5px;
     background: transparent;
     color: var(--vp-c-text-soft);
     background: linear-gradient(104deg,
@@ -12,7 +12,12 @@
         linear-gradient(183deg,
             rgba(255, 183, 0, 0) 0%,
             rgba(255, 183, 0, 0.3) 7.9%,
-            rgba(255, 183, 0, 0) 15%);
+            rgba(255, 183, 0, 0) 15%); */
+    text-decoration: underline;
+    text-decoration-thickness: 9px;
+    text-decoration-color: rgba(246, 184, 0, 0.4);
+    text-underline-offset: -4px;
+    text-decoration-skip-ink: none;
 }
 
 .marker-underline {
