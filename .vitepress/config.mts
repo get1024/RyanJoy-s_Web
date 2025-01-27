@@ -73,7 +73,10 @@ export default defineConfig({
   },
 
   //配置网页图标
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    ["script", { src: "/vercel-analytics.js" }]
+  ],
 
   //阅读增强插件
   vite: {
@@ -122,6 +125,21 @@ export default defineConfig({
           ".mts":"vscode-icons:file-type-typescript"
         },
       }), //代码组图标
+      {
+        name: "vercel-analytics-plugin",
+        transformIndexHtml: {
+          enforce: "pre",
+          transform(html) {
+            return html.replace(
+              "</body>",
+              `<script>
+                window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+              </script>
+              </body>`,
+            )
+          },
+        },
+      },
     ],
     optimizeDeps: {
       include: [],
