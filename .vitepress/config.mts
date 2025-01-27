@@ -69,11 +69,11 @@ export default defineConfig({
 
   //站点地图
   sitemap: {
-    hostname: "https://get1024.github.io/RyanJoy-s_Web/",
+    hostname: "https://ryanjoy.top/",
   },
 
   //配置网页图标
-  head: [["link", { rel: "icon", href: "/RyanJoy-s_Web/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
 
   //阅读增强插件
   vite: {
@@ -93,7 +93,7 @@ export default defineConfig({
               "18903803658@163.com",
             ],
             avatar:
-              "https://github.com/get1024/RyanJoy-s_Web/blob/main/public/avatar.png?raw=true",
+              "https://ryanjoy.top/avatar.png",
             links: "https://github.com/get1024",
           },
         ],
