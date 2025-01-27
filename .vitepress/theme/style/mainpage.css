@@ -109,3 +109,9 @@ body {
 h1 {
   color: var(--main-page-text);
 }
+
+
+/* 不知道哪里的样式，给大纲栏下脚填了阴影样式 */
+.aside-curtain {
+  background: transparent !important;
+}
