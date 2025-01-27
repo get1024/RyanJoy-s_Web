@@ -1,7 +1,7 @@
 ---
 title: Powershell配置和美化方案
 createAt: 2024-04-24 18:03:36
-updateAt: 2025-01-26 20:07:12
+updateAt: 2025-01-27 13:28:19
 ---
 
 # Powershell配置和美化方案
@@ -363,12 +363,12 @@ oh-my-posh init pwsh --config 'C:\Users\RJY\AppData\Local\Programs\oh-my-posh\th
     {
         "defaults": 
         {
-            "colorScheme": "HomebrewCus",
+            "colorScheme": "Homebrew",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
                 "face": "MesloLGM Nerd Font",
-                "size": 13
+                "size": 12
             },
             "intenseTextStyle": "all",
             "opacity": 55,
@@ -441,6 +441,7 @@ oh-my-posh init pwsh --config 'C:\Users\RJY\AppData\Local\Programs\oh-my-posh\th
     "schemes": 
     [
         {
+            "name": "Homebrew",
             "background": "#283033",
             "black": "#000000",
             "blue": "#6666E9",
@@ -464,6 +465,7 @@ oh-my-posh init pwsh --config 'C:\Users\RJY\AppData\Local\Programs\oh-my-posh\th
             "yellow": "#999900"
         },
         {
+            "name": "HomebrewCus",
             "background": "#283033",
             "black": "#000000",
             "blue": "#6666E9",
