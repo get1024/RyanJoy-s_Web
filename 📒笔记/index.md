@@ -16,7 +16,7 @@ updateAt: 2025-01-27 16:43:46
 
 ## <p><img src="/avatar.png" class="titleAvatar" /><span >RyanJoy 的知识图书馆</span></p>
 
-👏欢迎来到小业的知识图书馆 [RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/)，这里是「🗃️笔记归档」分区！
+👏欢迎来到小业的知识图书馆 [RyanJoy's Web](https://ryanjoy.top/)，这里是「🗃️笔记归档」分区！
 
 <span class="marker-evy">***左侧***是 📒笔记 侧边栏，***下方***是笔记更新时间树。`浏览` 或者 `ctrl+k` 搜索你需要的文档查阅吧！</span>
 

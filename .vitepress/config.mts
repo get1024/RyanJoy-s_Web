@@ -63,7 +63,7 @@ export default defineConfig({
   base: "",
   lang: "zh-CN",
   title: "RyanJoy's Web",
-  description: "RyanJoy前途似锦",
+  description: "RyanJoy的个人博客",
   lastUpdated: true,
   appearance: true,
 

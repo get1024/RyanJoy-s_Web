@@ -67,7 +67,7 @@ export default defineConfigWithTheme({
 
 首先需要指出的是，在配置参数中填写 `'文件夹名'` 和 `{ folderName: '文件夹名', separate: false }` 是完全等效的，所以，只书写字符串的配置，可以看作是 `{ folderName: '文件夹名', separate: false }` 的快捷简写。因此，如果希望配置参数格式上统一，可以都写成对象的形式。
 
-另外，在几乎 100% 的情况下，我们都会按照与 Obsidian 和 [RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/) 的侧边栏结构和形式去生成侧边栏，所以在绝大多数情况下，只写字符串也不会有问题。
+另外，在几乎 100% 的情况下，我们都会按照与 Obsidian 和 [RyanJoy's Web](https://ryanjoy.top/) 的侧边栏结构和形式去生成侧边栏，所以在绝大多数情况下，只写字符串也不会有问题。
 
 唯一的区别就是在于这个特殊的 `separate` 属性。当用户配置了 `separate: true` 之后，我们会生成 VitePress 所兼容和支持的多侧边栏，这使得「根据页面路径显示不同的侧边栏」变成可能。
 
