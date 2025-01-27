@@ -34,7 +34,7 @@ const groupedPosts = Object.entries(posts)
   <div v-for="group in groupedPosts" :key="group.year">
     <h2 class="noteIndex-h2">{{ group.year }}年</h2>
     <ul class="noteIndex-ul">
-      <a class="post-link" v-for="post of group.posts" :key="post.url" :href="'/RyanJoy-s_Web' + post.url">
+      <a class="post-link" v-for="post of group.posts" :key="post.url" :href="post.url">
         <li class="post-item">
           <span class="post-link-update">
             <span class="post-title">{{ post.frontmatter.title }}</span>&nbsp;

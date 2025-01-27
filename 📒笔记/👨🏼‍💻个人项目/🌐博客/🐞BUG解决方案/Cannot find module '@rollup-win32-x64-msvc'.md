@@ -1,12 +1,13 @@
 ---
-title: Cannot find module '@rollup-win32-x64-msvc'
+title: Error:Cannot find module @rollup-win32-x64-msvc
 createAt: 2023-12-07 10:15:38
-updateAt: 2025-01-13 16:52:26
+updateAt: 2025-01-27 16:53:56
 tags:
   - 博客
   - bug
 ---
-# Cannot find module '@rollup-win32-x64-msvc'
+
+# Error:Cannot find module @rollup-win32-x64-msvc
 
 ## 报错表现
 
@@ -25,6 +26,7 @@ Error: Cannot find module '@rollup/rollup-win32-x64-msvc'
 :::
 
 即当前依赖包中缺少`@rollup`相关，针对此错误有以下解决方法供参考。
+
 ## 解决方法
 
 1. 删除`node_modules`和`package-lock.json`文件后，在项目根目录下打开终端，执行`npm install`命令，部分同志通过这个步骤可解决；

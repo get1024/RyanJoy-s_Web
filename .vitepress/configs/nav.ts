@@ -11,9 +11,5 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '👨‍🎓关于我',
     link: '/otherDocs/关于我'
-  },
-  {
-    text: '🗃️归档',
-    link: '/otherDocs/最近更新'
-  },
+  }
 ]

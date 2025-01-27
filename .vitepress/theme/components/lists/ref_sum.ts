@@ -1,6 +1,7 @@
 import type { listdata } from "./lists";
 
-const baseUrl = "/RyanJoy-s_Web/📒笔记";
+// const baseUrl = "/RyanJoy-s_Web/📒笔记";
+const baseUrl = "/📒笔记";
 
 function completeUrl(path: string): string {
     return `${baseUrl}${path}`;

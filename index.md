@@ -18,7 +18,7 @@ hero:
       link: /📒笔记/index
     - theme: alt
       text: Todo✔️
-      link: /otherDocs/todo
+      link: /otherDocs/Todo 清单
   image:
     src: /logo.png
     alt: RyanJoy's Blog logo

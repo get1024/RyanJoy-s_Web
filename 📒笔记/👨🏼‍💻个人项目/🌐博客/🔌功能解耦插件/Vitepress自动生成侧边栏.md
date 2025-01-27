@@ -1,13 +1,13 @@
 ---
 createAt: 2025-01-08 12:09:08
-updateAt: 2025-01-26 00:04:10
-title: 自动生成侧边栏
+updateAt: 2025-01-27 16:54:03
+title: Vitepress自动生成侧边栏
 tags:
   - 博客
   - plugin
 ---
 
-# 自动生成侧边栏
+# Vitepress自动生成侧边栏
 
 ::: tip 插件相关
 

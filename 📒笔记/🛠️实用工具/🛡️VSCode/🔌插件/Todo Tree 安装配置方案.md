@@ -1,23 +1,32 @@
 ---
-title: Todo Tree🌳
+title: Todo Tree 安装配置方案
 createAt: 2024-05-18 15:28:26
-updateAt: 2025-01-11 22:44:59
+updateAt: 2025-01-27 17:00:20
 ---
-# {{$frontmatter.title}}
+
+# Todo Tree 安装配置方案
 
 ## 安装
+
 插件搜索`Todo Tree`，选择下图所示。
+
 ![todo tree](/blog/tools/vscode/插件/todo_tree.png)
+
 ## 自定义进行配置
+
 ### 进入插件设置界面
+
 ![setting1](/blog/tools/vscode/插件/todotree_setting1.png)
 
 ### 打开setting.json文件
+
 ![setting2](/blog/tools/vscode/插件/todotree_setting2.png)
 
 ### 配置自定义样式
+
 > 以下是我的个人配置，在`setting.json`文件中写入以下内容：
 ::: code-group
+
 ```json
 //todo-tree settings
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
@@ -45,25 +54,34 @@ updateAt: 2025-01-11 22:44:59
         },
     },
 ```
+
 :::
 
 ## 用法
+
 在要使用的地方点击快捷键`ctrl+/`，即可插入注释，在其中输入**既定的字段**，即以下内容：
+
 ::: code-group
+
 ```json 
 "todo-tree.general.tags": [
         "TODO", // [!code focus]
         "BUG"   // [!code focus]
     ],
 ```
+
 :::
 
 ## 使用示例
+
 ![use](/blog/tools/vscode/插件/todotree_use1.png)
 
 ![use](/blog/tools/vscode/插件/todotree_use2.png)
+
 ## 效果预览
+
 ![display](/blog/tools/vscode/插件/todotree_display.png)
+
 <hr/>
 
 > [!TIP] 作者说

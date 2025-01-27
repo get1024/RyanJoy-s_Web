@@ -1,14 +1,17 @@
 ---
-title: 自动生成索引页
+title: Vitepress自动生成索引页
 createAt: 2025-01-12 12:30:07
-updateAt: 2025-01-12 20:24:33
+updateAt: 2025-01-27 16:54:09
 ---
-# 自动生成索引页
+
+# Vitepress自动生成索引页
 
 ::: tip 作者说
+
 本文档旨在说明如何根据 文档创建时间 **自动生成索引页**。此实现并非是通过npm依赖包导入，而是自定义vue组件，并使用官方文档提供的 [`createContentLoader`](https://vitepress.dev/zh/guide/data-loading#createcontentloader)  字段来帮助我们简化实现。
 
 本文档提供无脑式配置教程，如果需要理解实现原理，请参考 [官方文档](https://vitepress.dev/zh/guide/data-loading) 。
+
 :::
 
 ## 前置介绍

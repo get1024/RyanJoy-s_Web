@@ -1,7 +1,7 @@
 ---
-title: table美化
+title: Table美化方案
 createAt: 2025-01-25 20:13:42
-updateAt: 2025-01-25 20:14:41
+updateAt: 2025-01-27 16:53:36
 ---
 
-# table美化
+# Table美化方案

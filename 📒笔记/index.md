@@ -1,7 +1,7 @@
 ---
-title: 📒笔记首页
+title: 笔记首页
 createAt: 2024-04-29 21:50:23
-updateAt: 2025-01-20 23:52:47
+updateAt: 2025-01-27 16:43:46
 ---
 <script setup>
     import {lifeSkills} from '/.vitepress/theme/components/lists/lifeSkills'
@@ -16,10 +16,13 @@ updateAt: 2025-01-20 23:52:47
 
 ## <p><img src="/avatar.png" class="titleAvatar" /><span >RyanJoy 的知识图书馆</span></p>
 
-👏欢迎来到小业的知识图书馆 [RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/)，这里是「📒笔记」分区!
+👏欢迎来到小业的知识图书馆 [RyanJoy's Web](https://get1024.github.io/RyanJoy-s_Web/)，这里是「🗃️笔记归档」分区！
 
-## 🏙️生活技巧
+<span class="marker-evy">***左侧***是 📒笔记 侧边栏，***下方***是笔记更新时间树。`浏览` 或者 `ctrl+k` 搜索你需要的文档查阅吧！</span>
 
+<nodeIndex />
+
+<!-- 
 <list v-for="{ title , items } in lifeSkills" :title="title" :items="items" />
 
 ## 👨🏼‍💻个人项目
@@ -40,4 +43,4 @@ updateAt: 2025-01-20 23:52:47
 
 ## 🛠️实用工具
 
-<list v-for="{ title , items } in tools" :title="title" :items="items" />
+<list v-for="{ title , items } in tools" :title="title" :items="items" /> -->
