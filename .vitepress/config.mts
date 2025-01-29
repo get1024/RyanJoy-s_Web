@@ -96,7 +96,7 @@ export default defineConfig({
               "18903803658@163.com",
             ],
             avatar:
-              "https://ryanjoy.top/avatar.png",
+              "/avatar.png",
             links: "https://github.com/get1024",
           },
         ],
