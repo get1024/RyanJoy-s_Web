@@ -2,6 +2,7 @@
 img:not(.linkcard-img):not(.VPImage.image-src):not(.VPImage.logo):not(.titleAvatar):not(.h-8):not(.avatar-img):not(.badgeP>img) {
     width: 90%;
     height: auto;
+    border-radius: 4px;
     /* 将图片设置为块状元素，防止与文本同行 */
     display: block;
     /* 水平居中 */
@@ -18,6 +19,7 @@ img:not(.linkcard-img):not(.VPImage.image-src):not(.VPImage.logo):not(.titleAvat
 video {
     width: 100%;
     /* 将图片设置为块状元素，防止与文本同行 */
+    border-radius: 4px;
     display: block;
     /* 水平居中 */
     margin-left: auto;
