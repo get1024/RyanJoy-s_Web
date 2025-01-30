@@ -1,7 +1,7 @@
 ---
 title: Vitepress自动生成索引页
 createAt: 2025-01-12 12:30:07
-updateAt: 2025-01-30 22:58:56
+updateAt: 2025-01-30 23:59:18
 ---
 
 # Vitepress自动生成索引页
@@ -251,7 +251,7 @@ const groupedPosts = Object.entries(posts)
 
 特别要注意 `:href="'/RyanJoy-s_Web'+post.url"` 参数。如果你的博客首页网址是 `https://xxx.xxx.io/` ，则只需要设置为 `:href="post.url"` ；如果你的博客首页网址是 `https://xxx.xxx.io/[example]/` ，则只需要设置为 `:href="'/[example]'+post.url"` 。
 
-其实本质也就是 `base` 的问题，这一点我们在 [](.md#项目结构明晰|项目结构明晰) 也提到过，如果您实在不确定该如何配置，建议您逐层实验 或者 询问 ChatGPT。
+其实本质也就是 `base` 的问题，这一点我们在 [项目结构明晰](#项目结构明晰) 也提到过，如果您实在不确定该如何配置，建议您逐层实验 或者 询问 ChatGPT。
 
 <span class="marker-highlight">配置正确情况下，此文件只需对 40 行进行修改</span>。
 
@@ -276,7 +276,7 @@ export const Theme: ThemeConfig = {
 
 ### 创建索引页并使用组件
 
-我选择在项目根目录下创建 `ResentUpdate.md` 文件，可以再次查看 [](.md#项目结构明晰|项目结构明晰)。
+我选择在项目根目录下创建 `ResentUpdate.md` 文件，可以再次查看 [项目结构明晰](#项目结构明晰)。
 
 ```md [ResentUpdate.md]
 ---
@@ -295,4 +295,4 @@ updateAt: 2025-01-12 12:21:41
 
 ![autoIndex](assets/vitepress自动生成索引页/autoIndex.png)
 
-您也可以 [点击此处查看](../../../index.md)。
+您也可以 [点击此处查看](/📒笔记)。
