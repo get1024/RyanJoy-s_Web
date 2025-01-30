@@ -197,23 +197,23 @@ p.beauty{
 
 #### 父元素
 
-- **直接**包裹某个元素的元素，就是该元素的父元素。 ![[public/blog/tech_skills/css/CSS_element_father.png]]
+- **直接**包裹某个元素的元素，就是该元素的父元素。 ![CSS\_element\_father](assets/2-css选择器详述/CSS_element_father.png)
 
 #### 子元素
 
-- **被**父元素**直接**包裹的元素 (也称：儿子元素)。 ![[public/blog/tech_skills/css/CSS_element_son.png]]
+- **被**父元素**直接**包裹的元素 (也称：儿子元素)。 ![CSS\_element\_son](assets/2-css选择器详述/CSS_element_son.png)
 
 #### 祖先元素
 
-- 元素本身所有的外层元素，都是祖先。 ![[public/blog/tech_skills/css/CSS_ancestor.png]]
+- 元素本身所有的外层元素，都是祖先。 ![CSS\_ancestor](assets/2-css选择器详述/CSS_ancestor.png)
 
 #### 后代元素
 
-- 元素本身所有的内层元素，都是后代。 ![[public/blog/tech_skills/css/CSS_posterity.png]]
+- 元素本身所有的内层元素，都是后代。 ![CSS\_posterity](assets/2-css选择器详述/CSS_posterity.png)
 
 #### 兄弟元素
 
-- 父元素相同的元素，互为兄弟元素。 ![[public/blog/tech_skills/css/CSS_brother.png]]
+- 父元素相同的元素，互为兄弟元素。 ![CSS\_brother](assets/2-css选择器详述/CSS_brother.png)
 
 ### 后代选择器
 
@@ -252,7 +252,7 @@ ul li a {
 >1. 选择器可以是任意一种基本选择器的组合；
 >2. 后代选择器最终选择的是后代，不选中祖先；
 >3. 儿子、孙子、重孙子……都算是后代；
->4. 结构一定要符合之前讲的 `HTML` 嵌套要求，例如：不能 `p` 中写 `h1~h6` 。（详见 [[📒笔记/🖥️专业技能/📄HTML/1-HTML4#排版标签|HTML4：排版标签]]）
+>4. 结构一定要符合之前讲的 `HTML` 嵌套要求，例如：不能 `p` 中写 `h1~h6` 。（详见 [](../📄HTML/1-HTML4.md#排版标签|HTML4：排版标签)）
 
 ### 子代选择器
 
@@ -522,4 +522,4 @@ div~p {
 | `#atdemo .slogan a:hover` | `(1,2,1)` |
 
 - 比较规则：按照从左到右的顺序，依次比较大小，从当前位胜出后，后面的不再参与对比。
-- 图示 ![[public/blog/tech_skills/css/CSS_weight.png]]
+- 图示 ![CSS\_weight](assets/2-css选择器详述/CSS_weight.png)

@@ -1,7 +1,7 @@
 ---
 title: Vitepress自动生成索引页
 createAt: 2025-01-12 12:30:07
-updateAt: 2025-01-27 16:54:09
+updateAt: 2025-01-30 22:58:56
 ---
 
 # Vitepress自动生成索引页
@@ -43,7 +43,7 @@ RyanJoy-s_Web
 
 易见我的项目结构没有 `'/docs/'` 存在，不过不必慌张，这一因素造成的区别也只会体现在 Vitepress 配置文件 `config.ts` 中的 [`base:`](https://vitepress.dev/zh/reference/site-config#base) 选项。我相信你在最初构建项目时，就已经完成了对它的配置。
 
-我需要展示在 [[最近更新|索引页]] 的笔记只是 `'/📒笔记/'` 目录下的。至于 `'/👨🏼‍🎓关于我/'` 和 `'/index.md'`、`'/ResentUpdate.md'` 都是通过 `config.mts` 文件中的 [`nav` 配置](https://vitepress.dev/zh/reference/default-theme-config#nav) 指向的。这么安排主要是因为，我要搭建的是一个「博客」而不是其它的什么东西，因此除了 `'/📒笔记/'` 目录下的内容都不应该出现在索引页中。
+我需要展示在 [索引页](最近更新) 的笔记只是 `'/📒笔记/'` 目录下的。至于 `'/👨🏼‍🎓关于我/'` 和 `'/index.md'`、`'/ResentUpdate.md'` 都是通过 `config.mts` 文件中的 [`nav` 配置](https://vitepress.dev/zh/reference/default-theme-config#nav) 指向的。这么安排主要是因为，我要搭建的是一个「博客」而不是其它的什么东西，因此除了 `'/📒笔记/'` 目录下的内容都不应该出现在索引页中。
 
 ### 文档结构明晰
 
@@ -251,7 +251,7 @@ const groupedPosts = Object.entries(posts)
 
 特别要注意 `:href="'/RyanJoy-s_Web'+post.url"` 参数。如果你的博客首页网址是 `https://xxx.xxx.io/` ，则只需要设置为 `:href="post.url"` ；如果你的博客首页网址是 `https://xxx.xxx.io/[example]/` ，则只需要设置为 `:href="'/[example]'+post.url"` 。
 
-其实本质也就是 `base` 的问题，这一点我们在 [[📒笔记/👨🏼‍💻个人项目/🌐博客/🔌功能解耦插件/Vitepress自动生成索引页#项目结构明晰|项目结构明晰]] 也提到过，如果您实在不确定该如何配置，建议您逐层实验 或者 询问 ChatGPT。
+其实本质也就是 `base` 的问题，这一点我们在 [](.md#项目结构明晰|项目结构明晰) 也提到过，如果您实在不确定该如何配置，建议您逐层实验 或者 询问 ChatGPT。
 
 <span class="marker-highlight">配置正确情况下，此文件只需对 40 行进行修改</span>。
 
@@ -276,7 +276,7 @@ export const Theme: ThemeConfig = {
 
 ### 创建索引页并使用组件
 
-我选择在项目根目录下创建 `ResentUpdate.md` 文件，可以再次查看 [[📒笔记/👨🏼‍💻个人项目/🌐博客/🔌功能解耦插件/Vitepress自动生成索引页#项目结构明晰|项目结构明晰]]。
+我选择在项目根目录下创建 `ResentUpdate.md` 文件，可以再次查看 [](.md#项目结构明晰|项目结构明晰)。
 
 ```md [ResentUpdate.md]
 ---
@@ -293,6 +293,6 @@ updateAt: 2025-01-12 12:21:41
 
 ## 效果展示
 
-![[public/blog/project/博客/autoIndex.png]]
+![autoIndex](assets/vitepress自动生成索引页/autoIndex.png)
 
-您也可以 [[最近更新|点击此处查看]]。
+您也可以 [点击此处查看](../../../index.md)。

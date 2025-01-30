@@ -13,7 +13,7 @@ tags:
 
 在搭建好基于 `vitepress` 的 `blog` 结构后，运行 `npm run docs:dev` 命令，进行部署前的运行结果检查，结果报以下错误：
 
-![[public/blog/project/博客/error_show.png]]
+![error\_show](assets/cannot-find-module-'@rollup-win32-x64-msvc'/error_show.png)
 
 **最为关键**的错误提示为以下一行代码：
 

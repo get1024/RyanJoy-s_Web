@@ -16,13 +16,13 @@ updateAt: 2025-01-27 13:28:19
 
 - Windows 终端窗口
 
-![[public/blog/tools/powershell/config_and_install/Terminal.png]]
+![Terminal](assets/1-powershell配置和美化方案/Terminal.png)
 
 - VSCode 自带终端
 
-![[public/blog/tools/powershell/config_and_install/VSCode-Terminal.png]]
+![VSCode-Terminal](assets/1-powershell配置和美化方案/VSCode-Terminal.png)
 
-是不是比原生的好看呢？接下来看看具体如何配置吧！如果你只是想复刻我的样式，请直接跳转这里： [[#想复刻我的配置]]
+是不是比原生的好看呢？接下来看看具体如何配置吧！如果你只是想复刻我的样式，请直接跳转这里： [#想复刻我的配置](#想复刻我的配置)
 
 ## 安装
 
@@ -30,11 +30,11 @@ updateAt: 2025-01-27 13:28:19
 
 对于 <span class="marker-evy">**Windows 11**</span> 系统已经默认用 Windows Terminal 取代了原本的 Powershell。<span class="marker-highlight">「注：此处的 Powershell 并不是我们本文档所关注的 Powershell 7。」</span>Windows 11 用户可以 `跳过安装` 这一步，直接单击键盘上的 `Windows 徽标键` ，在弹出窗口搜索🔍 `Windows PowerShell` ，单击打开。
 
-![[public/blog/tools/powershell/config_and_install/search-powershell.png]]
+![search-powershell](assets/1-powershell配置和美化方案/search-powershell.png)
 
 对于 <span class="marker-evy">**Windows 10**</span>，首先需要到 Microsoft store 安装 [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=zh-CN&gl=CN)（点击此链接一键安装）。安装成功后，单击键盘上的 `Windows 徽标键` ，在弹出窗口搜索🔍 `Windows Terminal` ，单击打开。
 
-![[public/blog/tools/powershell/config_and_install/search-Terminal.png]]
+![search-Terminal](assets/1-powershell配置和美化方案/search-Terminal.png)
 
 ::: tip 作者说
 
@@ -64,23 +64,23 @@ winget install --id Microsoft.PowerShell --source winget
 
 	可以按如下步骤操作，或直接在 `Windows Terminal` 窗口按 `ctrl+,` 快捷呼出。
 
-	![[public/blog/tools/powershell/config_and_install/config-default.png]]
+	![config-default](assets/1-powershell配置和美化方案/config-default.png)
 
-	![[public/blog/tools/powershell/config_and_install/config-default2.png]]
+	![config-default2](assets/1-powershell配置和美化方案/config-default2.png)
 
 - 新建空配置文件
 
-	![[public/blog/tools/powershell/config_and_install/config-default3.png]]
+	![config-default3](assets/1-powershell配置和美化方案/config-default3.png)
 
 - 设置配置项
 
 	如果你是安装到 `默认目录` ，那么照抄图中配置即可。如果你是安装到 `自定义目录` ，那你一定知道你在干什么，所以按照你的个性化配置填写下列配置即可。
 
-	![[public/blog/tools/powershell/config_and_install/config-default4.png]]
+	![config-default4](assets/1-powershell配置和美化方案/config-default4.png)
 
 - 设置默认启动 Powershell 7。选中刚刚创建的配置文件。
 
-	![[public/blog/tools/powershell/config_and_install/config-default5.png]]
+	![config-default5](assets/1-powershell配置和美化方案/config-default5.png)
 
 - 验证
 
@@ -121,9 +121,9 @@ winget install --id Microsoft.PowerShell --source winget
 
 - 设置 Powershell 7 外观配置
 
-	![[public/blog/tools/powershell/config_and_install/config-style.png]]
+	![config-style](assets/1-powershell配置和美化方案/config-style.png)
 
-	![[public/blog/tools/powershell/config_and_install/config-style2.png]]
+	![config-style2](assets/1-powershell配置和美化方案/config-style2.png)
 
 	只需设置标识的几项，剩余配置项保持默认、或者凭你喜好自由设置。
 
@@ -135,7 +135,7 @@ winget install --id Microsoft.PowerShell --source winget
 	Get-PoshThemes
 	```
 
-	![[public/blog/tools/powershell/config_and_install/Get-PoshThemes.gif]]
+	![Get-PoshThemes](assets/1-powershell配置和美化方案/Get-PoshThemes.gif)
 
 	如果你觉得终端观看各种主题不太清楚，可以到官方文档 [Themes | Oh My Posh](https://ohmyposh.dev/docs/themes) 查看。
 

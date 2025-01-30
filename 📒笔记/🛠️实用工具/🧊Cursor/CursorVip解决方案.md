@@ -9,7 +9,7 @@ title: Cursor Vip解决方案
 
 - 下载 [Cursor](https://www.cursor.com/)。进入官网，一键安装。
 
-![[public/blog/tools/cursor/CursorDownload.png]]
+![CursorDownload](assets/cursorvip解决方案/CursorDownload.png)
 
 - 下载 [git](https://git-scm.com/)。如安装有困难，见 git 安装教程。
 
@@ -25,11 +25,11 @@ bash <(curl -Lk https://gitee.com/kingparks/cursor-vip/releases/download/latest/
 
 运行成功如图
 
-![[public/blog/tools/cursor/VipInstall.png]]
+![VipInstall](assets/cursorvip解决方案/VipInstall.png)
 
 在 Cursor 中也可见，登录为 Vip 用户
 
-![[public/blog/tools/cursor/VipSuccess.png]]
+![VipSuccess](assets/cursorvip解决方案/VipSuccess.png)
 
 ## 注意事项
 

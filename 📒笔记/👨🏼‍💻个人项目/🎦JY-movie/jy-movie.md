@@ -1,7 +1,7 @@
 ---
 title: JY-movie
 createAt: 2023-04-01 09:12:31
-updateAt: 2025-01-27 16:54:25
+updateAt: 2025-01-30 23:10:59
 tags:
   - project
   - info
@@ -9,31 +9,22 @@ tags:
 
 # JY-movie
 
-> 🖥️ 基于 SpringBoot➕vue 的前后端分离的电影购票系统
+🖥️ 基于 SpringBoot➕vue 的前后端分离的电影购票系统
 
-## 🎤 〇、前言
+## 首页预览
+ ![app-home-vue](assets/jy-movie/app_home_vue.png)
 
-- 项目`GitHub`地址单击下图
-
-  > [![JY影院](https://github-readme-stats.vercel.app/api/pin/?username=get1024&repo=jy-movie&show_owner=true)](https://github.com/get1024/jy-movie)
-
-- 首页预览
-
-  > ![app-home-vue](/blog/project/JY-movie/app_home_vue.png)
-
----
-
-## 📃 一、介绍
+## 介绍
 
 - SpringBoot+SpringSecurity+MyBatis-Plus 框架的前后端电影项目，前端使用 vue+element ui，后端 SpringBoot。
 - 前台主要有根据类型和地区进行电影的筛选、电影的搜索、热门榜单、活动的发布、留言的发布、电影的购票、电影的在线选座位、我的购物车、我的订单等功能。
 - 后台主要有影片的增删查改、电影的排片、海报的管理、用户和员工的管理等等功能。
 
-## 📱 二、软件架构
+## 软件架构
 
 - 前后端分离项目
 
-## 🗂️ 三、关于
+## 关于
 
 - api 目录下为 Spring boot 项目代码，是整个项目的后端接口
 - vue-admin 目录下为网站管理后台代码
@@ -41,7 +32,7 @@ tags:
 - vue-worker 目录下为网站客服代码
 - model 数据、view 视图、controller 接口、三层
 
-## 🐞 四、未修复 bug
+## 未修复 bug
 
 ### ⚙️admin
 
@@ -52,13 +43,13 @@ tags:
 
 ### 🛡️worker
 
-> 暂时没发现 bug……
+暂时没发现 bug……
 
 ### 🌐app
 
 1. 订单超时处理没效果……（后端部分代码是低代码平台基础上开发的，逻辑我还没核对完）
 
-## 🔧 五、改动日志
+## 改动日志
 
 ### 1️⃣2024 年 03 月 26 日 18:37:48
 
@@ -94,10 +85,6 @@ tags:
 
 1. `vue-worker`端，信息统计改为`echarts`图表。
 
-## 🙌🏼 六、结尾碎碎念
+## 结尾碎碎念
 
 - Ok👌🏼，期待大家 `fork`。
-<!-- - 个人联系方式 [personal home](../../../../index.md)，有兴趣可以联系讨论交流。 -->
-
----
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=get1024&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=radical&hide_border=true&show_owner=true"/></div>
