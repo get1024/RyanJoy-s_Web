@@ -8,7 +8,7 @@ import path from 'path';
 export default defineConfig({
     plugins: [
         Sitemap({
-            hostname: 'https://ryanjoy.top/',
+            hostname: 'https://blog.ryanjoy.top/',
             changefreq: 'daily',
             outDir: '.vitepress/dist',
             generateRobotsTxt: true,

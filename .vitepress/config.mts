@@ -69,7 +69,7 @@ export default defineConfig({
 
   //站点地图
   sitemap: {
-    hostname: "https://ryanjoy.top/",
+    hostname: "https://blog.ryanjoy.top/",
   },
 
   //配置网页图标
@@ -89,11 +89,13 @@ export default defineConfig({
           {
             name: "RyanJoy",
             username: "get1024",
-            mapByNameAliases: ["RJY", "junyeren"],
+            mapByNameAliases: ["RJY", "junyeren", "RyanJoy"],
             mapByEmailAliases: [
               "junyeren@outlook.com",
               "2025050361@henu.edu.cn",
-              "18903803658@163.com",
+              "ryanjoy2002@gmail.com",
+              "ryanjoy2002@163.com",
+              "ryanjoy@qq.com"
             ],
             avatar:
               "/avatar.png",

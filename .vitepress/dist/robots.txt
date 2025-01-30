@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ryanjoy.top/sitemap.xml
+Sitemap: https://blog.ryanjoy.top/sitemap.xml
