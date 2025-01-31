@@ -1,7 +1,7 @@
 ---
 title: CSS 前置知识
 createAt: 2024-05-05 22:25:24
-updateAt: 2025-01-31 10:43:37
+updateAt: 2025-01-31 18:29:20
 tags:
   - 前端
 ---
@@ -12,8 +12,8 @@ tags:
 
 由于受 Vitepress 和 Markdown 的限制，为了更好的学习体验，笔者提供了本笔记的 PDF 版本：
 
-- [点击查看/下载**CSS2**完整笔记](/CSS2笔记.pdf)
-- [点击查看/下载**CSS3**完整笔记](/CSS3笔记.pdf)
+- [点击查看/下载**CSS2**完整笔记](/PDFs/CSS2笔记.pdf)
+- [点击查看/下载**CSS3**完整笔记](/PDFs/CSS3笔记.pdf)
 :::
 
 ## 简介
@@ -41,13 +41,13 @@ tags:
 	- 前 `<h1>这是一个内联样式举例</h1>`<h1>这是一个内联样式举例</h1>
 	- 后 `<h1 style="color:red;font-style:italic;">这是一个内联样式举例</h1>`<h1 style="color:red;font-style:italic;">这是一个内联样式举例</h1>
 
-<span class="marker-highlight">注意点</span>
+<span class="marker-underline">注意点</span>
 
 - **`HTML` 的名值对是“名=值”；`CSS` 的名值对是“名: 值;”；**
 - 行内样式表，**只能控制当前标签**的样式，对其他标签无效。
 - 优先级高，会覆盖在 `css` 文件中对同元素定义的样式。
 
-<span class="marker-highlight">存在的问题</span>
+<span class="marker-underline">存在的问题</span>
 
 - 不能复用；
 - **没有体现结构与样式分离**；
@@ -66,16 +66,16 @@ tags:
 </style>
 ```
 
-<span class="marker-highlight">注意点</span>
+<span class="marker-underline">注意点</span>
 
 - `<style>` 标签理论上可以放在 `HTML` 文件的任意位置，但是**推荐放在 `<head>` 标签内部**；
 
-<span class="marker-highlight">存在的问题</span>
+<span class="marker-underline">存在的问题</span>
 
 - **没有完全实现样式与结构分离**；
 - 同一个 `HTML` 文件内可以对样式进行复用，但是多个 `HTML` 文件无法复用样式。
 
-<span class="marker-highlight">优势</span>
+<span class="marker-underline">优势</span>
 
 - 可以复用；
 - 代码结构清晰。
@@ -98,14 +98,14 @@ h1 {
 <link rel="stylesheet" href="~/example.css">
 ```
 
-<span class="marker-highlight">注意点</span>
+<span class="marker-underline">注意点</span>
 
 - `<link>` 标签要写在 `<head>` 标签中；
 - `<link>` 标签属性说明：
 	- `href`：指明引入的文档位置；
 	- `rel`：`relation` 的简写，说明引入的文档与当前文档的关系；
 
-<span class="marker-highlight">优势</span>
+<span class="marker-underline">优势</span>
 
 - 可以复用；
 - 代码结构清晰；
