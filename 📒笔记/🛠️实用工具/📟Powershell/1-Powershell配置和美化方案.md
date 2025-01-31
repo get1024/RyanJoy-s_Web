@@ -166,23 +166,28 @@ winget install --id Microsoft.PowerShell --source winget
 ```ps1 [Microsoft.PowerShell_profile.ps1]
 # 引入 posh-git
 Import-Module posh-git
-
 # 引入 ps-read-line
 Import-Module PSReadLine
-
+# 退出时保存历史
+Set-PSReadLineOption -HistorySaveStyle SaveAtExit
 # 设置预测文本来源为历史记录
 Set-PSReadLineOption -PredictionSource History
 # 每次回溯输入历史，光标定位于输入内容末尾
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
-Set-PSReadLineOption -EditMode Emacs
+# 设置预测文本的展示样式为列表视图（另一选择：InlineView）
 Set-PSReadLineOption -PredictionViewStyle ListView
-Set-PSReadLineOption -BellStyle None
-
-Set-PSReadlineKeyHandler -Key Tab -Function Complete  ## 设置 Tab 键补全
-Set-PSReadLineKeyHandler -Key "Ctrl+d" -Function MenuComplete  ## 设置 Ctrl+D 为菜单补全和 Intellisense
-Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo  ## 设置 Ctrl+Z 为撤销
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward  ## 设置向上键为后向搜索历史记录
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward  ## 设置向下键为前向搜索历史记录
+# 禁用命令行输入时的铃声提醒，并改为光标提醒
+Set-PSReadLineOption -BellStyle Visual
+## 设置 Tab 键补全
+Set-PSReadlineKeyHandler -Key Tab -Function Complete
+## 设置 Ctrl+D 为菜单补全和 Intellisense
+Set-PSReadLineKeyHandler -Key "Ctrl+d" -Function MenuComplete
+## 设置 Ctrl+Z 为撤销
+Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo
+## 设置向上键为后向搜索历史记录
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+## 设置向下键为前向搜索历史记录
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 oh-my-posh init pwsh | Invoke-Expression
 
@@ -217,27 +222,6 @@ oh-my-posh init pwsh --config 'C:\Users\RJY\AppData\Local\Programs\oh-my-posh\th
                     "style": "diamond",
                     "template": " {{ .CurrentDate | date .Format }} ",
                     "type": "time"
-                },
-                {
-                    "foreground": "#5EADF2",
-                    "style": "plain",
-                    "template": "{{if .Version}}<#F3EFF5>is</> \uf487 {{.Version}} {{end}}",
-                    "type": "project"
-                },
-                {
-                    "foreground": "#98C379",
-                    "properties": {
-                        "fetch_version": true
-                    },
-                    "style": "plain",
-                    "template": "<#ffffff>via</> \ue781 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
-                    "type": "node"
-                },
-                {
-                    "foreground": "#FE4A49",
-                    "style": "plain",
-                    "template": "\ue71e {{.Full}} ",
-                    "type": "npm"
                 }
             ],
             "type": "prompt"
@@ -270,7 +254,7 @@ oh-my-posh init pwsh --config 'C:\Users\RJY\AppData\Local\Programs\oh-my-posh\th
                         "fetch_upstream_icon": true
                     },
                     "style": "plain",
-                    "template": "<#ef5350>branch:</>{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}",
+                    "template": "<#ef5350>on branch</> {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}",
                     "type": "git"
                 }
             ],
