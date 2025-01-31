@@ -1,7 +1,7 @@
 ---
 title: Todo Tree 安装配置方案
 createAt: 2024-05-18 15:28:26
-updateAt: 2025-01-27 17:00:20
+updateAt: 2025-01-31 10:02:19
 ---
 
 # Todo Tree 安装配置方案
@@ -10,17 +10,17 @@ updateAt: 2025-01-27 17:00:20
 
 插件搜索`Todo Tree`，选择下图所示。
 
-![todo tree](/blog/tools/vscode/插件/todo_tree.png)
+![todo tree](assets/todo-tree-安装配置方案/todo_tree.png)
 
 ## 自定义进行配置
 
 ### 进入插件设置界面
 
-![setting1](/blog/tools/vscode/插件/todotree_setting1.png)
+![setting1](assets/todo-tree-安装配置方案/todotree_setting1.png)
 
 ### 打开setting.json文件
 
-![setting2](/blog/tools/vscode/插件/todotree_setting2.png)
+![setting2](assets/todo-tree-安装配置方案/todotree_setting2.png)
 
 ### 配置自定义样式
 
@@ -74,13 +74,13 @@ updateAt: 2025-01-27 17:00:20
 
 ## 使用示例
 
-![use](/blog/tools/vscode/插件/todotree_use1.png)
+![use](assets/todo-tree-安装配置方案/todotree_use1.png)
 
-![use](/blog/tools/vscode/插件/todotree_use2.png)
+![use](assets/todo-tree-安装配置方案/todotree_use2.png)
 
 ## 效果预览
 
-![display](/blog/tools/vscode/插件/todotree_display.png)
+![display](assets/todo-tree-安装配置方案/todotree_display.png)
 
 <hr/>
 

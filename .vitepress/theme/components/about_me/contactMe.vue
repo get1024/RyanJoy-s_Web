@@ -27,7 +27,7 @@ const copyEmail = () => {
             </svg>
             <!-- 悬浮提示框 -->
             <span class="tooltiptext">
-                <img class="wechatImg" src="/about_me/wechat.jpg" alt="Tooltip Image">
+                <img class="wechatImg" src="/wechat.jpg" alt="Tooltip Image">
             </span>
         </div>
         <a href="https://t.me/RyanJoy_1945815" target="_blank">

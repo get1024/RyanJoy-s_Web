@@ -1,7 +1,7 @@
 ---
 title: Powershell配置和美化方案
 createAt: 2024-04-24 18:03:36
-updateAt: 2025-01-27 13:28:19
+updateAt: 2025-01-31 09:58:47
 ---
 
 # Powershell配置和美化方案
@@ -22,7 +22,7 @@ updateAt: 2025-01-27 13:28:19
 
 ![VSCode-Terminal](assets/1-powershell配置和美化方案/VSCode-Terminal.png)
 
-是不是比原生的好看呢？接下来看看具体如何配置吧！如果你只是想复刻我的样式，请直接跳转这里： [#想复刻我的配置](#想复刻我的配置)
+是不是比原生的好看呢？接下来看看具体如何配置吧！如果你只是想复刻我的样式，请直接跳转这里： [复刻我的配置](#复刻我的配置)
 
 ## 安装
 
@@ -157,7 +157,7 @@ winget install --id Microsoft.PowerShell --source winget
 
 如果你对配置教程有更加深刻的需求，请访问官方文档 [Introduction \| Oh My Posh](https://ohmyposh.dev/docs)。
 
-## 想复刻我的配置
+## 复刻我的配置
 
 这里提供几个关键文件
 

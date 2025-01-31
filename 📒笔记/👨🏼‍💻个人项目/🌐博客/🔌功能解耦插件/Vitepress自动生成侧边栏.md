@@ -1,6 +1,6 @@
 ---
 createAt: 2025-01-08 12:09:08
-updateAt: 2025-01-30 23:07:45
+updateAt: 2025-01-31 10:15:08
 title: Vitepress自动生成侧边栏
 tags:
   - 博客
@@ -75,7 +75,7 @@ export default defineConfigWithTheme({
 
 ### 特殊的处理规则
 
-#### 规则一：专一配置
+#### 规则一-专一配置
 
 <p style="color:red;font-weight:bold">1-separate: false</p>
 
@@ -123,7 +123,7 @@ sidebar: calculateSidebar([
 
 注意到：侧边栏显示结果为**当前所配置的文件夹名路径下的内容**。
 
-#### 规则二：混合配置
+#### 规则二-混合配置
 
 如果**既有**`字符串配置`**又有** `{ folderName: 'A', separate: true }` 的配置，那么，[差异路径忽略](#规则一-专一配置) 的规则将不再生效。以本博客为例
 
@@ -142,11 +142,11 @@ calculateSidebar([
 | :---------------------------------------------: | :---------------------------------------------: |
 | ![](assets/vitepress自动生成侧边栏/differentPathsidebar1%201.png) | ![](assets/vitepress自动生成侧边栏/differentPathsidebar3.png) |
 
-注意到：侧边栏显示结果有如下区别————对于`separate: true`配置的侧边栏，显示为**当前所配置的文件夹名路径下的内容**；对于`separate: false`（等价于`字符串参数`）配置的侧边栏，显示为**当前所配置的文件夹名**。这也不难理解，因为刚好与[规则一：专一配置](#规则一-专一配置)所呈现的效果严格对应。
+注意到：侧边栏显示结果有如下区别————对于 `separate: true` 配置的侧边栏，显示为**当前所配置的文件夹名路径下的内容**；对于 `separate: false` （等价于 `字符串参数` ）配置的侧边栏，显示为**当前所配置的文件夹名**。这也不难理解，因为刚好与 [规则一：专一配置](#规则一-专一配置) 所呈现的效果严格对应。
 
 ## 可选性配置
 
-上述配置完成了自动生成侧边栏，但不难发现，上述配置，实现效果在最理想情况下也只能做到展示对应路径下第一层级的内容（即`/path/`下的内容）。而考虑到你可能想要原生配置的[`collapse:false`选项](https://vitepress.dev/zh/reference/default-theme-sidebar#collapsible-sidebar-groups)实现的**指定路径下首级文件夹自动展开**效果，可以在完成上述配置的前提下进行下列配置。
+上述配置完成了自动生成侧边栏，但不难发现，上述配置，实现效果在最理想情况下也只能做到展示对应路径下第一层级的内容（即 `/path/` 下的内容）。而考虑到你可能想要原生配置的 [`collapse:false`选项](https://vitepress.dev/zh/reference/default-theme-sidebar#collapsible-sidebar-groups) 实现的**指定路径下首级文件夹自动展开**效果，可以在完成上述配置的前提下进行下列配置。
 
 ### 为 VitePress 配置
 

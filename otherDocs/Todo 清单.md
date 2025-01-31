@@ -1,7 +1,7 @@
 ---
 title: Todo 清单
 createAt: 2025-01-22 19:58:16
-updateAt: 2025-01-30 21:23:32
+updateAt: 2025-01-31 00:22:47
 sidebar: false
 ---
 
@@ -35,3 +35,4 @@ sidebar: false
 ## 配置相关
 
 - [x] 代码块样式统一；删除 mac 样式小圆点（太扎眼了……）
+- [ ] 完善附件、静态资源在全局的路径配置；整合 obsidian 适配
