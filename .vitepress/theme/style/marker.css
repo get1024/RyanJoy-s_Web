@@ -1,23 +1,7 @@
-.marker-highlight {
-    /* border-radius: 5px 5px;
-    background: transparent;
-    color: var(--vp-c-text-soft);
-    background: linear-gradient(104deg,
-            rgba(246, 184, 0, 0) 0.9%,
-            rgba(246, 184, 0, 1.25) 2.4%,
-            rgba(246, 184, 0, 0.5) 5.8%,
-            rgba(246, 184, 0, 0.1) 93%,
-            rgba(246, 184, 0, 0.7) 96%,
-            rgba(246, 184, 0, 0) 98%),
-        linear-gradient(183deg,
-            rgba(255, 183, 0, 0) 0%,
-            rgba(255, 183, 0, 0.3) 7.9%,
-            rgba(255, 183, 0, 0) 15%); */
-    text-decoration: underline;
-    text-decoration-thickness: 9px;
-    text-decoration-color: rgba(246, 184, 0, 0.4);
-    text-underline-offset: -4px;
-    text-decoration-skip-ink: none;
+.marker-fakeTitle {
+    color:red;
+    font-weight:bold;
+    font-style:italic;
 }
 
 .marker-underline {
