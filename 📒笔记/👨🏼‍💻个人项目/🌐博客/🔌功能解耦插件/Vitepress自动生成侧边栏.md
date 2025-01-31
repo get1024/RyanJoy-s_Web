@@ -71,7 +71,7 @@ export default defineConfigWithTheme({
 
 唯一的区别就是在于这个特殊的 `separate` 属性。当用户配置了 `separate: true` 之后，我们会生成 VitePress 所兼容和支持的多侧边栏，这使得「根据页面路径显示不同的侧边栏」变成可能。
 
-说得更直白一些，如果你希望能够在 `/A` 路径下展示仅与 A 目录相关的侧边栏，`/B` 路径只展示 B 目录的侧边栏，那么你就需要 `[{ folderName: 'A', separate: true }, { folderName: 'B', separate: true }]` 这样的配置。<span class="marker-highlight">推荐使用此配置。</span>
+说得更直白一些，如果你希望能够在 `/A` 路径下展示仅与 A 目录相关的侧边栏，`/B` 路径只展示 B 目录的侧边栏，那么你就需要 `[{ folderName: 'A', separate: true }, { folderName: 'B', separate: true }]` 这样的配置。<span class="marker-underline">推荐使用此配置。</span>
 
 ### 特殊的处理规则
 

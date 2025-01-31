@@ -84,7 +84,7 @@ color: `#ff9988`; /* 可简为: `#f98` */
 color: `#ff998866`; /* 可简为: `#f986` */
 ```
 
-<span class="marker-highlight">注意点：IE 浏览器不支持 HEXA，但支持 HEX。</span>
+<span class="marker-underline">注意点：IE 浏览器不支持 HEXA，但支持 HEX。</span>
 
 ###  表示方式四：HSL 或 HSLA
 

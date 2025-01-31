@@ -28,7 +28,7 @@ updateAt: 2025-01-31 09:58:47
 
 ### Windows Terminal
 
-对于 <span class="marker-evy">**Windows 11**</span> 系统已经默认用 Windows Terminal 取代了原本的 Powershell。<span class="marker-highlight">「注：此处的 Powershell 并不是我们本文档所关注的 Powershell 7。」</span>Windows 11 用户可以 `跳过安装` 这一步，直接单击键盘上的 `Windows 徽标键` ，在弹出窗口搜索🔍 `Windows PowerShell` ，单击打开。
+对于 <span class="marker-evy">**Windows 11**</span> 系统已经默认用 Windows Terminal 取代了原本的 Powershell。<span class="marker-underline">「注：此处的 Powershell 并不是我们本文档所关注的 Powershell 7。」</span>Windows 11 用户可以 `跳过安装` 这一步，直接单击键盘上的 `Windows 徽标键` ，在弹出窗口搜索🔍 `Windows PowerShell` ，单击打开。
 
 ![search-powershell](assets/1-powershell配置和美化方案/search-powershell.png)
 

@@ -120,7 +120,7 @@ export default createContentLoader("📒笔记/**/*.md", { // [!code error]
 
 特别需要注意的是 `"📒笔记/**/*.md"` 参数，对于你的文档配置，若你想要输出 `'/A'` 文件夹下的 `markdown` 文档到 索引页 ，将参数修改为 `"A/**/*.md"` 。
 
-<span class="marker-highlight">配置正确情况下，只需对 32 行进行修改</span>。
+<span class="marker-underline">配置正确情况下，只需对 32 行进行修改</span>。
 
 ### 配置样式文件
 
@@ -192,7 +192,7 @@ h2.noteIndex-h2 {
 }
 ```
 
-<span class="marker-highlight">可以根据自己喜好进行修改。</span>
+<span class="marker-underline">可以根据自己喜好进行修改。</span>
 
 ### 配置 Vue 组件
 
@@ -253,7 +253,7 @@ const groupedPosts = Object.entries(posts)
 
 其实本质也就是 `base` 的问题，这一点我们在 [项目结构明晰](#项目结构明晰) 也提到过，如果您实在不确定该如何配置，建议您逐层实验 或者 询问 ChatGPT。
 
-<span class="marker-highlight">配置正确情况下，此文件只需对 40 行进行修改</span>。
+<span class="marker-underline">配置正确情况下，此文件只需对 40 行进行修改</span>。
 
 ### 注册组件
 

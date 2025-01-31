@@ -130,7 +130,7 @@ p {
 
 ### 交集选择器
 
-- 作用：选中同时符合多个条件的元素。<span class="marker-highlight">交集有**并且**的意思，即：**既……又……**。</span>
+- 作用：选中同时符合多个条件的元素。<span class="marker-underline">交集有**并且**的意思，即：**既……又……**。</span>
 
 - 语法：**选择器之间没有任何符号/空格**
 
@@ -162,7 +162,7 @@ p.beauty{
 
 ### 并集选择器
 
-- 作用：选中多个选择器对应的元素，又称：**分组选择器**。<span class="marker-highlight">并集就是**或者**的意思，即：**要么……要么……**</span>
+- 作用：选中多个选择器对应的元素，又称：**分组选择器**。<span class="marker-underline">并集就是**或者**的意思，即：**要么……要么……**</span>
 
 - 语法：多个选择器通过 `,` 连接，此处 `,` 的含义就是**或**
 
@@ -452,7 +452,7 @@ div~p {
 #### 否定伪类
 
 - `:not(选择器)` **排除**满足括号中条件的元素。
-- <span class="marker-highlight">选择器可以是任意基本选择器</span>
+- <span class="marker-underline">选择器可以是任意基本选择器</span>
 
 #### UI 伪类
 
@@ -503,7 +503,7 @@ div~p {
 
 行内样式 `>` ID 选择器 `>` 类选择器 `>` 元素选择器 `>` 通配选择器；
 
- `!important` ：在属性键值对后加 `!important` 的权重，将<span class="marker-highlight">强制使用该样式设置</span>。
+ `!important` ：在属性键值对后加 `!important` 的权重，将<span class="marker-underline">强制使用该样式设置</span>。
 
 ### 详细描述
 
