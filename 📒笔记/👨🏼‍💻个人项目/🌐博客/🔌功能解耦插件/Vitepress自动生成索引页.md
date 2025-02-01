@@ -1,7 +1,7 @@
 ---
 title: Vitepress自动生成索引页
 createAt: 2025-01-12 12:30:07
-updateAt: 2025-01-31 00:06:30
+updateAt: 2025-02-01 00:01:27
 ---
 
 # Vitepress自动生成索引页
@@ -63,7 +63,7 @@ updateAt:  YYYY-MM-DD HH:mm:ss
 
 `createAt` 是文章创建的时间， `updateAt` 是文章最近一次编辑的时间。二者的格式均为 `YYYY-MM-DD HH:mm:ss` 。
 
-对于每篇文档中的这三个字段，您可以手动输入配置，或通过一些插件进行实现。由于笔者是基于 [Obsidian](https://obsidian.md/) 进行文档编写，我采用了插件实现文档格式化，自动添加以上三个属性。如果读者有更好的实现方案，请访问 [本仓库](https://github.com/get1024/RyanJoy-s_Web) `fork` 并提出 `PR` 。
+对于每篇文档中的这三个字段，您可以手动输入配置，或通过一些插件进行实现。由于笔者是基于 [Obsidian](https://obsidian.md/) 进行文档编写，我采用了 [插件](../⚓博客搭建部署/个人博客搭建、使用最佳解决方案.md#文件配置) 实现文档格式化，自动添加以上三个属性。如果读者有更好的实现方案，请访问 [本仓库](https://github.com/get1024/RyanJoy-s_Web) `fork` 并提出 `PR` 。
 
 对于上述配置如果您还有自己的需求，当然可以进行更多的键值对 `[属性名]: [属性值]` 配置。
 
