@@ -61,8 +61,8 @@ function chineseSearchOptimize(input: string) {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-CN",
-  title: "RyanJoy's Web",
-  description: "RyanJoy的个人博客",
+  title: "RyanJoy的博客",
+  description: "RyanJoy的博客",
   lastUpdated: true,
   appearance: true,
 

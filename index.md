@@ -4,13 +4,12 @@ title: 🏡首页
 head:
   - - meta
     - name: keywords
-    - content: vitepress vue vite blog 个人博客 博客
+    - content: vitepress vue vite blog 个人博客 博客 RyanJoy ryanjoy
   - - meta
     - name: description
-    - content: 一个全栈程序员的个人博客
+    - content: RyanJoy的个人博客
 hero:
-  name: RyanJoy's Web
-  text: 📝记录RyanJoy生活、学习、回忆的个人宫殿
+  name: RyanJoy的博客
   tagline: “🌟且视他人之疑目如盏盏鬼火，大胆地去走自己的夜路吧。”
   actions:
     - theme: brand
