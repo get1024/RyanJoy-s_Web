@@ -1,8 +1,10 @@
 ---
 title: JY-movie答辩相关
 createAt: 2024-06-21 22:42:11
-updateAt: 2025-02-02 17:05:50
-tags: []
+updateAt: 2025-02-02 17:39:36
+tags:
+  - 答辩
+  - 本科
 ---
 
 # JY-movie答辩相关

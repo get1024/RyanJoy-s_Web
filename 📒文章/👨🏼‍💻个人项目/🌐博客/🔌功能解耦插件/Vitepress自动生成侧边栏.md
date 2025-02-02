@@ -88,12 +88,12 @@ export default defineConfigWithTheme({
 // 方式一
 sidebar: calculateSidebar([
     { folderName: "👨🏼‍🎓关于我", separate: false },
-    { folderName: "📒笔记", separate: false },
+    { folderName: "📒文章", separate: false },
 ]),
 // 方式二
 sidebar: calculateSidebar([
     "👨🏼‍🎓关于我",
-    "📒笔记",
+    "📒文章",
 ]),
 ```
 
@@ -112,13 +112,13 @@ sidebar: calculateSidebar([
 ```ts [config.ts]
 sidebar: calculateSidebar([
     { folderName: "👨🏼‍🎓关于我", separate: true },
-    { folderName: "📒笔记", separate: true },
+    { folderName: "📒文章", separate: true },
 ]),
 ```
 
 效果如下
 
-|                         /📒笔记                          |                      /👨🏼‍🎓关于我                       |
+|                         /📒文章                          |                      /👨🏼‍🎓关于我                       |
 | :----------------------------------------------------: | :----------------------------------------------------: |
 | ![](assets/vitepress自动生成侧边栏/differentPathsidebar1.png) | ![](assets/vitepress自动生成侧边栏/differentPathsidebar2.png) |
 
@@ -133,13 +133,13 @@ sidebar: calculateSidebar([
 ```typescript [config.ts]
 calculateSidebar([
     "👨🏼‍🎓关于我",
-    { folderName: "📒笔记", separate: true },
+    { folderName: "📒文章", separate: true },
 ])
 ```
 
 效果如下
 
-|                      /📒笔记                      |                   /👨🏼‍🎓关于我                   |
+|                      /📒文章                      |                   /👨🏼‍🎓关于我                   |
 | :---------------------------------------------: | :---------------------------------------------: |
 | ![](assets/vitepress自动生成侧边栏/differentPathsidebar1%201.png) | ![](assets/vitepress自动生成侧边栏/differentPathsidebar3.png) |
 
@@ -232,7 +232,7 @@ export { calculateSidebar };
 
 ### 检验效果
 
-|                         /📒笔记                          |                       /👨🏼‍🎓关于我                       |
+|                         /📒文章                          |                       /👨🏼‍🎓关于我                       |
 | :----------------------------------------------------: | :-----------------------------------------------------: |
 | ![](assets/vitepress自动生成侧边栏/optionalSidebarConfig.png) | ![](assets/vitepress自动生成侧边栏/optionalSidebarConfig2.png) |
 

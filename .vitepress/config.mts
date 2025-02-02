@@ -218,7 +218,7 @@ export default defineConfig({
     },
     //侧边栏自动配置
     sidebar: calculateSidebarWithDefaultOpen(
-      [{ folderName: "📒笔记", separate: true }],
+      [{ folderName: "📒文章", separate: true }],
       ""
     ),
   },

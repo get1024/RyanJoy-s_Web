@@ -49,6 +49,7 @@ import developTools from "./components/about_me/developTools.vue"
 import others from "./components/about_me/others.vue"
 import contactMe from "./components/about_me/contactMe.vue"
 import TagCloud from './components/TagCloud/TagCloud.vue'
+import BackToTop from './components/BackToTop/BackToTop.vue'
 
 const enhanceAppOriginal = ({ app, router, siteData }) => {
   if (inBrowser) {
@@ -72,6 +73,7 @@ const enhanceAppOriginal = ({ app, router, siteData }) => {
   app.component('others', others)
   app.component('contactMe', contactMe)
   app.component('TagCloud', TagCloud)
+  app.component('BackToTop', BackToTop)
 }
 
 export const Theme: ThemeConfig = {
@@ -81,6 +83,7 @@ export const Theme: ThemeConfig = {
       'layout-top': () => [ 
         h(NolebaseHighlightTargetedHeading), 
       ],
+      'layout-bottom': () => h(BackToTop)
     })
   },
 

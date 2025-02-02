@@ -1,8 +1,11 @@
 ---
 title: JY-movie
 createAt: 2023-04-01 09:12:31
-updateAt: 2025-02-02 13:47:55
-tags: []
+updateAt: 2025-02-02 17:39:26
+tags:
+  - 项目
+  - SpringBoot
+  - Vue
 ---
 
 # JY-movie

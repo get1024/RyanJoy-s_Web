@@ -5,9 +5,10 @@ export const nav: DefaultTheme.Config['nav'] = [
     link: '/',
   },
   {
-    text: '📒笔记',
-    link: '/📒笔记/index',
+    text: '📒文章',
+    link: '/📒文章/index',
   },
+
   {
     text: '👨‍🎓关于我',
     link: '/otherDocs/关于我'

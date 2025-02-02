@@ -25,7 +25,7 @@ function groupByYear(posts) {
     }, {});
 }
 
-export default createContentLoader("📒笔记/**/*.md", {
+export default createContentLoader("📒文章/**/*.md", {
     transform(rawPosts) {
         // Split dates and group by year
         const postsWithDate = rawPosts.map((post) => {
