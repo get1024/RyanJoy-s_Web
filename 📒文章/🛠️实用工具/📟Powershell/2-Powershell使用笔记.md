@@ -1,7 +1,12 @@
 ---
 title: Powershell 使用笔记
 createAt: 2024-04-19 20:13:26
-updateAt: 2025-01-26 09:20:49
+updateAt: 2025-02-02 23:52:32
+tags:
+  - 工具
+  - 学习笔记
+  - 指南
+  - PowerShell
 ---
 
 # Powershell 使用笔记

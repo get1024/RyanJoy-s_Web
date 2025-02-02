@@ -1,7 +1,13 @@
 ---
 title: Powershell配置和美化方案
 createAt: 2024-04-24 18:03:36
-updateAt: 2025-01-31 09:58:47
+updateAt: 2025-02-02 23:52:27
+tags:
+  - 工具
+  - Windows
+  - 解决方案
+  - 美化
+  - PowerShell
 ---
 
 # Powershell配置和美化方案

@@ -1,9 +1,10 @@
 ---
 title: Vuebiji
 createAt: 2024-03-18 22:01:19
-updateAt: 2025-01-27 16:56:59
+updateAt: 2025-02-02 23:49:20
 tags:
   - 前端
+  - Vue
 ---
 
 # Vuebiji

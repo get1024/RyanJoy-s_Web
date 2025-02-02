@@ -1,8 +1,11 @@
 ---
 title: 关于做好Read it later的重要性
 createAt: 2024-06-12 13:40:26
-updateAt: 2025-01-11 22:42:29
+updateAt: 2025-02-02 23:51:00
 tags:
+  - 学习笔记
+  - 指南
+  - 生活
 ---
 # 关于做好Read it later的重要性
 

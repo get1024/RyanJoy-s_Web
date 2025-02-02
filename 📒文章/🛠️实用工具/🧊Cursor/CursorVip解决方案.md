@@ -1,7 +1,12 @@
 ---
 createAt: 2025-01-22 19:10:44
-updateAt: 2025-01-22 19:40:39
+updateAt: 2025-02-02 23:53:06
 title: Cursor Vip解决方案
+tags:
+  - 插件
+  - 工具
+  - 解决方案
+  - 教程
 ---
 # Cursor Vip解决方案
 

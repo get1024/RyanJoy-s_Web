@@ -1,10 +1,11 @@
 ---
 title: Error:Cannot find module @rollup-win32-x64-msvc
 createAt: 2023-12-07 10:15:38
-updateAt: 2025-02-02 17:04:49
+updateAt: 2025-02-02 23:44:25
 tags:
   - 博客
   - Bug
+  - 插件
 ---
 
 # Error:Cannot find module @rollup-win32-x64-msvc

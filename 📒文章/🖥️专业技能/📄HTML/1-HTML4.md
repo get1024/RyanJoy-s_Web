@@ -1,9 +1,10 @@
 ---
 title: HTML 4 笔记
 createAt: 2024-01-15 10:01:13
-updateAt: 2025-01-31 10:47:17
+updateAt: 2025-02-02 23:48:50
 tags:
   - 前端
+  - HTML
 ---
 
 # HTML 4 笔记

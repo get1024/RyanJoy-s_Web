@@ -36,7 +36,9 @@ features:
     title: 由<a href="https://vitepress.dev/zh/" style="color:#f7a800;text-decoration:underline;" target="_blank">Vitepress</a>提供支持
     details: 一款快速、易用的SSG工具，为本知识系统提供支持。在此感谢为vue.js、vite、vitepress做出贡献的所有朋友🙏。
 createAt: 2025-01-11 20:05:07
-updateAt: 2025-01-22 20:00:59
+updateAt: 2025-02-02 23:54:56
+tags:
+  - Index
 ---
 
 <HomeUnderLine />
