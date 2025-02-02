@@ -22,24 +22,24 @@ updateAt: 2025-01-31 10:06:20
 
 官网： <https://cloud.tencent.com/>
 
-![](assets/个人部署方案/个人部署方案-1.png)
+![](assets/vitepress一站式部署方案/Vitepress一站式部署方案-1.png)
 
 ### 注册
 
 [腾讯云首页](https://cloud.tencent.com/) => 产品 => 域名注册
 
-![个人部署方案-2](assets/个人部署方案/个人部署方案-2.png)
+![Vitepress一站式部署方案-2](assets/vitepress一站式部署方案/Vitepress一站式部署方案-2.png)
 
 自己想一个域名搜索，被注册了就换一个，直到有中意的
 
-![个人部署方案-3](assets/个人部署方案/个人部署方案-3.png)
-![](assets/个人部署方案/个人部署方案-4.png)
+![Vitepress一站式部署方案-3](assets/vitepress一站式部署方案/Vitepress一站式部署方案-3.png)
+![](assets/vitepress一站式部署方案/Vitepress一站式部署方案-4.png)
 
 购买完成后，右上角点击进入 `控制台`  => 域名注册 => 我的域名
 
-![域名注册](assets/个人部署方案/域名注册.png)
+![域名注册](assets/vitepress一站式部署方案/域名注册.png)
 
-![域名注册成功](assets/个人部署方案/域名注册成功.png)
+![域名注册成功](assets/vitepress一站式部署方案/域名注册成功.png)
 
 你就可以看到刚刚注册成功的域名了
 
@@ -47,15 +47,15 @@ updateAt: 2025-01-31 10:06:20
 
 腾讯云域名解析，使用的是全资收购的 [DNSPod](https://www.dnspod.cn/)
 
-![解析](assets/个人部署方案/解析.png)
+![解析](assets/vitepress一站式部署方案/解析.png)
 
 直接点 `快速添加解析` ，记录值填 `你的主机IP` 即可
 
-![快速解析](assets/个人部署方案/快速解析.png)
+![快速解析](assets/vitepress一站式部署方案/快速解析.png)
 
 解析成功后，结果如下
 
-![解析成功](assets/个人部署方案/解析成功.png)
+![解析成功](assets/vitepress一站式部署方案/解析成功.png)
 
 ## 部署到 Vercel
 
@@ -90,7 +90,7 @@ updateAt: 2025-01-31 10:06:20
 4. **Build Command:** 设置为 `npm run build` 或 `pnpm run build` 。这里根据你自己的 `package.json` 文件的内容进行配置。
 	
 	我的 `package.json` 内容如下：
-	![package-json](assets/个人部署方案/package-json.png)
+	![package-json](assets/vitepress一站式部署方案/package-json.png)
 	因此我的配置为 `pnpm build` 。
 5. **Output Directory**: 设置为 `.vitepress/dist`
 6. **Install Command**: 设置为 `npm install` 或 `pnpm install`
@@ -101,21 +101,21 @@ updateAt: 2025-01-31 10:06:20
 2. Vercel 会自动进行构建和部署
 3. 部署完成后，你会得到一个 `.vercel.app` 结尾的域名
 
-![部署成功](assets/个人部署方案/部署成功.png)
+![部署成功](assets/vitepress一站式部署方案/部署成功.png)
 
 如果你挂了梯子，你点击这一域名便可以成功访问你的网站了，但是如果你没有梯子，便会被墙。如图所示：
 
-![vercel墙](assets/个人部署方案/vercel墙.png)
+![vercel墙](assets/vitepress一站式部署方案/vercel墙.png)
 
 ### 自定义域名
 
 选择 `Domain` => `Add` ，填入你自己的域名即可。我这里使用的是 ` ryanjoy.top ` 。
 
-![domain配置1](assets/个人部署方案/domain配置1.png)
+![domain配置1](assets/vitepress一站式部署方案/domain配置1.png)
 
-![domain配置2](assets/个人部署方案/domain配置2.png)
+![domain配置2](assets/vitepress一站式部署方案/domain配置2.png)
 
-![domain配置3](assets/个人部署方案/domain配置3.png)
+![domain配置3](assets/vitepress一站式部署方案/domain配置3.png)
 
 ### 自动部署
 
@@ -157,31 +157,31 @@ Vercel 提供了一些内置的性能优化：
 
 右上角 `添加` => 现有域
 
-![添加域名](assets/个人部署方案/添加域名.png)
+![添加域名](assets/vitepress一站式部署方案/添加域名.png)
 
 输入我们之前注册好的 [域名](#注册) ，点击继续
 
-![域名添加](assets/个人部署方案/域名添加.png)
+![域名添加](assets/vitepress一站式部署方案/域名添加.png)
 
 方案选择 `FREE`
 
-![free](assets/个人部署方案/free.png)
+![free](assets/vitepress一站式部署方案/free.png)
 
 `开始快速扫描`
 
-![快速扫描](assets/个人部署方案/快速扫描.png)
+![快速扫描](assets/vitepress一站式部署方案/快速扫描.png)
 
 后面提示我们更改 DNS 服务器
 
-![更改dns](assets/个人部署方案/更改dns.png)
+![更改dns](assets/vitepress一站式部署方案/更改dns.png)
 
 回到腾讯云。打开域名界面，勾选域名，修改DNS服务器。
 
-![dns修改](assets/个人部署方案/dns修改.png)
+![dns修改](assets/vitepress一站式部署方案/dns修改.png)
 
 填入 `Cloudflare` 给出的服务器编码
 
-![服务器配置](assets/个人部署方案/服务器配置.png)
+![服务器配置](assets/vitepress一站式部署方案/服务器配置.png)
 
 点击确定，一直确认，最后提交即可。
 
@@ -189,7 +189,7 @@ Vercel 提供了一些内置的性能优化：
 
 出现图上提示
 
-![dns不正确](assets/个人部署方案/dns不正确.png)
+![dns不正确](assets/vitepress一站式部署方案/dns不正确.png)
 
 忽视即可。因为腾讯云自带的有 DNS 解析服务，我们现在使用了 `Cloudflare` 的解析，就不用再维护腾讯云的 DNS 解析配置了。
 
@@ -198,15 +198,15 @@ Vercel 提供了一些内置的性能优化：
 
 等待一会，会收到 `Cloudflare` 的邮件
 
-![激活成功](assets/个人部署方案/激活成功.png)
+![激活成功](assets/vitepress一站式部署方案/激活成功.png)
 
 这表示你已经成功激活 `Cloudflare` 的服务。 `Cloudflare` 控制台会显示如下
 
-![Cloudflare控制台](assets/个人部署方案/Cloudflare控制台.png)
+![Cloudflare控制台](assets/vitepress一站式部署方案/Cloudflare控制台.png)
 
 点击左侧 DNS => 记录。可以看到之前腾讯云我们配置的 DNS 解析自动被识别到这里了。
 
-![dns记录](assets/个人部署方案/dns记录.png)
+![dns记录](assets/vitepress一站式部署方案/dns记录.png)
 
 ## 切换域名
 
@@ -226,7 +226,7 @@ Cloudflare 负责 DNS 解析，因此我们需要在 **Cloudflare** 里添加新
     - **代理状态 (Proxy status)**：⚠ **保持"DNS 仅" (灰色云朵) 状态，不要启用 Cloudflare 代理（橙色云朵）**，否则可能会导致 Vercel 无法正确处理。
 4. **保存修改**。
 
-![添加dns解析](assets/个人部署方案/添加dns解析.png)
+![添加dns解析](assets/vitepress一站式部署方案/添加dns解析.png)
 
 ### 在 Vercel 绑定 `blog.ryanjoy.top` 域名
 
@@ -240,11 +240,11 @@ Cloudflare 负责 DNS 解析，因此我们需要在 **Cloudflare** 里添加新
     - 我们可以点击 **"View Instructions"**，按照 Vercel 提供的 CNAME 解析方式检查是否正确。
     - 确保 Cloudflare 里 `blog.ryanjoy.top` 的 CNAME 解析 **未启用 Cloudflare 代理**（应该是 **"DNS only"**)。
 
-![vercel-change-domian](assets/个人部署方案/vercel-change-domian.png)
+![vercel-change-domian](assets/vitepress一站式部署方案/vercel-change-domian.png)
 
 成功之后，会显示如下
 
-![changesuccess](assets/个人部署方案/changesuccess.png)
+![changesuccess](assets/vitepress一站式部署方案/changesuccess.png)
 
 ### 访问 `blog.ryanjoy.top` 验证是否生效
 
