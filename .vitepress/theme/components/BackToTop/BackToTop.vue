@@ -3,65 +3,68 @@ import { ref, onMounted, onUnmounted, computed } from 'vue'
 
 const isVisible = ref(false)
 const isHovered = ref(false)
-const isScrolling = ref(false)
 const fillPercentage = ref(0)
 
-// 计算圆环进度
-const progressOffset = computed(() => {
-    const circumference = 2 * Math.PI * 20 // 圆的周长
-    return circumference * (1 - fillPercentage.value / 100)
-})
+// 预计算圆环周长
+const CIRCUMFERENCE = 2 * Math.PI * 20
+const progressOffset = computed(() => 
+    CIRCUMFERENCE * (1 - Math.floor(fillPercentage.value / 5) * 5 / 100)  // 将进度离散化，每5%更新一次
+)
 
-// 监听滚动事件
+// 节流的滚动处理
+let scrollTimeout: number | null = null
 const handleScroll = () => {
-    if (isScrolling.value) return
+    if (scrollTimeout) return
 
-    const scrollTop = window.scrollY || document.documentElement.scrollTop
-    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
-
-    // 计算滚动百分比
-    fillPercentage.value = Math.min(Math.round((scrollTop / scrollHeight) * 100), 100)
-
-    // 显示/隐藏按钮
-    isVisible.value = scrollTop > 300
+    scrollTimeout = window.setTimeout(() => {
+        const scrollTop = window.scrollY
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+        
+        fillPercentage.value = Math.min(Math.round((scrollTop / scrollHeight) * 100), 100)
+        isVisible.value = scrollTop > 300
+        
+        scrollTimeout = null
+    }, 16) // 约60fps
 }
 
-// 平滑滚动到顶部
+// 优化的滚动动画
 const scrollToTop = () => {
-    if (isScrolling.value) return
-
-    isScrolling.value = true
-    const startPosition = window.scrollY
+    const duration = 500
+    const start = window.scrollY
+    const startPercentage = fillPercentage.value
     const startTime = performance.now()
-    const duration = fillPercentage.value * 20
 
-    const animation = (currentTime: number) => {
+    const scroll = (currentTime: number) => {
         const elapsed = currentTime - startTime
         const progress = Math.min(elapsed / duration, 1)
+        
+        const easing = 1 - Math.pow(1 - progress, 3)
+        
+        window.scrollTo({
+            top: start * (1 - easing),
+            behavior: 'auto'
+        })
 
-        const easeProgress = progress < 0.5
-            ? 2 * progress * progress
-            : 1 - Math.pow(-2 * progress + 2, 2) / 2
-
-        window.scrollTo(0, startPosition * (1 - easeProgress))
-        fillPercentage.value = Math.round((1 - easeProgress) * fillPercentage.value)
+        // 直接从当前进度值递减
+        fillPercentage.value = Math.round(startPercentage * (1 - easing))
 
         if (progress < 1) {
-            requestAnimationFrame(animation)
-        } else {
-            isScrolling.value = false
+            requestAnimationFrame(scroll)
         }
     }
 
-    requestAnimationFrame(animation)
+    requestAnimationFrame(scroll)
 }
 
 onMounted(() => {
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     handleScroll()
 })
 
 onUnmounted(() => {
+    if (scrollTimeout) {
+        window.clearTimeout(scrollTimeout)
+    }
     window.removeEventListener('scroll', handleScroll)
 })
 </script>
@@ -89,66 +92,79 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+/* 返回顶部按钮的基础样式 */
 .back-to-top {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s, transform 0.3s;
-    z-index: 100;
+    position: fixed;  /* 固定定位 */
+    right: 2rem;     /* 距离右侧边距 */
+    bottom: 2rem;    /* 距离底部边距 */
+    width: 3rem;     /* 按钮宽度 */
+    height: 3rem;    /* 按钮高度 */
+    border: none;    /* 移除边框 */
+    background: transparent;  /* 透明背景 */
+    cursor: pointer; /* 鼠标指针样式 */
+    opacity: 0;      /* 初始透明 */
+    transform: translateY(20px);  /* 初始向下偏移 */
+    transition: opacity 0.3s, transform 0.3s;  /* 过渡动画 */
+    z-index: 100;    /* 确保按钮在其他元素上方 */
+    will-change: transform, opacity;  /* 提示浏览器优化这些属性的变化 */
 }
 
+/* 按钮可见时的样式 */
 .back-to-top.visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1;      /* 完全不透明 */
+    transform: translateY(0);  /* 恢复正常位置 */
 }
 
+/* 进度环容器 */
 .progress-ring {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: relative;  /* 相对定位，作为子元素的定位参考 */
+    width: 100%;        /* 填充父元素宽度 */
+    height: 100%;       /* 填充父元素高度 */
 }
 
+/* 环形SVG容器 */
 .ring {
-    position: absolute;
+    position: absolute;  /* 绝对定位 */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg);  /* 旋转使进度从顶部开始 */
+    will-change: transform;     /* 优化变换性能 */
 }
 
+/* 环形背景 */
 .ring-background {
-    fill: none;
-    stroke: var(--vp-c-bg-soft);
-    stroke-width: 3;
+    fill: none;                    /* 无填充 */
+    stroke: var(--vp-c-bg-soft);   /* 使用主题软背景色 */
+    stroke-width: 3;               /* 线条宽度 */
 }
 
+/* 进度条环形 */
 .ring-progress {
-    fill: none;
-    stroke: var(--vp-c-brand-1);
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-dasharray: 125.66;
-    transition: stroke-dashoffset 0.3s;
+    fill: none;                    /* 无填充 */
+    stroke: var(--vp-c-brand-1);   /* 使用主题主色 */
+    stroke-width: 3;               /* 线条宽度 */
+    stroke-linecap: round;         /* 圆形线帽 */
+    stroke-dasharray: 125.66;      /* 虚线周长 */
+    transition: stroke-dashoffset 0.16s ease-out;  /* 平滑过渡 */
+    will-change: stroke-dashoffset;  /* 优化描边偏移动画 */
 }
 
+
+/* 中心图标 */
 .icon {
-    position: absolute;
+    position: absolute;            /* 绝对定位 */
     top: 50%;
     left: 50%;
-    width: 70%;
+    width: 70%;                   /* 图标大小 */
     height: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  /* 居中对齐 */
+    will-change: transform;            /* 优化变换性能 */
 }
 
+/* 悬浮效果 */
 .back-to-top.hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  /* 悬浮时放大效果 */
 }
 </style>
