@@ -1,10 +1,11 @@
 ---
 createAt: 2025-01-08 12:09:08
-updateAt: 2025-01-31 10:15:08
+updateAt: 2025-02-02 13:43:37
 title: Vitepress自动生成侧边栏
 tags:
   - 博客
-  - plugin
+  - 插件
+  - 教程
 ---
 
 # Vitepress自动生成侧边栏

@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-import { useData } from 'vitepress'
+import { useData, useRouter } from 'vitepress'
 import { computed, ref, onMounted } from 'vue'
 import { countWord } from './functions'
 
 const { page } = useData()
+const router = useRouter()
 const date = computed(
     () => new Date(page.value.lastUpdated!)
 )
@@ -29,6 +30,9 @@ const readTime = computed(() => {
     return Math.ceil((wordTime.value + imageTime.value) / 60)
 })
 
+const tags = computed(() => {
+    return page.value.frontmatter.tags || ['待定']
+})
 
 function analyze() {
     document.querySelectorAll('.meta-des').forEach(v => v.remove())
@@ -45,6 +49,11 @@ onMounted(() => {
     // 初始化时执行一次
     analyze()
 })
+
+// 添加标签点击处理函数
+const handleTagClick = (tag: string) => {
+    router.go(`/otherDocs/tagCloud.html?tag=${encodeURIComponent(tag)}`)
+}
 </script>
 
 
@@ -58,6 +67,22 @@ onMounted(() => {
                     fill="#8a8a8a" p-id="18132"></path>
             </svg>
             <span>更新: {{ date.toLocaleString() }}</span>
+            &nbsp;&nbsp;
+            <svg t="1738476810960" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="4127" width="16" height="16">
+                <path
+                    d="M483.2 790.3L861.4 412c1.7-1.7 2.5-4 2.3-6.3l-25.5-301.4c-0.7-7.8-6.8-13.9-14.6-14.6L522.2 64.3c-2.3-0.2-4.7 0.6-6.3 2.3L137.7 444.8c-3.1 3.1-3.1 8.2 0 11.3l334.2 334.2c3.1 3.2 8.2 3.2 11.3 0z m62.6-651.7l224.6 19 19 224.6L477.5 694 233.9 450.5l311.9-311.9z"
+                    p-id="4128" fill="#8a8a8a"></path>
+                <path d="M605.958852 324.826232a48 48 0 1 0 67.881066-67.883435 48 48 0 1 0-67.881066 67.883435Z"
+                    p-id="4129" fill="#8a8a8a"></path>
+                <path
+                    d="M889.7 539.8l-39.6-39.5c-3.1-3.1-8.2-3.1-11.3 0l-362 361.3-237.6-237c-3.1-3.1-8.2-3.1-11.3 0l-39.6 39.5c-3.1 3.1-3.1 8.2 0 11.3l243.2 242.8 39.6 39.5c3.1 3.1 8.2 3.1 11.3 0l407.3-406.6c3.1-3.1 3.1-8.2 0-11.3z"
+                    p-id="4130" fill="#8a8a8a"></path>
+            </svg>
+            <span class="tag-content">标签:
+                <span v-for="(tag, index) in tags" :key="tag" class="tag-item" @click="handleTagClick(tag)">
+                    {{ tag }}{{ index < tags.length - 1 ? ', ' : '' }} </span>
+                </span>
         </p>
         <p class="ArticleMetadata-info">
             <svg t="1736647717345" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -89,9 +114,9 @@ onMounted(() => {
 
 
 <style scoped>
-.ArticleMetadata-word{
+.ArticleMetadata-word {
     color: gray;
-    font-family: monospace; 
+    font-family: monospace;
     white-space: nowrap;
     min-width: 200px;
     font-size: 0.76em;
@@ -99,19 +124,39 @@ onMounted(() => {
 }
 
 .ArticleMetadata-word p {
-    display: flex; /* 使用 flex 布局 */
-    align-items: center; /* 垂直居中对齐 */
-    margin: 3px; /* 去除默认的段落间距 */
+    display: flex;
+    /* 使用 flex 布局 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    margin: 3px;
+    /* 去除默认的段落间距 */
 }
 
 .ArticleMetadata-word p svg {
-    margin-right: 4px; /* 图标和文字之间的间距，可根据需要调整 */
-    flex-shrink: 0; /* 防止图标被压缩 */
-    vertical-align: middle; /* 防止图标顶部与文字不对齐 */
+    margin-right: 4px;
+    /* 图标和文字之间的间距，可根据需要调整 */
+    flex-shrink: 0;
+    /* 防止图标被压缩 */
+    vertical-align: middle;
+    /* 防止图标顶部与文字不对齐 */
 }
 
 .ArticleMetadata-word p span {
-    line-height: 1.5; /* 确保文字的垂直居中看起来自然 */
+    line-height: 1.5;
+    /* 确保文字的垂直居中看起来自然 */
 }
 
+.tag-content {
+    color: var(--vp-c-brand-1);
+}
+
+.tag-item {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.tag-item:hover {
+    color: var(--vp-c-brand-3);
+    text-decoration: underline;
+}
 </style>

@@ -48,6 +48,7 @@ import devOps from "./components/about_me/devOps.vue"
 import developTools from "./components/about_me/developTools.vue"
 import others from "./components/about_me/others.vue"
 import contactMe from "./components/about_me/contactMe.vue"
+import TagCloud from './components/TagCloud/TagCloud.vue'
 
 const enhanceAppOriginal = ({ app, router, siteData }) => {
   if (inBrowser) {
@@ -70,6 +71,7 @@ const enhanceAppOriginal = ({ app, router, siteData }) => {
   app.component('developTools', developTools)
   app.component('others', others)
   app.component('contactMe', contactMe)
+  app.component('TagCloud', TagCloud)
 }
 
 export const Theme: ThemeConfig = {
@@ -124,7 +126,7 @@ export const Theme: ThemeConfig = {
       },
       //默认值为true，表示已启用，此参数可以忽略；
       //如果为false，则表示未启用
-      //您可以使用“comment:true”序言在页面上单独启用它
+      //您可以使用"comment:true"序言在页面上单独启用它
       true
     );
   },

@@ -47,8 +47,8 @@
     --main-page-menu: #525861;
     --main-page-appearance: #e0e0e0;
 
-    --custom-toast-bg: #000000;
-    --custom-toast-text: #ffffff;
+    --custom-toast-bg: #00000020;
+    --custom-toast-text: #000000;
 }
 
 .dark {
@@ -57,7 +57,7 @@
     --vp-c-brand-3: #f9d423;
 
     /* linkcard色卡 */
-    --custom-bg: #050505;
+    --custom-bg: #1f1f1f;
     --custom-border: #282828;
     --custom-text: #969ba6;
 
@@ -94,6 +94,6 @@
     --main-page-menu: #969ba6;
     --main-page-appearance: #222222;
 
-    --custom-toast-bg: #ffffff;
-    --custom-toast-text: #000000;
+    --custom-toast-bg: #ffffff20;
+    --custom-toast-text: #ffffff;
 }

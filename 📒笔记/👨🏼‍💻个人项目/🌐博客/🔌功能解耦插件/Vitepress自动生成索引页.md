@@ -1,7 +1,11 @@
 ---
 title: Vitepress自动生成索引页
 createAt: 2025-01-12 12:30:07
-updateAt: 2025-02-01 00:01:27
+updateAt: 2025-02-02 13:43:43
+tags:
+  - 博客
+  - 教程
+  - 插件
 ---
 
 # Vitepress自动生成索引页
