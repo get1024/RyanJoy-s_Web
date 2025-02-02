@@ -1,4 +1,43 @@
+/* 表格容器样式 */
 .vp-doc .custom-table-container {
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    margin: 1rem auto;      /* 只在容器外部添加上下间距 */
+    overflow-x: auto;
+}
+
+/* 表格基础样式 */
+.vp-doc table {
+    display: table;          /* 确保表格以表格形式显示 */
+    width: 100%;            /* 占满容器宽度 */
+    table-layout: auto;     /* 根据内容自动分配列宽 */
+    border-collapse: collapse;  /* 合并边框 */
+    margin: 0;             /* 移除表格默认外边距 */
+}
+
+/* 表头样式 */
+.vp-doc thead {
+    background-color: var(--vp-c-bg-soft);  /* 表头背景色 */
+}
+
+/* 表头单元格样式 */
+.vp-doc th {
+    white-space: nowrap;     /* 防止表头文字换行 */
+    text-align: left;        /* 文字左对齐 */
+    padding: 12px 16px;       /* 内边距 */
+    margin: 0;             /* 确保无外边距 */
+}
+
+/* 表格单元格样式 */
+.vp-doc td {
+    padding: 12px 16px;       /* 内边距 */
+    text-align: left;        /* 文字左对齐 */
+    margin: 0;             /* 确保无外边距 */
+}
+
+/* 确保表格在小屏幕上也能正常显示 */
+@media (max-width: 768px) {
+    .vp-doc .custom-table-container {
+        margin: 1rem auto;  /* 保持一致的外边距 */
+        padding: 0;         /* 移除内边距 */
+    }
 }
