@@ -1,7 +1,7 @@
 ---
 title: Todo 清单
 createAt: 2025-01-22 19:58:16
-updateAt: 2025-02-02 17:08:30
+updateAt: 2025-02-02 18:36:44
 sidebar: false
 tags:
   - Todo
@@ -19,6 +19,8 @@ tags:
 - [ ] table 美化方案 文档
 - [ ] 套壳 CloudFlare 之后显示“# 该网页无法正常运作，**ryanjoy.top** 将您重定向的次数过多。”
 - [ ] Vitepress自动生成标签云图
+- [ ] Vitepress 文档标题元信息组件
+- [ ] BackToTop 按钮文档
 - [ ] 网易云音乐项目教程文档完善
 ---
 - [ ] windows包管理器scoop 安装使用

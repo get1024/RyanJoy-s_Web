@@ -1,7 +1,10 @@
 ---
 title: Vitepress 一站式部署方案
 createAt: 2025-01-29 18:26:51
-updateAt: 2025-01-31 10:06:20
+updateAt: 2025-02-02 18:38:20
+tags:
+  - 博客
+  - 解决方案
 ---
 
 # Vitepress 一站式部署方案
