@@ -36,9 +36,10 @@ video {
 
 /* 分类首页头像图标 */
 img.titleAvatar {
-    width: 40px;
+    width: 35px;
     float: left;
-    margin: -7px 0 0 0;
+    margin: -2px 5px 0 0;
+    border-radius: 50%;
 }
 
 /* 贡献者头像图标 */
