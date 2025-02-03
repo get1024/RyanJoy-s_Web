@@ -1,52 +1,41 @@
-import { link } from "fs";
-import { cwd } from "node:process";
-import { text } from "stream/consumers";
 import { defineConfig, type DefaultTheme } from "vitepress";
-import flexSearchIndexOptions from "flexsearch";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
-//git更新版本
-import { join } from "node:path";
 import {
   GitChangelog,
   GitChangelogMarkdownSection,
 } from "@nolebase/vitepress-plugin-git-changelog/vite";
-import { hostname } from "os";
-//引入nav
 import { nav } from "./configs";
-//引入sidebar
-// import {sidebar} from './configs'  //原sidebar配置函数存放地
-// import { calculateSidebar as originalCalculateSidebar } from "@nolebase/vitepress-plugin-sidebar";
-//自己重新上传的npm包
 import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar";
-// 引入obsidian双链规则插件
 import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links";
-//代码组、块图标
-import {
-  groupIconMdPlugin,
-  groupIconVitePlugin,
-  localIconLoader,
-} from "vitepress-plugin-group-icons";
-// 脚注插件
+import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import footnote_plugin from "markdown-it-footnote";
-// 任务列表插件
 import task_checkbox_plugin from "markdown-it-task-checkbox";
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
+import { createFileSystemTypesCache } from '@shikijs/vitepress-twoslash/cache-fs'
 
-function calculateSidebarWithDefaultOpen(targets, base) {
-  const result = originalCalculateSidebar(targets, base);
-  if (Array.isArray(result)) {
-    result.forEach((item) => {
-      item.collapsed = false;
-    });
-  } else {
-    Object.values(result).forEach((items) => {
-      items.forEach((item) => {
-        item.collapsed = false;
-      });
-    });
-  }
-  return result;
-}
+// ==========================
+// 配置函数
+// ==========================
 
+// 自定义侧边栏配置：默认展开所有项
+function calculateSidebarWithDefaultOpen(targets:any, base:any) { 
+  const result = originalCalculateSidebar(targets, base); 
+  if (Array.isArray(result)) { 
+    result.forEach((item: any) => { 
+      item.collapsed = false;  
+    }); 
+  } else { 
+    Object.values(result).forEach((items: any[]) => { 
+      items.forEach((item: any) => { 
+        item.collapsed = false;  
+      }); 
+    }); 
+  } 
+  return result; 
+} 
+
+
+// 优化中文搜索：通过分词优化搜索表现
 function chineseSearchOptimize(input: string) {
   const segmenter = new Intl.Segmenter("zh-CN", { granularity: "word" });
   const result: string[] = [];
@@ -58,7 +47,9 @@ function chineseSearchOptimize(input: string) {
   return result.join(" ");
 }
 
-// https://vitepress.dev/reference/site-config
+// ==========================
+// VitePress 配置
+// ==========================
 export default defineConfig({
   lang: "zh-CN",
   title: "RyanJoy的博客",
@@ -71,19 +62,18 @@ export default defineConfig({
     hostname: "https://blog.ryanjoy.top/",
   },
 
-  //配置网页图标
+  // 页面头部配置：favicon 和额外的脚本
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
     ["script", { src: "/vercel-analytics.js" }]
   ],
 
-  //阅读增强插件
+  // Vite 配置
   vite: {
     plugins: [
+      // Git changelog 插件
       GitChangelog({
-        // 填写在此处填写您的仓库链接
         repoURL: () => "https://github.com/get1024/RyanJoy-s_Web",
-        //V2 --> V3 特性迁移
         mapAuthors: [
           {
             name: "RyanJoy",
@@ -103,6 +93,8 @@ export default defineConfig({
         ],
       }),
       GitChangelogMarkdownSection(),
+
+      // 搜索插件配置
       pagefindPlugin({
         customSearchQuery: chineseSearchOptimize,
         btnPlaceholder: "搜索",
@@ -115,6 +107,8 @@ export default defineConfig({
           return !searchItem.route.includes("404");
         },
       }),
+
+      // 代码组图标插件
       groupIconVitePlugin({
         customIcon: {
           pip: "vscode-icons:file-type-pip",
@@ -125,12 +119,14 @@ export default defineConfig({
           shell: "vscode-icons:file-type-shell",
           ".mts":"vscode-icons:file-type-typescript"
         },
-      }), //代码组图标
+      }),
+
+      // Vercel Analytics 插件
       {
         name: "vercel-analytics-plugin",
         transformIndexHtml: {
-          enforce: "pre",
-          transform(html) {
+          order: "pre",
+          handler(html) {
             return html.replace(
               "</body>",
               `<script>
@@ -154,9 +150,8 @@ export default defineConfig({
     },
   },
 
+  // 主题配置
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    //左上角的logo头像
     logo: "/logo.png",
 
     nav,
@@ -223,20 +218,25 @@ export default defineConfig({
     ),
   },
 
+  // Markdown 配置
   markdown: {
     lineNumbers: true,
     image: {
-      // 默认禁用图片懒加载
       lazyLoading: true,
     },
 
     config: (md) => {
+      // 添加自定义渲染规则
       md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
         let htmlResult = slf.renderToken(tokens, idx, options);
         if (tokens[idx].tag === "h1") htmlResult += `<ArticleMetadata />`;
         return htmlResult;
-      }; //update和阅读成本
-      md.use(groupIconMdPlugin); //代码组图标
+      };
+
+      // 使用插件
+
+      //代码组图标
+      md.use(groupIconMdPlugin);
       //obsidian双链插件
       md.use(BiDirectionalLinks());
       md.use(footnote_plugin);
@@ -275,5 +275,10 @@ export default defineConfig({
       };
 
     },
+    codeTransformers: [
+      transformerTwoslash({
+        typesCache: createFileSystemTypesCache() 
+      })
+    ]
   },
 });

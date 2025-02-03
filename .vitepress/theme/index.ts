@@ -1,41 +1,36 @@
-// 主题配置文件
-import { h } from 'vue'
+import { h, onMounted, watch, nextTick } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-import type { Theme as ThemeConfig } from 'vitepress'
-//高亮目标标题
-import {  
-  NolebaseHighlightTargetedHeading,  
-} from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
-import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
-//文件更新git页面历史
-import { 
-  NolebaseGitChangelogPlugin,
-  NolebaseGitChangelog, 
-  NolebaseGitContributors,
-  InjectionKey
-} from '@nolebase/vitepress-plugin-git-changelog/client'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-//浏览量
-import googleAnalytics from 'vitepress-plugin-google-analytics'
-import { inBrowser } from 'vitepress'
-import busuanzi from 'busuanzi.pure.js'
-//图片缩放
-import mediumZoom from 'medium-zoom';
-import { onMounted, watch, nextTick } from 'vue';
-import { useRoute } from 'vitepress';
-//引入外部样式文件
+import {
+  inBrowser,
+  useRoute,
+  useData,
+  type Theme as ThemeConfig,
+  type EnhanceAppContext,
+} from 'vitepress'
+
+// ==========================
+// 样式 & 核心插件
+// ==========================
 import './style/index.css'
-//评论giscus
-import giscusTalk from 'vitepress-plugin-comment-with-giscus';
-import { useData } from 'vitepress';
-import { strict } from 'assert'
-import { emit } from 'process'
-import theme from 'vitepress/theme'
-import 'virtual:group-icons.css' //代码组图标
-//
-import vitepressNprogress from 'vitepress-plugin-nprogress'
+import 'virtual:group-icons.css'
 import 'vitepress-plugin-nprogress/lib/css/index.css'
-//组件
+import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
+import '@shikijs/vitepress-twoslash/style.css'
+
+// ==========================
+// 第三方插件
+// ==========================
+import mediumZoom from 'medium-zoom'
+import giscusTalk from 'vitepress-plugin-comment-with-giscus'
+import vitepressNprogress from 'vitepress-plugin-nprogress'
+import { NolebaseHighlightTargetedHeading } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
+import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
+import TwoslashFloatingVue from '@shikijs/vitepress-twoslash/client'
+
+// ==========================
+// 组件
+// ==========================
 import Linkcard from "./components/Linkcard/Linkcard.vue"
 import HomeUnderLine from './components/HomeUnderline/HomeUnderLine.vue'
 import ArticleMetadata from "./components/ArticleMetadata/ArticleMetadata.vue"
@@ -51,19 +46,22 @@ import contactMe from "./components/about_me/contactMe.vue"
 import TagCloud from './components/TagCloud/TagCloud.vue'
 import BackToTop from './components/BackToTop/BackToTop.vue'
 
-const enhanceAppOriginal = ({ app, router, siteData }) => {
-  if (inBrowser) {
-    router.onAfterRouteChanged = (to) => {
-      busuanzi.fetch()
-    }
-  }
+// ==========================
+// enhanceApp 配置
+// ==========================
+const enhanceApp = ({ app, router }: EnhanceAppContext) => {
+  // 使用 Git changelog 插件
   app.use(NolebaseGitChangelogPlugin)
-  
-  // 组件引入
+  // 使用shiki twoslash
+  app.use(TwoslashFloatingVue) 
+  // 使用 nprogress 插件
+  vitepressNprogress({ app, router })
+
+  // 全局注册组件
   app.component('Linkcard', Linkcard)
   app.component('HomeUnderLine', HomeUnderLine)
   app.component('ArticleMetadata', ArticleMetadata)
-  app.component('nodeIndex',nodeIndex)
+  app.component('nodeIndex', nodeIndex)
   app.component('list', list)
   app.component('githubData', githubData)
   app.component('backEnd', backEnd)
@@ -76,28 +74,24 @@ const enhanceAppOriginal = ({ app, router, siteData }) => {
   app.component('BackToTop', BackToTop)
 }
 
+// ==========================
+// Theme 配置
+// ==========================
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'layout-top': () => [ 
-        h(NolebaseHighlightTargetedHeading), 
-      ],
+      'layout-top': () => [ h(NolebaseHighlightTargetedHeading) ],
       'layout-bottom': () => h(BackToTop)
     })
   },
 
-  // 简化enhanceApp的结构
-  enhanceApp: (ctx) => {
-    enhanceAppOriginal(ctx)  // 调用原有的配置
-    vitepressNprogress(ctx)  // 使用新的插件
-  },
+  enhanceApp,
 
   setup() {
+    //图片缩放
     const route = useRoute();
-      //图片缩放
     const initZoom = () => {
-      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
       mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
     };
     onMounted(() => {
@@ -107,11 +101,9 @@ export const Theme: ThemeConfig = {
       () => route.path,
       () => nextTick(() => initZoom())
     );
+
     //giscus评论插件
-    // Get frontmatter and route
     const { frontmatter } = useData();
-        
-    // giscus配置
     giscusTalk({
       repo: 'get1024/RyanJoy-s_Web', //仓库
       repoId: 'R_kgDOL1mSLA', //仓库ID
