@@ -1,7 +1,7 @@
 ---
 title: Todo 清单
 createAt: 2025-01-22 19:58:16
-updateAt: 2025-02-02 23:37:14
+updateAt: 2025-02-03 13:55:03
 sidebar: false
 tags:
   - Todo
@@ -42,3 +42,4 @@ tags:
 
 - [x] 代码块样式统一；删除 mac 样式小圆点（太扎眼了……）
 - [x] 完善附件、静态资源在全局的路径配置；整合 obsidian 适配
+- [ ] 集成 Mermaid 插件
