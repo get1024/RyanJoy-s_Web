@@ -33,20 +33,11 @@ onMounted(() => {
     <div class="tag-cloud">
       <div class="tags-container">
         <span
-          v-for="(tag, index) in tags"
+          v-for="tag in tags"
           :key="tag.name"
           class="tag-item"
           :class="{ active: selectedTag === tag.name }"
-          :style="{ 
-            '--tag-color': tag.color,
-            fontSize: `${tag.size}rem`,
-            '--rotate': `${Math.random() * 6 - 3}deg`,
-            '--delay': `${index * 0.15}s`,
-            '--float-duration': `${4 + Math.random() * 2}s`,
-            '--x-offset': `${Math.random() * 6 - 3}px`,
-            '--y-offset': `${Math.random() * 6 - 3}px`,
-            '--z-index': index
-          }"
+          :style="{ fontSize: `${tag.size}rem` }"
           @click="selectTag(tag.name)"
         >
           <span class="tag-text">{{ tag.name }}</span>
@@ -70,12 +61,17 @@ onMounted(() => {
     flex-direction: column;
 }
 
-/* 标签列表容器 */
+.tag-cloud {
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 1rem 0;
+    box-shadow: var(--custom-shadow);
+}
+
 .tags-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px 6px;          /* 水平和垂直间距 */
-    padding-top: 12px;
     justify-content: center;
     align-items: center;
 }
@@ -83,57 +79,31 @@ onMounted(() => {
 /* 单个标签样式 */
 .tag-item {
     display: inline-block;
-    margin: 0;
     padding: 0.3rem 0.6rem;
     border-radius: 1rem;
     cursor: pointer;
     transition: all 0.16s ease;
-    transform: rotate(var(--rotate));
-    animation: float var(--float-duration) ease-in-out infinite;
-    animation-delay: var(--delay);
-    position: relative;
-    z-index: calc(var(--z-index));
+    color: var(--main-page-text);
+    background: transparent;
 }
 
-/* 标签文本和计数样式 */
-.tag-text, .tag-count {
-    color: var(--tag-color);
-    transition: color 0.3s ease;
-}
-
-/* 标签悬浮效果 */
 .tag-item:hover {
-    border-color: var(--tag-color);
+    color: var(--vp-c-brand-1);
     transform: translateY(-2px);
+    background-color: var(--main-page-bg);
 }
 
 /* 激活状态样式 */
 .tag-item.active {
-    background-color: var(--tag-color);
-    border-color: var(--tag-color);
+    color: var(--vp-c-brand-1);
+    font-weight: bold;
 }
 
-.tag-item.active .tag-text,
-.tag-item.active .tag-count {
-    color: var(--vp-c-bg);
-}
 
-/* 计数样式 */
 .tag-count {
     margin-left: 2px;
-    opacity: 0.9;
+    opacity: 0.8;
+    font-size: 0.9em;
 }
 
-/* 浮动动画定义 */
-@keyframes float {
-    0%, 100% {
-        transform: translate(0, 0) rotate(var(--rotate));
-    }
-    25% {
-        transform: translate(var(--x-offset), var(--y-offset)) rotate(calc(var(--rotate) + 1deg));
-    }
-    75% {
-        transform: translate(calc(var(--x-offset) * -0.5), calc(var(--y-offset) * -0.5)) rotate(calc(var(--rotate) - 1deg));
-    }
-}
 </style> 

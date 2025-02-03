@@ -43,14 +43,7 @@ interface Tag {
     name: string        // 标签名称
     count: number       // 文章数量
     posts: Post[]       // 相关文章列表
-    color: string       // 标签颜色
     size: number        // 标签字体大小
-}
-
-// 生成鲜艳的HSL颜色
-const generateColor = () => {
-    const hue = Math.floor(Math.random() * 360)
-    return `hsl(${hue}, 85%, 45%)`  // 高饱和度，适中亮度
 }
 
 // 根据文章数量计算标签大小
@@ -110,7 +103,6 @@ export default createContentLoader('**/*.md', {
                         )
                         return dateB.getTime() - dateA.getTime()
                     }) as Post[],
-                color: generateColor(),
                 size: calculateSize(data.count, maxCount)
             }))
             .sort(() => Math.random() - 0.5)  // 随机打乱标签顺序
