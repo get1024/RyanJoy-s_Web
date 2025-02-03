@@ -1,6 +1,6 @@
 ---
 createAt: 2025-01-08 12:09:08
-updateAt: 2025-02-02 13:43:37
+updateAt: 2025-02-03 19:18:35
 title: Vitepress自动生成侧边栏
 tags:
   - 博客
@@ -155,30 +155,27 @@ calculateSidebar([
 
 如此配置
 
-```ts [config.ts]
+```ts [config.ts] twoslash
+import { defineConfig } from "vitepress";
 import { calculateSidebar } from '@ryanjoy/vitepress-plugin-sidebar'; // [!code --]
 import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar"; // [!code ++] 
-
 //...
-
-function calculateSidebarWithDefaultOpen(targets, base) { // [!code ++] 
+function calculateSidebarWithDefaultOpen(targets:any, base:any) { // [!code ++] 
   const result = originalCalculateSidebar(targets, base); // [!code ++] 
   if (Array.isArray(result)) { // [!code ++] 
-    result.forEach(item => { // [!code ++] 
+    result.forEach((item: any) => { // [!code ++] 
       item.collapsed = false;  // [!code ++] 
     }); // [!code ++] 
   } else { // [!code ++] 
-    Object.values(result).forEach(items => { // [!code ++] 
-      items.forEach(item => { // [!code ++] 
+    Object.values(result).forEach((items: any[]) => { // [!code ++] 
+      items.forEach((item: any) => { // [!code ++] 
         item.collapsed = false;  // [!code ++] 
       }); // [!code ++] 
     }); // [!code ++] 
   } // [!code ++] 
   return result; // [!code ++] 
 } // [!code ++] 
-
 //...
-
 export default defineConfig({
   //...
 })
