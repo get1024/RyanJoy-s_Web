@@ -47,8 +47,7 @@ img.titleAvatar {
 
 /* 关于我-创作者头像 */
 img.avatar-img {
-    margin-top: -2px;
-    margin-left: 2px;
+    box-shadow: var(--custom-shadow);
 }
 
 /* 关于我-徽标 */
