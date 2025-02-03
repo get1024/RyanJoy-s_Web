@@ -1,13 +1,15 @@
 ---
 title: RyanJoy's Web
 createAt: 2024-05-01 12:16:46
-updateAt: 2025-02-02 17:04:28
+updateAt: 2025-02-03 23:26:57
 tags:
   - Info
 ---
 # RyanJoy's Web
 
 这是一个基于 VitePress 搭建的个人博客系统。
+
+博客模板待整理中……(主要现在也没需求)
 
 ## 🌟 特性
 
@@ -58,13 +60,13 @@ pnpm install
 3. 本地开发
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
 4. 构建部署
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 ## 📝 文档规范
@@ -76,6 +78,7 @@ pnpm run build
 title: 文章标题
 createAt: YYYY-MM-DD HH:mm:ss
 updateAt: YYYY-MM-DD HH:mm:ss
+tags:
 ---
 ```
 
