@@ -155,7 +155,7 @@ calculateSidebar([
 
 如此配置
 
-```ts [config.ts] twoslash
+```ts [config.ts] twoslash:no-line-numbers
 import { defineConfig } from "vitepress";
 import { calculateSidebar } from '@ryanjoy/vitepress-plugin-sidebar'; // [!code --]
 import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar"; // [!code ++] 
