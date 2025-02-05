@@ -1,7 +1,7 @@
 ---
 title: Todo 清单
 createAt: 2025-01-22 19:58:16
-updateAt: 2025-02-03 13:55:03
+updateAt: 2025-02-05 22:33:38
 sidebar: false
 tags:
   - Todo
@@ -15,13 +15,14 @@ tags:
 ---
 - [x] 个人博客搭建最优解 文档完善
 - [x] 个人博客部署方案
-- [ ] 代码块美化方案 文档完善
-- [ ] ⭐table 美化方案 文档
-- [ ] 套壳 CloudFlare 之后显示“# 该网页无法正常运作，**ryanjoy.top** 将您重定向的次数过多。”
+- [x] 代码块美化方案 文档完善
+- [x] ⭐table 美化方案 文档
+- [x] 套壳 CloudFlare 之后显示“# 该网页无法正常运作，**ryanjoy.top** 将您重定向的次数过多。”
 - [ ] ⭐Vitepress自动生成标签云图
 - [ ] ⭐Vitepress 文档标题元信息组件
 - [ ] ⭐文章索引组件-文档更新
 - [ ] ⭐BackToTop 按钮文档
+- [x] Vitepress 代码块 icon
 - [ ] 网易云音乐项目教程文档完善
 ---
 - [ ] windows包管理器scoop 安装使用
