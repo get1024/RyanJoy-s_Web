@@ -18,7 +18,7 @@ tags:
 
 # 文章索引页
 
-## <p><img src="/avatar.png" class="titleAvatar" /><span >RyanJoy 的知识图书馆</span></p>
+## <p><img src="/avatar.png" class="titleAvatar" /><span>RyanJoy 的知识图书馆</span></p>
 
 👏欢迎来到小业的知识图书馆 [RyanJoy's Web](https://ryanjoy.top/)，这里是「🗃️笔记归档」分区！
 
