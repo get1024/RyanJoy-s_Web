@@ -1,11 +1,14 @@
 export default async (req, res) => {
     try {
-        // 构建原始 API 地址
-        const targetUrl = new URL("https://github-readme-stats.vercel.app/api");
+        // 根据请求决定目标 URL，使用 let 声明变量
+        let targetUrl;
         if (req.url.includes("activity")) {
-            targetUrl.hostname = "github-readme-activity-graph.vercel.app"; // 如果是 activity 图像请求，修改为相应的 API 地址
+            // 为 activity 图像请求创建一个 URL 对象
+            targetUrl = new URL("https://github-readme-activity-graph.vercel.app/graph");
+        } else {
+            targetUrl = new URL("https://github-readme-stats.vercel.app/api");
         }
-        
+
         // 将用户请求的参数附加到目标 URL
         const userParams = new URL(req.url, `http://${req.headers.host}`);
         userParams.searchParams.forEach((value, key) => {
