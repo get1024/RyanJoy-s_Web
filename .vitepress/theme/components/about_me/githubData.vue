@@ -1,7 +1,7 @@
 <template>
     <div align="center">
         <img
-            alt="本图片需要开启代理才能访问" src="https://github-readme-stats.vercel.app/api?username=get1024&show_icons=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide_border=true&show_owner=true" />
+            alt="本图片需要开启代理才能访问" src="https://github-readme-stats.vercel.app/api?username=get1024&rank_icon=github&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" />
     </div>
 
     <div align="center">
