@@ -7,7 +7,7 @@ import {
 import { nav } from "./configs";
 import { calculateSidebar as originalCalculateSidebar } from "@ryanjoy/vitepress-plugin-sidebar";
 import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links";
-import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
+import {  groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from "vitepress-plugin-group-icons";
 import footnote_plugin from "markdown-it-footnote";
 import task_checkbox_plugin from "markdown-it-task-checkbox";
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
@@ -113,11 +113,15 @@ export default defineConfig({
         customIcon: {
           pip: "vscode-icons:file-type-pip",
           docker: "vscode-icons:file-type-docker2",
+          ".mts":"vscode-icons:file-type-typescript",
           ".cpp": "vscode-icons:file-type-cpp",
           git: "vscode-icons:file-type-git",
           powershell: "vscode-icons:file-type-powershell",
           shell: "vscode-icons:file-type-shell",
-          ".mts":"vscode-icons:file-type-typescript"
+          'ryanjoy': localIconLoader(import.meta.url, '../public/RyanJoy.svg'),
+          'babel': 'vscode-icons:file-type-babel',
+          '.mdx': 'vscode-icons:file-type-light-mdx',
+          'unplugin': 'https://unplugin.unjs.io/logo_light.svg',
         },
       }),
 
