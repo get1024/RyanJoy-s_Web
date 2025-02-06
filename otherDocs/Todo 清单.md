@@ -1,7 +1,7 @@
 ---
 title: Todo 清单
 createAt: 2025-01-22 19:58:16
-updateAt: 2025-02-05 22:33:38
+updateAt: 2025-02-06 16:57:03
 sidebar: false
 tags:
   - Todo
@@ -18,8 +18,8 @@ tags:
 - [x] 代码块美化方案 文档完善
 - [x] ⭐table 美化方案 文档
 - [x] 套壳 CloudFlare 之后显示“# 该网页无法正常运作，**ryanjoy.top** 将您重定向的次数过多。”
-- [ ] ⭐Vitepress自动生成标签云图
-- [ ] ⭐Vitepress 文档标题元信息组件
+- [x] ⭐Vitepress自动生成标签云图
+- [x] ⭐Vitepress 文档标题元信息组件；修改标签样式过渡时间
 - [ ] ⭐文章索引组件-文档更新
 - [ ] ⭐BackToTop 按钮文档
 - [x] Vitepress 代码块 icon
@@ -43,4 +43,4 @@ tags:
 
 - [x] 代码块样式统一；删除 mac 样式小圆点（太扎眼了……）
 - [x] 完善附件、静态资源在全局的路径配置；整合 obsidian 适配
-- [ ] 集成 Mermaid 插件
+❌ ~~集成 Mermaid 插件~~ (GIVE UP)
