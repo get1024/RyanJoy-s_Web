@@ -149,7 +149,7 @@ const handleTagClick = (tag: string) => {
 
 .tag-item {
     cursor: pointer;
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
     color: var(--vp-c-brand-1);
 }
 
