@@ -107,7 +107,7 @@ const processedPosts = computed(() => {
 .post-item {
     margin: 8px 0;
     padding: 1rem;
-    transition: transform 0.2s ease, box-shadow 0s ease;
+    transition: transform 0.16s ease, box-shadow 0s ease;
     border: 2px solid var(--custom-border);
     border-radius: 0.5rem;
     background-color: transparent;
