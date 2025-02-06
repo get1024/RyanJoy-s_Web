@@ -52,7 +52,7 @@ function chineseSearchOptimize(input: string) {
 // ==========================
 export default defineConfig({
   lang: "zh-CN",
-  title: "RyanJoy的博客",
+  title: "𝓡𝔂𝓪𝓷𝓙𝓸𝔂'𝓼 𝓑𝓵𝓸𝓰",
   description: "RyanJoy的博客",
   lastUpdated: true,
   appearance: true,
@@ -166,8 +166,8 @@ export default defineConfig({
     },
 
     footer: {
-      message: "孩儿立志出乡关，学不成名誓不还。",
-      copyright: `Copyright © 2022-${new Date().getFullYear()}  <a href="https://github.com/get1024">RyanJoy(get1024)</a>`,
+      message: "见贤思齐",
+      copyright: `𝓒𝓸𝓹𝔂𝓻𝓲𝓰𝓱𝓽 © 𝟐𝟎𝟐𝟐-${new Date().getFullYear()}  <a href="https://github.com/get1024">𝓡𝔂𝓪𝓷𝓙𝓸𝔂(𝓖𝓮𝓽𝟏𝟎𝟐𝟒)</a>`,
     },
 
     docFooter: {
