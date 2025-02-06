@@ -18,11 +18,12 @@ tags:
 - [x] 代码块美化方案 文档完善
 - [x] ⭐table 美化方案 文档
 - [x] 套壳 CloudFlare 之后显示“# 该网页无法正常运作，**ryanjoy.top** 将您重定向的次数过多。”
-- [x] ⭐Vitepress自动生成标签云图
-- [x] ⭐Vitepress 文档标题元信息组件；修改标签样式过渡时间
-- [ ] ⭐文章索引组件-文档更新
 - [ ] ⭐BackToTop 按钮文档
 - [x] Vitepress 代码块 icon
+- [ ] ⭐Vitepress 文档标题元信息组件 文档完善
+	- [x] 修改标签样式过渡时间
+- [x] ⭐Vitepress自动生成标签检索
+- [ ] ⭐文章索引组件-文档更新
 - [ ] 网易云音乐项目教程文档完善
 ---
 - [ ] windows包管理器scoop 安装使用

@@ -1,7 +1,7 @@
 ---
 title: Vitepress自动生成标签检索
 createAt: 2025-02-05 13:42:25
-updateAt: 2025-02-06 16:42:37
+updateAt: 2025-02-07 00:09:39
 tags:
   - 博客
   - 教程
@@ -37,6 +37,8 @@ tags:
 ### 标签数据脚本文件
 
 新建 `📄:.vitepress/theme/components/TagCloud/tags.data.ts` 文件，复制粘贴下述内容
+
+::: details 由于代码过长，此处进行折叠包裹
 
 ```ts [tags.data.ts]
 // .vitepress/theme/components/TagCloud/tags.data.ts
@@ -136,7 +138,9 @@ export default createContentLoader('**/*.md', { // [!code warning]
 }) 
 ```
 
-注意到，我这里高亮了一行代码，主要关注<span class="marker-evy">`'**/*.md'`</span>。这一参数表示<span class="marker-underline">项目根目录下所有 `.md` 文件</span>。如果你只需要检索某一指定文件夹如 `📂:'/笔记'` 下的所有 `.md` 文件，那么你需要修改参数为 `'笔记/**/*.md'`
+注意到，我这里高亮了一行代码，主要关注 <span class="marker-evy">`'**/*.md'`</span> 。这一参数表示<span class="marker-underline">项目根目录下所有 `.md` 文件</span>。如果你只需要检索某一指定文件夹如 `📂:'/笔记'` 下的所有 `.md` 文件，那么你需要修改参数为 `'笔记/**/*.md'`
+
+:::
 
 ### 文章列表组件
 
@@ -147,6 +151,8 @@ export default createContentLoader('**/*.md', { // [!code warning]
 :::
 
 新建 `📄:.vitepress/theme/components/PostList/PostList.vue` ，复制粘贴下述内容：
+
+::: details 由于代码过长，此处进行折叠包裹
 
 ```vue [PostList.vue]
 <script setup lang="ts">
@@ -328,11 +334,15 @@ const processedPosts = computed(() => {
 </style>
 ```
 
-注意到，在 `<style scoped></style>` 标签中，存在几行高亮代码，这同样是为了满足复用需求而自定义的样式，具体配置在别的文档中提到过，这里不再赘述，详细配置见这里：[个性化配置](../🎨样式美化方案/代码块、组美化方案.md#个性化配置)
+注意到，在 `<style scoped></style>` 标签中，存在几行高亮代码，这同样是为了满足复用需求而自定义的样式，具体配置在别的文档中提到过，这里不再赘述，详细配置见这里： [个性化配置](../🎨样式美化方案/代码块、组美化方案.md#个性化配置)
+
+:::
 
 ### 标签云组件
 
 新建 `📄:.vitepress/theme/components/TagCloud/TagCloud.vue` ，复制粘贴下述内容：
+
+::: details 由于代码过长，此处进行折叠包裹
 
 ```vue [TagCloud.vue]
 // .vitepress/theme/components/TagCloud/TagCloud.vue
@@ -426,6 +436,8 @@ onMounted(() => {
 ```
 
 这里高亮代码同前文。
+
+:::
 
 ## 组件注册
 

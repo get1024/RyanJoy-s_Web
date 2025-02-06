@@ -1,7 +1,7 @@
 ---
 title: JY-movie
 createAt: 2023-04-01 09:12:31
-updateAt: 2025-02-02 17:39:26
+updateAt: 2025-02-07 00:35:54
 tags:
   - 项目
   - SpringBoot
@@ -13,6 +13,7 @@ tags:
 🖥️ 基于 SpringBoot➕vue 的前后端分离的电影购票系统
 
 ## 首页预览
+
  ![app-home-vue](assets/jy-movie/app_home_vue.png)
 
 ## 介绍

@@ -5,17 +5,14 @@ import { countWord } from './functions'
 
 const { page } = useData()
 const router = useRouter()
-const date = computed(
-    () => new Date(page.value.lastUpdated!)
-)
-
+const date = computed(() =>{
+    return page.value.frontmatter.createAt;
+})
 const wordCount = ref(0)
 const imageCount = ref(0)
-
 const wordTime = computed(() => {
     return ((wordCount.value / 275) * 60)
 })
-
 const imageTime = computed(() => {
     const n = imageCount.value
     if (imageCount.value <= 10) {
@@ -24,12 +21,9 @@ const imageTime = computed(() => {
     }
     return 175 + (n - 10) * 3
 })
-
-// 阅读时间
 const readTime = computed(() => {
     return Math.ceil((wordTime.value + imageTime.value) / 60)
 })
-
 const tags = computed(() => {
     return page.value.frontmatter.tags || ['待定']
 })
@@ -66,7 +60,7 @@ const handleTagClick = (tag: string) => {
                     d="M168.021333 504.192A343.253333 343.253333 0 0 1 268.629333 268.8a342.229333 342.229333 0 0 1 243.285334-100.778667A341.504 341.504 0 0 1 755.029333 268.8c9.856 9.898667 19.2 20.394667 27.733334 31.402667l-60.16 46.976a8.021333 8.021333 0 0 0 2.986666 14.122666l175.701334 43.008a8.021333 8.021333 0 0 0 9.898666-7.68l0.810667-180.906666a7.936 7.936 0 0 0-12.885333-6.314667L842.666667 253.44a418.858667 418.858667 0 0 0-330.922667-161.493333c-229.12 0-415.488 183.594667-419.797333 411.818666a8.021333 8.021333 0 0 0 8.021333 8.192H160a7.978667 7.978667 0 0 0 8.021333-7.808zM923.946667 512H864a7.978667 7.978667 0 0 0-8.021333 7.808 341.632 341.632 0 0 1-26.88 125.994667 342.186667 342.186667 0 0 1-73.685334 109.397333 342.442667 342.442667 0 0 1-243.328 100.821333 342.229333 342.229333 0 0 1-270.976-132.224l60.16-46.976a8.021333 8.021333 0 0 0-2.986666-14.122666l-175.701334-43.008a8.021333 8.021333 0 0 0-9.898666 7.68l-0.682667 181.034666c0 6.698667 7.68 10.496 12.885333 6.314667L181.333333 770.56a419.072 419.072 0 0 0 330.922667 161.408c229.205333 0 415.488-183.722667 419.797333-411.818667a8.021333 8.021333 0 0 0-8.021333-8.192z"
                     fill="#8a8a8a" p-id="18132"></path>
             </svg>
-            <span>更新: {{ date.toLocaleString() }}</span>
+            <span>创建于: {{ date }}</span>
             &nbsp;&nbsp; -->
             <svg t="1738476810960" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 p-id="4127" width="16" height="16">
