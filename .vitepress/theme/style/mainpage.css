@@ -2,92 +2,6 @@
 
 /* 主页修饰 */
 :root {
-
-  /* 导航下拉菜单背景色 */
-  .VPMenu {
-    background-color: var(--main-page-bg);
-  }
-
-  /* 本地搜索框背景色 */
-  .VPLocalSearchBox .shell {
-    background: var(--main-page-bg);
-  }
-
-  /* algolia搜索框背景 */
-  .DocSearch-Modal , .DocSearch-Footer {
-    background-color: var(--main-page-bg);
-  }
-
-  /* 手机端导航栏颜色 */
-  .VPNavBar:not(.home) {
-    background-color: var(--main-page-bg);
-  }
-
-  /* 手机端导航按钮 */
-  .VPNavBarHamburger:hover {
-    height: 40px;
-    border: 2px solid #dedede;
-    border-radius: 8px;
-  }
-
-  /* 手机端菜单栏 */
-  .VPNavScreenMenuLink {
-    border-bottom: none;
-    color: var(--main-page-menu);
-  }
-
-  /* 手机端菜单组隐藏 */
-  .VPNavScreenMenuGroup {
-    border-bottom: none;
-  }
-
-  /* 手机端菜单组按钮 */
-  .VPNavScreenMenuGroup .button {
-    color: var(--main-page-menu);
-
-  }
-
-  /* 手机端深浅模式切换 */
-  .VPNavScreenAppearance {
-    background-color: var(--main-page-bg);
-    border: 1px solid var(--main-page-appearance);
-  }
-
-  /* 手机端深浅模式字体 */
-  .VPNavScreenAppearance .text {
-    color: var(--main-page-menu);
-  }
-
-  /* 手机端菜单栏顶部横条隐藏 */
-  .VPNavBar.screen-open {
-    border-bottom: none;
-  }
-
-  /* 手机端菜单背景 */
-  .VPNavScreen {
-    background-color: var(--main-page-bg);
-  }
-
-  .VPLocalNavOutlineDropdown .header, .outline {
-    background-color: var(--main-page-bg);
-  }
-
-  /* 页脚背景 */
-  .VPFooter {
-    background-color: var(--main-page-bg);
-  }
-
-
-  /* 侧边栏背景色 */
-  .VPSidebar {
-    background-color: var(--main-page-bg);
-  }
-
-  /* 文档页侧边栏顶部背景色 */
-  .curtain {
-    background-color: var(--main-page-bg);
-  }
-
   /* 文档底部上下页间距 */
   .pager .desc {
     padding-bottom: 8px;
@@ -95,23 +9,9 @@
     font-weight: 600;
     color: var(--main-page-text);
   }
-
-
-}
-
-
-/* 背景色 */
-body {
-  background-color: var(--main-page-bg);
 }
 
 /* h1标题颜色 */
 h1 {
   color: var(--main-page-text);
-}
-
-
-/* 不知道哪里的样式，给大纲栏下脚填了阴影样式 */
-.aside-curtain {
-  background: transparent !important;
 }
