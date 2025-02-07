@@ -35,7 +35,7 @@ const calculateSize = (count: number, maxCount: number): number => {
 declare const data: Tag[];
 export { data };
 
-export default createContentLoader("**/*.md", {
+export default createContentLoader("📒文章/**/*.md", {
     transform(raw: ContentData[]) {
         // 创建标签映射表
         const tagMap = new Map<string, { count: number; posts: BlogPost[] }>();
