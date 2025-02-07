@@ -34,7 +34,7 @@ import TwoslashFloatingVue from '@shikijs/vitepress-twoslash/client'
 import Linkcard from "./components/Linkcard/Linkcard.vue"
 import HomeUnderLine from './components/HomeUnderline/HomeUnderLine.vue'
 import ArticleMetadata from "./components/ArticleMetadata/ArticleMetadata.vue"
-import nodeIndex from "./components/noteIndex/noteIndex.vue"
+import nodeIndex from "./components/PostList/noteIndex.vue"
 import list from "./components/lists/list.vue"
 import githubData from "./components/about_me/githubData.vue"
 import backEnd from "./components/about_me/backEnd.vue"
@@ -43,7 +43,7 @@ import devOps from "./components/about_me/devOps.vue"
 import developTools from "./components/about_me/developTools.vue"
 import others from "./components/about_me/others.vue"
 import contactMe from "./components/about_me/contactMe.vue"
-import TagCloud from './components/TagCloud/TagCloud.vue'
+import TagCloud from './components/PostList/TagCloud.vue'
 import BackToTop from './components/BackToTop/BackToTop.vue'
 
 // ==========================

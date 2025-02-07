@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { data as tags } from './tags.data'
-import PostList from '../PostList/PostList.vue'
+import PostList from './PostList.vue'
+import { data as tags } from './tags.data.ts'
 
 // 当前选中的标签
 const selectedTag = ref('')

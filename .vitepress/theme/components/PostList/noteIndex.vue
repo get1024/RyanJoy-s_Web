@@ -1,6 +1,6 @@
 <script setup>
 import { data as posts } from './note.data.ts'
-import PostList from '../PostList/PostList.vue'
+import PostList from './PostList.vue'
 
 // 计算文章总数
 const totalPosts = Object.values(posts).reduce((sum, yearPosts) => sum + yearPosts.length, 0)

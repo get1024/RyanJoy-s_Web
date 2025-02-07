@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { data as tagsData } from '../TagCloud/tags.data'
+import { data as tagsData } from './tags.data'
 
 interface Post {
     url: string
