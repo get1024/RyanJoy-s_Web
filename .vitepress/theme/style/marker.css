@@ -1,5 +1,5 @@
 .marker-fakeTitle {
-    color:rgb(255, 72, 0);
+    color: rgb(255, 40, 130);
     font-weight:bold;
     font-style:italic;
 }
@@ -7,7 +7,7 @@
 .marker-underline {
     text-decoration: underline;
     text-decoration-thickness: 9px;
-    text-decoration-color: rgba(255, 72, 0, 0.4);
+    text-decoration-color: rgba(255, 40, 130, 0.4);
     text-underline-offset: -4px;
     text-decoration-skip-ink: none;
 }
@@ -27,7 +27,7 @@
     right: 0em;
     bottom: 0;
     transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-    background-color: rgba(255, 72, 0, 0.5);
+    background-color: rgba(255, 40, 130, 0.5);
 }
 
 .marker-evy:hover:after {

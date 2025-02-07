@@ -34,10 +34,6 @@ img.titleAvatar {
 /* 贡献者头像图标 */
 /* img.h-8 */
 
-/* 关于我-创作者头像 */
-img.avatar-img {
-    box-shadow: var(--custom-shadow);
-}
 
 /* 关于我-徽标 */
 /* .badgeP>img */
