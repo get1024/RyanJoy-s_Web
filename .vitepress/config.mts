@@ -73,7 +73,7 @@ export default defineConfig({
     plugins: [
       // Git changelog 插件
       GitChangelog({
-        repoURL: () => "https://github.com/get1024/RyanJoy-s_Web",
+        repoURL: () => "https://github.com/get1024/get1024.github.io",
         mapAuthors: [
           {
             name: "RyanJoy",
@@ -166,13 +166,13 @@ export default defineConfig({
     nav,
 
     editLink: {
-      pattern: "https://github.com/get1024/RyanJoy-s_Web/edit/main/:path",
+      pattern: "https://github.com/get1024/get1024.github.io/edit/main/:path",
       text: "在 GitHub 上编辑此页面",
     },
 
     footer: {
       message: "见贤思齐",
-      copyright: `𝓒𝓸𝓹𝔂𝓻𝓲𝓰𝓱𝓽 © 𝟐𝟎𝟐𝟐-${new Date().getFullYear()}  <a href="https://github.com/get1024">𝓡𝔂𝓪𝓷𝓙𝓸𝔂(𝓖𝓮𝓽𝟏𝟎𝟐𝟒)</a>`,
+      copyright: `Copyright © 𝟐𝟎𝟐𝟐-${new Date().getFullYear()}  <a href="https://github.com/get1024">RyanJoy(get1024)</a>`,
     },
 
     docFooter: {
@@ -203,7 +203,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/get1024/RyanJoy-s_Web",
+        link: "https://github.com/get1024/get1024.github.io",
       },
       {
         icon: {

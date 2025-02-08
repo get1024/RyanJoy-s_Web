@@ -44,7 +44,7 @@ tags:
 ### 对其它用户
 
 ::: info 作者说
-目前笔者只能提供临时办法，若您有好的解决方案，欢迎来[本仓库](https://github.com/get1024/RyanJoy-s_Web) `fork` 并提出 `PR`。
+目前笔者只能提供临时办法，若您有好的解决方案，欢迎来[本仓库](https://github.com/get1024/get1024.github.io) `fork` 并提出 `PR`。
 :::
 
 <h4>第一步</h4>

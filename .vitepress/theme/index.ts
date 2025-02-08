@@ -108,7 +108,7 @@ export const Theme: ThemeConfig = {
     //giscus评论插件
     const { frontmatter } = useData();
     giscusTalk({
-      repo: 'get1024/RyanJoy-s_Web', //仓库
+      repo: 'get1024/get1024.github.io', //仓库
       repoId: 'R_kgDOL1mSLA', //仓库ID
       category: 'Announcements', // 讨论分类
       categoryId: 'DIC_kwDOL1mSLM4CfRSC', //讨论分类ID

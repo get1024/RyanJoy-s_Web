@@ -48,7 +48,7 @@ tags:
 1. 克隆项目
 
 ```bash
-git clone https://github.com/get1024/RyanJoy-s_Web.git
+git clone https://github.com/get1024/get1024.github.io.git
 ```
 
 2. 安装依赖
