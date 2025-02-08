@@ -24,7 +24,7 @@ const handleScroll = () => {
         isVisible.value = scrollTop > 300
         
         scrollTimeout = null
-    }, 16) // 约60fps
+    }, 8) // 约120fps
 }
 
 // 优化的滚动动画
@@ -79,13 +79,13 @@ onUnmounted(() => {
                     :style="{ 'stroke-dashoffset': progressOffset }" />
             </svg>
             <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <path d="M512 0A512 512 0 1 1 0 512 512 512 0 0 1 512 0z" fill="#FFDA00" />
+                <path d="M512 0A512 512 0 1 1 0 512 512 512 0 0 1 512 0z" fill="var(--vp-c-brand-1)" />
                 <path
                     d="M675.57181 542.524952a30.378667 30.378667 0 0 1-20.016762-7.533714l-145.627429-127.097905-140.970667 126.829715a30.47619 30.47619 0 0 1-40.764952-45.348572l161.060571-144.847238a30.47619 30.47619 0 0 1 40.423619-0.292571l165.961143 144.871619a30.47619 30.47619 0 0 1-20.065523 53.418666z"
-                    fill="#111111" />
+                    fill="var(--main-page-bg)" />
                 <path
                     d="M512.073143 730.745905a30.47619 30.47619 0 0 1-30.476191-30.476191v-182.857143a30.47619 30.47619 0 0 1 60.952381 0v182.857143a30.47619 30.47619 0 0 1-30.47619 30.476191z"
-                    fill="#111111" />
+                    fill="var(--main-page-bg)" />
             </svg>
         </div>
     </button>
@@ -143,7 +143,7 @@ onUnmounted(() => {
 /* 进度条环形 */
 .ring-progress {
     fill: none;                    /* 无填充 */
-    stroke: var(--vp-c-brand-1);   /* 使用主题主色 */
+    stroke: var(--vp-c-brand-3);   /* 使用主题主色 */
     stroke-width: 3;               /* 线条宽度 */
     stroke-linecap: round;         /* 圆形线帽 */
     stroke-dasharray: 125.66;      /* 虚线周长 */
