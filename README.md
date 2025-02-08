@@ -5,11 +5,13 @@ updateAt: 2025-02-03 23:26:57
 tags:
   - Info
 ---
-# RyanJoy's Web
+# RyanJoy's Blog
 
-这是一个基于 VitePress 搭建的个人博客系统。
+这是一个基于 VitePress 搭建的个人博客系统。目前使用 [Obsidian - Sharpen your thinking](https://obsidian.md/) 进行文档编写、 [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/) 进行版本维护。
 
-博客模板待整理中……(主要现在也没需求)
+目前同步托管在 [Vercel](https://vercel.com/) 和 [GitHub Pages](https://pages.github.com/) 上，这就产生了两个地址：
+- 主站： <https://blog.ryanjoy.top/ >
+- 副站：<https://get1024.github.io/>
 
 ## 🌟 特性
 
