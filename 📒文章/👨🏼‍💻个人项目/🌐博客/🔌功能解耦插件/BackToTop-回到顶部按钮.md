@@ -71,7 +71,6 @@ export default {
     background-color: var(--custom-backtop-ring); /* [!code warning] */
 }
 
-
 .icon {
     position: absolute;
     top: 50%;

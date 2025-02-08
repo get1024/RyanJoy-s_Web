@@ -1,7 +1,7 @@
 ---
 title: Vitepress 一站式部署方案
 createAt: 2025-01-29 18:26:51
-updateAt: 2025-02-05 22:33:18
+updateAt: 2025-02-08 22:29:23
 tags:
   - 博客
   - 解决方案
@@ -258,7 +258,7 @@ Cloudflare 负责 DNS 解析，因此我们需要在 **Cloudflare** 里添加新
 ### 访问 `blog.ryanjoy.top` 验证是否生效
 
 - 在 **浏览器中访问 `blog.ryanjoy.top`**，查看是否能够正确加载 VitePress 站点。
-- 我们也可以在 `powershell` 使用 ** `nslookup blog.ryanjoy.top` 或 `ping blog.ryanjoy.top` ** 检查解析是否生效。
+- 我们也可以在 `powershell` 使用 **`nslookup blog.ryanjoy.top` 或 `ping blog.ryanjoy.top` 检查解析是否生效**。
 - 一般 DNS 解析 **可能需要几分钟到 24 小时生效**，如果访问不成功可以稍等一会儿。
 
 ### 🎯 总结
