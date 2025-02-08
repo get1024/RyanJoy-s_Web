@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 import Sitemap from 'vite-plugin-sitemap';
 import { promises as fs } from 'fs';
 import path from 'path';
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
     plugins: [
@@ -45,6 +48,12 @@ export default defineConfig({
                 }
             },
         },
+        AutoImport({
+            resolvers: [ElementPlusResolver()],
+        }),
+        Components({
+            resolvers: [ElementPlusResolver()],
+        }),
     ],
     build: {
         minify: false,

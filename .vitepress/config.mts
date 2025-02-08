@@ -52,7 +52,7 @@ function chineseSearchOptimize(input: string) {
 // ==========================
 export default defineConfig({
   lang: "zh-CN",
-  title: "𝓡𝔂𝓪𝓷𝓙𝓸𝔂'𝓼 𝓑𝓵𝓸𝓰",
+  title: "RyanJoy的博客",
   description: "RyanJoy的博客",
   lastUpdated: true,
   appearance: true,
