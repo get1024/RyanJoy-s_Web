@@ -12,8 +12,7 @@ import footnote_plugin from "markdown-it-footnote";
 import task_checkbox_plugin from "markdown-it-task-checkbox";
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
 import { createFileSystemTypesCache } from '@shikijs/vitepress-twoslash/cache-fs'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from "unplugin-vue-components/vite"
+
 // ==========================
 // 配置函数
 // ==========================
@@ -153,6 +152,11 @@ export default defineConfig({
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
       ],
     },
+    server: {
+      watch: {
+        ignored: ['**/node_modules/**', '**/dist/**']
+      }
+    }
   },
 
   // 主题配置

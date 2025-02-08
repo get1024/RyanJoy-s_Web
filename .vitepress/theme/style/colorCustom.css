@@ -1,7 +1,5 @@
 :root {
-    /* --vp-c-brand-1: #e68c00;
-    --vp-c-brand-2: #ff9e00;
-    --vp-c-brand-3: #e0b424; */
+    --custom-backtop-ring: #f7a800;
 
     /* linkcard色卡 */
     --custom-bg: #f0f0f0;
@@ -52,6 +50,8 @@
 }
 
 .dark {
+    --custom-backtop-ring: #3451B2;
+    
     --vp-c-brand-1: #f7a800;
     --vp-c-brand-2: #ffb300;
     --vp-c-brand-3: #f9d423;

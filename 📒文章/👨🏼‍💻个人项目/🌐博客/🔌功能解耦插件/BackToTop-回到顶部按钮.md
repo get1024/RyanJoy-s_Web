@@ -12,13 +12,192 @@ tags:
 
 # BackToTop-回到顶部按钮
 
-## 效果展示
+::: tip 作者说
+这里提供两个方案，方案一采用 [Backtop 回到顶部 \| Element Plus](https://element-plus.org/zh-CN/component/backtop.html) ，方案二从零开始写一个组件。
+:::
+
+## 方案一
+
+### 效果展示
+
+![](assets/backtotop-回到顶部按钮/2025-02-08_16-49-37.gif)
+
+### 安装 ElementPlus
+
+::: code-group
+
+```sh [pnpm]
+pnpm add -D element-plus
+```
+
+```sh [npm]
+npm install element-plus --save
+```
+
+```sh [yarn]
+yarn add element-plus
+```
+
+:::
+要在 Vitepress 项目中新增一个使用 Element Plus 组件 `el-backtop` 的自定义组件，你需要按照以下步骤进行配置。以下是详细的步骤：
+
+### 组件定义
+
+新建 `📄:.vitepress/theme/components/BackToTop/BackToTop.vue` ，复制粘贴以下内容
+
+```vue [BackToTop.vue]
+<template>
+    <el-backtop class="el-backtop">
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M512 0A512 512 0 1 1 0 512 512 512 0 0 1 512 0z" fill="var(--vp-c-brand-1)" />
+            <path
+                d="M675.57181 542.524952a30.378667 30.378667 0 0 1-20.016762-7.533714l-145.627429-127.097905-140.970667 126.829715a30.47619 30.47619 0 0 1-40.764952-45.348572l161.060571-144.847238a30.47619 30.47619 0 0 1 40.423619-0.292571l165.961143 144.871619a30.47619 30.47619 0 0 1-20.065523 53.418666z"
+                fill="var(--custom-backtop-ring)" />
+            <path
+                d="M512.073143 730.745905a30.47619 30.47619 0 0 1-30.476191-30.476191v-182.857143a30.47619 30.47619 0 0 1 60.952381 0v182.857143a30.47619 30.47619 0 0 1-30.47619 30.476191z"
+                fill="var(--custom-backtop-ring)" />
+        </svg>
+    </el-backtop>
+</template>
+
+<script>
+export default {
+    name: 'BackToTop'
+}
+</script>
+
+<style scoped>
+.el-backtop {
+    background-color: var(--custom-backtop-ring); /* [!code warning] */
+}
+
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+</style>
+```
+
+::: details 高亮代码什么意思？
+`var(--custom-backtop-ring);` 是自定义的一种颜色样式，为了自动跟随 `Vitepress` 两种主题进行切换。具体配置如下。
+
+在 `📄:.vitepress/theme/style/colorCustom.css` 中添加下述内容
+
+```css [colorCustom.css]
+:root {
+    --custom-backtop-ring: #f7a800; /* [!code ++] */
+    --custom-bg: #f0f0f0;
+    --custom-border: #dedede;
+    --custom-text: #575d65;
+    --vp-button-brand-text: #F6CEEC;
+    --vp-button-brand-bg: #D939CD;
+    --vp-button-brand-hover-text: #fff;
+    --vp-button-brand-hover-bg: #fe64f1;
+    --custom-shadow:0 10px 30px 0 rgb(0 0 0 / 40%);
+    --custom-block-info-left: #cccccc;
+    --custom-block-info-bg: #fafafa;
+    --custom-block-tip-left: #009400;
+    --custom-block-tip-bg: #e6f6e6;
+    --custom-block-warning-left: #e6a700;
+    --custom-block-warning-bg: #fff8e6;
+    --custom-block-danger-left: #e13238;
+    --custom-block-danger-bg: #ffebec;
+    --custom-block-note-left: #4cb3d4;
+    --custom-block-note-bg: #eef9fd;
+    --custom-block-important-left: #a371f7;
+    --custom-block-important-bg: #f4eefe;
+    --custom-block-caution-left: #e0575b;
+    --custom-block-caution-bg: #fde4e8;
+    --main-page-bg: white;
+    --main-page-text: #050505;
+    --main-page-from: #222222;
+    --main-page-to: #585858;
+    --main-page-menu: #525861;
+    --main-page-appearance: #e0e0e0;
+    --custom-toast-bg: #00000020;
+    --custom-toast-text: #000000;
+}
+
+.dark {
+    --custom-backtop-ring: #3451B2; /* [!code ++] */
+    --vp-c-brand-1: #f7a800;
+    --vp-c-brand-2: #ffb300;
+    --vp-c-brand-3: #f9d423;
+    --custom-bg: #1f1f1f;
+    --custom-border: #282828;
+    --custom-text: #969ba6;
+    --custom-shadow:0 10px 30px 0 rgb(255 255 255 / 40%);
+    --custom-block-info-left: #cccccc;
+    --custom-block-info-bg: #474748;
+    --custom-block-tip-left: #009400;
+    --custom-block-tip-bg: #003100;
+    --custom-block-warning-left: #e6a700;
+    --custom-block-warning-bg: #4d3800;
+    --custom-block-danger-left: #e13238;
+    --custom-block-danger-bg: #4b1113;
+    --custom-block-note-left: #4cb3d4;
+    --custom-block-note-bg: #193c47;
+    --custom-block-important-left: #a371f7;
+    --custom-block-important-bg: #230555;
+    --custom-block-caution-left: #e0575b;
+    --custom-block-caution-bg: #391c22;
+    --main-page-bg: #050505;
+    --main-page-text: #f0f0f0;
+    --main-page-from: #f0f0f0;
+    --main-page-to: #575757;
+    --main-page-menu: #969ba6;
+    --main-page-appearance: #222222;
+    --custom-toast-bg: #ffffff20;
+    --custom-toast-text: #ffffff;
+}
+```
+:::
+
+### 引入 ElementPlus 并使用组件
+
+在 `Vitepress` 主题文件 `📄:.vitepress/theme/index.ts` 中引入
+
+```javascript
+// .vitepress/theme/index.ts
+import DefaultTheme from 'vitepress/theme'
+import { ElBacktop } from 'element-plus' // [!code ++]
+import 'element-plus/dist/index.css' // [!code ++]
+import BackToTop from './components/BackToTop/BackToTop.vue' // [!code ++]
+
+export const Theme: ThemeConfig = {
+  extends: DefaultTheme,
+  Layout: () => {
+    return h(DefaultTheme.Layout, null, {
+      'layout-bottom': () => h(BackToTop) // [!code ++]
+    })
+  },
+  enhanceApp = ({ app, router }: EnhanceAppContext) => {
+  	app.component('BackToTop', BackToTop) // [!code ++]
+  	app.component(ElBacktop.name!, ElBacktop) // [!code ++]
+}
+```
+
+刷新项目，就能看到 `<el-backtop>` 按钮啦~
+## 方案二
+
+::: info 谴责 RyanJoy
+这是一个重复造轮子的尝试……并且效果极其垃圾；
+
+不过，你仍然可以尝试这一方案！
+
+现存的问题是性能不友好，在手机上使用起来就略显掉帧，ipad 和 MacBook 体验良好。欢迎您的尝试并期待收到 `PR` 🥺。
+:::
+### 效果展示
 
 ![](assets/backtotop-回到顶部按钮/2025-02-08_09-41-45.gif)
 
 按钮默认隐藏，只有当前位置不在「页面顶部」时才会出现；按钮外部有「环形进度条」，进度条与当前页面位置正相关；点击按钮返回页面顶部。
-
-## 配置
 
 ### 组件定义
 
@@ -197,7 +376,7 @@ export const Theme: ThemeConfig = {
 export default Theme
 ```
 
-## 检验成果
+### 检验成果
 
 滑动页面时，在右下角出现按钮，按钮样式跟随主题发生变化
 
