@@ -17,6 +17,7 @@ import 'vitepress-plugin-nprogress/lib/css/index.css'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import '@shikijs/vitepress-twoslash/style.css'
+import 'element-plus/dist/index.css'
 
 // ==========================
 // 第三方插件
@@ -27,6 +28,7 @@ import vitepressNprogress from 'vitepress-plugin-nprogress'
 import { NolebaseHighlightTargetedHeading } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 import TwoslashFloatingVue from '@shikijs/vitepress-twoslash/client'
+import { ElBacktop } from 'element-plus'
 
 // ==========================
 // 组件
@@ -72,6 +74,7 @@ const enhanceApp = ({ app, router }: EnhanceAppContext) => {
   app.component('contactMe', contactMe)
   app.component('TagCloud', TagCloud)
   app.component('BackToTop', BackToTop)
+  app.component(ElBacktop.name!, ElBacktop)
 }
 
 // ==========================
