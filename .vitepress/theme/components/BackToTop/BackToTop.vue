@@ -20,17 +20,20 @@ export default {
 
 <style scoped>
 
-.el-backtop {
-    background-color: var(--custom-backtop-ring);
+.el-backtop{
+    background-color: transparent;
 }
 
+.el-backtop:hover {
+    background-color: var(--custom-backtop-ring);
+}
 
 .icon {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     transform: translate(-50%, -50%);
     will-change: transform;
 }
