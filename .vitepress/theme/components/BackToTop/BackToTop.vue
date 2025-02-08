@@ -1,5 +1,5 @@
 <template>
-    <el-backtop class="el-backtop">
+    <!-- <el-backtop class="el-backtop">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <path d="M512 0A512 512 0 1 1 0 512 512 512 0 0 1 512 0z" fill="var(--vp-c-brand-1)" />
             <path
@@ -9,7 +9,7 @@
                 d="M512.073143 730.745905a30.47619 30.47619 0 0 1-30.476191-30.476191v-182.857143a30.47619 30.47619 0 0 1 60.952381 0v182.857143a30.47619 30.47619 0 0 1-30.47619 30.476191z"
                 fill="var(--main-page-bg)" />
         </svg>
-    </el-backtop>
+    </el-backtop> -->
 </template>
 
 <style scoped>

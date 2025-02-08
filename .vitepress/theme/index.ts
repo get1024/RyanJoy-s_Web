@@ -53,7 +53,7 @@ const enhanceApp = ({ app, router }: EnhanceAppContext) => {
   // 使用 Git changelog 插件
   app.use(NolebaseGitChangelogPlugin)
   // 使用shiki twoslash
-  app.use(TwoslashFloatingVue) 
+  app.use(TwoslashFloatingVue)
   // 使用 nprogress 插件
   vitepressNprogress({ app, router })
 
