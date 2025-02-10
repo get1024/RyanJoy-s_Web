@@ -1,17 +1,28 @@
 ---
-title: RyanJoy's Web
+title: "RyanJoy's Blog"
 createAt: 2024-05-01 12:16:46
-updateAt: 2025-02-03 23:26:57
+updateAt: 2025-02-10 11:04:56
 tags:
   - Info
 ---
+
 # RyanJoy's Blog
 
-这是一个基于 VitePress 搭建的个人博客系统。目前使用 [Obsidian - Sharpen your thinking](https://obsidian.md/) 进行文档编写、 [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/) 进行版本维护。
+## 部署方式
 
-目前同步托管在 [Vercel](https://vercel.com/) 和 [GitHub Pages](https://pages.github.com/) 上，这就产生了两个地址：
-- 主站：<https://blog.ryanjoy.top/>
-- 副站：<https://get1024.github.io/>
+这是一个基于 VitePress 搭建的个人博客系统。目前使用 [Obsidian](https://obsidian.md/) 进行文档编写、 [Visual Studio Code](https://code.visualstudio.com/) 进行版本维护。
+
+目前同步托管在 [Vercel](https://vercel.com/) 、 [GitHub Pages](https://pages.github.com/)、 [Cloudflare](https://www.cloudflare.com/zh-cn/) 上，这就产生了三个地址：
+
+- 主站 `Vercel`：<https://blog.ryanjoy.top/>
+- 副站 `Github Pages` ：<https://get1024.github.io/>
+- 副站 `CloudFlare Pages` ：<https://get1024-github-io.pages.dev/>
+
+**速度对比**
+
+| [Vercel](https://blog.ryanjoy.top/) | [Github Pages](https://get1024.github.io/) | [CloudFlare Pages](https://get1024-github-io.pages.dev/) |
+| :---------------------------------: | :----------------------------------------: | :------------------------------------------------------: |
+|                                     |                                            |                                                          |
 
 ## 🌟 特性
 
