@@ -172,7 +172,7 @@ export default defineConfig({
 
     footer: {
       message: "见贤思齐",
-      copyright: `Copyright © 𝟐𝟎𝟐𝟐-${new Date().getFullYear()}  <a href="https://github.com/get1024">RyanJoy(get1024)</a>`,
+      copyright: `Copyright © 2022.10~${new Date().getFullYear()}\.${String(new Date().getMonth() + 1).padStart(2, '0')}\.${new Date().getDate()}&nbsp;&nbsp;<a href="https://github.com/get1024">👨🏼‍💻RyanJoy</a>`,
     },
 
     docFooter: {
