@@ -34,7 +34,7 @@ tags:
 - 🔍 全文搜索功能
 - 🎨 美化的代码块和代码组展示、 `<table>` 样式……等众多美化样式，高效提升阅读体验！
 - 📊 自动生成 [侧边栏](https://blog.ryanjoy.top/%F0%9F%93%92%E6%96%87%E7%AB%A0/%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/%F0%9F%8C%90%E5%8D%9A%E5%AE%A2/%F0%9F%94%8C%E5%8A%9F%E8%83%BD%E8%A7%A3%E8%80%A6%E6%8F%92%E4%BB%B6/Vitepress%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E4%BE%A7%E8%BE%B9%E6%A0%8F.html)、[索引页](https://blog.ryanjoy.top/%F0%9F%93%92%E6%96%87%E7%AB%A0/%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/%F0%9F%8C%90%E5%8D%9A%E5%AE%A2/%F0%9F%94%8C%E5%8A%9F%E8%83%BD%E8%A7%A3%E8%80%A6%E6%8F%92%E4%BB%B6/Vitepress%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%B4%A2%E5%BC%95%E9%A1%B5.html)、[标签检索页](https://blog.ryanjoy.top/%F0%9F%93%92%E6%96%87%E7%AB%A0/%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/%F0%9F%8C%90%E5%8D%9A%E5%AE%A2/%F0%9F%94%8C%E5%8A%9F%E8%83%BD%E8%A7%A3%E8%80%A6%E6%8F%92%E4%BB%B6/Vitepress%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%B4%A2%E5%BC%95%E9%A1%B5.html) ……等系列自动化配置，完全专注于文章编写
-- 🔄 Git 更新日志集成、Obsidian `[[双梁]]` 语法支持……等众多插件，强力支持**个人跨平台知识库体系**搭建
+- 🔄 Git 更新日志集成、Obsidian `[[双链]]` 语法支持……等众多插件，强力支持**个人跨平台知识库体系**搭建
 - 🎯 SEO 优化
 - ……更多特性等你挖掘
 
