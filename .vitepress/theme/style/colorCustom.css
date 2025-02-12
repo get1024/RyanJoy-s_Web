@@ -39,7 +39,7 @@
 
     /* 主页色卡 */
     --main-page-bg: white;
-    --main-page-text: #050505;
+    --main-page-text: #3C3C43;
     --main-page-from: #222222;
     --main-page-to: #585858;
     --main-page-menu: #525861;
@@ -88,7 +88,7 @@
 
     /* 主页色卡 */
     --main-page-bg: #050505;
-    --main-page-text: #f0f0f0;
+    --main-page-text: #DFDFD6;
     --main-page-from: #f0f0f0;
     --main-page-to: #575757;
     --main-page-menu: #969ba6;

@@ -15,3 +15,16 @@
 h1 {
   color: var(--main-page-text);
 }
+
+/* 脚注 */
+.footnotes p{
+  font-size: 13px;
+  font-weight: bold;
+  margin: 2px 0;
+  font-family: monospace;
+  color: var(--main-page-text);
+}
+
+.footnotes-list li+li{
+  margin-top: 0px;
+}
