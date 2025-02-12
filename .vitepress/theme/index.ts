@@ -108,15 +108,17 @@ export const Theme: ThemeConfig = {
     //giscus评论插件
     const { frontmatter } = useData();
     giscusTalk({
-      repo: 'get1024/get1024.github.io', //仓库
-      repoId: 'R_kgDOL1mSLA', //仓库ID
-      category: 'Announcements', // 讨论分类
-      categoryId: 'DIC_kwDOL1mSLM4CfRSC', //讨论分类ID
-      mapping: 'pathname',
-      strict: '0',
+      repo: 'get1024/get1024.github.io',
+      repoId: 'R_kgDOL1mSLA',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOL1mSLM4CfRSC',
+      mapping: 'title',
+      strict: '1',
+      reactionsEnabled: '1',
       inputPosition: 'top',
       theme:'preferred_color_scheme',
       lang: 'zh-CN',
+      loading: 'lazy',
       crossorigin:'anonymous',
       }, 
       {
