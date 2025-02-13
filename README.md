@@ -1,28 +1,26 @@
----
-title: "RyanJoy's Blog"
-createAt: 2024-05-01 12:16:46
-updateAt: 2025-02-10 11:04:56
-tags:
-  - Info
----
-
 # RyanJoy's Blog
 
 ## 🌐 部署方式
 
-这是一个基于 VitePress 搭建的个人博客系统。目前使用 [Obsidian](https://obsidian.md/) 进行文档编写、 [Visual Studio Code](https://code.visualstudio.com/) 进行版本维护。
+这是一个基于 `VitePress` 搭建的个人博客系统。目前使用 [Obsidian](https://obsidian.md/) 进行文档编写、 [Visual Studio Code](https://code.visualstudio.com/) 进行版本维护。
 
-目前同步托管在 [Vercel](https://vercel.com/) 、 [GitHub Pages](https://pages.github.com/)、 [Cloudflare](https://www.cloudflare.com/zh-cn/) 上，这就产生了三个地址：
+目前同步托管在 [Netlify](https://app.netlify.com/)、[Vercel](https://vercel.com/) 、[GitHub Pages](https://pages.github.com/)、[Cloudflare](https://www.cloudflare.com/zh-cn/) 上，托管都是从本仓库自动拉取代码，在各平台自动构建并部署，这就产生了四个地址：
 
-- 主站 `Vercel`：<https://blog.ryanjoy.top/>
-- 副站 `Github Pages` ：<https://get1024.github.io/>
-- 副站 `CloudFlare Pages` ：<https://get1024-github-io.pages.dev/>
+- 主站 `Netlify` ：<https://blog.ryanjoy.top/>
+- 备用站
+	- `Vercel` ：<https://blog1.ryanjoy.top/>
+	- `CloudFlare Pages` ：<https://blog2.ryanjoy.top/>
+	- `Github Pages` ：<https://blog3.ryanjoy.top/>
 
 **速度对比**
 
-|                                 [Vercel](https://blog.ryanjoy.top/)                                  |                                 [Github Pages](https://get1024.github.io/)                                 |                            [CloudFlare Pages](https://get1024-github-io.pages.dev/)                            |
-| :--------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-| ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/vercel.png?raw=true) | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/gtihub-pages.png?raw=true) | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/CloudFlare-pages.png?raw=true) |
+| [Netlify](https://app.netlify.com/) |                                 [Vercel](https://blog.ryanjoy.top/)                                  |
+| ----------------------------------- | :--------------------------------------------------------------------------------------------------: |
+|                                     | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/vercel.png?raw=true) |
+
+|                                 [GithubPages](https://get1024.github.io/)                                  |                               [CloudFlare](https://get1024-github-io.pages.dev/)                               |
+| :--------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+| ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/gtihub-pages.png?raw=true) | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/CloudFlare-pages.png?raw=true) |
 
 可见 `Vercel` 还是比较不错的，但是仍然存在问题：对于国内搜索引擎 `Baidu` 的 SEO 做得差强人意，不过这也是静态博客的常见问题了……
 
