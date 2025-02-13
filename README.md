@@ -1,10 +1,27 @@
 # RyanJoy's Blog
 
-## 🌐 部署方式
+<p>
+	<img src="https://img.shields.io/badge/Obsidian-purple?style=plastic&logo=obsidian&logoColor=white" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Vitepress-5C73E7?style=plastic&logo=vitepress&logoColor=white" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Nodejs-5FA04E?style=plastic&logo=nodedotjs&logoColor=white" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Vue-4FC08D?style=plastic&logo=vuedotjs&logoColor=white" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Git-F05032?style=plastic&logo=git&logoColor=white" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Markdown-000000?style=plastic&logo=markdown&logoColor=white" style="display:inline-block;">
+</p>
 
 这是一个基于 `VitePress` 搭建的个人博客系统。目前使用 [Obsidian](https://obsidian.md/) 进行文档编写、 [Visual Studio Code](https://code.visualstudio.com/) 进行版本维护。
 
-目前同步托管在 [Netlify](https://app.netlify.com/)、[Vercel](https://vercel.com/) 、[GitHub Pages](https://pages.github.com/)、[Cloudflare](https://www.cloudflare.com/zh-cn/) 上，托管都是从本仓库自动拉取代码，在各平台自动构建并部署，这就产生了四个地址：
+## 🌐 部署
+
+<p>
+	<img src="https://img.shields.io/badge/Netlify-%E4%B8%BB%E7%AB%99%E7%82%B9-green?style=plastic&logo=netlify&logoColor=white&labelColor=00C7B7" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Vercel-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=vercel&logoColor=white&labelColor=000000" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/CloudFlare-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=cloudflare&logoColor=white&labelColor=F38020" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Github_Pages-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=github&logoColor=white&labelColor=181717" style="display:inline-block;">
+</p>
+
+目前同步托管在 [Netlify](https://app.netlify.com/)、[Vercel](https://vercel.com/) 、[GitHub Pages](https://pages.github.com/)、[Cloudflare](https://www.cloudflare.com/zh-cn/) 上，托管都是从`本仓库`自动拉取代码，在各平台自动构建并部署，这就产生了四个地址：
 
 - 主站 `Netlify` ：<https://blog.ryanjoy.top/>
 - 备用站
@@ -12,17 +29,21 @@
 	- `CloudFlare Pages` ：<https://blog2.ryanjoy.top/>
 	- `Github Pages` ：<https://blog3.ryanjoy.top/>
 
+`DNS` 解析如下
+
+![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/dns.png?raw=true)
+
 **速度对比**
 
-| [Netlify](https://app.netlify.com/) |                                 [Vercel](https://blog.ryanjoy.top/)                                  |
-| ----------------------------------- | :--------------------------------------------------------------------------------------------------: |
-|                                     | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/vercel.png?raw=true) |
+|                                        [Netlify](https://app.netlify.com/)                                        |                                    [Vercel](https://vercel.com/)                                     |
+| :---------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
+| ![](https://raw.githubusercontent.com/get1024/get1024.github.io/refs/heads/main/public/README-assets/netlify.png) | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/vercel.png?raw=true) |
 
-|                                 [GithubPages](https://get1024.github.io/)                                  |                               [CloudFlare](https://get1024-github-io.pages.dev/)                               |
-| :--------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-| ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/gtihub-pages.png?raw=true) | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/CloudFlare-pages.png?raw=true) |
+|                               [CloudFlare](https://get1024-github-io.pages.dev/)                               |                                 [GithubPages](https://get1024.github.io/)                                  |
+| :------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
+| ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/CloudFlare-pages.png?raw=true) | ![](https://github.com/get1024/get1024.github.io/blob/main/public/README-assets/gtihub-pages.png?raw=true) |
 
-可见 `Vercel` 还是比较不错的，但是仍然存在问题：对于国内搜索引擎 `Baidu` 的 SEO 做得差强人意，不过这也是静态博客的常见问题了……
+可见 `Netlify` 还是比较不错的，但是仍然存在问题：对于国内搜索引擎 `Baidu` 的 SEO 做得差强人意，不过这也是静态博客的常见问题了……
 
 考虑到个人博客的「个人」属性，其实对于搜索 => 点击量也不是特别重要，实在有想要别人看到的，最笨的方法就是 share your link 嘛~也没什么的，不太优雅而已。
 
@@ -36,25 +57,21 @@
 - 🎯 SEO 优化
 - ……更多特性等你挖掘
 
-## 🛠️ 技术栈
-
-`VitePress` 、 `Vue 3` 、 `TypeScript` 、 `Node.js` 、 `Git` 、 `Markdown` ……
-
 ## 📦 项目结构
 
 >  当前还是一个简单的 `Vitepress` 项目，日后会更新为 `monorepo` 来更好的支持博客模板和系列插件等
 
 ```sh
 ~
-├── 📒文章/              # 文章目录
-├── otherDocs/           # nav文章目录
-├── .vitepress/          # VitePress 配置目录
-│  ├── dist/             # 构建输出目录
-│  ├── theme/            # 主题配置
-│  └── config.mts        # 主配置文件
-├── public/              # 静态资源目录
-└── package.json         # 项目依赖配置
-
+|—— 📒文章/              # 文章目录
+|—— otherDocs/           # nav文章目录
+|—— .vitepress/          # VitePress 配置目录
+|	|—— dist/             # 构建输出目录
+|	|—— theme/            # 主题配置
+|	|—— config.mts        # 主配置文件
+|—— public/              # 静态资源目录
+|—— package.json         # 项目依赖配置
+|...
 ```
 
 ## 🚀 快速开始
