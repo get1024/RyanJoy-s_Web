@@ -34,130 +34,146 @@ tags:
 
 ## 组件定义
 
-### 标签数据脚本文件
+### 时间处理脚本
+
+新建 `📄:.vitepress/theme/components/PostList/dateUtils.ts` 文件，复制粘贴下述内容
+
+```ts [dateUtils.ts]
+import { ContentData } from "vitepress";
+export interface DateComponents {
+    year: number;
+    month: string;
+    day: string;
+    hour: string;
+    minute: string;
+    second: string;
+}
+export interface Post {
+    url: string;
+    frontmatter: {
+        title: string;
+        tags?: string[];
+        createAt: DateComponents;
+        updateAt: DateComponents;
+    };
+}
+export function splitDate(dateStr: string): DateComponents {
+    const date = new Date(dateStr);
+    return {
+        year: date.getUTCFullYear(),
+        month: (date.getUTCMonth() + 1).toString().padStart(2, "0"),
+        day: date.getUTCDate().toString().padStart(2, "0"),
+        hour: date.getUTCHours().toString().padStart(2, "0"),
+        minute: date.getUTCMinutes().toString().padStart(2, "0"),
+        second: date.getUTCSeconds().toString().padStart(2, "0"),
+    };
+}
+export function processPost(post: ContentData): Post {
+    return {
+        url: post.url,
+        frontmatter: {
+            title: post.frontmatter.title,
+            tags: post.frontmatter.tags,
+            createAt: splitDate(post.frontmatter.createAt),
+            updateAt: splitDate(post.frontmatter.updateAt),
+        },
+    };
+}
+export function sortPostsByDate(posts: Post[]): Post[] {
+    return posts.sort((a, b) => {
+        const dateA = new Date(
+            `${a.frontmatter.createAt.year}-${a.frontmatter.createAt.month}-${a.frontmatter.createAt.day}`
+        );
+        const dateB = new Date(
+            `${b.frontmatter.createAt.year}-${b.frontmatter.createAt.month}-${b.frontmatter.createAt.day}`
+        );
+        return dateB.getTime() - dateA.getTime();
+    });
+} 
+```
+
+### 标签数据脚本
 
 新建 `📄:.vitepress/theme/components/TagCloud/tags.data.ts` 文件，复制粘贴下述内容
 
-::: details 由于代码过长，此处进行折叠包裹
-
 ```ts [tags.data.ts]
-// .vitepress/theme/components/TagCloud/tags.data.ts
-import { ContentData, createContentLoader } from 'vitepress'
-function splitDate(dateStr: string) {
-    const date = new Date(dateStr)
-    return {
-        year: date.getUTCFullYear(),
-        month: (date.getUTCMonth() + 1).toString().padStart(2, '0'),
-        day: date.getUTCDate().toString().padStart(2, '0'),
-        hour: date.getUTCHours().toString().padStart(2, '0'),
-        minute: date.getUTCMinutes().toString().padStart(2, '0'),
-        second: date.getUTCSeconds().toString().padStart(2, '0')
-    }
-}
-interface Post {
-    url: string
-    frontmatter: {
-        title: string
-        tags?: string[]
-        createAt: {
-            year: number
-            month: string
-            day: string
-            hour: string
-            minute: string
-            second: string
-        }
-        updateAt: {
-            year: number
-            month: string
-            day: string
-            hour: string
-            minute: string
-            second: string
-        }
-    }
-}
+import { ContentData, createContentLoader } from "vitepress";
+import { processPost, sortPostsByDate } from "./dateUtils";
+import type { Post as BlogPost } from "./dateUtils";
 interface Tag {
-    name: string
-    count: number
-    posts: Post[]
-    size: number
+    name: string;
+    count: number;
+    posts: BlogPost[];
+    size: number;
 }
 const calculateSize = (count: number, maxCount: number): number => {
-    const minSize = 0.9
-    const maxSize = 1.4
-    const scale = (count - 1) / (maxCount - 1)
-    return minSize + (maxSize - minSize) * scale
-}
-declare const data: Tag[]
-export { data }
-export default createContentLoader('**/*.md', { // [!code warning]
-//                                  ^?
+    const minSize = 0.8;
+    const maxSize = 1.7;
+    if (count <= 1) return minSize;
+    if (count >= maxCount) return maxSize;
+    if (maxCount <= 1) return minSize;
+    const logBase = Math.E;
+    const normalizedCount = Math.log(count) / Math.log(logBase);
+    const normalizedMax = Math.log(maxCount) / Math.log(logBase);
+    const scale = normalizedCount / normalizedMax;
+    const smoothScale = 1 / (1 + Math.exp(-5 * (scale - 0.5)));
+    return minSize + (maxSize - minSize) * smoothScale;
+};
+
+declare const data: Tag[];
+export { data };
+
+export default createContentLoader("📒文章/**/*.md", { // [!code warning]
     transform(raw: ContentData[]) {
-        const tagMap = new Map<string, { count: number; posts: ContentData[] }>()
-        raw.forEach(post => {
-            const tags = post.frontmatter.tags || []
-            tags.forEach(tag => {
+        const tagMap = new Map<string, { count: number; posts: BlogPost[] }>();
+        raw.forEach((rawPost) => {
+            const post = processPost(rawPost);
+            const tags = post.frontmatter.tags || [];
+            tags.forEach((tag) => {
                 if (!tagMap.has(tag)) {
-                    tagMap.set(tag, { count: 0, posts: [] })
+                    tagMap.set(tag, { count: 0, posts: [] });
                 }
-                const tagData = tagMap.get(tag)!
-                tagData.count++
-                tagData.posts.push(post)
-            })
-        })
-        const maxCount = Math.max(...Array.from(tagMap.values()).map(t => t.count))
+                const tagData = tagMap.get(tag)!;
+                tagData.count++;
+                tagData.posts.push(post);
+            });
+        });
+        const maxCount = Math.max(
+            ...Array.from(tagMap.values()).map((t) => t.count)
+        );
         const tags: Tag[] = Array.from(tagMap.entries())
             .map(([name, data]) => ({
                 name,
                 count: data.count,
-                posts: data.posts
-                    .map(post => ({
-                        url: post.url,
-                        frontmatter: {
-                            title: post.frontmatter.title,
-                            tags: post.frontmatter.tags,
-                            createAt: splitDate(post.frontmatter.createAt),
-                            updateAt: splitDate(post.frontmatter.updateAt)
-                        }
-                    }))
-                    .sort((a, b) => {
-                        const dateA = new Date(
-                            `${a.frontmatter.createAt.year}-${a.frontmatter.createAt.month}-${a.frontmatter.createAt.day}`
-                        )
-                        const dateB = new Date(
-                            `${b.frontmatter.createAt.year}-${b.frontmatter.createAt.month}-${b.frontmatter.createAt.day}`
-                        )
-                        return dateB.getTime() - dateA.getTime()
-                    }) as Post[],
-                size: calculateSize(data.count, maxCount)
+                posts: sortPostsByDate(data.posts),
+                size: calculateSize(data.count, maxCount),
             }))
-            .sort(() => Math.random() - 0.5)
-        return tags
-    }
-}) 
+            .sort(() => Math.random() - 0.5);
+
+        return tags;
+    },
+});
+
 ```
 
-注意到，我这里高亮了一行代码，主要关注 <span class="marker-evy">`'**/*.md'`</span> 。这一参数表示<span class="marker-underline">项目根目录下所有 `.md` 文件</span>。如果你只需要检索某一指定文件夹如 `📂:'/笔记'` 下的所有 `.md` 文件，那么你需要修改参数为 `'笔记/**/*.md'`
-
-:::
+注意到，我这里高亮了一行代码，主要关注 <span class="marker-evy">`📒文章/**/*.md`</span> 。这一参数表示<span class="marker-underline">项目根目录下 `📒文章` 文件夹内所有 `.md` 文件</span>。如果你需要检索某一指定文件夹如 `📂:'/笔记'` 下的所有 `.md` 文件，那么你需要修改参数为 `'笔记/**/*.md'` ，实际配置需要根据你的项目结构具体调整。
 
 ### 文章列表组件
 
 ::: tip 作者说
 
-这里我把「文章列表组件」和「标签云组件」进行解耦，主要目的是为了**复用**「文章列表组件」。
+这里把「文章列表组件」和「标签云组件」进行解耦，主要目的是为了**复用**「文章列表组件」。
 
 :::
 
 新建 `📄:.vitepress/theme/components/PostList/PostList.vue` ，复制粘贴下述内容：
 
-::: details 由于代码过长，此处进行折叠包裹
 
 ```vue [PostList.vue]
 <script setup lang="ts">
 import { computed } from 'vue'
-import { data as tagsData } from '../TagCloud/tags.data'
+import { data as tagsData } from './tags.data'
+
 interface Post {
     url: string
     frontmatter: {
@@ -181,9 +197,11 @@ interface Post {
         }
     }
 }
+
 const props = defineProps<{
     posts: Post[]
 }>()
+
 const processedPosts = computed(() => {
     return props.posts.map(post => {
         const postTags = tagsData.reduce((acc: string[], tagItem) => {
@@ -192,6 +210,7 @@ const processedPosts = computed(() => {
             }
             return acc
         }, [])
+
         return {
             ...post,
             frontmatter: {
@@ -245,13 +264,16 @@ const processedPosts = computed(() => {
     padding: 0;
     margin: 0;
 }   
+
 .post-link {
     text-decoration: none;
     display: block;
 }
+
 .post-link:hover .post-title {
     text-decoration: underline;
 }
+
 .post-item {
     margin: 8px 0;
     padding: 1rem;
@@ -260,15 +282,18 @@ const processedPosts = computed(() => {
     border-radius: 0.5rem;
     background-color: transparent;
 }
+
 .post-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--custom-shadow); /* [!code warning] */
 }
+
 .post-content {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
+
 .post-title-container {
     flex: 1;
     display: flex;
@@ -277,31 +302,37 @@ const processedPosts = computed(() => {
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 .post-title {
     font-family: monospace;
     text-decoration: none;
     word-break: break-word;
     flex-shrink: 0;
 }
+
 .post-tags {
     color: gray;
     font-family: monospace;
     font-size: 0.76em;
     font-weight: bolder;
 }
+
 .tag-label {
     color: var(--custom-text); /* [!code warning] */
 }
+
 .tag-item {
     color: var(--vp-c-brand-1);
     margin: 0 2px;
 }
+
 .post-dates {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
 }
+
 .post-update,
 .post-date {
     color: var(--custom-text); /* [!code warning] */
@@ -309,24 +340,30 @@ const processedPosts = computed(() => {
     font-size: 0.76em;
     font-weight: bolder;
 }
+
+/* 移动端适配 */
 @media (max-width: 768px) {
     .post-content {
         gap: 0.8rem;
     }
+
     .post-title-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.4rem;
     }
+
     .post-dates {
         flex-direction: column;
         gap: 0.3rem;
     }
+
     .post-update,
     .post-date {
         white-space: normal;
         min-width: unset;
     }
+
     .post-item {
         padding: 0.8rem;
     }
@@ -334,22 +371,17 @@ const processedPosts = computed(() => {
 </style>
 ```
 
-注意到，在 `<style scoped></style>` 标签中，存在几行高亮代码，这同样是为了满足复用需求而自定义的样式，具体配置在别的文档中提到过，这里不再赘述，详细配置见这里： [个性化配置](../🎨样式美化方案/代码块、组美化方案.md#个性化配置)
-
-:::
+注意到，在 `<style scoped></style>` 标签中，存在几行高亮代码，这是为了满足复用、项目样式统一的需求而自定义的样式，具体配置在别的文档中提到过，这里不再赘述，详细配置见这里： [个性化配置](../🎨样式美化方案/代码块、组美化方案.md#个性化配置) 。
 
 ### 标签云组件
 
 新建 `📄:.vitepress/theme/components/TagCloud/TagCloud.vue` ，复制粘贴下述内容：
 
-::: details 由于代码过长，此处进行折叠包裹
-
 ```vue [TagCloud.vue]
-// .vitepress/theme/components/TagCloud/TagCloud.vue
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { data as tags } from './tags.data'
-import PostList from '../PostList/PostList.vue'
+import PostList from './PostList.vue'
+import { data as tags } from './tags.data.ts'
 const selectedTag = ref('')
 const selectedPosts = computed(() => {
     if (!selectedTag.value) return []
@@ -384,6 +416,7 @@ onMounted(() => {
         </span>
       </div>
     </div>
+
     <div v-if="selectedTag && selectedPosts.length" class="posts-list">
       <h4>{{ selectedTag }} 相关文章 —— {{ selectedPosts.length }} 篇</h4>
       <PostList :posts="selectedPosts" />
@@ -396,6 +429,7 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
 }
+
 .tag-cloud {
     background-color: var(--vp-c-bg-soft);
     border-radius: 12px;
@@ -403,12 +437,14 @@ onMounted(() => {
     margin: 1rem 0;
     box-shadow: var(--custom-shadow); /* [!code warning] */
 }
+
 .tags-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+
 .tag-item {
     display: inline-block;
     padding: 0.3rem 0.6rem;
@@ -418,15 +454,18 @@ onMounted(() => {
     color: var(--main-page-text); /* [!code warning] */
     background: transparent;
 }
+
 .tag-item:hover {
     color: var(--vp-c-brand-1);
     transform: translateY(-2px);
     background-color: var(--main-page-bg); /* [!code warning] */
 }
+
 .tag-item.active {
     color: var(--vp-c-brand-1);
     font-weight: bold;
 }
+
 .tag-count {
     margin-left: 2px;
     opacity: 0.8;
@@ -436,8 +475,6 @@ onMounted(() => {
 ```
 
 这里高亮代码同前文。
-
-:::
 
 ## 组件注册
 
@@ -460,4 +497,18 @@ export const Theme: ThemeConfig = {
 
 ## 组件使用
 
-在需要出现 `标签索引` 的文档输入 `<TagCloud />` 。
+在需要出现 `标签索引` 的文档输入 `<TagCloud />` ，我的 [标签索引页](../../../../otherDocs/tagCloud.md) 源代码如下
+
+```md [tagCloud.md]
+---
+title: 文档标签
+createAt: 2025-02-02 11:59:30
+updateAt: 2025-02-02 23:53:52
+tags:
+  - Index
+---
+
+# 文档标签
+
+<TagCloud /> 
+```
