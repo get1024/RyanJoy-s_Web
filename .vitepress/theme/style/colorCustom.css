@@ -1,5 +1,5 @@
 :root {
-    --custom-backtop-ring: #f7a800;
+    --custom-backtop-ring: var(--main-page-bg);
 
     --vp-c-brand-1: #8A5CF5;
     --vp-c-brand-2: #a984ff;
@@ -54,7 +54,7 @@
 }
 
 .dark {
-    --custom-backtop-ring: #3451B2;
+    --custom-backtop-ring: var(--main-page-bg);
     
     --vp-c-brand-1: #9b70ff;
     --vp-c-brand-2: #a984ff;

@@ -20,12 +20,25 @@ export default {
 
 <style scoped>
 
-.el-backtop{
+.el-backtop {
     background-color: transparent;
 }
 
 .el-backtop:hover {
-    background-color: var(--custom-backtop-ring);
+    transform: scale(1) rotate(0deg);
+    animation: scaleAndRotate 1.5s linear infinite;
+}
+
+@keyframes scaleAndRotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
 }
 
 .icon {
