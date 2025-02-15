@@ -7,22 +7,22 @@ tags:
   - Info
   - 博客
 ---
-<script setup>
+<!-- <script setup>
     import {lifeSkills} from '/.vitepress/theme/components/lists/lifeSkills'
     import {os} from '/.vitepress/theme/components/lists/os'
     import {personalProject} from '/.vitepress/theme/components/lists/personalProject'
     import {ref_sum} from '/.vitepress/theme/components/lists/ref_sum'
     import {tech_skills} from '/.vitepress/theme/components/lists/tech_skills'
     import {tools} from '/.vitepress/theme/components/lists/tools'
-</script>
+</script> -->
 
 # 文章索引页
 
-## <p><img src="/avatar.png" class="titleAvatar" /><span>RyanJoy 的知识图书馆</span></p>
+## <p><img src="/avatar.png" class="titleAvatar" /><span>RyanJoy 的博客</span></p>
 
-👏欢迎来到小业的知识图书馆 [RyanJoy's Web](https://ryanjoy.top/)，这里是「🗃️笔记归档」分区！
+👏欢迎来到我的博客 [RyanJoy's Blog](https://blog.ryanjoy.top/)，这里是「📒文章索引页」分区！
 
-<span class="marker-underline">***左侧*** 是</span><span class="marker-fakeTitle">📒文章侧边栏</span><span class="marker-underline">，***下方*** 是</span><span class="marker-fakeTitle">📒文章更新时间树</span><span class="marker-underline">。 `浏览` 或者 `ctrl+k` 搜索你需要的文档查阅吧！</span>
+<span class="marker-underline">***左侧*** 是</span><span class="marker-fakeTitle">📒文章分类</span><span class="marker-underline">，***下方*** 是</span><span class="marker-fakeTitle">📒文章更新时间树</span><span class="marker-underline">。选择一种方式进行 `浏览` 寻找你感兴趣的文章，或者 `ctrl+k` 搜索你需要的文章查阅吧！</span>
 
 <nodeIndex />
 
