@@ -1,7 +1,7 @@
 ---
 title: BackToTop-回到顶部按钮
 createAt: 2025-02-08 09:23:44
-updateAt: 2025-02-08 09:23:49
+updateAt: 2025-02-15 13:38:41
 tags:
   - 插件
   - 博客
@@ -13,7 +13,9 @@ tags:
 # BackToTop-回到顶部按钮
 
 ::: tip 作者说
+
 这里提供两个方案，方案一采用 [Backtop 回到顶部 \| Element Plus](https://element-plus.org/zh-CN/component/backtop.html) ，方案二从零开始写一个组件。
+
 :::
 
 ## 方案一
@@ -39,6 +41,7 @@ yarn add element-plus
 ```
 
 :::
+
 要在 Vitepress 项目中新增一个使用 Element Plus 组件 `el-backtop` 的自定义组件，你需要按照以下步骤进行配置。以下是详细的步骤：
 
 ### 组件定义
@@ -84,6 +87,7 @@ export default {
 ```
 
 ::: details 高亮代码什么意思？
+
 `var(--custom-backtop-ring);` 是自定义的一种颜色样式，为了自动跟随 `Vitepress` 两种主题进行切换。具体配置如下。
 
 在 `📄:.vitepress/theme/style/colorCustom.css` 中添加下述内容
@@ -156,13 +160,14 @@ export default {
     --custom-toast-text: #ffffff;
 }
 ```
+
 :::
 
 ### 引入 ElementPlus 并使用组件
 
 在 `Vitepress` 主题文件 `📄:.vitepress/theme/index.ts` 中引入
 
-```javascript
+```ts [index.ts]
 // .vitepress/theme/index.ts
 import DefaultTheme from 'vitepress/theme'
 import { ElBacktop } from 'element-plus' // [!code ++]
@@ -183,15 +188,19 @@ export const Theme: ThemeConfig = {
 ```
 
 刷新项目，就能看到 `<el-backtop>` 按钮啦~
+
 ## 方案二
 
 ::: info 谴责 RyanJoy
+
 这是一个重复造轮子的尝试……并且效果极其垃圾；
 
 不过，你仍然可以尝试这一方案！
 
 现存的问题是性能不友好，在手机上使用起来就略显掉帧，ipad 和 MacBook 体验良好。欢迎您的尝试并期待收到 `PR` 🥺。
+
 :::
+
 ### 效果展示
 
 ![](assets/backtotop-回到顶部按钮/2025-02-08_09-41-45.gif)

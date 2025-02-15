@@ -119,7 +119,7 @@ bun add vitepress-plugin-group-icons
 输入
 
 ````md [example.md]
-```js [vite.config.js] <!-- [!code warning] -->
+```js [vite.config.js]
 import legacy from '@vitejs/plugin-legacy'
 import { defineConfig } from 'vite'
 
