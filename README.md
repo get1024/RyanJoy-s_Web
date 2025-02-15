@@ -1,23 +1,23 @@
 # RyanJoy's Blog
 
 <p>
-	<img src="https://img.shields.io/badge/Obsidian-purple?style=plastic&logo=obsidian&logoColor=white" style="display:inline-block;">
-	<img src="https://img.shields.io/badge/Vitepress-5C73E7?style=plastic&logo=vitepress&logoColor=white" style="display:inline-block;">
-	<img src="https://img.shields.io/badge/Nodejs-5FA04E?style=plastic&logo=nodedotjs&logoColor=white" style="display:inline-block;">
-	<img src="https://img.shields.io/badge/Vue-4FC08D?style=plastic&logo=vuedotjs&logoColor=white" style="display:inline-block;">
-	<img src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" style="display:inline-block;">
-	<img src="https://img.shields.io/badge/Git-F05032?style=plastic&logo=git&logoColor=white" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Obsidian-purple?style=plastic&logo=obsidian&logoColor=white" style="display:inline-block;">&nbsp;
+	<img src="https://img.shields.io/badge/Vitepress-5C73E7?style=plastic&logo=vitepress&logoColor=white" style="display:inline-block;">&nbsp;
+	<img src="https://img.shields.io/badge/Nodejs-5FA04E?style=plastic&logo=nodedotjs&logoColor=white" style="display:inline-block;">&nbsp;
+	<img src="https://img.shields.io/badge/Vue-4FC08D?style=plastic&logo=vuedotjs&logoColor=white" style="display:inline-block;">&nbsp;
+	<img src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" style="display:inline-block;">&nbsp;
+	<img src="https://img.shields.io/badge/Git-F05032?style=plastic&logo=git&logoColor=white" style="display:inline-block;">&nbsp;
 	<img src="https://img.shields.io/badge/Markdown-000000?style=plastic&logo=markdown&logoColor=white" style="display:inline-block;">
 </p>
 
-这是一个基于 `VitePress` 搭建的个人博客系统。目前使用 [Obsidian](https://obsidian.md/) 进行文档编写、 [Visual Studio Code](https://code.visualstudio.com/) 进行版本维护。
+这是一个基于 `VitePress` 搭建的个人博客系统。目前使用 [Obsidian](https://obsidian.md/) 进行文档编写、 [Visual Studio Code](https://code.visualstudio.com/) 进行配置编写、主题调整以及插件开发。
 
 ## 🌐 部署
 
 <p>
-	<img src="https://img.shields.io/badge/Netlify-%E4%B8%BB%E7%AB%99%E7%82%B9-green?style=plastic&logo=netlify&logoColor=white&labelColor=00C7B7" style="display:inline-block;">
-	<img src="https://img.shields.io/badge/Vercel-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=vercel&logoColor=white&labelColor=000000" style="display:inline-block;">
-	<img src="https://img.shields.io/badge/CloudFlare-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=cloudflare&logoColor=white&labelColor=F38020" style="display:inline-block;">
+	<img src="https://img.shields.io/badge/Netlify-%E4%B8%BB%E7%AB%99%E7%82%B9-green?style=plastic&logo=netlify&logoColor=white&labelColor=00C7B7" style="display:inline-block;">&nbsp;
+	<img src="https://img.shields.io/badge/Vercel-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=vercel&logoColor=white&labelColor=000000" style="display:inline-block;">&nbsp;
+	<img src="https://img.shields.io/badge/CloudFlare-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=cloudflare&logoColor=white&labelColor=F38020" style="display:inline-block;">&nbsp;
 	<img src="https://img.shields.io/badge/Github_Pages-%E5%A4%87%E7%94%A8%E7%AB%99%E7%82%B9-red?style=plastic&logo=github&logoColor=white&labelColor=181717" style="display:inline-block;">
 </p>
 
@@ -104,7 +104,7 @@ pnpm build
 
 ### 文档规范
 
-所有文档需要包含以下 front matter:
+所有文档需要包含以下 `frontmatter` ：
 
 ```markdown
 ---
