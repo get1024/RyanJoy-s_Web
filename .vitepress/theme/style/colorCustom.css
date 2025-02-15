@@ -1,6 +1,10 @@
 :root {
     --custom-backtop-ring: #f7a800;
 
+    --vp-c-brand-1: #8A5CF5;
+    --vp-c-brand-2: #a984ff;
+    --vp-c-brand-3: #aa86ff;
+
     /* linkcard色卡 */
     --custom-bg: #f0f0f0;
     --custom-border: #dedede;
@@ -52,9 +56,9 @@
 .dark {
     --custom-backtop-ring: #3451B2;
     
-    --vp-c-brand-1: #f7a800;
-    --vp-c-brand-2: #ffb300;
-    --vp-c-brand-3: #f9d423;
+    --vp-c-brand-1: #9b70ff;
+    --vp-c-brand-2: #a984ff;
+    --vp-c-brand-3: #aa86ff;
 
     /* linkcard色卡 */
     --custom-bg: #1f1f1f;
