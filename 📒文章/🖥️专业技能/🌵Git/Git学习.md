@@ -1,14 +1,16 @@
 ---
-title: Git学习
+title: Git 学习
 createAt: 2024-03-26 10:55:46
-updateAt: 2025-02-02 23:47:11
+updateAt: 2025-02-15 19:49:10
 tags:
   - Git
   - 学习笔记
 ---
+
 # Git 学习
 
 ::: tip 作者说
+
 本文档是笔者基于对 [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN) 的自主学习整理的补充性文档。如果有幸此文被您发现，强烈推荐结合 [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN) 进行学习。
 
 由于本篇内容较多，翻看右边➡️「本页大纲」也无法做到十分清晰，因此这里提供对「二级标题」的快速索引。主体主要包括**三大部分**，如下表格所示，点击对应链接查看目标内容吧~
@@ -33,6 +35,7 @@ git commit -m "提交描述"
 Git 的分支非常轻量。它们只是简单地指向**某个提交纪录** —— 仅此而已。所以许多 Git 使用者传颂：**早建分支！多用分支！**
 
 #### 新建并切换分支
+
 <p></p>
 
 ```sh [git]
@@ -41,6 +44,7 @@ git switch <分支名>   // 切换分支
 ```
 
 #### 合并分支
+
 <p></p>
 
 ```shell [git]
@@ -69,6 +73,7 @@ git checkout <提交记录hash值>
 使用相对引用的话，你就可以从一个易于记忆的地方（比如 `bugFix` 分支或 `HEAD` ）开始操作。
 
 相对引用非常给力，这里我介绍两个简单的用法：
+
 - 使用 `^` 向上移动 1 个提交记录
 - 使用 `~<num>` 向上移动多个提交记录，如 `~3`
 
@@ -88,6 +93,7 @@ git branch -f <被移动分支> <HEAD or 分支名>~<num>
 这一命令会将 `被移动分支` 强制指向 `HEAD or 分支名` 指向的提交记录的第 `num` 级 `parent` 提交。
 
 #### 撤销变更
+
 <p></p>
 
 ```sh [git]
@@ -140,7 +146,7 @@ git rebase -i HEAD~<num>
 
 #### 技巧 2
 
-主要是通过 [`git cherry-pick`](#git%20cherry-pick) 和 [强制移动分支](#强制移动分支) 进行多次提交
+主要是通过 [git cherry-pick](#git%20cherry-pick) 和 [强制移动分支](#强制移动分支) 进行多次提交
 
 ### Git tags
 
@@ -151,6 +157,7 @@ git tag <标签值> <提交记录hash值>or<相对引用>
 ```
 
 ### Git describe
+
 <p></p>
 
 ```sh [git]
@@ -170,7 +177,9 @@ git describe <ref>
 ## <span style="color:red;font-family:monospace;font-style:italic;">2</span>-Git 远程
 
 ::: info 远程仓库
+
 即本地仓库的内容在远程的备份，实现了代码社交化。
+
 :::
 
 ### git clone
@@ -208,7 +217,7 @@ git clone git@github.com:<username>/<repo-name>.git
 
 |                初始状态                |               目标状态               |
 | :--------------------------------: | :------------------------------: |
-| ![orgin](assets/2-git学习/orgin.png) | ![goal](assets/2-git学习/goal.png) |
+| ![orgin](assets/git学习/orgin.png) | ![goal](assets/git学习/goal.png) |
 
 ```sh [git]
 git clone
@@ -220,7 +229,7 @@ git push
 
 运行过程如下
 
-![process](assets/2-git学习/process.mp4)
+![process](assets/git学习/process.mp4)
 
 ### 远程服务器拒绝
 
@@ -233,7 +242,7 @@ git push
 
 |                  初始状态                  |                目标状态                |
 | :------------------------------------: | :--------------------------------: |
-| ![origin2](assets/2-git学习/origin2.png) | ![goal2](assets/2-git学习/goal2.png) |
+| ![origin2](assets/git学习/origin2.png) | ![goal2](assets/git学习/goal2.png) |
 
 ```sh [git]
 git branch -f main o/main
@@ -244,7 +253,7 @@ git push
 
 运行过程如下
 
-![process2](assets/2-git学习/process2.mp4)
+![process2](assets/git学习/process2.mp4)
 
 ## <span style="color:red;font-family:monospace;font-style:italic;">3</span>-实际搭配 Github 使用
 
