@@ -209,7 +209,10 @@ export default defineConfig({
     },
     //侧边栏自动配置
     sidebar: calculateSidebarWithDefaultOpen(
-      [{ folderName: "📒文章", separate: true }],
+      [
+        { folderName: "📒文章", separate: true },
+        // { folderName: "📆日记", separate: true }
+      ],
       ""
     ),
   },
