@@ -55,7 +55,7 @@ export default defineConfig({
   title: "RyanJoy的博客",
   description: "RyanJoy的博客",
   lastUpdated: true,
-  appearance: "dark",
+  appearance: "force-dark",
 
   //站点地图
   sitemap: {
