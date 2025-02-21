@@ -134,16 +134,17 @@ const processedPosts = computed(() => {
 }
 
 .post-title {
-    font-family: monospace;
+    font-weight: bolder;
     text-decoration: none;
     word-break: break-word;
     flex-shrink: 0;
+    font-size: 0.95em;
 }
 
 .post-tags {
     color: gray;
-    font-family: monospace;
-    font-size: 0.76em;
+    font-weight: bolder;
+    font-size: 0.72em;
     font-weight: bolder;
 }
 
@@ -166,9 +167,8 @@ const processedPosts = computed(() => {
 .post-update,
 .post-date {
     color: var(--custom-text);
-    font-family: monospace;
-    font-size: 0.76em;
     font-weight: bolder;
+    font-size: 0.72em;
 }
 
 /* 移动端适配 */

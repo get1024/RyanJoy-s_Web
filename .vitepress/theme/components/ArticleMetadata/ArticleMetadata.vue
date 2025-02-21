@@ -91,11 +91,10 @@ const handleTagClick = (tag: string) => {
 <style scoped>
 .ArticleMetadata-word {
     color: var(--custom-text);
-    font-family: monospace;
     white-space: nowrap;
     width: fit-content;
     min-width: 200px;
-    font-size: 0.75em;
+    font-size: 0.72em;
     font-weight: bolder;
 }
 
