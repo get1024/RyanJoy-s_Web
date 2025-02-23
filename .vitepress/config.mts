@@ -119,6 +119,7 @@ export default defineConfig({
           'babel': 'vscode-icons:file-type-babel',
           '.mdx': 'vscode-icons:file-type-light-mdx',
           'unplugin': 'https://unplugin.unjs.io/logo_light.svg',
+          sql: "vscode-icons:file-type-mysql",
         },
       }),
 

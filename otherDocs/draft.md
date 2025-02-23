@@ -65,3 +65,27 @@ Github 样式容器
 <Linkcard url="https://yiov.top/guide/" title="标题" description="描述" logo="https://pp.myapp.com/ma_icon/0/icon_10910_1711008413/256" />
 
 ---
+
+```
+demo
+```
+
+```vue
+demo
+```
+
+```vue [example.vue]
+demo
+```
+
+::: code-group
+
+```pnpm
+demo
+```
+
+```npm
+demo
+```
+
+:::
